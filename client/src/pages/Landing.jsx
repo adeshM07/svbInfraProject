@@ -160,8 +160,8 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               <video
-                src={constructionVideo}
-                // src="https://youtu.be/mZ0SXgZAJT8"
+                // src={constructionVideo}
+                src="../videos/constructionVideo3.mp4"
                 autoPlay
                 muted
                 loop
