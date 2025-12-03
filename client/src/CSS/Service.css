@@ -1,0 +1,25 @@
+#serviceBanner::before{
+    content: "";
+    background: url("../assets/serviceBannerIMG.png") no-repeat;
+    position: absolute;
+    width: 100vw;
+    height: 95vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+@media (min-width: 701px) and (max-width:1023px) {
+  #serviceBanner::before {
+    background: url('../assets/serviceBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 45vh;                   /* smaller height for mobile */
+  }
+}
+
+@media (max-width: 700px) {
+  #serviceBanner::before {
+    background: url('../assets/serviceBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 45vh;                   /* smaller height for mobile */
+  }
+}

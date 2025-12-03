@@ -1,0 +1,70 @@
+#hseBanner::before {
+    content: "";
+    background: url('../assets/HSEBannerBG.png');
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+}
+
+.fontMon {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+@media (min-width: 701px) and (max-width:1023px) {
+  #hseBanner::before {
+    background: url('../assets/HSEBannerBG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 45vh;                   /* smaller height for mobile */
+  }
+}
+
+@media (max-width: 700px) {
+  #hseBanner::before {
+    background: url('../assets/HSEBannerBG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 45vh;                   /* smaller height for mobile */
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+
+.hseBannerTitle {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.fontMon{
+    font-family: "Montserrat";
+    font-style: normal;
+}
+
+.hseBannerDesc{
+     font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+}
+
+.popins{
+    font-family: "Poppins";
+    font-style: normal;
+}
+
+.HSEUL{
+    list-style:disc;
+}

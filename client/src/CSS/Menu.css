@@ -1,0 +1,13 @@
+.menuNavLinks {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menuButton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}

@@ -1,0 +1,152 @@
+.popins {
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+.popins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.popins-noweight {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.aboutCom {
+  font-family: "Montserrat";
+  /* font-weight: bold; */
+  font-style: normal;
+}
+
+.fontMon {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+#infrastructure {
+  position: relative;
+  /* ✅ anchor the pseudo-element */
+  z-index: 1;
+  /* keep this above the background */
+}
+
+#landingBanner::before {
+  content: "";
+  position: absolute;
+  background: url('../assets/landingBannerIMG.png') no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 88vh;
+  z-index: 400;
+}
+
+@media (max-width: 700px) {
+  #landingBanner::before {
+    background: url('../assets/landingBannerIMG.png') no-repeat center top;
+    background-size: cover;      
+    height: 45vh;                  
+  }
+}
+
+@media (min-width: 701px) and (max-width:1023px) {
+  #landingBanner::before {
+    background: url('../assets/landingBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 45vh;                   /* smaller height for mobile */
+  }
+}
+
+#infrastructure::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* fills the parent fully */
+  background: url("../assets/infraBG.png") center/cover no-repeat;
+  z-index: -1;
+  /* behind text, but inside #infrastructure */
+  opacity: 1;
+  /* optional - adjust if you want a fade effect */
+  border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+  #infrastructure::before {
+    background: url('../assets/infraBG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 30vh;                   /* smaller height for mobile */
+  }
+}
+
+#landing-contact::before {
+  content: "";
+  position: absolute;
+  /* inset: 0; */
+  background: url('../assets/landingContactUSBG.png');
+  width:78vw;
+  height: 37vh;
+  background-size: cover;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@media (max-width: 700px) {
+  #landing-contact::before {
+    background: url('../assets/landingContactUSBG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 15vh;     
+    width: 95vw;              /* smaller height for mobile */
+  }
+}
+
+@media (min-width: 701px) and (max-width:1023px) {
+  #landing-contact::before {
+    background: url('../assets/landingContactUSBG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 23vh;     
+    width: 95vw;              /* smaller height for mobile */
+  }
+}
+
+
+@keyframes fleetScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-410%);
+  }
+}
+
+.animate-fleet-scroll {
+  display: flex;
+  animation: fleetScroll 20s linear infinite;
+  /* 40s = smooth full cycle (adjust speed as you like) */
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .animate-fleet-scroll {
+    animation: fleetScroll 25s linear infinite;
+  }
+}
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: fit-content;
+  animation: scroll 6s linear infinite;
+}

@@ -1,0 +1,72 @@
+.popins {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.popins-noweight {
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+.popins-bold {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+}
+
+.aboutCom {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.fontMon {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+
+#aboutCardBG {
+  position: relative;
+  z-index: 0;
+}
+
+#aboutCardBG::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../assets/aboutCardBG.png') no-repeat center center;
+  background-size: cover;
+  z-index: -1; 
+}
+
+
+#aboutBanner::before {
+  content: "";
+  position: absolute;
+  background: url('../assets/aboutBannerIMG.png') no-repeat center center;
+  width: 100vw;
+  height: 95vh;
+  background-size: cover;
+  z-index: -1;
+}
+
+@media (min-width: 701px) and (max-width:1023px) {
+  #aboutBanner::before {
+    background: url('../assets/aboutBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 45vh;                   /* smaller height for mobile */
+  }
+}
+
+@media (max-width: 700px) {
+  #aboutBanner::before {
+    background: url('../assets/aboutBannerIMG.png') no-repeat center top;
+    background-size: cover;
+    /* keeps full image visible */
+    height: 45vh;
+    /* smaller height for mobile */
+  }
+}
+

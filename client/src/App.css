@@ -1,0 +1,41 @@
+@layer base {
+  :root {
+    --main-color: white;
+    --text-size: 1.5rem;
+    --cube-scale: 0.8;
+  }
+}
+
+.popins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.popins-bold{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+
+@keyframes cardScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-220vw); /* Adjust depending on total width */
+  }
+}
+
+.animate-cardScroll {
+  animation: cardScroll 25s linear infinite;
+}
+
+/* Optional: pause animation when hovered */
+/* .animate-cardScroll:hover {
+  animation-play-state: paused;
+} */

@@ -1,0 +1,48 @@
+.popins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.popins-noweight {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.popins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#fleetBanner::before {
+  content: "";
+  position: absolute;
+  background: url('../assets/fleetBannerIMG.png') no-repeat;
+  height: 95vh;
+  width: 100vw;
+  background-size: cover;
+  z-index: -1;
+}
+
+@media (min-width: 701px) and (max-width:1023px) {
+  #fleetBanner::before {
+    background: url('../assets/fleetBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 45vh;                   /* smaller height for mobile */
+  }
+}
+
+@media (max-width: 700px) {
+  #fleetBanner::before {
+    background: url('../assets/fleetBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 45vh;                   /* smaller height for mobile */
+  }
+}
+
+
+.fontMon {
+  font-family: "Montserrat";
+  font-style: normal;
+}
