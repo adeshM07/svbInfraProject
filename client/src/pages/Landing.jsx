@@ -160,8 +160,8 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               <video
-                src={constructionVideo}
-                // src="/videos/constructionVideo3.mp4"
+                // src={constructionVideo}
+                src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1764767947/constructionVideo3_wvcw1r.mp4"
                 autoPlay
                 muted
                 loop
