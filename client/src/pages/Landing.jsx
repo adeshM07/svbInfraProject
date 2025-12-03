@@ -161,7 +161,7 @@ const Landing = () => {
             >
               <video
                 // src={constructionVideo}
-                src="../videos/constructionVideo3.mp4"
+                src="/videos/constructionVideo3.mp4"
                 autoPlay
                 muted
                 loop
