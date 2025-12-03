@@ -40,7 +40,7 @@ import v2 from "../assets/v2.mp4";
 import v3 from "../assets/v3.mp4";
 import v4 from "../assets/v4.mp4";
 import v5 from "../assets/v5.mp4";
-import constructionVideo from "/public/videos/constructionVideo3.mp4";
+import constructionVideo from "/src/videos/constructionVideo3.mp4";
 
 const Landing = () => {
   let [projectVideo, setProjectVideo] = useState(v3);
@@ -160,8 +160,8 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               <video
-                // src={constructionVideo}
-                src="/videos/constructionVideo3.mp4"
+                src={constructionVideo}
+                // src="/videos/constructionVideo3.mp4"
                 autoPlay
                 muted
                 loop
