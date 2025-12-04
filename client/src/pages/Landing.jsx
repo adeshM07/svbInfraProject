@@ -409,8 +409,8 @@ const Landing = () => {
               <p className="text-[#4D4D4D]  w-[40vw]  popins  text-[8px] lg:text-[16px] ml-3 lg:mt-5 font-semibold ">
                 We have successfully completed a wide range of earthwork and
                 excavation projects for leading clients across Karnataka. Our
-                portfolio includes residential, commercial, and infrastructure
-                developments <br /> delivered with quality and precision.
+                portfolio includes residential, commercial, and  infrastructure developments delivered
+                with quality and precision.
               </p>
             ) : (
               <p className="text-[#4D4D4D] popins  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
