@@ -83,7 +83,7 @@ const Menu = () => {
           <>
             <nav
               id="menuNav"
-              className="flex gap-7 h-fit list-none text-white z-[999]"
+              className="flex gap-7 h-fit list-none text-black z-[999]"
             >
               {[
                 { name: "About Us", link: "/about" },
