@@ -197,7 +197,7 @@ const PortFolio = () => {
                 key={index}
                 src={src}
                 alt={`Project ${index + 1}`}
-                className="w-[27vw] h-[20vh] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
+                className="w-[30vw] h-[20vh] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
               />
             ))}
           </div>
@@ -215,7 +215,7 @@ const PortFolio = () => {
                 key={index}
                 src={src}
                 alt={`Project ${index + 1}`}
-                className="w-[27vw] h-[20vh] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg "
+                className="w-[30vw] h-[20vh] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg "
               />
             ))}
           </div>
