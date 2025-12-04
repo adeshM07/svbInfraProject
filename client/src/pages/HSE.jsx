@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import c2 from '../assets/hseCard2.png'
 import c3 from '../assets/hseCard3.png'
 import c4 from '../assets/hseCard4.png'
-import ic1 from '../assets/infoCardIMG1.png'
+import ic1 from '../assets/infoCardIMG1.jpeg'
 import ic2 from '../assets/infoCardIMG2.png'
 import ic3 from '../assets/infoCardIMG3.png'
 import ic4 from '../assets/infoCardIMG4.png'

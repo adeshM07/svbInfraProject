@@ -101,7 +101,7 @@ const AboutHighlights = () => {
             Reliable Results
           </p>
           <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] popins">
-            Trusted since 2003, delivering projects across Karnataka
+            Trusted since 2003, delivering projects across Karnataka and AP
           </p>
         </motion.div>
 
