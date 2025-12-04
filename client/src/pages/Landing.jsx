@@ -166,7 +166,7 @@ const Landing = () => {
                 muted
                 loop
                 playsInline
-                className="rounded-2xl shadow-lg w-[47vw] h-[30vh] lg:w-[40vw] lg:h-[84vh] object-cover"
+                className="rounded-2xl shadow-lg w-[49vw] h-[40vh] lg:w-[40vw] lg:h-[84vh] object-cover"
               />
             </motion.div>
 
@@ -178,14 +178,14 @@ const Landing = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="fontMon border-2 bg-[#F8F8F8] z-999 mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
+              <p className="fontMon bg-[#F8F8F8] z-999 mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
                 Great Relationships,
                 <br /> Great{" "}
                 <span className="text-[#FDC000]">Infrastructure</span>
               </p>
 
               <div className="flex flex-col place-items-end gap-4 px-2 pt-2 lg:pt-10">
-                <p className="text-[#4D4D4D] popins lg:w-[32vw] text-[0.6rem] md:text-[0.8rem] lg:text-[1.25rem] lg:pl-5">
+                <p className="text-[#4D4D4D] popins lg:w-[32vw] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] lg:pl-5">
                   <span className="font-semibold lg:mr-1">
                     SVB Infra Projects
                   </span>

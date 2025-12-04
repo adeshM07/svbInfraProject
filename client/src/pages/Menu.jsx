@@ -49,7 +49,7 @@ const Menu = () => {
           >
             <nav
               id="menuNav"
-              className="flex flex-col text-[1.6rem] border-2 border-green-500  gap-5 h-fit list-none text-white z-[1000] p-4"
+              className="flex flex-col text-[1.6rem]   gap-5 h-fit list-none text-black z-[1000] p-4"
             >
               {[
                 { name: "About Us", link: "/about" },
