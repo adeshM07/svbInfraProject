@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Menu = () => {
-
   const [isMobile, setIsMobile] = useState(false);
   const [popup, setPopup] = useState(false);
 
@@ -31,11 +30,14 @@ const Menu = () => {
       <div className=" bg-[#333333] w-screen flex px-5 md:px-6 justify-between h-[9vh] lg:h-[13vh] place-items-center lg:px-24">
         <div className="">
           <Link to="/">
-            <img src={svbLogo} className="w-[15vw] h-[5vh] lg:w-[8vw] lg:h-[8vh]" />
+            <img
+              src={svbLogo}
+              className="w-[15vw] h-[5vh] lg:w-[8vw] lg:h-[8vh]"
+            />
           </Link>
         </div>
-        {
-          popup && <div
+        {popup && (
+          <div
             className="absolute right-5 top-[90px] w-[60vw] h-fit 
   border border-white/20 
   rounded-xl 
@@ -70,44 +72,49 @@ const Menu = () => {
               ))}
             </nav>
           </div>
+        )}
 
-        }
+        {isMobile ? (
+          <i
+            class="fa-solid fa-bars text-[21px] text-white z-[1000]"
+            onClick={() => setPopup(!popup)}
+          ></i>
+        ) : (
+          <>
+            <nav
+              id="menuNav"
+              className="flex gap-7 h-fit list-none text-white z-[999]"
+            >
+              {[
+                { name: "About Us", link: "/about" },
+                { name: "Service", link: "/services" },
+                { name: "Our Fleet", link: "/fleet" },
+                { name: "Portfolio", link: "/portfolio" },
+                { name: "HSE", link: "/hse" },
+              ].map((item) => (
+                <li key={item.link} className=" relative group">
+                  <Link
+                    to={item.link}
+                    className="relative text-white transition-all duration-300 ease-in-out"
+                  >
+                    {item.name}
+                    {/* Animated underline */}
+                    <span className="absolute left-1/2 -bottom-[3px]  w-0  h-[2px]  bg-[#FDC000]  transition-all duration-300 ease-in-out  group-hover:left-0   group-hover:w-full "></span>
+                  </Link>
+                </li>
+              ))}
+            </nav>
 
-        {
-          isMobile ? <i class="fa-solid fa-bars text-[21px] text-white z-[1000]" onClick={() => setPopup(!popup)}></i> :
-            <>
-
-              <nav id="menuNav" className="flex gap-7 h-fit list-none text-white z-[999]">
-                {[
-                  { name: "About Us", link: "/about" },
-                  { name: "Service", link: "/services" },
-                  { name: "Our Fleet", link: "/fleet" },
-                  { name: "Portfolio", link: "/portfolio" },
-                  { name: "HSE", link: "/hse" },
-                ].map((item) => (
-                  <li key={item.link} className=" relative group">
-                    <Link
-                      to={item.link}
-                      className="relative text-white transition-all duration-300 ease-in-out"
-                    >
-                      {item.name}
-                      {/* Animated underline */}
-                      <span
-                        className="absolute left-1/2 -bottom-[3px]  w-0  h-[2px]  bg-[#FDC000]  transition-all duration-300 ease-in-out  group-hover:left-0   group-hover:w-full "
-                      ></span>
-                    </Link>
-                  </li>
-                ))}
-              </nav>
-
-
-              <button className="menuButton md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] bg-[#FDC000] text-black text-[1rem] rounded-[9px]">
-                <Link to='/contact'>Contact Us</Link>
-
+            <Link to="/contact">
+              <button
+                className="menuButton md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] bg-[#FDC000] text-black text-[1rem] rounded-[9px] transition duration-300 transform
+  hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
+              >
+                Contact Us
               </button>
-
-            </>
-        }
+            </Link>
+          </>
+        )}
       </div>
     </>
   );

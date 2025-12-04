@@ -505,7 +505,8 @@ const Landing = () => {
                     src={`${item.src}`}
                     onClick={() => setProjectVideo(item.video)}
                     alt=""
-                    className="w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] object-cover"
+                    className="w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] object-cover 
+           transition-transform duration-300 hover:scale-115 cursor-pointer"
                   />
                 ))}
               </div>

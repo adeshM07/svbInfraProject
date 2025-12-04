@@ -333,7 +333,7 @@ const HSE = () => {
                         >
                             <img
                                 src={ic2}
-                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] lg:h-[52vh]"
+                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[60vw] lg:h-[52vh]"
                                 alt="Commitment to health & safety"
                             />
                         </motion.div>
