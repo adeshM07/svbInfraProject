@@ -381,8 +381,16 @@ const Landing = () => {
               src={projectVideo}
               title="SVB Infra Project Video"
               frameBorder="0"
-              allow="autoplay; fullscreen; encrypted-media"
+              allow="autoplay; fullscreen;  encrypted-media"
             ></iframe>
+            {/* <video
+              className="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-[2.25]"
+              src={projectVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+            /> */}
 
             {/* Overlay */}
             <div className="absolute  inset-0 bg-black/40 "></div>
@@ -416,25 +424,85 @@ const Landing = () => {
             <div className="absolute  left-[42vw] lg:left-[50.2vw] -top-[11vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[40vw] py-2 lg:py-4  overflow-hidden ">
               <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                 {[
-                  { src: c1, video: v5 },
-                  { src: c2, video: v2 },
-                  { src: c3, video: v1 },
-                  { src: c4, video: v3 },
-                  { src: c5, video: v4 },
-                  { src: c6, video: v5 },
-                  { src: c7, video: v1 },
-                  { src: c8, video: v2 },
-                  { src: c9, video: v3 },
-                  { src: c10, video: v4 },
-                  { src: c11, video: v5 },
-                  { src: c12, video: v1 },
-                  { src: c13, video: v2 },
-                  { src: c14, video: v3 },
-                  { src: c15, video: v4 },
+                  {
+                    src: c1,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
+                  },
+                  {
+                    src: c2,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
+                  },
+                  {
+                    src: c3,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
+                  },
+                  {
+                    src: c4,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
+                  },
+                  {
+                    src: c5,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
+                  },
+                  {
+                    src: c6,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
+                  },
+                  {
+                    src: c7,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
+                  },
+                  {
+                    src: c8,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
+                  },
+                  {
+                    src: c9,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
+                  },
+                  {
+                    src: c10,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
+                  },
+                  {
+                    src: c11,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
+                  },
+                  {
+                    src: c12,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
+                  },
+                  {
+                    src: c13,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
+                  },
+                  {
+                    src: c14,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
+                  },
+                  {
+                    src: c15,
+                    video:
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
+                  },
                 ].map((item, index) => (
                   <img
                     key={index}
-                    src={item.src}
+                    src={`${item.src}`}
                     onClick={() => setProjectVideo(item.video)}
                     alt=""
                     className="w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] object-cover"
