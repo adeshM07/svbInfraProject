@@ -378,7 +378,7 @@ const Landing = () => {
             {/* 🎥 Background Video */}
             <iframe
               className="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-[2.25]"
-              src={projectVideo}
+              src={`${projectVideo}`}
               title="SVB Infra Project Video"
               frameBorder="0"
               allow="autoplay; fullscreen;  encrypted-media"
