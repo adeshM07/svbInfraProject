@@ -122,7 +122,7 @@ const Contactus = () => {
                           className="w-[3vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh]"
                         />
                         <p className="text-[#333333] popins-contact text-[0.9rem] lg:text-[1rem]">
-                          9900641808 , 9980851508
+                          919980851508 , 9036354261  
                         </p>
                       </a>
                     </div>
