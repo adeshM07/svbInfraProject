@@ -27,17 +27,25 @@ const Contactus = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch("http://localhost:5000/clientRequest", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+    const url =
+      "https://script.google.com/macros/s/AKfycbxMXXpLSjDzpyndl3juxYhJuiNTXMTnHjMbZELESB_2lnrbVgLOp43iZzaoGw8ESi7TDg/exec";
 
-      if (response.ok) {
-        alert("Message sent successfully!");
+    const formBody = `Email=${encodeURIComponent(
+      formData.email
+    )}&Name=${encodeURIComponent(formData.name)}&Phone=${encodeURIComponent(
+      formData.phone
+    )}&Address=${encodeURIComponent(
+      formData.address
+    )}&Message=${encodeURIComponent(formData.message)}`;
+
+    fetch(url, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formBody,
+    })
+      .then(() => {
+        alert("Thank you! We’ll notify you soon.");
         setFormData({
           name: "",
           email: "",
@@ -45,13 +53,11 @@ const Contactus = () => {
           address: "",
           message: "",
         });
-      } else {
-        alert("Failed to send message. Please try again later.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Something went wrong. Please check your connection.");
-    }
+      })
+      .catch((err) => {
+        alert("Something went wrong. Try again.");
+        console.error(err);
+      });
   };
 
   return (
@@ -218,8 +224,9 @@ const Contactus = () => {
                   ></textarea>
                   <div className=" w-full    lg:w-[27.2vw] flex justify-end mt-[33px]">
                     <button
-                    //   type="submit"
-                      className="contactUSBannerFormButton font-semibold text-[#333333] w-[60vw] h-[4vh] lg:w-[9vw] lg:h-[6vh] rounded-md bg-[#FDC000] mx-auto lg:mx-0"
+                      //   type="submit"
+                      className="contactUSBannerFormButton font-semibold text-[#333333] w-[60vw] h-[4vh] lg:w-[9vw] lg:h-[6vh] rounded-md bg-[#FDC000] mx-auto lg:mx-0  transition duration-300 transform
+  hover:bg-[#ffcf00] hover:scale-105 hover:shadow-lg cursor-pointer"
                     >
                       Send Now
                     </button>
