@@ -39,7 +39,7 @@ const DS = () => {
           </div>
         </div>
         <div className=" w-full flex flex-col px-2 lg:px-0  gap-[27px] my-21 md:gap-[150px] lg:gap-[150px]  place-items-center">
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -102,7 +102,7 @@ const DS = () => {
               </motion.ul>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -165,7 +165,7 @@ const DS = () => {
               </motion.ul>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}

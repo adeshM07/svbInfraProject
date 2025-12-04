@@ -68,9 +68,9 @@ const Contactus = () => {
           className=" flex  flex-col gap-[51px] w-full h-[45vh] md:h-[45vh] lg:h-[95vh] mb-[30rem] "
         >
           <p className="contactUSbannertitle text-white text-[1.2rem] md:text-[2.5rem] md:leading-12 lg:text-[4rem] leading-7 lg:leading-19 ml-12 lg:ml-48 pt-[40px] lg:pt-[90px] ">
-            Contact SVB Infra Projects — Your <br /> Partner for Reliable{" "}
+            Contact SVB Infra Projects — Your <br className="xl:hidden 2xl:block" /> Partner for Reliable{" "}
             <span className="text-[#FDC000]">
-              Construction <br /> Solutions
+              Construction <br className="xl:hidden 2xl:block" /> Solutions
             </span>{" "}
           </p>
           <div className="w-[88vw]  lg:w-[69vw] h-[100vh] lg:h-[88vh]  lg:pl-[5rem]   bg-white rounded-lg lg:py-[60px] lg:gap-[80px] lg:pr-[48px] mx-auto">

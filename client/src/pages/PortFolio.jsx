@@ -143,7 +143,7 @@ const PortFolio = () => {
 
               <Link to='/contact'>
                 <motion.button
-                  className="mt-3 lg:mt-5 w-[30%] md:py-4 lg:w-[8vw] bg-[#FDC000] text-[#333333] font-bold py-1.5 lg:py-2 rounded-md"
+                  className="mt-3 lg:mt-5 w-[30%] md:py-4 xl:w-[9vw] 2xl:w-[8vw] lg:w-[8vw] bg-[#FDC000] text-[#333333] font-bold py-1.5 lg:py-2 rounded-md"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.2 }}
@@ -197,7 +197,7 @@ const PortFolio = () => {
                 key={index}
                 src={src}
                 alt={`Project ${index + 1}`}
-                className="w-[30vw] h-[20vh] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
+                className="w-[30vw] h-[20vh] lg:w-[18vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
               />
             ))}
           </div>
@@ -215,7 +215,7 @@ const PortFolio = () => {
                 key={index}
                 src={src}
                 alt={`Project ${index + 1}`}
-                className="w-[30vw] h-[20vh] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg "
+                className="w-[30vw] h-[20vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg "
               />
             ))}
           </div>
@@ -224,7 +224,7 @@ const PortFolio = () => {
         <section className="flex flex-col gap-20">
           {/* ===== HEADING ===== */}
           <motion.p
-            className="text-[#333333] text-[1.2rem] lg:text-[2rem] pl-[2rem] lg:pl-40 underline decoration-[#FDC000] underline-offset-8"
+            className="text-[#333333] text-[1.2rem] font-semibold lg:text-[2rem] pl-[2rem] lg:pl-40 underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -234,7 +234,7 @@ const PortFolio = () => {
           </motion.p>
 
           {/* ===== INTRO TEXT & COUNTER ===== */}
-          <div className="flex w-fit mx-4 lg:mx-auto lg:gap-80">
+          <div className="flex w-fit mx-4 lg:mx-auto xl:mx-30 2xl:mx-auto lg:gap-80">
             {/* Left text */}
             <motion.div
               className="flex flex-col w-[65%] lg:w-fit gap-3"
@@ -243,7 +243,7 @@ const PortFolio = () => {
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="text-[1.3rem] lg:text-[4.2rem] text-[#333333] popins-bold leading-7 lg:leading-20">
+              <p className="text-[1.3rem] lg:text-[4.2rem] xl:text-[3rem] 2xl:text-[4rem] text-[#333333] popins-bold leading-7 xl:leading-16 2xl:leading-20 lg:leading-20">
                 Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
                 Captured in Action
               </p>

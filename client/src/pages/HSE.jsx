@@ -96,11 +96,11 @@ const HSE = () => {
                         transition={{ duration: 0.9, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.3 }}
                     >
-                        <div className="flex justify-center gap-[2px] lg:gap-[1.5rem] min-w-full">
-                            <img src={c1} className="w-[47vw] h-[30vh] md:w-[25vw] md_h-[17vh] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d" />
-                            <img src={c2} className="w-[47vw] h-[30vh] md:w-[25vw] md_h-[17vh] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d" />
-                            <img src={c3} className="w-[47vw] h-[30vh] md:w-[25vw] md_h-[17vh] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d" />
-                            <img src={c4} className="w-[47vw] h-[30vh] md:w-[25vw] md_h-[17vh] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d" />
+                        <div className="flex justify-center gap-[2px] lg:gap-[1.5rem] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
+                            <img src={c1} className="w-[47vw] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d" />
+                            <img src={c2} className="w-[47vw] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d" />
+                            <img src={c3} className="w-[47vw] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d" />
+                            <img src={c4} className="w-[47vw] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d" />
                         </div>
                     </motion.div>
                 )}
@@ -157,7 +157,7 @@ const HSE = () => {
                     </motion.div>
                 </div>
                 <div className=' w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px]'>
-                    <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+                    <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
                         {/* ===== IMAGE (Fades In Smoothly) ===== */}
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -167,7 +167,7 @@ const HSE = () => {
                         >
                             <img
                                 src={ic1}
-                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] lg:h-[52vh]"
+                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh]"
                                 alt="Commitment to health & safety"
                             />
                         </motion.div>
@@ -176,7 +176,7 @@ const HSE = () => {
                         <div className="flex flex-col gap-[10px] lg:gap-[20px]">
                             {/* Title (Spring Entry From Right + Slight Down) */}
                             <motion.p
-                                className=" text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                                className=" text-[#FDC000] text-[1.4rem] md:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem]   lg:text-[2rem] fontMon font-semibold"
                                 initial={{ opacity: 0, x: 120, y: -30 }}
                                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                                 transition={{
@@ -213,7 +213,7 @@ const HSE = () => {
                             </motion.ul>
                         </div>
                     </div>
-                    <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+                    <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
                         {/* ===== IMAGE (Fades In Smoothly) ===== */}
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -223,16 +223,16 @@ const HSE = () => {
                         >
                             <img
                                 src={ic2}
-                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] lg:h-[52vh]"
+                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[40vw] lg:h-[52vh]"
                                 alt="Commitment to health & safety"
                             />
                         </motion.div>
 
                         {/* ===== TEXT SECTION ===== */}
-                        <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                        <div className="flex flex-col gap-[10px] lg:gap-[20px] ">
                             {/* Title (Spring from Left → Right + Slight Down) */}
                             <motion.p
-                                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                                className="text-[#FDC000] text-[1.4rem] md:text-[2rem]  xl:text-[1.7rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold"
                                 initial={{ opacity: 0, x: -120, y: -30 }}
                                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                                 transition={{
@@ -268,7 +268,7 @@ const HSE = () => {
                             </motion.ul>
                         </div>
                     </div>
-                    <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0  lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+                    <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
                         {/* ===== IMAGE (Fades In Smoothly) ===== */}
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -278,7 +278,7 @@ const HSE = () => {
                         >
                             <img
                                 src={ic1}
-                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] lg:h-[52vh]"
+                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] xl:w-[75vw] xl:h-[60vh] lg:w-[40vw] lg:h-[52vh]"
                                 alt="Commitment to health & safety"
                             />
                         </motion.div>
@@ -323,7 +323,7 @@ const HSE = () => {
                             </motion.ul>
                         </div>
                     </div>
-                    <div className="mx-2 md:mx-0 py-5 md:py-0 lg:flex-row-reverse px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col gap-7 lg:gap-[39px] rounded-lg justify-center">
+                    <div className="mx-2 md:mx-0 py-5 md:py-0 lg:flex-row-reverse px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col gap-7 lg:gap-[39px] rounded-lg justify-center">
                         {/* ===== IMAGE (Fades In Smoothly) ===== */}
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -333,7 +333,7 @@ const HSE = () => {
                         >
                             <img
                                 src={ic2}
-                                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[60vw] lg:h-[52vh]"
+                                className="w-[85vw] h-[30vh] md:w-[85vw]  md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[60vw] lg:h-[52vh]"
                                 alt="Commitment to health & safety"
                             />
                         </motion.div>

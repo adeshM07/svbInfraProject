@@ -28,7 +28,7 @@ const REP = () => {
           </div>
           <div className="flex flex-col gap-2 lg:gap-4">
             <p className="lg:text-[4rem] md:text-[2.5rem] text-[1.4rem] text-[#333333] fontMon font-bold">
-              {" "}
+          
               <span className="text-[#FDC000]">Rock Excavation</span> Services
             </p>
             <p className="popins text-[14px] md:text-[20px] lg:text-[20px] text-[#333333]">
@@ -38,7 +38,7 @@ const REP = () => {
           </div>
         </div>
         <div className=" w-full flex flex-col px-2 lg:px-0  gap-[27px] my-21 md:gap-[150px] lg:gap-[2.5rem]  place-items-center">
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -103,7 +103,7 @@ const REP = () => {
               </motion.ul>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -167,7 +167,7 @@ const REP = () => {
               </motion.ul>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -231,7 +231,7 @@ const REP = () => {
               </motion.ul>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -296,7 +296,7 @@ const REP = () => {
               </motion.ul>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -360,7 +360,7 @@ const REP = () => {
               </motion.ul>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
               initial={{ opacity: 0 }}

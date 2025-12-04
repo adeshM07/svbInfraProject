@@ -139,7 +139,7 @@ const Fleet = () => {
       >
         {/* Section Title */}
         <motion.div
-          className="flex flex-col gap-2 w-fit mx-10 lg:mx-40 my-30 lg:my-30"
+          className="flex flex-col gap-2 w-fit mx-10  lg:mx-40 xl:mx-25 2xl:mx-40 my-30 lg:my-30"
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: {
@@ -173,7 +173,7 @@ const Fleet = () => {
 
         {/* Cards */}
         <motion.div
-          className="flex gap-x-8 gap-y-10 w-[77vw] justify-between flex-wrap mx-auto mb-20"
+          className="flex gap-x-8 gap-y-10 w-[85vw] md:w-[77vw] xl:w-[85vw] 2xl:w-[78vw] justify-between flex-wrap mx-auto mb-20"
           variants={{
             visible: {
               transition: { staggerChildren: 0.15 },
@@ -183,7 +183,7 @@ const Fleet = () => {
           {cardDetails.map((item, index) => (
             <motion.div
               key={index}
-              className="w-[80vw] h-[50vh] md:h-[45vh] lg:w-[24vw] lg:h-[50vh] flex flex-col gap-2 lg:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
+              className="w-[85vw]  h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] lg:h-[50vh] flex flex-col gap-2 lg:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
               variants={{
                 hidden: { opacity: 0, y: 60, scale: 0.98 },
                 visible: {
