@@ -112,7 +112,7 @@ const Service = () => {
                 >
                   <img
                     src={src}
-                    className="w-[24vw] h-[14vh] md:h-[20vh] lg:w-[20vw] lg:h-[47vh] object-cover 
+                    className="w-[24vw] h-[10vh] md:h-[20vh] lg:w-[20vw] lg:h-[47vh] object-cover 
            transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md"
                     alt={`Service ${index + 1}`}
                   />
