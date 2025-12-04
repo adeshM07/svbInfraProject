@@ -106,8 +106,8 @@ const Service = () => {
                       : index === 1
                         ? "/rep"
                         : index === 2
-                          ? "/ds"
-                          : "/srp"
+                          ? "/srp"
+                          : "/ds"
                   }
                 >
                   <img
