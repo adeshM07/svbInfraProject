@@ -82,7 +82,7 @@ const AboutPage = () => {
 
             <Link to="/contact">
               <motion.button
-                className="lg:mt-[40px] mt-[20px] w-[21vw] h-[3.2vh] text-[12px] md:w-[24vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
+                className="lg:mt-10 mt-5 w-[21vw] h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
@@ -139,14 +139,14 @@ const AboutPage = () => {
                   main and sub contract civil engineering sector.
                 </p>
               ) : (
-                <p className="text-[#4D4D4D] md:text-[0.8rem]  lg:w-[32vw] lg:text-[1rem]">
+                <p className="text-[#4D4D4D] md:text-[0.8rem] xl:text-[1.1rem] 2xl:text-[1rem]   lg:w-[32vw] lg:text-[1rem]">
                   <span className="font-semibold mr-1">SVB Infra Projects</span>
-                  is a 3rd generation family-run business. SVB has <br /> been
-                  managing earthmoving projects since 2003. Based in <br />{" "}
+                  is a 3rd generation family-run business. SVB has <br className="xl:hidden 2xl:block" /> been
+                  managing earthmoving projects since 2003. Based in <br className="xl:hidden 2xl:block" />{" "}
                   Bangalore, we provide a fast, flexible, reliable and
-                  professional <br /> service statewide. We offer contract
-                  earthmoving services across <br /> the state providing a
-                  professional and reliable service to the main <br /> and sub
+                  professional <br  className="xl:hidden 2xl:block" /> service statewide. We offer contract
+                  earthmoving services across <br className="xl:hidden 2xl:block" /> the state providing a
+                  professional and reliable service to the main <br className="xl:hidden 2xl:block" /> and sub
                   contract civil engineering sector.
                 </p>
               )}

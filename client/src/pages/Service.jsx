@@ -68,7 +68,7 @@ const Service = () => {
 
         {/* ===== SERVICE CARDS ===== */}
         <motion.div
-          className='w-fit flex flex-col gap-6 lg:gap-5 mx-auto -mt-[100px] md:-mt-[150px] lg:-mt-[150px] pb-20'
+          className='w-fit flex flex-col gap-6 lg:gap-5  mx-auto -mt-[100px] md:-mt-[150px] lg:-mt-[150px] pb-20'
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -86,7 +86,7 @@ const Service = () => {
           </motion.p>
 
           {/* Service Image Grid */}
-          <div className='flex lg:gap-3'>
+          <div className='flex lg:gap-3 xl:gap-4 2xl:gap-3 '>
             {[s1, s2, s3, s4].map((src, index) => (
               <motion.div
                 key={index}
@@ -112,7 +112,7 @@ const Service = () => {
                 >
                   <img
                     src={src}
-                    className="w-[24vw] h-[14vh] md:h-[20vh] lg:w-[20vw] lg:h-[47vh] object-cover 
+                    className="w-[24vw] h-[14vh] md:h-[20vh] lg:w-[20vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] object-cover 
            transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md"
                     alt={`Service ${index + 1}`}
                   />

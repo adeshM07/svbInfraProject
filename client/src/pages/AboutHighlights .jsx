@@ -29,10 +29,10 @@ const AboutHighlights = () => {
       viewport={{ once: true, amount: 0.3 }}
     >
       {/* ========== ROW 1 ========== */}
-      <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-10 md:gap-7 lg:gap-20">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-10 md:gap-7 xl:gap-30 2xl:gap-20 lg:gap-20">
         {/* Left Item */}
         <motion.div
-          className="flex  flex-col items-center md:items-start text-center md:text-left w-[80vw] sm:w-[60vw] md:w-[28vw] lg:w-[19vw] h-auto"
+          className="flex  flex-col items-center xl:w-[21vw] 2xl:w-[19vw] md:items-start text-center md:text-left w-[80vw] sm:w-[60vw] md:w-[28vw] lg:w-[19vw] h-auto"
           variants={fadeUp}
         >
           <motion.div
@@ -51,7 +51,7 @@ const AboutHighlights = () => {
 
         {/* Center Image */}
         <motion.div
-          className="order-first md:order-none mt-10 md:mt-[190px] lg:mt-[120px] z-999"
+          className="order-first md:order-0 mt-10 md:mt-[190px] lg:mt-[120px] z-999"
           variants={fadeUp}
           transition={{ delay: 0.2, duration: 1 }}
         >
@@ -64,12 +64,12 @@ const AboutHighlights = () => {
 
         {/* Right Item */}
         <motion.div
-          className="flex flex-col items-center md:items-start text-center md:text-left w-[80vw] sm:w-[60vw] md:w-[28vw] lg:w-[19vw] h-auto"
+          className="flex flex-col items-center md:items-start  text-center md:text-left w-[80vw] sm:w-[60vw] md:w-[28vw] xl:w-[20vw] 2xl:w-[19vw] lg:w-[19vw] h-auto"
           variants={fadeUp}
           transition={{ delay: 0.3 }}
         >
           <motion.div
-            className="bg-[#FFE26C] rounded-full aspect-square w-[18vw] sm:w-[10vw] md:w-[5vw] flex items-center justify-center shadow-sm mb-3"
+            className="bg-[#FFE26C]  rounded-full aspect-square w-[18vw] sm:w-[10vw] md:w-[5vw] flex items-center justify-center shadow-sm mb-3"
             variants={scaleIn}
           >
             <img src={icon2} className="w-[7vw] sm:w-[4vw] md:w-[2vw] h-auto" />
@@ -84,15 +84,15 @@ const AboutHighlights = () => {
       </div>
 
       {/* ========== ROW 2 ========== */}
-      <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-10 md:gap-10 lg:gap-20 mt-10 md:-mt-[100px]">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-10 md:gap-10 xl:gap-30 2xl:gap-20 lg:gap-20  mt-10  md:-mt-[100px] xl:-mt-30">
         {/* Bottom Left */}
         <motion.div
-          className="flex flex-col items-center md:items-start text-center md:text-left w-[80vw] sm:w-[60vw] md:w-[28vw] lg:w-[19vw] h-auto"
+          className="flex flex-col items-center  md:items-start text-center md:text-left w-[80vw] sm:w-[60vw] md:w-[28vw] xl:w-[21vw] 2xl:w-[19vw] lg:w-[19vw] h-auto"
           variants={fadeUp}
           transition={{ delay: 0.1 }}
         >
           <motion.div
-            className="bg-[#FFE26C] rounded-full aspect-square w-[18vw] sm:w-[10vw] md:w-[5vw] flex items-center justify-center shadow-sm mb-3"
+            className="bg-[#FFE26C] rounded-full aspect-square  w-[18vw] sm:w-[10vw] md:w-[5vw] flex items-center justify-center shadow-sm mb-3"
             variants={scaleIn}
           >
             <img src={icon3} alt="" className="w-[7vw] sm:w-[4vw] md:w-[2vw] h-auto" />
