@@ -3,7 +3,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 88%, 93% 100%, 0 100%);
 } */
 
-@media (max-width: 768px) {
+@media  (min-width: 300px) and (max-width: 800px){
   .clip-angled {
     clip-path: polygon(0 0, 100% 0, 100% 92%, 90% 100%, 0 100%);
   }
@@ -21,13 +21,13 @@
   );
 }
 
-@media (max-width: 768px) {
+@media  (min-width: 300px) and (max-width: 800px) {
   .custom-clip {
     clip-path: polygon(
       0 0,
       100% 0,
       100% 90%,
-      85% 100%,
+      40% 100%,
       0 100%
     );
   }
@@ -62,15 +62,10 @@
 
 /* You had a media query in your original code.
    If you want the shape to change on mobile screens, adjust these percentages: */
-@media (max-width: 768px) {
+@media  (min-width: 300px) and (max-width: 800px) {
   .banner-shape {
     clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      100% 70%,   /* Start notch higher up */
-      80% 70%,    /* Make notch deeper */
-      80% 100%,
-      0% 100%
+      
     );
   }
 }

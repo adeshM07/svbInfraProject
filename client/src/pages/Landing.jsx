@@ -374,7 +374,7 @@ const Landing = () => {
         </div>
         ;
         <div className=" px-2 lg:px-40 ">
-          <div className="relative w-[90vw]  lg:w-[85vw] h-[70vh] mx-auto overflow-hidden banner-shape shadow-lg">
+          <div className="relative w-[90vw]  h-[20vh]  lg:w-[85vw] md:h-[70vh] mx-auto overflow-hidden banner-shape shadow-lg">
             {/* 🎥 Background Video */}
             {/* <iframe
               className="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-[2.25]"
@@ -421,7 +421,7 @@ const Landing = () => {
                 with quality and precision.
               </p>
             )}
-            <div className="absolute  left-[42vw] lg:left-[50.2vw] -top-[11vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[40vw] py-2 lg:py-4  overflow-hidden ">
+            <div className="absolute  left-[57vw] md:left-[50.2vw] lg:left-[50.2vw] -top-[10vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[40vw] py-2 lg:py-4  overflow-hidden ">
               <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                 {[
                   {
