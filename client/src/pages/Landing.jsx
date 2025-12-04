@@ -166,7 +166,7 @@ const Landing = () => {
                 muted
                 loop
                 playsInline
-                className="rounded-2xl shadow-lg w-[49vw] h-[40vh] lg:w-[40vw] lg:h-[84vh] object-cover"
+                className="rounded-2xl shadow-lg w-[50vw] h-[35vh] lg:w-[40vw] lg:h-[84vh] object-cover"
               />
             </motion.div>
 
@@ -180,7 +180,7 @@ const Landing = () => {
             >
               <p className="fontMon bg-[#F8F8F8] z-999 mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
                 Great Relationships,
-                <br /> Great{" "}
+                <br /> Great
                 <span className="text-[#FDC000]">Infrastructure</span>
               </p>
 
