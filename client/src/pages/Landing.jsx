@@ -43,7 +43,7 @@ import v5 from "../assets/v5.mp4";
 import constructionVideo from "/src/videos/constructionVideo3.mp4";
 
 const Landing = () => {
-  let [projectVideo, setProjectVideo] = useState(v3);
+  let [projectVideo, setProjectVideo] = useState('https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4');
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
