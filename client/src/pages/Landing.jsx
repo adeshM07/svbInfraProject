@@ -178,7 +178,7 @@ const Landing = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="fontMon bg-[#F8F8F8] lg:leading-20 text-[1.5rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
+              <p className="fontMon border-2 bg-[#F8F8F8] mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
                 Great Relationships,
                 <br /> Great{" "}
                 <span className="text-[#FDC000]">Infrastructure</span>
