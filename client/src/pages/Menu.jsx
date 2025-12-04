@@ -41,7 +41,7 @@ const Menu = () => {
             className="absolute right-5 top-[90px] w-[60vw] h-fit 
   border border-white/20 
   rounded-xl 
-  bg-white/10 
+  bg-white/40 
   backdrop-blur-sm 
   shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
   flex flex-col 
@@ -63,7 +63,7 @@ const Menu = () => {
                   <Link
                     to={item.link}
                     onClick={() => setPopup(!popup)}
-                    className=" relative text-white/90 transition-all duration-300 ease-in-out z-[1000]"
+                    className=" relative text-black transition-all duration-300 ease-in-out z-[1000]"
                   >
                     {item.name}
                     <span className="absolute left-1/2 -bottom-[3px] w-0 h-[2px] bg-[#FDC000] transition-all duration-300 ease-in-out z-[1000] group-hover:left-0 group-hover:w-full"></span>
@@ -83,7 +83,7 @@ const Menu = () => {
           <>
             <nav
               id="menuNav"
-              className="flex gap-7 h-fit list-none text-black z-[999]"
+              className="flex gap-7 h-fit list-none text-white z-[999]"
             >
               {[
                 { name: "About Us", link: "/about" },
