@@ -376,21 +376,21 @@ const Landing = () => {
         <div className=" px-2 lg:px-40 ">
           <div className="relative w-[90vw]  lg:w-[85vw] h-[70vh] mx-auto overflow-hidden banner-shape shadow-lg">
             {/* 🎥 Background Video */}
-            <iframe
+            {/* <iframe
               className="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-[2.25]"
               src={`${projectVideo}`}
               title="SVB Infra Project Video"
               frameBorder="0"
               allow="autoplay; fullscreen;  encrypted-media"
-            ></iframe>
-            {/* <video
+            ></iframe> */}
+            <video
               className="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-[2.25]"
-              src={projectVideo}
+              src={`${projectVideo}`}
               autoPlay
               muted
               loop
               playsInline
-            /> */}
+            />
 
             {/* Overlay */}
             <div className="absolute  inset-0 bg-black/40 "></div>
