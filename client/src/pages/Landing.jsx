@@ -132,9 +132,9 @@ const Landing = () => {
           </motion.div>
 
           {/* Button Animation */}
-          <Link to="/fleet" className="block z-[999]">
+          <Link to="/fleet" className="block z-400">
             <motion.button
-              className="w-[30vw] md:w-[25vw] lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 lg:py-0 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] popins-noweight font-semibold mt-[2.5rem]"
+              className="w-[30vw] md:w-[25vw] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] popins-noweight font-semibold mt-[2.5rem]"
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
@@ -151,7 +151,7 @@ const Landing = () => {
 
       <div className="flex flex-col  gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] my-15 lg:my-30  w-screen bg-[#F8F8F8]">
         <div>
-          <section className="flex flex-row w-full px-4 lg:mx-0 lg:justify-center text-gray-800">
+          <section className="flex flex-row w-full px-4 lg:mx-0 lg:justify-center text-gray-800 ">
             {/* === VIDEO === */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -166,26 +166,26 @@ const Landing = () => {
                 muted
                 loop
                 playsInline
-                className="rounded-2xl shadow-lg w-[50vw] h-[35vh] lg:w-[40vw] lg:h-[84vh] object-cover"
+                className="rounded-2xl shadow-lg w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[45vw] xl:h-[90vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] object-cover"
               />
             </motion.div>
 
             {/* === TEXT SECTION === */}
             <motion.div
-              className="lg:w-[33vw]  w-[50vw] h-fit flex flex-col"
+              className="lg:w-[33vw]  w-[50vw] xl:w-[39vw] 2xl:w-[33vw] h-fit flex flex-col "
               initial={{ opacity: 0, x: 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="fontMon bg-[#F8F8F8] z-999 mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
+              <p className="fontMon bg-[#F8F8F8] z-999 mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] xl:text-[3.5rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
                 Great Relationships,
                 <br /> Great
                 <span className="text-[#FDC000]">Infrastructure</span>
               </p>
 
-              <div className="flex flex-col place-items-end gap-4 px-2 pt-2 lg:pt-10">
-                <p className="text-[#4D4D4D] popins lg:w-[32vw] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] lg:pl-5">
+              <div className="flex flex-col lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10">
+                <p className="text-[#4D4D4D] popins lg:w-[32vw] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.2rem] 2xl:text-[1.25rem] lg:pl-5">
                   <span className="font-semibold lg:mr-1">
                     SVB Infra Projects
                   </span>
@@ -201,7 +201,7 @@ const Landing = () => {
                 </p>
 
                 {/* Button animation */}
-                <Link to="/about">
+                <Link to="/about" className="flex w-full justify-end">
                   <motion.button
                     className="popins mr-3 px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300"
                     initial={{ opacity: 0, y: 40 }}
@@ -227,7 +227,7 @@ const Landing = () => {
             viewport={{ once: true, amount: 0.3 }}
           >
             {/* Box 1 */}
-            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
               <p className="popins text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
                 <Counter from={0} to={185} duration={1.2} />+
               </p>
@@ -237,7 +237,7 @@ const Landing = () => {
             </div>
 
             {/* Box 2 */}
-            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
               <p className="popins text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
                 <Counter from={0} to={30} duration={1.5} />+
               </p>
@@ -247,7 +247,7 @@ const Landing = () => {
             </div>
 
             {/* Box 3 */}
-            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
               <p className="popins text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
                 24/7
               </p>
@@ -292,16 +292,16 @@ const Landing = () => {
             Our Fleet
           </motion.p>
 
-          <div className="flex flex-col  lg:flex-row lg:mx-30 gap-7 lg:gap-5 lg:my-5">
+          <div className="flex flex-col  lg:flex-row lg:mx-30 xl:mx-25 2xl:mx-30  gap-7 lg:gap-5 lg:my-5">
             {/* ===== LEFT TEXT CONTENT ===== */}
             <motion.div
-              className="flex flex-col w-screen place-items-center lg:place-items-start lg:w-[40vw] gap-4 lg:py-10 lg:gap-5"
+              className="flex flex-col w-screen  place-items-center lg:place-items-start xl:w-[43vw] 2xl:w-[40vw] lg:w-[40vw] gap-4 lg:py-10 lg:gap-5"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="fontMon bold leading-9 md:leading-12 lg:leading-18 text-[#333333] text-[1.5rem] md:text-[2.5rem] lg:text-[4rem] font-bold text-center lg:text-start bg-[#F8F8F8]">
+              <p className="fontMon bold leading-9 md:leading-12 lg:leading-18 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4rem] lg:text-[4rem] font-bold text-center lg:text-start bg-[#F8F8F8]">
                 Force Behind <br /> Every{" "}
                 <span className="text-[#FDC000]">Foundation</span>
               </p>
@@ -323,7 +323,7 @@ const Landing = () => {
             {/* ===== RIGHT IMAGE SCROLLER ===== */}
             <motion.div
               id="cont-fleet-img"
-              className="relative  mx-auto flex w-[95vw] lg:w-[40vw] overflow-hidden"
+              className="relative  mx-auto flex w-[95vw] lg:w-[40vw]  overflow-hidden "
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1.2, ease: "easeOut" }}
