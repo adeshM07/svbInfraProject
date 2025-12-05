@@ -267,36 +267,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </div> */}
-        <div
-          id="landing-contact"
-          className="lg:w-[78vw]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-[4.2rem] lg:gap-70 z-999 mt-10 mb-20"
-        >
-          <div className="">
-            <p className="text-[0.8rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
-              Let's Build Your Next Project Together
-            </p>
-            <p className="fontMon font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]">
-              Contact With Us!
-            </p>
-          </div>
-          <Link to="/contact">
-            <motion.button
-              className="lg:w-[calc(9vw+0px)] md:w-[18vw] w-[calc(17vw+0px)] 
-                             rounded-sm lg:rounded-lg 
-                             text-[calc(9px+0px)] md:text-[20px] lg:text-[calc(16px+0px)] 
-                             h-[calc(3vh+0px)] md:h-[4vh] lg:h-[calc(6vh+0px)] 
-                             bg-[#FDC000] hover:bg-[#ffcf33] transition-all duration-300"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Contact Now
-            </motion.button>
-          </Link>
-        </div>
+        
       </div>
     </>
   );

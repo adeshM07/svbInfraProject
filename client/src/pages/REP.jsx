@@ -530,10 +530,21 @@ const REP = () => {
           </div>
         ) : (
           <div className="flex w-full   my-20  md:text-[1.3rem] font-semibold justify-between mx-2 md:justify-evenly  overfow-hidden">
-            <p>Excavation Soil / Earth</p>
-            <p className="text-[#FDC000]">Rock Excavation</p>
-            <p>Reliable Dewatering System</p>
-            <p>Soil Retention System</p>
+             <Link to="/ese" className=" hover:underline">
+                          Excavation Soil / Earth
+                        </Link>
+            
+                        <Link to="/rep" className="text-[#FDC000] hover:underline">
+                          Rock Excavation
+                        </Link>
+            
+                        <Link to="/ds" className="hover:underline">
+                          Reliable Dewatering System
+                        </Link>
+            
+                        <Link to="/srp" className=" hover:underline">
+                          Soil Retention System
+                        </Link>
           </div>
         )}
       </div>

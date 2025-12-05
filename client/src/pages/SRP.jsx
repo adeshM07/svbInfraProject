@@ -570,97 +570,67 @@ const SRP = () => {
             </div>
           </div>
         </div>
-        <div
-          id="landing-contact"
-          className="lg:w-[78vw]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-[4.2rem] lg:gap-70 z-999 mt-10 mb-20"
-        >
-          <div className="">
-            <p className="text-[0.8rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
-              Let's Build Your Next Project Together
-            </p>
-            <p className="fontMon font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]">
-              Contact With Us!
-            </p>
-          </div>
-          <Link to="/contact">
-            <motion.button
-              className="lg:w-[calc(9vw+0px)] md:w-[18vw] w-[calc(17vw+0px)] 
-             rounded-sm lg:rounded-lg 
-             text-[calc(9px+0px)] md:text-[20px] lg:text-[calc(16px+0px)] 
-             h-[calc(3vh+0px)] md:h-[4vh] lg:h-[calc(6vh+0px)] 
-             bg-[#FDC000] hover:bg-[#ffcf33] transition-all duration-300"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Contact Now
-            </motion.button>
-          </Link>
-        </div>
+        
         {isMobile ? (
-         <div className="relative w-full overflow-hidden my-20">
-                     <div className="marquee flex items-center whitespace-nowrap">
-                       <Link to="/ese" className="mx-8 md:text-[1.3rem] font-semibold">
-                         Excavation Soil / Earth
-                       </Link>
-         
-                       <Link
-                         to="/rep"
-                         className="mx-8 md:text-[1.3rem] font-semibold "
-                       >
-                         Rock Excavation
-                       </Link>
-         
-                       <Link
-                         to="/ds"
-                         className="mx-8 md:text-[1.3rem] font-semibold"
-                       >
-                         Reliable Dewatering System
-                       </Link>
-         
-                       <Link
-                         to="/srp"
-                         className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
-                       >
-                         Soil Retention System
-                       </Link>
-         
-                       {/* Duplicate items for seamless loop */}
-                       <Link to="/ese" className="mx-8 md:text-[1.3rem] font-semibold">
-                         Excavation Soil / Earth
-                       </Link>
-         
-                       <Link
-                         to="/rep"
-                         className="mx-8 md:text-[1.3rem] font-semibold "
-                       >
-                         Rock Excavation
-                       </Link>
-         
-                       <Link
-                         to="/ds"
-                         className="mx-8 md:text-[1.3rem] font-semibold"
-                       >
-                         Reliable Dewatering System
-                       </Link>
-         
-                       <Link
-                         to="/soil-retention"
-                         className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
-                       >
-                         Soil Retention System
-                       </Link>
-                     </div>
-                   </div>
+          <div className="relative w-full overflow-hidden my-20">
+            <div className="marquee flex items-center whitespace-nowrap">
+              <Link to="/ese" className="mx-8 md:text-[1.3rem] font-semibold">
+                Excavation Soil / Earth
+              </Link>
+
+              <Link to="/rep" className="mx-8 md:text-[1.3rem] font-semibold ">
+                Rock Excavation
+              </Link>
+
+              <Link to="/ds" className="mx-8 md:text-[1.3rem] font-semibold">
+                Reliable Dewatering System
+              </Link>
+
+              <Link
+                to="/srp"
+                className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
+              >
+                Soil Retention System
+              </Link>
+
+              {/* Duplicate items for seamless loop */}
+              <Link to="/ese" className="mx-8 md:text-[1.3rem] font-semibold">
+                Excavation Soil / Earth
+              </Link>
+
+              <Link to="/rep" className="mx-8 md:text-[1.3rem] font-semibold ">
+                Rock Excavation
+              </Link>
+
+              <Link to="/ds" className="mx-8 md:text-[1.3rem] font-semibold">
+                Reliable Dewatering System
+              </Link>
+
+              <Link
+                to="/soil-retention"
+                className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
+              >
+                Soil Retention System
+              </Link>
+            </div>
+          </div>
         ) : (
           <div className="flex w-full   my-20  md:text-[1.3rem] font-semibold justify-between mx-2 md:justify-evenly  overfow-hidden">
-            <p>Excavation Soil / Earth</p>
-            <p>Rock Excavation</p>
-            <p>Reliable Dewatering System</p>
-            <p className="text-[#FDC000]">Soil Retention System</p>
+            <Link to="/ese" className=" hover:underline">
+              Excavation Soil / Earth
+            </Link>
+
+            <Link to="/rep" className="hover:underline">
+              Rock Excavation
+            </Link>
+
+            <Link to="/ds" className="hover:underline">
+              Reliable Dewatering System
+            </Link>
+
+            <Link to="/srp" className="text-[#FDC000] hover:underline">
+              Soil Retention System
+            </Link>
           </div>
         )}
       </div>
