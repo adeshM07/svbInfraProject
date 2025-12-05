@@ -56,20 +56,9 @@ const Landing = () => {
     }
   };
 
-  useEffect(() => {
-  const handleClickOutside = (e) => {
-    if (popup) {
-      // if click is NOT inside popup and NOT on hamburger icon
-      if (!e.target.closest("#mobilePopup") && !e.target.closest("#hamburgerIcon")) {
-        setPopup(false);
-      }
-    }
-  };
 
-  document.addEventListener("click", handleClickOutside);
 
-  return () => document.removeEventListener("click", handleClickOutside);
-}, [popup]);
+
 
 
   useEffect(() => {
