@@ -25,6 +25,24 @@ const Menu = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (popup) {
+        // if click is NOT inside popup and NOT on hamburger icon
+        if (
+          !e.target.closest("#mobilePopup") &&
+          !e.target.closest("#hamburgerIcon")
+        ) {
+          setPopup(false);
+        }
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [popup]);
+
   return (
     <>
       <div className=" bg-[#333333] w-screen flex px-5 md:px-6 justify-between h-[9vh] lg:h-[13vh] place-items-center lg:px-24">
@@ -38,6 +56,7 @@ const Menu = () => {
         </div>
         {popup && (
           <div
+            id="mobilePopup"
             className="absolute right-5 top-[90px] w-[60vw] h-fit 
   border border-white/20 
   rounded-xl 
@@ -76,6 +95,7 @@ const Menu = () => {
 
         {isMobile ? (
           <i
+            id="hamburgerIcon"
             class="fa-solid fa-bars text-[21px] text-white z-[1000]"
             onClick={() => setPopup(!popup)}
           ></i>

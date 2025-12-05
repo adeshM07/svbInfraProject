@@ -6,11 +6,29 @@ import ic1 from "../assets/ESECardIMG1.png";
 import ic2 from "../assets/ESECardIMG2.png";
 import ic3 from "../assets/ESECardIMG3.png";
 import ic4 from "../assets/ESECardIMG4.png";
-import fb from '../assets/forwardButton.png'
+import fb from "../assets/forwardButton.png";
+import { Link } from "react-router-dom";
+import "../CSS/Landing.css";
+import { useState, useEffect } from "react";
 
 const ESE = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const handleResize = () => {
+    const width = window.innerWidth;
 
-     let nav = useNavigate();
+    if (width < 740) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  let nav = useNavigate();
   return (
     <>
       <div>
@@ -19,11 +37,14 @@ const ESE = () => {
             <p className="text-[14px] md:text-[1.5rem] lg:text-[2rem] underline decoration-[#FDC000] underline-offset-8 fontMon font-semibold text-[#333333]">
               Excavation Soil / Earth
             </p>
-            <img onClick={()=>nav('/rep')} src={fb} className="h-[1.5vh] w-[3vw] md:h-[2vh] lg:h-[4.5vh] lg:w-[2.5vw] transition-transform duration-300 hover:scale-110 cursor-pointer" />
+            <img
+              onClick={() => nav("/rep")}
+              src={fb}
+              className="h-[1.5vh] w-[3vw] md:h-[2vh] lg:h-[4.5vh] lg:w-[2.5vw] transition-transform duration-300 hover:scale-110 cursor-pointer"
+            />
           </div>
           <div className="flex flex-col gap-2 lg:gap-4">
             <p className="lg:text-[4rem] md:text-[2.5rem] text-[1.4rem] text-[#333333] fontMon font-bold">
-              
               <span className="text-[#FDC000]">Earth & Soil</span> Excavation
               Services
             </p>
@@ -296,6 +317,87 @@ const ESE = () => {
             </div>
           </div>
         </div>
+        <div
+          id="landing-contact"
+          className="lg:w-[78vw]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-[4.2rem] lg:gap-70 z-999 mt-10 mb-20"
+        >
+          <div className="">
+            <p className="text-[0.8rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
+              Let's Build Your Next Project Together
+            </p>
+            <p className="fontMon font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]">
+              Contact With Us!
+            </p>
+          </div>
+          <Link to="/contact">
+            <motion.button
+              className="lg:w-[calc(9vw+0px)] md:w-[18vw] w-[calc(17vw+0px)] 
+             rounded-sm lg:rounded-lg 
+             text-[calc(9px+0px)] md:text-[20px] lg:text-[calc(16px+0px)] 
+             h-[calc(3vh+0px)] md:h-[4vh] lg:h-[calc(6vh+0px)] 
+             bg-[#FDC000] hover:bg-[#ffcf33] transition-all duration-300"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.4 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Now
+            </motion.button>
+          </Link>
+        </div>
+        {isMobile ? (
+          <div className="relative w-full overflow-hidden my-20">
+                      <div className="marquee flex items-center whitespace-nowrap">
+                        <Link to="/ese" className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]">
+                          Excavation Soil / Earth
+                        </Link>
+          
+                        <Link to="/rep" className="mx-8 md:text-[1.3rem] font-semibold ">
+                          Rock Excavation
+                        </Link>
+          
+                        <Link to="/ds" className="mx-8 md:text-[1.3rem] font-semibold">
+                          Reliable Dewatering System
+                        </Link>
+          
+                        <Link
+                          to="/srp"
+                          className="mx-8 md:text-[1.3rem] font-semibold "
+                        >
+                          Soil Retention System
+                        </Link>
+          
+                        {/* Duplicate items for seamless loop */}
+                        <Link to="/ese" className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]">
+                          Excavation Soil / Earth
+                        </Link>
+          
+                        <Link to="/rep" className="mx-8 md:text-[1.3rem] font-semibold ">
+                          Rock Excavation
+                        </Link>
+          
+                        <Link to="/ds" className="mx-8 md:text-[1.3rem] font-semibold">
+                          Reliable Dewatering System
+                        </Link>
+          
+                        <Link
+                          to="/soil-retention"
+                          className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
+                        >
+                          Soil Retention System
+                        </Link>
+                      </div>
+                    </div>
+        ) : (
+          <div className="flex w-full   my-20  md:text-[1.3rem] font-semibold justify-between mx-2 md:justify-evenly  overfow-hidden">
+            <p className="text-[#FDC000]">Excavation Soil / Earth</p>
+            <p>Rock Excavation</p>
+            <p>Reliable Dewatering System</p>
+            <p>Soil Retention System</p>
+          </div>
+        )}
       </div>
     </>
   );
