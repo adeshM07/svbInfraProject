@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import "../CSS/Landing.css";
 import { useState, useEffect } from "react";
 import reviewsIMG from "../assets/potfolioReviewIMG.png";
 import c1 from "../assets/globalCard1.png";
@@ -41,7 +42,7 @@ import g24 from "../assets/galleryIMG24.png";
 import g25 from "../assets/galleryIMG25.png";
 import g26 from "../assets/galleryIMG26.png";
 import g27 from "../assets/galleryIMG27.png";
-import onc1 from '../assets/ongoingCard.png'
+import onc1 from "../assets/ongoingCard.png";
 
 const PortFolio = () => {
   const galleryImages = [
@@ -141,7 +142,7 @@ const PortFolio = () => {
                 </p>
               )}
 
-              <Link to='/contact'>
+              <Link to="/contact">
                 <motion.button
                   className="mt-3 lg:mt-5 w-[30%] md:py-4 xl:w-[9vw] 2xl:w-[8vw] lg:w-[8vw] bg-[#FDC000] text-[#333333] font-bold py-1.5 lg:py-2 rounded-md"
                   whileHover={{ scale: 1.05 }}
@@ -202,15 +203,13 @@ const PortFolio = () => {
             ))}
           </div>
         </section>
-         <section className="flex flex-col gap-12 overflow-hidden">
+        <section className="flex flex-col gap-12 overflow-hidden">
           <p className="lg:text-[2rem] text-[1.2rem] pl-[2rem] lg:pl-[130px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
             Our Ongoing Projects
           </p>
 
           <div className="relative  w-[92vw] mx-auto lg:mx-0 lg:w-[92vw] lg:ml-[60px] lg:mr-[60px] overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
-            {[
-              onc1,c3
-            ].map((src, index) => (
+            {[onc1, c3].map((src, index) => (
               <img
                 key={index}
                 src={src}
@@ -277,19 +276,47 @@ const PortFolio = () => {
             {galleryImages.map((img, i) => (
               <motion.div
                 key={i}
-              
                 className="break-inside-avoid overflow-hidden mb-4 rounded-lg"
               >
                 <motion.img
                   src={img}
                   alt={`Gallery ${i + 1}`}
-                  
                   className="w-full rounded-lg object-cover hover:scale-[1.03] transition-transform duration-300"
                 />
               </motion.div>
             ))}
           </div>
         </section>
+        <div
+          id="landing-contact"
+          className="lg:w-[78vw]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-[4.2rem] lg:gap-70 z-999 mt-10 mb-20"
+        >
+          <div className="">
+            <p className="text-[0.8rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
+              Let's Build Your Next Project Together
+            </p>
+            <p className="fontMon font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]">
+              Contact With Us!
+            </p>
+          </div>
+          <Link to="/contact">
+            <motion.button
+              className="lg:w-[calc(9vw+0px)] md:w-[18vw] w-[calc(17vw+0px)] 
+                                             rounded-sm lg:rounded-lg 
+                                             text-[calc(9px+0px)] md:text-[20px] lg:text-[calc(16px+0px)] 
+                                             h-[calc(3vh+0px)] md:h-[4vh] lg:h-[calc(6vh+0px)] 
+                                             bg-[#FDC000] hover:bg-[#ffcf33] transition-all duration-300"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.4 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Now
+            </motion.button>
+          </Link>
+        </div>
       </div>
     </>
   );

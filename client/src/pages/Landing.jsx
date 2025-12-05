@@ -384,7 +384,7 @@ const Landing = () => {
               allow="autoplay; fullscreen;  encrypted-media"
             ></iframe> */}
             <video
-              className="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-[2.25]"
+              className="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-x-[0.75] scale-y-"
               src={`${projectVideo}`}
               autoPlay
               muted

@@ -43,9 +43,9 @@ const Footer = () => {
       <div className="bg-[#F8F8F8]">
         <div
           id="footer"
-          className=" h-full lg:h-[80vh] w-screen flex flex-col gap-14  z-999"
+          className=" h-full lg:h-[80vh] w-screen flex flex-col gap-5 md:gap-14  z-999"
         >
-          <div className=" lg:h-[65%] flex flex-col lg:flex-row justify-evenly pt-10 lg:pt-20 gap-10 lg:gap-40">
+          <div className=" lg:h-[65%] flex flex-col lg:flex-row justify-evenly pt-10 lg:pt-20 gap-8 lg:gap-40">
             <div className="flex flex-col gap-7">
               <img
                 src={logo}
@@ -62,7 +62,7 @@ const Footer = () => {
               <p className="text-white text-[1rem] lg:text-[1.4rem] popins font-semibold underline decoration-[#FDC000] underline-offset-8">
                 Quick Links
               </p>
-              <ul className="flex lg:flex-col gap-3 text-[0.8rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0">
+              <ul className="flex lg:flex-col gap-3  text-[0.8rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0">
                 <ul className="flex flex-col gap-3">
                   {[
                     { label: "About Us", to: "/about" },
@@ -90,7 +90,7 @@ const Footer = () => {
               </ul>
             </div>
             {isMobile ? (
-              <div></div>
+              <div className="text-white text-center"> <a href="tel:9036354261">+91 9036354261</a>   ,  <a href="tel:9980851508">+91 9980851508</a>  </div>
             ) : (
               <div className="flex flex-col gap-8">
                 <p className="text-white text-[1rem] lg:text-[1.4rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
@@ -137,13 +137,13 @@ const Footer = () => {
 
                   {/* 📞 Phone */}
                   <div className="flex items-start gap-3 md:gap-4">
-                    <a href="tel:9900641808" className="flex gap-3 md:gap-4">
+                    <a href="tel:9036354261" className="flex gap-3 md:gap-4">
                       <img
                         src={phone}
                         className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[3.6vh]"
                       />
                       <p className="text-white popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
-                        9980851508 , 9036354261
+                          +91 9036354261 , +91 9980851508 
                       </p>
                     </a>
                   </div>
@@ -164,9 +164,9 @@ const Footer = () => {
               </div>
             )}
           </div>
-          <hr className="border-none h-[2px] bg-white opacity-50 mx-33" />
+          <hr className="border-none h-[2px] bg-white opacity-50 mx-10 md:mx-33" />
           <div className=" lg:h-[35%] flex flex-col gap-4 place-items-center justify-center">
-            <div className="flex gap-2 mt-5 lg:mt-0">
+            <div className="flex gap-2  lg:mt-0">
               <a
                 href="https://www.facebook.com/share/17Yn7q28DJ/"
                 target="_blank"
