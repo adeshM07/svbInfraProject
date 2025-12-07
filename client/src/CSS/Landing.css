@@ -43,6 +43,12 @@
   z-index: 400;
 }
 
+.banner-active {
+  opacity: 0;          /* or 0.4 or whatever smooth fade you want */
+  transform: translateY(-10px); /* smooth slide up */
+}
+
+
 @media (max-width: 700px) {
   #landingBanner::before {
     background: url('../assets/landingBannerIMG.png') no-repeat center top;
@@ -143,6 +149,10 @@
   100% {
     transform: translateX(-100%);
   }
+}
+
+body, * {
+  cursor: url('../src//assets/cursor-icon.png') 10 10, auto;
 }
 
 .animate-scroll {

@@ -2,16 +2,18 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import "../CSS/Fleet.css";
 import { Link } from "react-router-dom";
-import f1 from "../assets/fleetCardIMG1.png";
-import f2 from "../assets/fleetCardIMG2.png";
-import f3 from "../assets/fleetCardIMG3.png";
-import f4 from "../assets/fleetCardIMG4.png";
-import f5 from "../assets/fleetCardIMG5.png";
-import f6 from "../assets/fleetCardIMG6.png";
-import f7 from "../assets/fleetCardIMG7.png";
-import f8 from "../assets/fleetCardIMG8.png";
-import f9 from "../assets/fleetCardIMG9.png";
-import f10 from "../assets/fleetCardIMG10.png";
+import f1 from "../assets/f1.png";
+import f2 from "../assets/f2.png";
+import f3 from "../assets/f3.png";
+import f4 from "../assets/f4.png";
+import f5 from "../assets/f5.png";
+import f6 from "../assets/f6.png";
+import f7 from "../assets/f7.png";
+import f8 from "../assets/f8.png";
+import f9 from "../assets/f9.png";
+import f10 from "../assets/f10.png";
+import f11 from "../assets/f11.png";
+import f12 from "../assets/f12.png";
 import "../CSS/Landing.css";
 
 const Fleet = () => {
@@ -47,53 +49,63 @@ const Fleet = () => {
   const cardDetails = [
     {
       img: f1,
-      title: "Tata Hitachi EX 70",
-      desc: "Compact power built for dependable excavation.",
+      title: "Volvo EX 350 ",
+      desc: "Versatile and efficient for all construction operations..",
     },
     {
       img: f2,
-      title: "Bharatbenz Tipper 20 CUM",
-      desc: "Strong performance for heavy-duty hauling.",
-    },
-    {
-      img: f3,
-      title: "L&T Komatsu PC 2",
-      desc: "Reliable strength for consistent site performance.",
-    },
-    {
-      img: f4,
-      title: "380 Xtra",
+      title: "JCB 380 Xtra",
       desc: "High-performance excavator for demanding earthwork.",
     },
     {
-      img: f5,
+      img: f3,
       title: "Volvo EX 210",
       desc: "Precision and durability in every excavation task.",
     },
     {
+      img: f4,
+      title: "L&T Komatsu",
+      desc: "Eliable strength for consistent site performance.",
+    },
+    {
+      img: f5,
+      title: "Tata Hitachi EX 140",
+      desc: "Compact power built for dependable excavation.",
+    },
+    {
       img: f6,
+      title: "Bharat Benz Tipper 16 CUM",
+      desc: "Strong performance for heavy-duty hauling.",
+    },
+    {
+      img: f7,
+      title: "Tata prima 23 cum",
+      desc: "Versatile and efficient for all construction operations.",
+    },
+    {
+      img: f8,
+      title: "Man Dumpers 16 CUM",
+      desc: "Rugged and efficient for bulk material movement..",
+    },
+    {
+      img: f9,
       title: "Hydraulic Rock Splitter",
       desc: "Efficient and powerful tool for controlled rock breaking.",
     },
     {
-      img: f7,
-      title: "Man Dumpers 18 CUM",
-      desc: "Rugged and efficient for bulk material movement.",
-    },
-    {
-      img: f8,
-      title: "Compressors",
-      desc: "Reliable air power for all on-site construction tools.",
-    },
-    {
-      img: f9,
+      img: f10,
       title: "Diamond Rope Cutting",
       desc: "Accurate cutting for concrete and rock structures.",
     },
-    {
-      img: f10,
-      title: "JCB (3DX)",
+     {
+      img: f11,
+      title: "JCB (3DX) ",
       desc: "Versatile and efficient for all construction operations.",
+    },
+     {
+      img: f12,
+      title: "Compressors",
+      desc: "High pressure compressor & Tractor mount compressor",
     },
   ];
 

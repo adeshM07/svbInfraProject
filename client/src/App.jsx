@@ -1,47 +1,55 @@
 import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+
 import Menu from "./pages/Menu";
 import Landing from "./pages/Landing";
 import Footer from "./pages/Footer";
 import AboutPage from "./pages/AboutPage";
 import Service from "./pages/Service";
-import Fleet from './pages/Fleet'
+import Fleet from "./pages/Fleet";
 import PortFolio from "./pages/PortFolio";
 import Contactus from "./pages/Contactus";
 import HSE from "./pages/HSE";
-import Subpage1 from "./pages/Subpage1";
 import ESE from "./pages/ESE";
-import { Routes, Route } from "react-router-dom";
 import REP from "./pages/REP";
 import DS from "./pages/DS";
 import SRP from "./pages/SRP";
 
+import lvideo from "./assets/landingVideo.mov";
+import "./App.css";
+
 const App = () => {
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
+
   return (
     <>
-      <Menu></Menu>
-      {/* <Landing></Landing> */}
-      {/* <AboutPage></AboutPage> */}
-      {/* <Service></Service>
-      <Fleet></Fleet>
-      <PortFolio></PortFolio>
-      <Contactus></Contactus> */}
-      {/* <HSE></HSE> */}
-      <Routes>
-        <Route path="/" element={<Landing></Landing>}/>
-        <Route path="/about" element={<AboutPage></AboutPage>}/>
-        <Route path="/services" element={<Service></Service>}/>
-        <Route path="/fleet" element={<Fleet></Fleet>}/>
-        <Route path="/portfolio" element={<PortFolio></PortFolio>}/>
-        <Route path="/contact" element={<Contactus></Contactus>}/>
-        <Route path="/hse" element={<HSE></HSE>}/>
-        <Route path="/ese" element={<ESE></ESE>}/>
-        <Route path="/rep" element={<REP></REP>}/>
-        <Route path="/ds" element={<DS></DS>}/>
-        <Route path="/srp" element={<SRP></SRP>}/>
-      </Routes>
-      {/* <Subpage1></Subpage1> */}
-      {/* kjn */}
-      <Footer></Footer>
+      <Menu />
+
+      {isLandingPage && (
+        <div className="hero-video-container">
+          <video src={lvideo} autoPlay loop muted playsInline />
+        </div>
+      )}
+
+      {/* FIX → Add margin only for landing, top padding for other pages */}
+      <div style={{ marginTop: isLandingPage ? "100vh" : "13vh" }}>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/fleet" element={<Fleet />} />
+          <Route path="/portfolio" element={<PortFolio />} />
+          <Route path="/contact" element={<Contactus />} />
+          <Route path="/hse" element={<HSE />} />
+          <Route path="/ese" element={<ESE />} />
+          <Route path="/rep" element={<REP />} />
+          <Route path="/ds" element={<DS />} />
+          <Route path="/srp" element={<SRP />} />
+        </Routes>
+
+        <Footer />
+      </div>
     </>
   );
 };

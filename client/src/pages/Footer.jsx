@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/SVB_Logo.png";
+import logo from "../assets/svb_logo_footer.png";
 import "../CSS/Landing.css";
 import mail from "../assets/mail_marker.png";
 import phone from "../assets/phone_marker.png";
@@ -40,7 +40,7 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div className="bg-[#F8F8F8]">
+      <div className="bg-[#F8F8F8] w-full">
         <div
           id="footer"
           className=" h-full lg:h-[80vh] w-screen flex flex-col gap-5 md:gap-14  z-999"
@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="flex flex-col gap-7">
               <img
                 src={logo}
-                className="w-[20vw] h-[7vh] lg:w-[9vw] lg:h-[9vh] mx-auto lg:mx-0"
+                className="w-[20vw] h-[7vh] lg:w-[9vw] lg:h-[8vh] mx-auto lg:mx-0"
               />
               <p className=" popins text-white text-center lg:text-[0.8rem] lg:text-start">
                 At SVB Infra Projects, we are a trusted <br /> provider of

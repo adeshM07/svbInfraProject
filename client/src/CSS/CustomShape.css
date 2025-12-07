@@ -1,0 +1,25 @@
+.custom-shape-container {
+  width: 78vw;
+  height: 70vh;
+  background: #FDC000;   /* replace with video/image if needed */
+  clip-path: polygon(
+    0% 0%,       /* top-left */
+    100% 0%,     /* top-right */
+    100% 80%,    /* right vertical bottom */
+    70% 80%,     /* start slant left */
+    60% 100%,    /* bottom slanted point */
+    0% 100%      /* bottom-left */
+  );
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.custom-shape-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}

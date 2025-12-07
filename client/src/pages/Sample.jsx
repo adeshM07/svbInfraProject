@@ -1,86 +1,143 @@
-{/* <div
-  className="flex flex-col gap-[calc(0.5rem+0.4vw)] animate-fadeUp opacity-0 translate-y-3"
->
-  <p className="text-[calc(1.2rem+1vw)] lg:text-[calc(2.5rem+1.5vw)] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] lg:leading-[calc(3rem+1vw)]">
-    Building the Future with <br /> 
-    <span className="text-[#FDC000]">Strength & Precision</span>
-  </p>
+import React from "react";
+import svbLogo from "../assets/SVB_Logo.png";
+import "../App.css";
+import "../CSS/Menu.css";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-  {isMobile ? (
-    <p className="text-white w-[88%] text-[calc(0.9rem+0.3vw)] popins leading-[calc(1.4rem+0.3vw)]">
-      Delivering reliable infrastructure solutions with modern machinery and expert execution.
-    </p>
-  ) : (
-    <p className="text-white text-[calc(1rem+0.5vw)] popins leading-[calc(1.5rem+0.4vw)]">
-      Delivering reliable infrastructure solutions with modern machinery <br /> and expert execution.
-    </p>
-  )}
+const Menu = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [popup, setPopup] = useState(false);
 
-  <button
-    className="mt-[calc(1.5rem+0.5vw)] rounded-md bg-[#FDC000] text-[calc(0.8rem+0.3vw)] 
-               font-semibold px-[calc(1rem+0.5vw)] py-[calc(0.4rem+0.3vw)] 
-               lg:w-[calc(8vw+1rem)] lg:h-[calc(5vh+1rem)] popins-noweight
-               hover:bg-[#ffcf33] transition-all duration-300"
-  >
-    See Our Fleet
-  </button>
-</div> */}
+  const handleResize = () => {
+    const width = window.innerWidth;
 
+    if (width < 740) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
 
+  useEffect(() => {
+    handleResize(); // Run once when mounted
+    window.addEventListener("resize", handleResize);
 
-<div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-  {/* ===== IMAGE (Fades In Smoothly) ===== */}
-  <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 1.2, ease: "easeOut" }}
-    viewport={{ once: true, amount: 0.4 }}
-  >
-    <img
-      src={ic1}
-      className="w-[85vw] h-[30vh] lg:w-[40vw] lg:h-[52vh]"
-      alt="Commitment to health & safety"
-    />
-  </motion.div>
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (popup) {
+        // if click is NOT inside popup and NOT on hamburger icon
+        if (
+          !e.target.closest("#mobilePopup") &&
+          !e.target.closest("#hamburgerIcon")
+        ) {
+          setPopup(false);
+        }
+      }
+    };
 
-  {/* ===== TEXT SECTION ===== */}
-  <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-    {/* Title (Spring Entry From Right + Slight Down) */}
-    <motion.p
-      className="text-[#333333] text-[1.4rem] lg:text-[2rem] fontMon font-semibold"
-      initial={{ opacity: 0, x: 120, y: -30 }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
-      transition={{
-        type: "spring",
-        stiffness: 80,
-        damping: 15,
-        duration: 0.9,
-      }}
-      viewport={{ once: true, amount: 0.4 }}
-    >
-      Commitment to health & safety
-    </motion.p>
+    document.addEventListener("click", handleClickOutside);
 
-    {/* List (Spring Entry With Slight Delay, Same Direction) */}
-    <motion.ul
-      id="HSEUL"
-      className="text-[#333333] popins text-[14px] lg:text-[18px] bg-white -ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-      initial={{ opacity: 0, x: 120, y: -30 }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
-      transition={{
-        type: "spring",
-        stiffness: 80,
-        damping: 15,
-        delay: 0.25,
-      }}
-      viewport={{ once: true, amount: 0.4 }}
-    >
-      <li className="HSEUL">Setting out of corner benchmarks</li>
-      <li className="HSEUL">Surveying ground levels</li>
-      <li className="HSEUL">Surveying top levels</li>
-      <li className="HSEUL">Excavation to approved depth</li>
-      <li className="HSEUL">Dressing of loose soil</li>
-      <li className="HSEUL">Making up to cut-off level</li>
-    </motion.ul>
-  </div>
-</div>
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [popup]);
+
+  return (
+    <>
+      <div className=" bg-[#333333] w-screen flex px-5 md:px-6 justify-between h-[9vh] lg:h-[13vh] place-items-center lg:px-24">
+        <div className="">
+          <Link to="/">
+            <img
+              src={svbLogo}
+              className="w-[15vw] h-[5vh] lg:w-[8vw] lg:h-[8vh]"
+            />
+          </Link>
+        </div>
+        {popup && (
+          <div
+            id="mobilePopup"
+            className="absolute right-5 top-[90px] w-[60vw] h-fit 
+  border border-white/20 
+  rounded-xl 
+  bg-white/40 
+  backdrop-blur-sm 
+  shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
+  flex flex-col 
+  z-[999]"
+          >
+            <nav
+              id="menuNav"
+              className="flex flex-col text-[1.6rem]   gap-5 h-fit list-none text-black z-[1000] p-4"
+            >
+              {[
+                { name: "About Us", link: "/about" },
+                { name: "Service", link: "/services" },
+                { name: "Our Fleet", link: "/fleet" },
+                { name: "Portfolio", link: "/portfolio" },
+                { name: "HSE", link: "/hse" },
+                { name: "Contact Us", link: "/contact" },
+              ].map((item) => (
+                <li key={item.link} className=" relative group">
+                  <Link
+                    to={item.link}
+                    onClick={() => setPopup(!popup)}
+                    className=" relative text-black transition-all duration-300 ease-in-out z-[1000]"
+                  >
+                    {item.name}
+                    <span className="absolute left-1/2 -bottom-[3px] w-0 h-[2px] bg-[#FDC000] transition-all duration-300 ease-in-out z-[1000] group-hover:left-0 group-hover:w-full"></span>
+                  </Link>
+                </li>
+              ))}
+            </nav>
+          </div>
+        )}
+
+        {isMobile ? (
+          <i
+            id="hamburgerIcon"
+            class="fa-solid fa-bars text-[21px] text-white z-[1000]"
+            onClick={() => setPopup(!popup)}
+          ></i>
+        ) : (
+          <>
+            <nav
+              id="menuNav"
+              className="flex gap-7 h-fit list-none text-white z-[999]"
+            >
+              {[
+                { name: "About Us", link: "/about" },
+                { name: "Service", link: "/services" },
+                { name: "Our Fleet", link: "/fleet" },
+                { name: "Portfolio", link: "/portfolio" },
+                { name: "HSE", link: "/hse" },
+              ].map((item) => (
+                <li key={item.link} className=" relative group">
+                  <Link
+                    to={item.link}
+                    className="relative text-white transition-all duration-300 ease-in-out"
+                  >
+                    {item.name}
+                    {/* Animated underline */}
+                    <span className="absolute left-1/2 -bottom-[3px]  w-0  h-[2px]  bg-[#FDC000]  transition-all duration-300 ease-in-out  group-hover:left-0   group-hover:w-full "></span>
+                  </Link>
+                </li>
+              ))}
+            </nav>
+
+            <Link to="/contact">
+              <button
+                className="menuButton md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] bg-[#FDC000] text-black text-[1rem] rounded-[9px] transition duration-300 transform
+  hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
+              >
+                Contact Us
+              </button>
+            </Link>
+          </>
+        )}
+      </div>
+    </>
+  );
+};
+
+export default Menu;

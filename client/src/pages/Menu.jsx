@@ -2,12 +2,60 @@ import React from "react";
 import svbLogo from "../assets/SVB_Logo.png";
 import "../App.css";
 import "../CSS/Menu.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Menu = () => {
+  const [showMenu, setShowMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [popup, setPopup] = useState(false);
+  const [isColored, setIsColored] = useState(false);
+
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
+
+  
+
+  useEffect(() => {
+    if (!isLandingPage) {
+      setShowMenu(true); // always show menu on other pages
+      return;
+    }
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowMenu(true);
+      } else {
+        setShowMenu(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isLandingPage]);
+
+  useEffect(() => {
+    if (!isLandingPage) {
+      setIsColored(true); // always colored on other pages
+      return;
+    }
+
+    const section = document.getElementById("secondSection");
+
+    const handleScroll = () => {
+      if (!section) return;
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top <= 0) {
+        setIsColored(true);
+      } else {
+        setIsColored(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isLandingPage]);
 
   const handleResize = () => {
     const width = window.innerWidth;
@@ -45,12 +93,20 @@ const Menu = () => {
 
   return (
     <>
-      <div className=" bg-[#333333] w-screen flex px-5 md:px-6 justify-between h-[9vh] lg:h-[13vh] place-items-center lg:px-24">
+      <div
+        className={`
+    fixed top-0 left-0 w-full flex px-5 md:px-6 justify-between 
+    h-[9vh] lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
+    transition-all duration-500 z-[999]
+    ${showMenu ? "translate-y-0" : "-translate-y-full"}
+    ${isColored ? "bg-[#333333]" : "bg-transparent"}
+  `}
+      >
         <div className="">
           <Link to="/">
             <img
               src={svbLogo}
-              className="w-[15vw] h-[5vh] lg:w-[8vw] lg:h-[8vh]"
+              className="w-[15vw] h-[5vh] lg:w-[8vw] xl:w-[8vw] xl:h-[8vh] lg:h-[8vh]"
             />
           </Link>
         </div>
