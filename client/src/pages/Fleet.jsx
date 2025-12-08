@@ -114,7 +114,7 @@ const Fleet = () => {
       {/* ===== Fleet Banner ===== */}
       <motion.div
         id="fleetBanner"
-        className="w-screen h-[45vh] md:h-[45vh] lg:h-[95vh]"
+        className="w-screen  h-[45vh] md:h-[45vh] lg:h-[95vh]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}

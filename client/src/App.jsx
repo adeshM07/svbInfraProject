@@ -43,7 +43,7 @@ const App = () => {
       )}
 
       {/* FIX → Add margin only for landing, top padding for other pages */}
-      <div style={{ marginTop: isLandingPage ? "100vh" : "13vh" }}>
+      <div style={{ marginTop: isLandingPage ? "100vh" : "9vh" }}>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<AboutPage />} />
