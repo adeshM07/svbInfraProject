@@ -158,7 +158,7 @@ const Fleet = () => {
 
           {/* Stats Box */}
           <motion.div
-            className="w-[82vw] h-[6vh] lg:w-[52vw] lg:h-[17vh] bg-white rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
+            className="w-[82vw] h-[6vh] lg:w-[52vw] lg:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
             initial={{ opacity: 0, scale: 0.85, y: 30 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
@@ -172,7 +172,7 @@ const Fleet = () => {
             ].map(([title, value], i) => (
               <React.Fragment key={i}>
                 <div className="flex flex-col gap-[3px] lg:gap-[20px] text-center">
-                  <p className="popins-noweight text-[0.6rem] md:text-[0.8rem] lg:text-[1.3rem] font-semibold text-[#333333]">
+                  <p className="popins-noweight [@media(min-width:300px)_and_(max-width:410px)]:text-[0.5rem] text-[0.6rem] md:text-[0.8rem] lg:text-[1.3rem] font-semibold text-[#333333]">
                     {title}
                   </p>
                   <p className="popins-noweight text-[0.4rem] md:text-[0.6rem] lg:text-[1rem] font-normal text-[#333333]">
