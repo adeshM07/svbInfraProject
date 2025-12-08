@@ -155,7 +155,7 @@ const DS = () => {
               {/* List (Spring Entry from Left, Slight Delay) */}
               <motion.ul
                 id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-999"
+                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
