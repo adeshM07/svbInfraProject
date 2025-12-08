@@ -29,7 +29,7 @@
     width: 92vw;
     height: 20vh;
 
-    /* smoother shape for small screens */
+   
     clip-path: polygon(
       0% 0%,
       100% 0%,

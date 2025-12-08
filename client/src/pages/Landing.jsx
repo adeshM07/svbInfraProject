@@ -48,7 +48,7 @@ import c3 from "../assets/globalCard15.png";
 const Landing = () => {
   const [applyEffect, setApplyEffect] = useState(false);
   let [projectVideo, setProjectVideo] = useState(
-    "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4"
+    "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
   );
   const [isMobile, setIsMobile] = useState(false);
 
@@ -197,10 +197,10 @@ const Landing = () => {
 
       <div
         id="secondSection"
-        className="flex flex-col  gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] md:pt-[40vh] py-15 lg:pb-30  w-screen bg-[#F8F8F8]"
+        className="flex flex-col  gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[15vh] md:pt-[40vh]  py-15 lg:pb-30  w-screen bg-[#F8F8F8]"
       >
         <div>
-          <section className="flex flex-row w-full px-4 lg:mx-0 lg:justify-center text-gray-800 ">
+          <section className="flex flex-row w-full px-4 lg:mx-0  lg:justify-center text-gray-800 ">
             {/* === VIDEO === */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -426,17 +426,25 @@ const Landing = () => {
           <div className="custom-shape-container">
             {/* Put anything inside this shape */}
             <video
-            //  src={lvideo} 
-            src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
-             autoPlay muted loop playsInline></video>
+              src={projectVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
           </div>
-           <div className=" flex w-full py-2 lg:py-6 relative ">
+          <div className=" flex w-full py-2 lg:py-6 relative ">
             {isMobile ? (
               <p className="text-[#4D4D4D]  w-[40vw]  popins  text-[8px] lg:text-[16px] ml-3 lg:mt-5 font-semibold ">
                 We have successfully completed a wide range of earthwork and
                 excavation projects for leading clients across Karnataka. Our
-                portfolio includes residential, commercial, and  infrastructure developments delivered
-                with quality and precision.
+                portfolio includes residential, commercial, and infrastructure
+                developments delivered with quality and precision.
               </p>
             ) : (
               <p className="text-[#4D4D4D] popins   text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
@@ -453,47 +461,47 @@ const Landing = () => {
                   {
                     src: c1,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4",
                   },
                   {
                     src: c2,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175406/MarkSquareProjectVideo_v7fof2.mp4",
                   },
                   {
                     src: c3,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175519/VellaraJunctionProjectVideo_wsgwwi.mp4",
                   },
                   {
                     src: c4,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4",
                   },
                   {
                     src: c5,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4",
                   },
                   {
                     src: c6,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175618/ProjectVideo_regqnp.mp4",
                   },
                   {
                     src: c7,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4",
                   },
                   {
                     src: c8,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4",
                   },
                   {
                     src: c9,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175618/ProjectVideo_regqnp.mp4",
                   },
                   {
                     src: c10,
@@ -503,22 +511,22 @@ const Landing = () => {
                   {
                     src: c11,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4",
                   },
                   {
                     src: c12,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175618/ProjectVideo_regqnp.mp4",
                   },
                   {
                     src: c13,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175406/MarkSquareProjectVideo_v7fof2.mp4",
                   },
                   {
                     src: c14,
                     video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
+                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765177074/MarkSquare_xiglio.mp4",
                   },
                   {
                     src: c15,
@@ -538,7 +546,6 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          
         </div>
 
         {/* <div className=" px-2 ">
