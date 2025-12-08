@@ -10,8 +10,8 @@ import CustomShape from "./CustomShape";
 import "../CSS/ProjectVideoBanner.css";
 import "../CSS/CustomShape.css";
 import "../CSS/Landing.css";
-import boxvideo from "../videos/boxVideo.MOV";
-import lvideo from "../assets/landingVideo.mov";
+import boxvideo from "../videos/BoxVideo.mp4";
+// import lvideo from "../videos/boxVideoTrimmed.mov";
 import { useState, useEffect } from "react";
 import fleet1 from "../assets/fleet-img1.png";
 import fleet2 from "../assets/fleet-img2.png";
@@ -44,7 +44,7 @@ import v2 from "../assets/v2.mp4";
 import v3 from "../assets/v3.mp4";
 import v4 from "../assets/v4.mp4";
 import v5 from "../assets/v5.mp4";
-import constructionVideo from "/src/videos/constructionVideo.mov";
+// import constructionVideo from "/src/videos/constructionVideo.mov";
 
 const Landing = () => {
   const [applyEffect, setApplyEffect] = useState(false);
@@ -212,6 +212,7 @@ const Landing = () => {
               <video
                 src={boxvideo}
                 // src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1764767947/constructionVideo3_wvcw1r.mp4"
+                //  src="https://www.dropbox.com/scl/fi/of9fvfwuakx55meeokabt/boxVideo.MOV?rlkey=ufy3suzkctcwu33gxusr467s9&raw=1"
                 autoPlay
                 muted
                 loop
@@ -422,10 +423,13 @@ const Landing = () => {
             </motion.div>
           </div>
         </div>
-        <div className="pl-34">
+        <div className="pl-4 md:pl-34">
           <div className="custom-shape-container">
             {/* Put anything inside this shape */}
-            <video src={lvideo} autoPlay muted loop playsInline></video>
+            <video
+            //  src={lvideo} 
+            src="https://www.dropbox.com/scl/fi/zaa7la43gnisr3qhyuzto/landingVideo.MOV?rlkey=rj9jrqt1jifxyxvml8fcwmx8i&raw=1"
+             autoPlay muted loop playsInline></video>
           </div>
            <div className=" flex w-full py-2 lg:py-6 relative ">
             {isMobile ? (
@@ -444,7 +448,7 @@ const Landing = () => {
                 with quality and precision.
               </p>
             )}
-            <div className="absolute   left-[57vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[9vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden ">
+            <div className="absolute   left-[69vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[7vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden ">
               <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                 {[
                   {

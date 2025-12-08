@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/CustomShape.css";
-import lvideo from "../assets/landingVideo.mov";
+// import lvideo from "../assets/landingVideo.mov";
 
 const CustomShape = () => {
   return (

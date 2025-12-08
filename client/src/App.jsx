@@ -15,7 +15,8 @@ import REP from "./pages/REP";
 import DS from "./pages/DS";
 import SRP from "./pages/SRP";
 
-import lvideo from "./assets/landingVideo.mov";
+// import lvideo from "./assets/landingVideo.mov";
+import lvideo from './videos/landingVideoTrimmed.mp4'
 import "./App.css";
 
 const App = () => {
@@ -29,6 +30,14 @@ const App = () => {
       {isLandingPage && (
         <div className="hero-video-container">
           <video src={lvideo} autoPlay loop muted playsInline />
+           {/* <video
+  src="https://www.dropbox.com/scl/fi/zaa7la43gnisr3qhyuzto/landingVideo.MOV?rlkey=rj9jrqt1jifxyxvml8fcwmx8i&raw=1"
+  autoPlay
+  loop
+  muted
+  playsInline
+  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+/> */}
         </div>
       )}
 
