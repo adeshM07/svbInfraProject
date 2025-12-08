@@ -34,7 +34,7 @@ const SRP = () => {
   return (
     <>
       <div>
-        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:mt-[120px] mt-[40px] mx-[20px]  lg:ml-[119px]">
+        <div className="flex flex-col gap-7 lg:gap-10 mt-[120px] lg:mt-[120px] mt-[40px] mx-[20px]  lg:ml-[119px]">
           <div className="flex  place-items-center gap-3">
             <p className="text-[14px] md:text-[1.4rem] lg:text-[2rem] underline decoration-[#FDC000] underline-offset-8 fontMon font-semibold text-[#333333]">
               Soil Retention System
@@ -160,7 +160,7 @@ const SRP = () => {
               {/* List (Spring Entry from Left, Slight Delay) */}
               <motion.ul
                 id="HSEUL"
-                className="text-[#333333] popins md:text-[15px] text-[14px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-999"
+                className="text-[#333333] popins md:text-[15px] text-[14px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
@@ -287,7 +287,7 @@ const SRP = () => {
               {/* List (Spring Entry from Left, Slight Delay) */}
               <motion.ul
                 id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-999"
+                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
@@ -415,7 +415,7 @@ const SRP = () => {
               {/* List (Spring Entry from Left, Slight Delay) */}
               <motion.ul
                 id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-999"
+                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
@@ -541,7 +541,7 @@ const SRP = () => {
               {/* List (Spring Entry from Left, Slight Delay) */}
               <motion.ul
                 id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-999"
+                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
