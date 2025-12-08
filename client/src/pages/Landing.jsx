@@ -128,7 +128,7 @@ const Landing = () => {
       {/* <LandingBanner></LandingBanner> */}
       <div
         // id="landingBanner"
-        className={`w-screen h-[45vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 
+        className={`w-screen h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 
   ${applyEffect ? "banner-active" : ""}`}
       >
         <div
