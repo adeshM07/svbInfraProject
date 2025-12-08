@@ -202,12 +202,12 @@ const Fleet = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <p className="text-[#333333] text-[1rem] md:text-[1.4rem] lg:text-[1.6rem] font-semibold underline decoration-[#FDC000] underline-offset-8 mb-6">
+          <p className="text-[#333333] text-[1.4rem] md:text-[1.4rem] lg:text-[1.6rem] font-semibold underline decoration-[#FDC000] underline-offset-8 mb-6">
             Our Powerfull Machines
           </p>
 
           <div>
-            <p className="popins-bold text-[1.4rem] md:text-[3rem] lg:text-[4rem] md:leading-14 lg:leading-[69px]">
+            <p className="popins-bold text-[1.6rem] md:text-[3rem] lg:text-[4rem] md:leading-14 lg:leading-[69px]">
               Power, Precision, and <br /> Performance -{" "}
               <span className="text-[#FCD000]">All in One Fleet.</span>
             </p>
