@@ -89,7 +89,7 @@ const Service = () => {
           </motion.p>
 
           {/* Service Image Grid */}
-          <div className="flex lg:gap-3 xl:gap-4 2xl:gap-3 ">
+          <div className="flex gap-1 lg:gap-3 xl:gap-4 2xl:gap-3 ">
             {[s1, s2, s3, s4].map((src, index) => (
               <motion.div
                 key={index}
@@ -115,7 +115,7 @@ const Service = () => {
                 >
                   <img
                     src={src}
-                    className="w-[23vw] h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[16vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[23vw] md:h-[20vh] lg:w-[20vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] object-cover 
+                    className="w-[23vw] h-[13vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[16vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[23vw] md:h-[20vh] lg:w-[20vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] object-cover 
            transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md"
                     alt={`Service ${index + 1}`}
                   />
