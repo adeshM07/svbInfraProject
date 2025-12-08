@@ -209,8 +209,8 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               <video
-                src={boxvideo}
-                // src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1764767947/constructionVideo3_wvcw1r.mp4"
+                // src={boxvideo}
+                src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4"
                 //  src="https://www.dropbox.com/scl/fi/of9fvfwuakx55meeokabt/boxVideo.MOV?rlkey=ufy3suzkctcwu33gxusr467s9&raw=1"
                 autoPlay
                 muted
@@ -427,7 +427,7 @@ const Landing = () => {
             {/* Put anything inside this shape */}
             <video
             //  src={lvideo} 
-            src="https://www.dropbox.com/scl/fi/zaa7la43gnisr3qhyuzto/landingVideo.MOV?rlkey=rj9jrqt1jifxyxvml8fcwmx8i&raw=1"
+            src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
              autoPlay muted loop playsInline></video>
           </div>
            <div className=" flex w-full py-2 lg:py-6 relative ">

@@ -30,7 +30,7 @@ const App = () => {
 
       {isLandingPage && (
         <div className="hero-video-container">
-          <video src={lvideo} autoPlay loop muted playsInline />
+          <video src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4" autoPlay loop muted playsInline />
            {/* <video
   src="https://www.dropbox.com/scl/fi/zaa7la43gnisr3qhyuzto/landingVideo.MOV?rlkey=rj9jrqt1jifxyxvml8fcwmx8i&raw=1"
   autoPlay
