@@ -214,7 +214,7 @@ const HSE = () => {
             <div className="flex flex-col gap-[10px] lg:gap-[20px]">
               {/* Title (Spring Entry From Right + Slight Down) */}
               <motion.p
-                className=" text-[#FDC000] text-[1.4rem] md:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem]   lg:text-[2rem] fontMon font-semibold"
+                className=" text-[#FDC000] text-[1.4rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem]   lg:text-[2rem] fontMon font-semibold"
                 initial={{ opacity: 0, x: 120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
@@ -270,7 +270,7 @@ const HSE = () => {
             <div className="flex flex-col gap-[10px] lg:gap-[20px] ">
               {/* Title (Spring from Left → Right + Slight Down) */}
               <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem]  xl:text-[1.7rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                className="text-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.4rem] md:text-[2rem]  xl:text-[1.7rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
@@ -287,7 +287,7 @@ const HSE = () => {
               {/* List (Spring Entry from Left, Slight Delay) */}
               <motion.ul
                 id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-999"
+                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
@@ -422,7 +422,7 @@ const HSE = () => {
               {/* List (Spring Entry from Left, Slight Delay) */}
               <motion.ul
                 id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-999"
+                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
