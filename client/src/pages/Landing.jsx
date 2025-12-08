@@ -222,16 +222,7 @@ const Landing = () => {
 
             {/* === TEXT SECTION === */}
             <motion.div
-              // className="lg:w-[33vw]  w-[50vw] xl:w-[39vw] 2xl:w-[33vw] h-fit flex flex-col "
-              className="
-  rounded-2xl shadow-lg 
-  w-[100vw] h-[55vh] 
-  md:w-[50vw] md:h-[32vh]
-  lg:w-[40vw] xl:w-[45vw] 
-  xl:h-[90vh] lg:h-[84vh] 
-  2xl:w-[40vw] 2xl:h-[84vh] 
-  object-cover
-"
+              className="lg:w-[33vw]  w-[50vw] xl:w-[39vw] 2xl:w-[33vw] h-fit flex flex-col "
               initial={{ opacity: 0, x: 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
