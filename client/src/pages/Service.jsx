@@ -31,10 +31,10 @@ const Service = () => {
           id="serviceBanner"
           className="w-screen h-[45vh] md:h-[45vh] lg:h-[95vh]"
         >
-          <div className="pt-[80px] ml-[30px] lg:pt-[120px] lg:ml-[120px]">
+          <div className="pt-[80px] ml-[30px] [@media(min-width:300px)_and_(max-width:410px)]:pt-[60px] lg:pt-[120px] lg:ml-[120px]">
             {/* Heading Animation */}
             <motion.p
-              className="text-white text-[1.5rem]  md:text-[3.2rem] lg:text-[4rem] aboutCom leading-8 md:leading-14 lg:leading-19"
+              className="text-white text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6  md:text-[3.2rem] lg:text-[4rem] aboutCom leading-8 md:leading-14 lg:leading-19"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -115,7 +115,7 @@ const Service = () => {
                 >
                   <img
                     src={src}
-                    className="w-[24vw] h-[14vh] md:h-[20vh] lg:w-[20vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] object-cover 
+                    className="w-[23vw] h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[16vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[23vw] md:h-[20vh] lg:w-[20vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] object-cover 
            transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md"
                     alt={`Service ${index + 1}`}
                   />
