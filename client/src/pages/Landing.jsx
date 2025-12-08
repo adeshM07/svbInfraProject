@@ -228,14 +228,14 @@ const Landing = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="fontMon bg-[#F8F8F8] z-300  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] xl:text-[3.5rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
+              <p className="fontMon bg-[#F8F8F8] z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] xl:text-[3.5rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
                 Great Relationships,
                 <br /> Great
                 <span className="text-[#FDC000]">Infrastructure</span>
               </p>
 
-              <div className="flex flex-col lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10">
-                <p className="text-[#4D4D4D] popins lg:w-[32vw] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.2rem] 2xl:text-[1.25rem] lg:pl-5">
+              <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10">
+                <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]  md:w-[32vw] lg:w-[32vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.2rem] 2xl:text-[1.25rem] lg:pl-5">
                   <span className="font-semibold lg:mr-1">
                     SVB Infra Projects
                   </span>
@@ -253,7 +253,7 @@ const Landing = () => {
                 {/* Button animation */}
                 <Link to="/about" className="flex w-full justify-end">
                   <motion.button
-                    className="popins mr-3 px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300"
+                    className="popins mr-3 px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
@@ -270,15 +270,15 @@ const Landing = () => {
 
           {/* === COUNTER BOXES === */}
           <motion.div
-            className="flex gap-5 my-10 mx-auto lg:mx-0 lg:my-2 pl-[4vw] lg:pl-34"
+            className="flex gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10 mx-auto lg:mx-0 lg:my-2 pl-[4vw] lg:pl-34"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
             {/* Box 1 */}
-            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
-              <p className="popins text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
+            <div className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+              <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold">
                 <Counter from={0} to={185} duration={1.2} />+
               </p>
               <p className="popins font-medium text-[9px] md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start">
@@ -287,8 +287,8 @@ const Landing = () => {
             </div>
 
             {/* Box 2 */}
-            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
-              <p className="popins text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
+            <div className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+              <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold">
                 <Counter from={0} to={30} duration={1.5} />+
               </p>
               <p className="popins font-medium text-[9px]  md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start">
@@ -297,11 +297,11 @@ const Landing = () => {
             </div>
 
             {/* Box 3 */}
-            <div className="border lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
-              <p className="popins text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
+            <div className="border lg:border-2 border-[#FDC000] rounded-md flex [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+              <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
                 24/7
               </p>
-              <p className="popins font-medium text-[9px]  md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start">
+              <p className="popins font-medium text-[9px]   md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start">
                 Anywhere <br /> Assistance
               </p>
             </div>
@@ -800,13 +800,13 @@ const Landing = () => {
         </div> */}
         <div
           id="landing-contact"
-          className="lg:w-[78vw] border-2 border-red-500 rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-[4.2rem] lg:gap-70 z-200"
+          className="lg:w-[78vw]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
         >
           <div className="">
-            <p className="text-[0.8rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
+            <p className="text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.7rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
               Let's Build Your Next Project Together
             </p>
-            <p className="fontMon font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]">
+            <p className="fontMon [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem] font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]">
               Contact With Us!
             </p>
           </div>
