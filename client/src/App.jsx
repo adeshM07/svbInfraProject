@@ -16,7 +16,7 @@ import DS from "./pages/DS";
 import SRP from "./pages/SRP";
 
 // import lvideo from "./assets/landingVideo.mov";
-import lvideo from './videos/landingVideoTrimmed.mp4'
+import lvideo from './videos/LandingVideoTrimmed.mp4'
 import "./App.css";
 
 const App = () => {
