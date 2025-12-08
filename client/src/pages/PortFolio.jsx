@@ -144,7 +144,7 @@ const PortFolio = () => {
 
               <Link to="/contact">
                 <motion.button
-                  className="mt-3 lg:mt-5 w-[30%] md:py-4 xl:w-[9vw] 2xl:w-[8vw] lg:w-[8vw] bg-[#FDC000] text-[#333333] font-bold py-1.5 lg:py-2 rounded-md"
+                  className="mt-3 lg:mt-5 w-[30%] md:py-4 [@media(min-width:300px)_and_(max-width:410px)]:w-[40%] xl:w-[9vw] 2xl:w-[8vw] lg:w-[8vw] bg-[#FDC000] text-[#333333] font-bold [@media(min-width:300px)_and_(max-width:410px)]:py-2 py-1.5 lg:py-2 rounded-md"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.2 }}
