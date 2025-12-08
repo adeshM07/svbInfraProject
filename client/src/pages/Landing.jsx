@@ -200,7 +200,7 @@ const Landing = () => {
         className="flex flex-col  gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[15vh] md:pt-[40vh]  py-15 lg:pb-30  w-screen bg-[#F8F8F8]"
       >
         <div>
-          <section className="relative  flex flex-row w-full px-4 lg:mx-0  lg:justify-center text-gray-800 ">
+          <section className="flex flex-row w-full px-4 lg:mx-0  lg:justify-center text-gray-800 ">
             {/* === VIDEO === */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -228,7 +228,7 @@ const Landing = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="fontMon bg-[#F8F8F8] border-2 border-red-500  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] xl:text-[3.5rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
+              <p className="fontMon bg-[#F8F8F8] z-300  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] xl:text-[3.5rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
                 Great Relationships,
                 <br /> Great
                 <span className="text-[#FDC000]">Infrastructure</span>
