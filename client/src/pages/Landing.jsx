@@ -440,7 +440,7 @@ const Landing = () => {
           </div>
           <div className=" flex w-full py-2 lg:py-6 relative ">
             {isMobile ? (
-              <p className="text-[#4D4D4D]  w-[40vw]  popins  text-[8px] lg:text-[16px] ml-3 lg:mt-5 font-semibold ">
+              <p className="text-[#4D4D4D]  w-[40vw]  popins  text-[8px] lg:text-[16px]  lg:mt-5 font-semibold ">
                 We have successfully completed a wide range of earthwork and
                 excavation projects for leading clients across Karnataka. Our
                 portfolio includes residential, commercial, and infrastructure
@@ -455,7 +455,7 @@ const Landing = () => {
                 with quality and precision.
               </p>
             )}
-            <div className="absolute   left-[69vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[7vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden ">
+            <div className="absolute   left-[68vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[6vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden ">
               <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                 {[
                   {
