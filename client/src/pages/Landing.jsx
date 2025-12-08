@@ -197,7 +197,7 @@ const Landing = () => {
 
       <div
         id="secondSection"
-        className="flex flex-col  gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[15vh] md:pt-[40vh]  py-15 lg:pb-30  w-screen bg-[#F8F8F8]"
+        className="flex flex-col  gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[15vh] md:pt-150vh]  py-15 lg:pb-30  w-screen bg-[#F8F8F8]"
       >
         <div>
           <section className="flex flex-row w-full px-4 lg:mx-0  lg:justify-center text-gray-800 ">

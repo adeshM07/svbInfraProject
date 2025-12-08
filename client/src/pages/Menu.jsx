@@ -46,7 +46,7 @@ const Menu = () => {
       if (!section) return;
       const rect = section.getBoundingClientRect();
 
-      if (rect.top <= 0) {
+      if (rect.top <= 100) {
         setIsColored(true);
       } else {
         setIsColored(false);
