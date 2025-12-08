@@ -54,6 +54,8 @@ body, * {
   z-index: -1;
 }
 
+
+
 @media (min-width: 701px) and (max-width:1023px) {
   #aboutBanner::before {
     background: url('../assets/aboutBannerIMG.png') no-repeat center top;
@@ -69,6 +71,14 @@ body, * {
     /* keeps full image visible */
     height: 45vh;
     /* smaller height for mobile */
+  }
+}
+
+@media (min-width: 300px) and (max-width:410px) {
+  #aboutBanner::before {
+    background: url('../assets/aboutBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 50vh;                   /* smaller height for mobile */
   }
 }
 

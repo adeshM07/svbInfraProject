@@ -61,11 +61,11 @@ const AboutPage = () => {
       <div>
         <div
           id="aboutBanner"
-          className="w-screen   h-[45vh] md:h-[45vh] lg:h-[95vh]"
+          className="w-screen [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   h-[45vh] md:h-[45vh] lg:h-[95vh]"
         >
           <div className="pl-[30px]  pt-[100px] lg:pl-[120px] lg:pt-[150px]">
             <motion.p
-              className="text-white text-[1.7rem] md:text-[3.2rem] lg:text-[4rem] aboutCom leading-8 md:leading-14 lg:leading-19"
+              className="text-white [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.7rem] md:text-[3.2rem] lg:text-[4rem] aboutCom [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-8 md:leading-14 lg:leading-19"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -86,7 +86,7 @@ const AboutPage = () => {
 
             <Link to="/contact">
               <motion.button
-                className="lg:mt-10 mt-5 w-[21vw] h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
+                className="lg:mt-10 mt-5 w-[21vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[25vw]  h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
