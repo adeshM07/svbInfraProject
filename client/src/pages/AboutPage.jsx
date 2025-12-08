@@ -98,7 +98,7 @@ const AboutPage = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:mx-auto   w-fit flex flex-col gap-10 pt-[50px] lg:pt-[120px] mx-2">
+        <div className="lg:mx-auto  [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 pt-[50px] lg:pt-[120px] mx-2">
           <motion.p
             className="text-black popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 40 }}
@@ -108,11 +108,11 @@ const AboutPage = () => {
           >
             About our company
           </motion.p>
-          <div className="flex gap-4 lg:gap-7">
+          <div className="flex gap-4 [@media(min-width:300px)_and_(max-width:410px)]:gap-2 lg:gap-7">
             {/* 🟡 Image comes from left */}
             <motion.img
               src={bgIMG}
-              className="w-[45vw] h-[20vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw] lg:h-[59vh]"
+              className="w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw] lg:h-[59vh]"
               initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -127,13 +127,13 @@ const AboutPage = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="popins-bold text-[1.3rem] md:text-[2.3rem] leading-7 md:leading-12 lg:text-[3rem] lg:leading-14">
-                Excellence, <br />{" "}
+              <p className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] lg:leading-14">
+                Excellence, <br />
                 <span className="text-[#FDC000]">Expertise,</span> Efficiency
               </p>
 
               {isMobile ? (
-                <p className="text-[#4D4D4D] w-[49vw] text-[10px]">
+                <p className="text-[#4D4D4D] w-[49vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[10px]">
                   <span className="font-semibold mr-1">SVB Infra Projects</span>
                   is a 3rd generation family-run business. SVB has been managing
                   earthmoving projects since 2003. Based in Bangalore, we
@@ -161,7 +161,7 @@ const AboutPage = () => {
 
               {/* 🧱 Stats below */}
               <motion.div
-                className="flex absolute lg:relative gap-7 lg:gap-14 lg:-left-0 -left-[180px] md:-left-[340px] top-[230px] md:top-[400px] lg:top-0 place-items-center lg:mx-5 lg:mt-5"
+                className="flex  w-screen absolute lg:relative [@media(min-width:300px)_and_(max-width:410px)]:gap-4 [@media(min-width:300px)_and_(max-width:410px)]:justify-center gap-7 lg:gap-14 lg:-left-0 -left-[180px] md:-left-[340px] top-[230px] md:top-[400px] lg:top-0 place-items-center lg:mx-5 lg:mt-5"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -169,10 +169,10 @@ const AboutPage = () => {
               >
                 {/* Clients */}
                 <div className="flex flex-col place-items-center">
-                  <p className="text-[1.5rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
+                  <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
                     <Counter from={0} to={125} duration={0.8} />+
                   </p>
-                  <p className="popins text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[0.9rem]">
+                  <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[0.9rem]">
                     Clients
                   </p>
                 </div>
@@ -181,10 +181,10 @@ const AboutPage = () => {
 
                 {/* Projects */}
                 <div className="flex flex-col place-items-center">
-                  <p className="text-[1.5rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
+                  <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
                     <Counter from={0} to={185} duration={1.0} />+
                   </p>
-                  <p className="popins text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[0.9rem]">
+                  <p className="popins text-[#4D4D4D] [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[10px] md:text-[1.4rem] lg:text-[0.9rem]">
                     Successful project
                   </p>
                 </div>
@@ -193,10 +193,10 @@ const AboutPage = () => {
 
                 {/* Machines */}
                 <div className="flex flex-col place-items-center">
-                  <p className="text-[1.5rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
+                  <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
                     <Counter from={0} to={30} duration={1.3} />+
                   </p>
-                  <p className="popins text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[0.9rem]">
+                  <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[0.9rem]">
                     Machines & Equipments
                   </p>
                 </div>
