@@ -10,7 +10,7 @@ import CustomShape from "./CustomShape";
 import "../CSS/ProjectVideoBanner.css";
 import "../CSS/CustomShape.css";
 import "../CSS/Landing.css";
-import boxvideo from "../videos/BoxVideo.mp4";
+import boxvideo from "../videos/Boxvideo.mp4";
 // import lvideo from "../videos/boxVideoTrimmed.mov";
 import { useState, useEffect } from "react";
 import fleet1 from "../assets/fleet-img1.png";
