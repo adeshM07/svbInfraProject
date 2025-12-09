@@ -336,7 +336,7 @@ const HSE = () => {
             >
               <img
                 src={ic1}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] xl:w-[75vw] xl:h-[60vh] lg:w-[40vw] lg:h-[52vh]"
+                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[65vw] xl:w-[75vw] xl:h-[60vh] lg:w-[40vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -402,7 +402,7 @@ const HSE = () => {
             >
               <img
                 src={ic2}
-                className="w-[85vw] h-[30vh] md:w-[85vw]  md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[60vw] lg:h-[52vh]"
+                className="w-[85vw] h-[30vh] md:w-[85vw]  md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[70vw] lg:w-[60vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
