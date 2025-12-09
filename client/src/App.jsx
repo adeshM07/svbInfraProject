@@ -57,7 +57,7 @@ const App = () => {
           <Route path="/" element={<Landing />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/excavators-dumpers-on-hire" element={<Service />} />
+          <Route path="/services/excavators-dumpers-on-hire" element={<Service />} />
           <Route path="/our-fleet-2" element={<Fleet />} />
           <Route path="/portfolio" element={<PortFolio />} />
           <Route path="/gallery" element={<PortFolio />} />
@@ -67,9 +67,8 @@ const App = () => {
           <Route path="/rep" element={<REP />} />
           <Route path="/ds" element={<DS />} />
           <Route path="/srp" element={<SRP />} />
-          <Route path="/mass-earth-excavation-2" element={<ESE />} />
-          <Route path="/mass-rock-excavation" element={<REP />} />
-          <Route path="/excavators-dumpers-on-hire" element={<Service />} />
+          <Route path="/services/mass-earth-excavation-2" element={<ESE />} />
+          <Route path="/services/mass-rock-excavation" element={<REP />} />
         </Routes>
 
         <Footer />
