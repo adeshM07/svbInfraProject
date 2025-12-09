@@ -127,7 +127,7 @@ const Menu = () => {
               className="flex flex-col text-[1.6rem]   gap-5 h-fit list-none text-black z-[1000] p-4"
             >
               {[
-                { name: "About Us", link: "/about" },
+                { name: "About Us", link: "/about-us" },
                 { name: "Service", link: "/services" },
                 { name: "Our Fleet", link: "/fleet" },
                 { name: "Portfolio", link: "/gallery" },
@@ -162,10 +162,10 @@ const Menu = () => {
               className="flex gap-7 h-fit list-none text-white z-[999]"
             >
               {[
-                { name: "About Us", link: "/about" },
+                { name: "About Us", link: "/about-us" },
                 { name: "Service", link: "/services" },
                 { name: "Our Fleet", link: "/fleet" },
-                { name: "Portfolio", link: "/portfolio" },
+                { name: "Portfolio", link: "/gallery" },
                 { name: "HSE", link: "/hse" },
               ].map((item) => (
                 <li key={item.link} className=" relative group">

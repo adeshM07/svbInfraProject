@@ -65,7 +65,7 @@ const Footer = () => {
               <ul className="flex lg:flex-col gap-3  text-[0.8rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0">
                 <ul className="flex flex-col gap-3">
                   {[
-                    { label: "About Us", to: "/about" },
+                    { label: "About Us", to: "/about-us" },
                     { label: "Services", to: "/services" },
                     { label: "Our Fleet", to: "/fleet" },
                     { label: "Portfolio", to: "/gallery" },

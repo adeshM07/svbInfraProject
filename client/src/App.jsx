@@ -46,7 +46,7 @@ const App = () => {
       <div className="w-screen" style={{ marginTop: isLandingPage ? "100vh" : "9vh" }} >
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about-us" element={<AboutPage />} />
           <Route path="/services" element={<Service />} />
           <Route path="/fleet" element={<Fleet />} />
           <Route path="/gallery" element={<PortFolio />} />

@@ -258,7 +258,7 @@ const Landing = () => {
                 </p>
 
                 {/* Button animation */}
-                <Link to="/about" className="flex w-full justify-end">
+                <Link to="/about-us" className="flex w-full justify-end">
                   <motion.button
                     className="popins mr-3 px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300"
                     initial={{ opacity: 0, y: 40 }}
