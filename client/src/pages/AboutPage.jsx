@@ -68,7 +68,7 @@ const AboutPage = () => {
       <div>
         <div
           id="aboutBanner"
-          className="w-screen [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   h-[45vh] md:h-[45vh] lg:h-[95vh]"
+          className=" [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]    h-[45vh] md:h-[45vh] lg:h-[95vh]"
         >
           <div className="pl-[30px]  pt-[100px] lg:pl-[120px] lg:pt-[150px]">
             <motion.p
@@ -93,7 +93,7 @@ const AboutPage = () => {
 
             <Link to="/contact">
               <motion.button
-                className="lg:mt-10 mt-5 w-[21vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[25vw]  h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
+                className="lg:mt-10 mt-5 w-[21vw]  [@media(min-width:300px)_and_(max-width:410px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[25vw]  h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
@@ -105,7 +105,7 @@ const AboutPage = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:mx-auto  [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 pt-[50px] lg:pt-[120px] mx-2">
+        <div className="lg:mx-auto   [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 pt-[50px] lg:pt-[120px] mx-2">
           <motion.p
             className="text-black popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 40 }}
@@ -168,7 +168,7 @@ const AboutPage = () => {
 
               {/* 🧱 Stats below */}
               <motion.div
-                className="flex  w-screen absolute lg:relative [@media(min-width:300px)_and_(max-width:410px)]:gap-4 [@media(min-width:300px)_and_(max-width:410px)]:justify-center gap-7 lg:gap-14 lg:-left-0 -left-[180px] md:-left-[340px] top-[230px] md:top-[400px] lg:top-0 place-items-center lg:mx-5 lg:mt-5"
+                className="flex  [@media(min-width:300px)_and_(max-width:410px)]:w-screen  absolute lg:relative [@media(min-width:300px)_and_(max-width:410px)]:gap-4 [@media(min-width:300px)_and_(max-width:410px)]:justify-center gap-7 lg:gap-14 lg:-left-0 -left-[180px] md:-left-[340px] top-[230px] md:top-[400px] lg:top-0 place-items-center lg:mx-5 lg:mt-5"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -211,7 +211,7 @@ const AboutPage = () => {
             </motion.div>
           </div>
         </div>
-        <div className="md:mt-[14vh] lg:mt-[30vh]">
+        <div className="md:mt-[14vh]  lg:mt-[30vh]">
           <AboutHighlights></AboutHighlights>
         </div>
         {/* <div className='flex flex-col gap-10 w-fit my-40  '>

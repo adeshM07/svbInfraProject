@@ -130,7 +130,7 @@ const Menu = () => {
                 { name: "About Us", link: "/about" },
                 { name: "Service", link: "/services" },
                 { name: "Our Fleet", link: "/fleet" },
-                { name: "Portfolio", link: "/portfolio" },
+                { name: "Portfolio", link: "/gallery" },
                 { name: "HSE", link: "/hse" },
                 { name: "Contact Us", link: "/contact" },
               ].map((item) => (
