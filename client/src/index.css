@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-body, * {
-  cursor: url('/car.png') 10 10, auto;
+html, body, * {
+  cursor: url('/car.png') 0 0, default !important;
 }
