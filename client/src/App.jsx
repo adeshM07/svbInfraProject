@@ -69,6 +69,7 @@ const App = () => {
           <Route path="/srp" element={<SRP />} />
           <Route path="/mass-earth-excavation-2" element={<ESE />} />
           <Route path="/mass-rock-excavation" element={<REP />} />
+          <Route path="/excavators-dumpers-on-hire" element={<Service />} />
         </Routes>
 
         <Footer />
