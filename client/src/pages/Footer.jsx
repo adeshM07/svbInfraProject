@@ -67,7 +67,7 @@ const Footer = () => {
                   {[
                     { label: "About Us", to: "/about-us" },
                     { label: "Services", to: "/services" },
-                    { label: "Our Fleet", to: "/fleet" },
+                    { label: "Our Fleet", to: "/our-fleet-2" },
                     { label: "Portfolio", to: "/portfolio" },
                     { label: "HSE", to: "/hse" },
                   ].map((item, index) => (

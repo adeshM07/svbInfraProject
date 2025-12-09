@@ -184,7 +184,7 @@ const Landing = () => {
           </motion.div>
 
           {/* Button Animation */}
-          <Link to="/fleet" className="block z-400 customCursor">
+          <Link to="/our-fleet-2" className="block z-400 customCursor">
             <motion.button
               className="w-[30vw] md:w-[25vw] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] popins-noweight font-semibold mt-[2.5rem]"
               initial={{ opacity: 0, y: 10 }}
@@ -370,7 +370,7 @@ const Landing = () => {
               </p>
 
               {/* Button — static now */}
-              <Link to="/fleet">
+              <Link to="/our-fleet-2">
                 <button className="popins px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300">
                   Explore All
                 </button>
