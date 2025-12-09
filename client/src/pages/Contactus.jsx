@@ -21,11 +21,38 @@ const Contactus = () => {
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    if (name === "phone") {
+      // remove alphabets, allow only digits, max length 10
+      const numeric = value.replace(/[^0-9]/g, "");
+      if (numeric.length <= 10) {
+        setFormData({ ...formData, phone: numeric });
+      }
+      return;
+    }
+
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.phone.trim() ||
+      !formData.address.trim() ||
+      !formData.message.trim()
+    ) {
+      alert("All fields are mandatory.");
+      return;
+    }
+
+    if (formData.phone.length !== 10) {
+      alert("Phone number must be exactly 10 digits.");
+      return;
+    }
 
     const url =
       "https://script.google.com/macros/s/AKfycbxMXXpLSjDzpyndl3juxYhJuiNTXMTnHjMbZELESB_2lnrbVgLOp43iZzaoGw8ESi7TDg/exec";
@@ -68,7 +95,8 @@ const Contactus = () => {
           className=" flex  flex-col gap-[51px] w-full h-[45vh] md:h-[45vh] lg:h-[95vh] mb-[30rem] "
         >
           <p className="contactUSbannertitle text-white text-[1.2rem] md:text-[2.5rem] md:leading-12 lg:text-[4rem] leading-7 lg:leading-19 ml-12 lg:ml-48 pt-[40px] lg:pt-[90px] ">
-            Contact SVB Infra Projects — Your <br className="xl:hidden 2xl:block" /> Partner for Reliable{" "}
+            Contact SVB Infra Projects — Your
+            <br className="[@media(min-width:300px)_and_(max-width:410px)]:hidden md:block xl:hidden 2xl:block" /> Partner for Reliable{" "}
             <span className="text-[#FDC000]">
               Construction <br className="xl:hidden 2xl:block" /> Solutions
             </span>{" "}
@@ -122,7 +150,7 @@ const Contactus = () => {
                           className="w-[3vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh]"
                         />
                         <p className="text-[#333333] popins-contact text-[0.9rem] lg:text-[1rem]">
-                           +91 9036354261 , +91 9980851508 
+                          +91 9036354261 , +91 9980851508
                         </p>
                       </a>
                     </div>
@@ -197,14 +225,17 @@ const Contactus = () => {
                       onChange={handleChange}
                       className="px-3 lg:px-4 w-[40vw] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md placeholder:text-sm lg:placeholder:text-base"
                     />
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="px-3 lg:px-4 w-[40vw] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md placeholder:text-sm lg:placeholder:text-base"
-                    />
+                    <div className="flex items-center px-3 lg:px-4 w-[40vw] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md bg-white">
+                      <span className="text-gray-500 mr-1">+91</span>
+                      <input
+                        type="tel"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        placeholder="Phone"
+                        className="outline-none w-full placeholder:text-sm lg:placeholder:text-base"
+                      />
+                    </div>
                     <input
                       type="text"
                       name="address"
