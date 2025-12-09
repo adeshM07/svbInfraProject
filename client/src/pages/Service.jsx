@@ -98,7 +98,7 @@ const Service = () => {
           </motion.p>
 
           {/* Service Image Grid */}
-          <div className="flex gap-1 lg:gap-3 xl:gap-4 2xl:gap-3 ">
+          <div className="flex [@media(min-width:300px)_and_(max-width:410px)]:gap-0.5 gap-1 lg:gap-3 xl:gap-4 2xl:gap-3 ">
             {[s1, s2, s3, s4].map((src, index) => (
               <motion.div
                 key={index}
