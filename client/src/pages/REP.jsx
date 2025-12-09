@@ -33,7 +33,7 @@ const REP = () => {
   return (
     <>
       <div>
-        <div className="flex flex-col gap-7 lg:gap-10 mt-[120px] lg:mt-[120px] mt-[40px] mx-[20px]  lg:ml-[119px]">
+        <div className="flex flex-col gap-7 lg:gap-10 mt-[120px] lg:mt-[200px] mt-[40px] mx-[20px]  lg:ml-[119px]">
           <div className="flex  place-items-center gap-3">
             <p className="text-[14px] md:text-[1.4rem] lg:text-[2rem] underline decoration-[#FDC000] underline-offset-8 fontMon font-semibold text-[#333333]">
               Rock Excavation
