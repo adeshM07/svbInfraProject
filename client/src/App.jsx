@@ -29,7 +29,7 @@ const App = () => {
       <Menu />
 
       {isLandingPage && (
-        <div className="hero-video-container">
+        <div className="hero-video-container  w-screen">
           <video src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4" autoPlay loop muted playsInline />
            {/* <video
   src="https://www.dropbox.com/scl/fi/zaa7la43gnisr3qhyuzto/landingVideo.MOV?rlkey=rj9jrqt1jifxyxvml8fcwmx8i&raw=1"
@@ -43,7 +43,7 @@ const App = () => {
       )}
 
       {/* FIX → Add margin only for landing, top padding for other pages */}
-      <div style={{ marginTop: isLandingPage ? "100vh" : "9vh" }} >
+      <div className="w-screen" style={{ marginTop: isLandingPage ? "100vh" : "9vh" }} >
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<AboutPage />} />

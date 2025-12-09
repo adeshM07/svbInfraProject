@@ -193,7 +193,7 @@ const Footer = () => {
               {/* <img src={ins} className="h-[3vh] lg:h-[4vh]" alt="" /> */}
             </div>
             <p className="text-white popins text-[0.5rem] lg:text-[0.8rem] mb-4 lg:mb-0">
-              Copyright 2018 SVB Infra Projects. All right reserved.
+              Copyright 2025 SVB Infra Projects. All right reserved.
             </p>
           </div>
         </div>

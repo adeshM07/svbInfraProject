@@ -124,7 +124,7 @@ const Landing = () => {
   };
 
   return (
-    <div className="w-screen bg-transparent ">
+    <div className=" bg-transparent ">
       {/* <LandingBanner></LandingBanner> */}
       <div
         // id="landingBanner"
@@ -179,7 +179,7 @@ const Landing = () => {
           {/* Button Animation */}
           <Link to="/fleet" className="block z-400">
             <motion.button
-              className="w-[30vw] md:w-[25vw] [@media(min-width:1270px)_and_(max-width:1500px)]:w-[40vw] [@media(min-width:1270px)_and_(max-width:1500px)]:h-[7vh] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md [@media(min-width:1270px)_and_(max-width:1500px)]:text-[9px] text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] popins-noweight font-semibold mt-[2.5rem]"
+              className="w-[30vw] md:w-[25vw] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] popins-noweight font-semibold mt-[2.5rem]"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -197,7 +197,7 @@ const Landing = () => {
 
       <div
         id="secondSection"
-        className="flex flex-col  gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30  w-screen bg-[#F8F8F8]"
+        className="flex flex-col   gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30   bg-[#F8F8F8]"
       >
         <div>
           <section className="flex flex-row w-full px-4 lg:mx-0  lg:justify-center text-gray-800 ">

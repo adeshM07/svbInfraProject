@@ -5,9 +5,7 @@
     --cube-scale: 0.8;
   }
 }
-body, * {
-  cursor: url('../src//assets/cursor-icon.png') 10 10, auto;
-}
+
 
 .popins {
   font-family: "Poppins", sans-serif;
