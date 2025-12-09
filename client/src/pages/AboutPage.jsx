@@ -64,6 +64,7 @@ const AboutPage = () => {
         <meta name="description" content="SVB Infra PROJECTS is a 3rd generation family-run business..." />
         <link rel="canonical" href="https://svbinfraprojects.com/about" />
       </Helmet>
+      {/* new line  */}
       <div>
         <div
           id="aboutBanner"
