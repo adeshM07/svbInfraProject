@@ -2,6 +2,7 @@ import React from "react";
 import "../CSS/About.css";
 import bgIMG from "../assets/aboutCompanyIMG.png";
 import LandingBanner from "./LandingBanner";
+import { Helmet } from "react-helmet";
 import "../CSS/Landing.css";
 import icon1 from "../assets/aboutCardIcon1.png";
 import icon2 from "../assets/aboutCardIcon2.png";
@@ -58,6 +59,11 @@ const AboutPage = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>About Us | SVB Infra Projects</title>
+        <meta name="description" content="SVB Infra PROJECTS is a 3rd generation family-run business..." />
+        <link rel="canonical" href="https://svbinfraprojects.com/about" />
+      </Helmet>
       <div>
         <div
           id="aboutBanner"

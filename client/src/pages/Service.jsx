@@ -4,6 +4,7 @@ import s1 from "../assets/serviceCardIMG1.png";
 import s2 from "../assets/serviceCardIMG2.png";
 import s3 from "../assets/serviceCardIMG3.png";
 import s4 from "../assets/serviceCardIMG4.png";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import "../CSS/Landing.css";
 import "../CSS/Service.css";
@@ -25,6 +26,14 @@ const Service = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Services | SVB Infra Projects</title>
+        <meta
+          name="description"
+          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
+        />
+        <link rel="canonical" href="https://svbinfraprojects.com/services" />
+      </Helmet>
       <div className="w-screen">
         {/* ===== BANNER SECTION ===== */}
         <div
@@ -124,7 +133,6 @@ const Service = () => {
             ))}
           </div>
         </motion.div>
-        
       </div>
     </>
   );

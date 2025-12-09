@@ -2,6 +2,7 @@ import React from "react";
 import "../CSS/HSE.css";
 import "../App.css";
 import "../CSS/Landing.css";
+import { Helmet } from "react-helmet";
 import c1 from "../assets/hseCard1.png";
 import { Link } from "react-router-dom";
 // import c1 from '../assets/hseCard1.png'
@@ -38,6 +39,11 @@ const HSE = () => {
   }, []);
   return (
     <>
+    <Helmet>
+            <title>HSE | SVB Infra Projects</title>
+            <meta name="description" content="SVB Infra PROJECTS is a 3rd generation family-run business..." />
+            <link rel="canonical" href="https://svbinfraprojects.com/hse" />
+          </Helmet>
       <div className="bg-[F8F8F8]">
         <div
           className="h-[45vh] md:h-[45vh] lg:h-[95vh] w-screen"

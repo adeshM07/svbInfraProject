@@ -10,6 +10,7 @@ import { useInView } from "react-intersection-observer";
 import "../CSS/ProjectVideoBanner.css";
 import "../CSS/CustomShape.css";
 import "../CSS/Landing.css";
+import { Helmet } from "react-helmet";
 import boxvideo from "../videos/Boxvideo.mp4";
 import { useState, useEffect } from "react";
 import fleet1 from "../assets/fleet-img1.png";
@@ -124,6 +125,12 @@ const Landing = () => {
   };
 
   return (
+    <>
+   <Helmet>
+           <title>SVB Infra Projects</title>
+           <meta name="description" content="SVB Infra PROJECTS is a 3rd generation family-run business..." />
+           <link rel="canonical" href="https://svbinfraprojects.com" />
+         </Helmet>
     <div className=" bg-transparent ">
       {/* <LandingBanner></LandingBanner> */}
       <div
@@ -830,6 +837,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
+     </>
   );
 };
 
