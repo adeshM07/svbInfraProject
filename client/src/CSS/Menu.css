@@ -15,3 +15,11 @@
 body, * {
   cursor: url('../src//assets/cursor-icon.png') 10 10, auto;
 }
+
+.menu-container {
+  position: fixed; /* or sticky if you use that */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999 !important; /* IMPORTANT */
+}

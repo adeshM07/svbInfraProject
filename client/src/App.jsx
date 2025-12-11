@@ -29,7 +29,7 @@ const App = () => {
       <Menu />
 
       {isLandingPage && (
-        <div className="hero-video-container  w-screen border-2 border-red-500">
+        <div className="hero-video-container  w-screen ">
           <video
             src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
             autoPlay
