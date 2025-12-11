@@ -134,7 +134,7 @@ const Landing = () => {
         />
         <link rel="canonical" href="https://svbinfraprojects.com" />
       </Helmet>
-      <div className=" bg-transparent border-2 border-red-500">
+      <div className=" bg-transparent ">
         {/* <LandingBanner></LandingBanner> */}
         <div
           // id="landingBanner"
