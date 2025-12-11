@@ -113,12 +113,13 @@ const Fleet = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | SVB Infra Projects</title>
+        <title>Our Fleet | SVB Infra Projects</title>
         <meta
           name="description"
           content="SVB Infra PROJECTS is a 3rd generation family-run business..."
         />
-        <link rel="canonical" href="https://svbinfraprojects.com/about" />
+        <link rel="canonical" href="https://svbinfraprojects.com/fleet
+        " />
       </Helmet>
       <div>
         {/* ===== Fleet Banner ===== */}

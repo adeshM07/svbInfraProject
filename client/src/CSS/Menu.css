@@ -11,3 +11,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
+body, * {
+  cursor: url('../src//assets/cursor-icon.png') 10 10, auto;
+}
