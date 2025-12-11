@@ -68,7 +68,7 @@ const AboutPage = () => {
       <div>
         <div
           id="aboutBanner"
-          className=" [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]    h-[45vh] md:h-[45vh] lg:h-[95vh]"
+          className=" [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] md:h-[45vh] lg:h-[95vh]"
         >
           <div className="pl-[30px]  pt-[100px] lg:pl-[120px] lg:pt-[150px]">
             <motion.p
