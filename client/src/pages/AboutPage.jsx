@@ -68,9 +68,9 @@ const AboutPage = () => {
       <div>
         <div
           id="aboutBanner"
-          className=" [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] md:h-[45vh] lg:h-[95vh]"
+          className="[@media(min-width:800px)_and_(max-width:1200px)]:h-[100vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] md:h-[45vh] lg:h-[95vh]"
         >
-          <div className="pl-[30px]  pt-[100px] lg:pl-[120px] lg:pt-[150px]">
+          <div className="pl-[30px] [@media(min-width:300px)_and_(max-width:700px)]:pt-[50px] pt-[100px] lg:pl-[120px] lg:pt-[150px]">
             <motion.p
               className="text-white [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.7rem] md:text-[3.2rem] lg:text-[4rem] aboutCom [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-8 md:leading-14 lg:leading-19"
               initial={{ opacity: 0, y: 40 }}
@@ -93,7 +93,7 @@ const AboutPage = () => {
 
             <Link to="/contact">
               <motion.button
-                className="lg:mt-10 mt-5 w-[21vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem]  [@media(min-width:300px)_and_(max-width:410px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[25vw]  h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
+                className="[@media(min-width:800px)_and_(max-width:1200px)]:h-[13vh] lg:mt-10 mt-5 w-[21vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.8rem]  [@media(min-width:300px)_and_(max-width:410px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[25vw]  h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
@@ -105,7 +105,7 @@ const AboutPage = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:mx-auto   [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 pt-[50px] lg:pt-[120px] mx-2">
+        <div className="lg:mx-auto [@media(min-width:800px)_and_(max-width:1200px)]:h-[130vh]   [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 pt-[50px] lg:pt-[120px] mx-2">
           <motion.p
             className="text-black popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 40 }}
@@ -119,7 +119,7 @@ const AboutPage = () => {
             {/* 🟡 Image comes from left */}
             <motion.img
               src={bgIMG}
-              className="w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw] lg:h-[59vh]"
+              className="[@media(min-width:800px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw] lg:h-[59vh]"
               initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}

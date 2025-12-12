@@ -64,6 +64,14 @@ body, * {
   }
 }
 
+@media (min-height: 300px) and (max-height:1023px) {
+  #aboutBanner::before {
+    background: url('../assets/aboutBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 100vh;                   /* smaller height for mobile */
+  }
+}
+
 @media (max-width: 700px) {
   #aboutBanner::before {
     background: url('../assets/aboutBannerIMG.png') no-repeat center top;
