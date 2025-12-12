@@ -189,7 +189,7 @@ const Landing = () => {
             {/* Button Animation */}
             <Link to="/our-fleet-2" className="block z-400 customCursor">
               <motion.button
-                className="w-[30vw] md:w-[25vw] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] popins-noweight font-semibold mt-[2.5rem]"
+                className="w-[30vw] h-[5.2vh] md:w-[25vw] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] popins-noweight font-semibold mt-[2.5rem]"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}

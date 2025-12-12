@@ -45,23 +45,21 @@ const Footer = () => {
           id="footer"
           className=" h-full lg:h-[80vh] w-screen flex flex-col gap-5 md:gap-14  z-999"
         >
-          <div className=" lg:h-[65%] flex flex-col lg:flex-row justify-evenly pt-10 lg:pt-20 gap-8 lg:gap-40">
+          <div className=" lg:h-[65%] flex flex-col border-2 border-white lg:flex-row justify-evenly pt-10 lg:pt-20 gap-8 lg:gap-40">
             <div className="flex flex-col gap-7">
               <img
                 src={logo}
-                className="w-[20vw] h-[7vh] lg:w-[9vw] lg:h-[8vh] mx-auto lg:mx-0"
+                className="w-[20vw] h-[7vh] lg:w-[9vw] lg:h-[8vh]  lg:mx-0"
               />
-              <p className=" popins text-white text-center lg:text-[0.8rem] lg:text-start">
+              <p className=" popins text-white text-start lg:text-[0.8rem] lg:text-start">
                 At SVB Infra Projects, we are a trusted <br /> provider of
                 comprehensive infrastructure <br /> solutions, specializing in
                 construction, <br /> earthmoving, land development, and <br />{" "}
                 project execution.{" "}
               </p>
             </div>
-            <div className="flex flex-col gap-5 lg:gap-8 w-fit mx-auto lg:mx-0 place-items-center lg:place-items-start">
-              <p className="text-white text-[1rem] lg:text-[1.4rem] popins font-semibold underline decoration-[#FDC000] underline-offset-8">
-                Quick Links
-              </p>
+            <div className="flex  flex-col gap-5 lg:gap-8 w-fit lg:mx-0 place-items-center lg:place-items-start">
+              
               <ul className="flex lg:flex-col gap-3  text-[0.8rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0">
                 <ul className="flex flex-col gap-3">
                   {[
