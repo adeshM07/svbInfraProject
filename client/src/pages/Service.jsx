@@ -43,7 +43,7 @@ const Service = () => {
           <div className="pt-[80px] ml-[30px] [@media(min-width:300px)_and_(max-width:410px)]:pt-[60px] lg:pt-[120px] lg:ml-[120px]">
             {/* Heading Animation */}
             <motion.p
-              className="text-white text-[1.5rem] [@media(min-width:800px)_and_(max-width:1200px)]:text-[1rem] [@media(min-width:800px)_and_(max-width:1200px)]:leading-4 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6  md:text-[3.2rem] lg:text-[4rem] aboutCom leading-8 md:leading-14 lg:leading-19"
+              className="text-white text-[1.5rem] [@media(min-width:800px)_and_(max-width:1200px)]:text-[1.5rem] [@media(min-width:800px)_and_(max-width:1200px)]:leading-7 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6  md:text-[3.2rem] lg:text-[4rem] aboutCom leading-8 md:leading-14 lg:leading-19"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
