@@ -45,11 +45,11 @@ const Footer = () => {
           id="footer"
           className=" h-full lg:h-[80vh] w-screen flex flex-col gap-5 md:gap-14  z-999"
         >
-          <div className=" lg:h-[65%] flex flex-col border-2 border-white lg:flex-row justify-evenly pt-10 lg:pt-20 gap-8 lg:gap-40">
+          <div className=" lg:h-[65%] flex flex-col pl-4 md:pl-0 lg:flex-row justify-evenly pt-10 lg:pt-20 gap-8 lg:gap-40">
             <div className="flex flex-col gap-7">
               <img
                 src={logo}
-                className="w-[20vw] h-[7vh] lg:w-[9vw] lg:h-[8vh]  lg:mx-0"
+                className="w-[20vw] h-[5vh] lg:w-[9vw] lg:h-[8vh]  lg:mx-0"
               />
               <p className=" popins text-white text-start lg:text-[0.8rem] lg:text-start">
                 At SVB Infra Projects, we are a trusted <br /> provider of
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div className="flex  flex-col gap-5 lg:gap-8 w-fit lg:mx-0 place-items-center lg:place-items-start">
               
-              <ul className="flex lg:flex-col gap-3  text-[0.8rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0">
+              <ul className="flex lg:flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0">
                 <ul className="flex flex-col gap-3">
                   {[
                     { label: "About Us", to: "/about-us" },
@@ -88,7 +88,7 @@ const Footer = () => {
               </ul>
             </div>
             {isMobile ? (
-              <div className="text-white text-center"> <a href="tel:9036354261">+91 9036354261</a>   ,  <a href="tel:9980851508">+91 9980851508</a>  </div>
+              <div className="text-white md:text-center flex flex-col md:flex-row"> <a href="tel:9036354261">+91 9036354261</a>   <span className="hidden md:block">,</span>  <a href="tel:9980851508">+91 9980851508</a>  </div>
             ) : (
               <div className="flex flex-col gap-8">
                 <p className="text-white text-[1rem] lg:text-[1.4rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
