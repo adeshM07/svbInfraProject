@@ -124,7 +124,7 @@ const Service = () => {
                 >
                   <img
                     src={src}
-                    className="w-[23vw] h-[13vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[19vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[35vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[17vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[24vw] md:h-[20vh] lg:w-[20vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] object-cover 
+                    className="w-[23vw] h-[13vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[19vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[40vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[17vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[24vw] md:h-[20vh] lg:w-[20vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] object-cover 
            transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md"
                     alt={`Service ${index + 1}`}
                   />
