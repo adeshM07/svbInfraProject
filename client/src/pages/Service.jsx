@@ -43,7 +43,7 @@ const Service = () => {
           <div className="pt-[80px] ml-[30px] [@media(min-width:300px)_and_(max-width:410px)]:pt-[60px] lg:pt-[120px] lg:ml-[120px]">
             {/* Heading Animation */}
             <motion.p
-              className="text-white text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6  md:text-[3.2rem] lg:text-[4rem] aboutCom leading-8 md:leading-14 lg:leading-19"
+              className="text-white text-[1.5rem] [@media(min-width:800px)_and_(max-width:1200px)]:text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6  md:text-[3.2rem] lg:text-[4rem] aboutCom leading-8 md:leading-14 lg:leading-19"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -62,7 +62,7 @@ const Service = () => {
               viewport={{ once: true, amount: 0.4 }}
             >
               {isMobile ? (
-                <p className="popins text-[10px] lg:text-[20px] text-white mt-[18px]">
+                <p className="popins text-[10px] [@media(min-width:800px)_and_(max-width:1200px)]:text-[7px] lg:text-[20px] text-white mt-[18px]">
                   Delivering top-quality machinery and equipment <br />
                   to ensure every project runs smoothly, <br />
                   safely, and efficiently.
