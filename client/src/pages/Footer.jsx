@@ -88,7 +88,7 @@ const Footer = () => {
               </ul>
             </div>
             {isMobile ? (
-              <div className="text-white [@media(min-width:800px)_and_(max-width:1200px)]:text-start  md:text-center flex flex-col [@media(min-width:800px)_and_(max-width:1200px)]:flex-col md:flex-row"> <a href="tel:9036354261">+91 9036354261</a>   <span className="hidden [@media(min-width:900px)_and_(max-width:1200px)]:hidden md:block">,</span>  <a href="tel:9980851508">+91 9980851508</a>  </div>
+              <div className="text-white [@media(min-width:800px)_and_(max-width:1200px)]:text-start  md:text-center flex flex-col [@media(min-width:800px)_and_(max-width:1200px)]:flex-col md:flex-row"> <a href="tel:9036354261">+91 9036354261</a>   <span className="hidden [@media(min-width:800px)_and_(max-width:1200px)]:hidden md:block">,</span>  <a href="tel:9980851508">+91 9980851508</a>  </div>
             ) : (
               <div className="flex flex-col gap-8">
                 <p className="text-white text-[1rem] lg:text-[1.4rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
@@ -184,7 +184,7 @@ const Footer = () => {
               >
                 <img
                   src={yt}
-                  className="h-[3vh] [@media(min-width:900px)_and_(max-width:1200px)]:h-[7vh] lg:h-[4vh] cursor-pointer"
+                  className="h-[3vh] [@media(min-width:800px)_and_(max-width:1200px)]:h-[7vh] lg:h-[4vh] cursor-pointer"
                   alt="YouTube"
                 />
               </a>
