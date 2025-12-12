@@ -70,7 +70,7 @@ const AboutPage = () => {
           id="aboutBanner"
           className="[@media(min-width:800px)_and_(max-width:1200px)]:h-[100vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] md:h-[45vh] lg:h-[95vh]"
         >
-          <div className="pl-[30px] [@media(min-width:300px)_and_(max-width:700px)]:pt-[50px] pt-[100px] lg:pl-[120px] lg:pt-[150px]">
+          <div className="pl-[30px] [@media(min-width:300px)_and_(max-width:700px)]:pt-[50px] [@media(min-width:800px)_and_(max-width:1200px)]:pt-[40px] pt-[100px] lg:pl-[120px] lg:pt-[150px]">
             <motion.p
               className="text-white [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.7rem] md:text-[3.2rem] lg:text-[4rem] aboutCom [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-8 md:leading-14 lg:leading-19"
               initial={{ opacity: 0, y: 40 }}

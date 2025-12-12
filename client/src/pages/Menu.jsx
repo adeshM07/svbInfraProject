@@ -95,7 +95,7 @@ const Menu = () => {
     <>
       <div
         className={`
-    fixed top-0 left-0  [@media(min-width:800px)_and_(max-width:1200px)]:h-[14vh] w-full flex px-5 md:px-6 justify-between 
+    fixed top-0 left-0  [@media(min-width:800px)_and_(max-width:1200px)]:h-[15vh] w-full flex px-5 md:px-6 justify-between 
     h-[9vh] lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
     transition-all duration-500 z-[999]
     ${showMenu ? "translate-y-0" : "-translate-y-full"}
