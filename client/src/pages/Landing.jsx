@@ -138,7 +138,7 @@ const Landing = () => {
         {/* <LandingBanner></LandingBanner> */}
         <div
           // id="landingBanner"
-          className={`w-screen  [@media(min-width:900px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 
+          className={`w-screen  [@media(min-width:800px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 
   ${applyEffect ? "banner-active" : ""}`}
         >
           <div
@@ -207,7 +207,7 @@ const Landing = () => {
 
         <div
           id="secondSection"
-          className="flex flex-col [@media(min-width:900px)_and_(max-width:1200px)]:gap-[30vh]   gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30   bg-[#F8F8F8]"
+          className="flex flex-col [@media(min-width:800px)_and_(max-width:1200px)]:gap-[30vh]   gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30   bg-[#F8F8F8]"
         >
           <div>
             <section className="flex flex-row w-full px-4 lg:mx-0  lg:justify-center text-gray-800 ">
@@ -226,7 +226,7 @@ const Landing = () => {
                   muted
                   loop
                   playsInline
-                  className="rounded-2xl shadow-lg [@media(min-width:900px)_and_(max-width:1200px)]:h-[95vh] w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[45vw] xl:h-[90vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] object-cover"
+                  className="rounded-2xl shadow-lg [@media(min-width:800px)_and_(max-width:1200px)]:h-[95vh] w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[45vw] xl:h-[90vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] object-cover"
                 />
               </motion.div>
 
@@ -245,7 +245,7 @@ const Landing = () => {
                 </p>
 
                 <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10">
-                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]  md:w-[32vw] lg:w-[32vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.2rem] 2xl:text-[1.25rem] [@media(min-width:900px)_and_(max-width:1200px)]:pl-4 lg:pl-5">
+                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]  md:w-[32vw] lg:w-[32vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.2rem] 2xl:text-[1.25rem] [@media(min-width:800px)_and_(max-width:1200px)]:pl-4 lg:pl-5">
                     <span className="font-semibold lg:mr-1">
                       SVB Infra Projects
                     </span>
@@ -292,7 +292,7 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               {/* Box 1 */}
-              <div className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:900px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+              <div className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
                 <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold">
                   <Counter from={0} to={185} duration={1.2} />+
                 </p>
@@ -302,7 +302,7 @@ const Landing = () => {
               </div>
 
               {/* Box 2 */}
-              <div className="border [@media(min-width:900px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+              <div className="border [@media(min-width:800px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
                 <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold">
                   <Counter from={0} to={30} duration={1.5} />+
                 </p>
@@ -312,7 +312,7 @@ const Landing = () => {
               </div>
 
               {/* Box 3 */}
-              <div className="border [@media(min-width:900px)_and_(max-width:1200px)]:h-[15vh] lg:border-2 border-[#FDC000] rounded-md flex [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+              <div className="border [@media(min-width:800px)_and_(max-width:1200px)]:h-[15vh] lg:border-2 border-[#FDC000] rounded-md flex [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
                 <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
                   24/7
                 </p>
@@ -410,7 +410,7 @@ const Landing = () => {
                     <img
                       key={i}
                       src={src}
-                      className="[@media(min-width:900px)_and_(max-width:1200px)]:h-[40vh] [@media(min-width:900px)_and_(max-width:1200px)]:w-[55vh] lg:w-[18vw] lg:h-[43vh] md:w-[46vw] md:h-[20vh] w-[46vw] h-[20vh] object-cover"
+                      className="[@media(min-width:800px)_and_(max-width:1200px)]:h-[40vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[55vh] lg:w-[18vw] lg:h-[43vh] md:w-[46vw] md:h-[20vh] w-[46vw] h-[20vh] object-cover"
                       loading="lazy"
                     />
                   ))}
@@ -429,7 +429,7 @@ const Landing = () => {
                     <img
                       key={i + 10}
                       src={src}
-                      className="[@media(min-width:900px)_and_(max-width:1200px)]:h-[40vh] [@media(min-width:900px)_and_(max-width:1200px)]:w-[55vh] lg:w-[18vw] lg:h-[43vh] w-[46vw] h-[20vh] object-cover"
+                      className="[@media(min-width:800px)_and_(max-width:1200px)]:h-[40vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[55vh] lg:w-[18vw] lg:h-[43vh] w-[46vw] h-[20vh] object-cover"
                       loading="lazy"
                     />
                   ))}
@@ -462,7 +462,7 @@ const Landing = () => {
                   developments delivered with quality and precision.
                 </p>
               ) : (
-                <p className="text-[#4D4D4D] popins [@media(min-width:900px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
+                <p className="text-[#4D4D4D] popins [@media(min-width:800px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
                   We have successfully completed a wide range of <br />{" "}
                   earthwork and excavation projects for leading <br /> clients
                   across Karnataka. Our portfolio includes <br /> residential,
@@ -470,7 +470,7 @@ const Landing = () => {
                   with quality and precision.
                 </p>
               )}
-              <div className="absolute [@media(min-width:900px)_and_(max-width:1200px)]:left-[55vw] [@media(min-width:900px)_and_(max-width:1200px)]:w-[25vw]   left-[68vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[6vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden ">
+              <div className="absolute [@media(min-width:800px)_and_(max-width:1200px)]:left-[55vw] [@media(min-width:900px)_and_(max-width:1200px)]:w-[25vw]   left-[68vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[6vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden ">
                 <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                   {[
                     {
@@ -554,7 +554,7 @@ const Landing = () => {
                       src={`${item.src}`}
                       onClick={() => setProjectVideo(item.video)}
                       alt=""
-                      className="[@media(min-width:900px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:900px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] object-cover 
+                      className="[@media(min-width:800px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] object-cover 
            transition-transform duration-300 hover:scale-115 cursor-pointer"
                     />
                   ))}
@@ -815,7 +815,7 @@ const Landing = () => {
         </div> */}
           <div
             id="landing-contact"
-            className="lg:w-[78vw] [@media(min-width:900px)_and_(max-width:1200px)]:h-[30vh]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
+            className="lg:w-[78vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[30vh]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
           >
             <div className="">
               <p className="text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.7rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
@@ -827,7 +827,7 @@ const Landing = () => {
             </div>
             <Link to="/contact">
               <motion.button
-                className="lg:w-[calc(9vw+0px)] [@media(min-width:900px)_and_(max-width:1200px)]:h-[10vh] md:w-[18vw] w-[calc(17vw+0px)] 
+                className="lg:w-[calc(9vw+0px)] [@media(min-width:800px)_and_(max-width:1200px)]:h-[10vh] md:w-[18vw] w-[calc(17vw+0px)] 
              rounded-sm lg:rounded-lg 
              text-[calc(9px+0px)] md:text-[20px] lg:text-[calc(16px+0px)] 
              h-[calc(3vh+0px)] md:h-[4vh] lg:h-[calc(6vh+0px)] 
