@@ -106,7 +106,7 @@ const Menu = () => {
           <Link to="/">
             <img
               src={svbLogo}
-              className="w-[15vw] h-[5vh] [@media(min-width:720px)_and_(max-width:1200px)]:h-[9vh] [@media(min-width:720px)_and_(max-width:1200px)]:w-[7vw] lg:w-[8vw] xl:w-[8vw] xl:h-[8vh] lg:h-[8vh]"
+              className="w-[15vw] h-[5vh] [@media(min-width:700px)_and_(max-width:1200px)]:h-[9vh] [@media(min-width:700px)_and_(max-width:1200px)]:w-[7vw] lg:w-[8vw] xl:w-[8vw] xl:h-[8vh] lg:h-[8vh]"
             />
           </Link>
         </div>
@@ -183,7 +183,7 @@ const Menu = () => {
 
             <Link to="/contact">
               <button
-                className="menuButton [@media(min-width:720px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:720px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] bg-[#FDC000] text-black text-[1rem] rounded-[9px] transition duration-300 transform
+                className="menuButton [@media(min-width:700px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:700px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] bg-[#FDC000] text-black text-[1rem] rounded-[9px] transition duration-300 transform
   hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
               >
                 Contact Us
