@@ -68,7 +68,7 @@ const Menu = () => {
   }, []);
 
   useEffect(() => {
-    handleResize(); // Run once when mounted
+    // handleResize(); // Run once when mounted
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
