@@ -46,7 +46,7 @@ const HSE = () => {
           </Helmet>
       <div className="bg-[F8F8F8]">
         <div
-          className="h-[45vh] [@media(min-width:800px)_and_(max-width:1200px)]:h-[100vh] md:h-[45vh] lg:h-[95vh] w-screen"
+          className="h-[45vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh] md:h-[45vh] lg:h-[95vh] w-screen"
           id="hseBanner"
         >
           <div className="lg:pl-[135px] pl-[20px] flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">
@@ -131,19 +131,19 @@ const HSE = () => {
             <div className="flex justify-center gap-[2px] lg:gap-[1.5rem] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
               <img
                 src={c1}
-                className="w-[47vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c2}
-                className="w-[47vw] h-[30vh] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c3}
-                className="w-[47vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c4}
-                className="w-[47vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
               />
             </div>
           </motion.div>
@@ -211,7 +211,7 @@ const HSE = () => {
             >
               <img
                 src={ic1}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -267,7 +267,7 @@ const HSE = () => {
             >
               <img
                 src={ic2}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[40vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[40vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -336,7 +336,7 @@ const HSE = () => {
             >
               <img
                 src={ic1}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[65vw] xl:w-[75vw] xl:h-[60vh] lg:w-[40vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[65vw] xl:w-[75vw] xl:h-[60vh] lg:w-[40vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -402,7 +402,7 @@ const HSE = () => {
             >
               <img
                 src={ic2}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw]  md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[70vw] lg:w-[60vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw]  md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[70vw] lg:w-[60vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
