@@ -125,7 +125,7 @@ const Fleet = () => {
         {/* ===== Fleet Banner ===== */}
         <motion.div
           id="fleetBanner"
-          className="w-screen  h-[45vh] md:h-[45vh] lg:h-[95vh]"
+          className="w-screen [@media(min-width:800px)_and_(max-width:1200px)]:h-[100vh]   h-[45vh] md:h-[45vh] lg:h-[95vh]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -169,7 +169,7 @@ const Fleet = () => {
 
             {/* Stats Box */}
             <motion.div
-              className="w-[82vw] h-[6vh] lg:w-[52vw] lg:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
+              className="w-[82vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[20vh] h-[6vh] lg:w-[52vw] lg:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
               initial={{ opacity: 0, scale: 0.85, y: 30 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
@@ -241,7 +241,7 @@ const Fleet = () => {
             {cardDetails.map((item, index) => (
               <motion.div
                 key={index}
-                className="w-[85vw]  h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] lg:h-[50vh] flex flex-col gap-2 lg:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] lg:h-[50vh] flex flex-col gap-2 lg:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -253,7 +253,7 @@ const Fleet = () => {
                 <motion.img
                   src={item.img}
                   alt={item.title}
-                  className="h-[30vh] w-[80vw] lg:w-[22vw] lg:h-[30vh]"
+                  className="h-[30vh] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] w-[80vw] lg:w-[22vw] lg:h-[30vh]"
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.3 }}
                 />

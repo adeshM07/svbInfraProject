@@ -65,7 +65,7 @@ const REP = () => {
             >
               <img
                 src={ic1}
-                className="w-[85vw] h-[30vh]  md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh]  md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -130,7 +130,7 @@ const REP = () => {
             >
               <img
                 src={ic2}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -194,7 +194,7 @@ const REP = () => {
             >
               <img
                 src={ic3}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -258,7 +258,7 @@ const REP = () => {
             >
               <img
                 src={ic4}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -323,7 +323,7 @@ const REP = () => {
             >
               <img
                 src={ic5}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -387,7 +387,7 @@ const REP = () => {
             >
               <img
                 src={ic6}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>

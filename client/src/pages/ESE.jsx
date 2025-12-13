@@ -65,7 +65,7 @@ const ESE = () => {
             >
               <img
                 src={ic1}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -128,7 +128,7 @@ const ESE = () => {
             >
               <img
                 src={ic2}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[60vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[60vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -194,7 +194,7 @@ const ESE = () => {
             >
               <img
                 src={ic3}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[60vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[60vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -260,7 +260,7 @@ const ESE = () => {
             >
               <img
                 src={ic4}
-                className="w-[85vw] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[60vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[60vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>

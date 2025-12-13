@@ -1,143 +1,193 @@
-import React from "react";
-import svbLogo from "../assets/SVB_Logo.png";
+import React, { useState } from "react";
 import "../App.css";
-import "../CSS/Menu.css";
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import "../CSS/ContactUS.css";
+import mail from "../assets/mail_marker_black.png";
+import phone from "../assets/phone_marker_black.png";
+import address from "../assets/address_marker_black.png";
+import fb from "../assets/facebook-black-marker.png";
+import yt from "../assets/contact-yt-icon.png";
 
-const Menu = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [popup, setPopup] = useState(false);
+const Contactus = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+    message: "",
+  });
 
-  const handleResize = () => {
-    const width = window.innerWidth;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-    if (width < 740) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
+    if (name === "phone") {
+      const numeric = value.replace(/[^0-9]/g, "");
+      if (numeric.length <= 10) {
+        setFormData({ ...formData, phone: numeric });
+      }
+      return;
     }
+    setFormData({ ...formData, [name]: value });
   };
 
-  useEffect(() => {
-    handleResize(); // Run once when mounted
-    window.addEventListener("resize", handleResize);
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (popup) {
-        // if click is NOT inside popup and NOT on hamburger icon
-        if (
-          !e.target.closest("#mobilePopup") &&
-          !e.target.closest("#hamburgerIcon")
-        ) {
-          setPopup(false);
-        }
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.address ||
+      !formData.message
+    ) {
+      alert("All fields are mandatory.");
+      return;
+    }
+
+    if (formData.phone.length !== 10) {
+      alert("Phone number must be exactly 10 digits.");
+      return;
+    }
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbxMXXpLSjDzpyndl3juxYhJuiNTXMTnHjMbZELESB_2lnrbVgLOp43iZzaoGw8ESi7TDg/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `Email=${encodeURIComponent(formData.email)}&Name=${encodeURIComponent(
+          formData.name
+        )}&Phone=${encodeURIComponent(formData.phone)}&Address=${encodeURIComponent(
+          formData.address
+        )}&Message=${encodeURIComponent(formData.message)}`,
       }
-    };
-
-    document.addEventListener("click", handleClickOutside);
-
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, [popup]);
+    ).then(() => {
+      alert("Thank you! We’ll notify you soon.");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        message: "",
+      });
+    });
+  };
 
   return (
-    <>
-      <div className=" bg-[#333333] w-screen flex px-5 md:px-6 justify-between h-[9vh] lg:h-[13vh] place-items-center lg:px-24">
-        <div className="">
-          <Link to="/">
-            <img
-              src={svbLogo}
-              className="w-[15vw] h-[5vh] lg:w-[8vw] lg:h-[8vh]"
-            />
-          </Link>
-        </div>
-        {popup && (
-          <div
-            id="mobilePopup"
-            className="absolute right-5 top-[90px] w-[60vw] h-fit 
-  border border-white/20 
-  rounded-xl 
-  bg-white/40 
-  backdrop-blur-sm 
-  shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
-  flex flex-col 
-  z-[999]"
-          >
-            <nav
-              id="menuNav"
-              className="flex flex-col text-[1.6rem]   gap-5 h-fit list-none text-black z-[1000] p-4"
-            >
-              {[
-                { name: "About Us", link: "/about" },
-                { name: "Service", link: "/services" },
-                { name: "Our Fleet", link: "/fleet" },
-                { name: "Portfolio", link: "/portfolio" },
-                { name: "HSE", link: "/hse" },
-                { name: "Contact Us", link: "/contact" },
-              ].map((item) => (
-                <li key={item.link} className=" relative group">
-                  <Link
-                    to={item.link}
-                    onClick={() => setPopup(!popup)}
-                    className=" relative text-black transition-all duration-300 ease-in-out z-[1000]"
-                  >
-                    {item.name}
-                    <span className="absolute left-1/2 -bottom-[3px] w-0 h-[2px] bg-[#FDC000] transition-all duration-300 ease-in-out z-[1000] group-hover:left-0 group-hover:w-full"></span>
-                  </Link>
-                </li>
-              ))}
-            </nav>
+    <div className="w-screen">
+      <div
+        id="contactUSBanner"
+        className="
+          flex flex-col gap-[51px] w-full
+          min-h-[45vh] md:min-h-[45vh] lg:min-h-[95vh]
+          pb-[6rem]
+          [@media(min-width:800px)_and_(max-width:1200px)]:min-h-fit
+        "
+      >
+        <p className="contactUSbannertitle text-white text-[1.2rem] md:text-[2.5rem] lg:text-[4rem] ml-12 lg:ml-48 pt-[40px] lg:pt-[90px]">
+          Contact SVB Infra Projects — Your <br className="hidden md:block" />
+          Partner for Reliable <span className="text-[#FDC000] mx-1">Construction Solutions</span>
+        </p>
+
+        <div
+          className="
+            w-[88vw] lg:w-[69vw]
+            min-h-fit
+            bg-white rounded-lg
+            lg:pl-[5rem] lg:pr-[48px] lg:py-[60px]
+            mx-auto
+          "
+        >
+          <p className="font-semibold text-[1.2rem] lg:text-[2rem] text-[#333333] text-center lg:text-left lg:mb-14 my-10 lg:my-0">
+            Get in touch
+          </p>
+
+          <div className="flex flex-col-reverse lg:flex-row gap-[4rem]">
+            {/* LEFT INFO */}
+            <div className="lg:w-[30vw]">
+              <div className="flex flex-col gap-10">
+                {[{
+                  title: "Karnataka Office",
+                  text: "UB Tower, UB City, 24, Vittal Mallya Road, Bengaluru - 560001",
+                },{
+                  title: "Andhra / Telangana Office",
+                  text: "PCS Business Centre, Vijayawada - 520010",
+                }].map((item, i) => (
+                  <div key={i} className="flex gap-6 w-[80vw] lg:w-[26vw]">
+                    <img src={address} className="w-[3vw] lg:w-[1vw] h-[3vh]" />
+                    <div>
+                      <span className="text-[#FDC000]">{item.title}</span>
+                      <p className="text-black">{item.text}</p>
+                    </div>
+                  </div>
+                ))}
+
+                <a href="tel:9036354261" className="flex gap-6">
+                  <img src={phone} className="w-[3vw] lg:w-[1vw]" />
+                  <p>+91 9036354261 , +91 9980851508</p>
+                </a>
+
+                <a href="mailto:info@svbinfraprojects.com" className="flex gap-6">
+                  <img src={mail} className="w-[4vw] lg:w-[1.5vw]" />
+                  <p>info@svbinfraprojects.com</p>
+                </a>
+
+                <div className="flex gap-4 items-center mt-6">
+                  <p>Follow for More</p>
+                  <a href="https://www.youtube.com/@svbinfraprojects5316">
+                    <img src={yt} className="w-[5vw] lg:w-[1.1vw]" />
+                  </a>
+                  <a href="https://www.facebook.com/share/17Yn7q28DJ/">
+                    <img src={fb} className="w-[5vw] lg:w-[1.3vw]" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* FORM */}
+            <div className="w-[90vw] lg:w-[30vw]">
+              <form onSubmit={handleSubmit} className="flex flex-col  ">
+                <div className="flex flex-wrap gap-3 justify-between">
+                  {["name", "email", "address"].map((field) => (
+                    <input
+                      key={field}
+                      name={field}
+                      value={formData[field]}
+                      onChange={handleChange}
+                      placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
+                      className="w-[43vw] md:w-[14vw] h-[5vh] md:h-[7vh] border rounded-md px-3"
+                    />
+                  ))}
+
+                  <div className="flex items-center w-[43vw] md:w-[14vw] h-[5vh] md:h-[7vh] border rounded-md px-3">
+                    <span className="mr-2">+91</span>
+                    <input
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="Phone"
+                      className="w-full outline-none"
+                    />
+                  </div>
+                </div>
+
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Message"
+                  className="w-full lg:w-[29vw] h-[14vh] border rounded-md p-3 mt-5"
+                />
+
+                <button className="mt-8 w-full lg:w-[9vw] h-[6vh] bg-[#FDC000] rounded-md font-semibold hover:scale-105 transition">
+                  Send Now
+                </button>
+              </form>
+            </div>
           </div>
-        )}
-
-        {isMobile ? (
-          <i
-            id="hamburgerIcon"
-            class="fa-solid fa-bars text-[21px] text-white z-[1000]"
-            onClick={() => setPopup(!popup)}
-          ></i>
-        ) : (
-          <>
-            <nav
-              id="menuNav"
-              className="flex gap-7 h-fit list-none text-white z-[999]"
-            >
-              {[
-                { name: "About Us", link: "/about" },
-                { name: "Service", link: "/services" },
-                { name: "Our Fleet", link: "/fleet" },
-                { name: "Portfolio", link: "/portfolio" },
-                { name: "HSE", link: "/hse" },
-              ].map((item) => (
-                <li key={item.link} className=" relative group">
-                  <Link
-                    to={item.link}
-                    className="relative text-white transition-all duration-300 ease-in-out"
-                  >
-                    {item.name}
-                    {/* Animated underline */}
-                    <span className="absolute left-1/2 -bottom-[3px]  w-0  h-[2px]  bg-[#FDC000]  transition-all duration-300 ease-in-out  group-hover:left-0   group-hover:w-full "></span>
-                  </Link>
-                </li>
-              ))}
-            </nav>
-
-            <Link to="/contact">
-              <button
-                className="menuButton md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] bg-[#FDC000] text-black text-[1rem] rounded-[9px] transition duration-300 transform
-  hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
-              >
-                Contact Us
-              </button>
-            </Link>
-          </>
-        )}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Menu;
+export default Contactus;

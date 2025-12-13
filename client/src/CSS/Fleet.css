@@ -27,11 +27,21 @@ body, * {
   z-index: -1;
 }
 
+
+
 @media (min-width: 701px) and (max-width:1023px) {
   #fleetBanner::before {
     background: url('../assets/fleetBannerIMG.png') no-repeat center top;
     background-size: cover;       /* keeps full image visible */
     height: 45vh;                   /* smaller height for mobile */
+  }
+}
+
+@media (min-height: 300px) and (max-height:1023px) {
+   #fleetBanner::before {
+    background: url('../assets/fleetBannerIMG.png') no-repeat center top;
+    background-size: cover;       /* keeps full image visible */
+    height: 100vh;                   /* smaller height for mobile */
   }
 }
 
@@ -42,6 +52,8 @@ body, * {
     height: 45vh;                   /* smaller height for mobile */
   }
 }
+
+
 
 
 .fontMon {

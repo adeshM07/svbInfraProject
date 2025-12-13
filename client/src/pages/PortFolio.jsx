@@ -204,7 +204,7 @@ const PortFolio = () => {
                 key={index}
                 src={src}
                 alt={`Project ${index + 1}`}
-                className="w-[30vw] h-[20vh] lg:w-[18vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
+                className="w-[30vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh]   h-[20vh] lg:w-[18vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
               />
             ))}
           </div>
@@ -220,7 +220,7 @@ const PortFolio = () => {
                 key={index}
                 src={src}
                 alt={`Project ${index + 1}`}
-                className="w-[30vw] h-[20vh] xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg "
+                className="w-[30vw] h-[20vh] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh]   xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg "
               />
             ))}
           </div>
