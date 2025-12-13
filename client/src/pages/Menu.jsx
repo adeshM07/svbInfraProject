@@ -58,22 +58,39 @@ const Menu = () => {
   }, [isLandingPage]);
   
 
-  const handleResize = () => {
-    const width = window.innerWidth;
+  // const handleResize = () => {
+  //   const width = window.innerWidth;
 
-    if (width < 740) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
+  //   if (width < 740) {
+  //     setIsMobile(true);
+  //   } else {
+  //     setIsMobile(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   handleResize(); // Run once when mounted
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+  
+  useEffect(() => {
+  const mediaQuery = window.matchMedia("(max-width: 739px)");
+
+  const handleChange = (e) => {
+    setIsMobile(e.matches);
   };
 
-  useEffect(() => {
-    handleResize(); // Run once when mounted
-    window.addEventListener("resize", handleResize);
+  // Run once on mount
+  setIsMobile(mediaQuery.matches);
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  mediaQuery.addEventListener("change", handleChange);
+
+  return () => mediaQuery.removeEventListener("change", handleChange);
+}, []);
+
+  
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (popup) {
