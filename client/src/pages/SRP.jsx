@@ -71,7 +71,7 @@ const SRP = () => {
             >
               <img
                 src={ic1}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -134,7 +134,7 @@ const SRP = () => {
             >
               <img
                 src={ic2}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -197,7 +197,7 @@ const SRP = () => {
             >
               <img
                 src={ic3}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -261,7 +261,7 @@ const SRP = () => {
             >
               <img
                 src={ic4}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -326,7 +326,7 @@ const SRP = () => {
             >
               <img
                 src={ic5}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -389,7 +389,7 @@ const SRP = () => {
             >
               <img
                 src={ic6}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -452,7 +452,7 @@ const SRP = () => {
             >
               <img
                 src={ic7}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -515,7 +515,7 @@ const SRP = () => {
             >
               <img
                 src={ic8}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>

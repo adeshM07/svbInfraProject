@@ -92,7 +92,7 @@ const Contactus = () => {
       <div className="w-screen  ">
         <div
           id="contactUSBanner"
-          className=" flex   flex-col gap-[51px] w-full [@media(min-width:800px)_and_(max-width:1200px)]:min-h-fit min-h-[45vh] md:min-h-[45vh] lg:min-h-[95vh] mb-[5rem] "
+          className=" flex   flex-col gap-[51px] w-full [@media(min-width:650px)_and_(max-width:1200px)]:min-h-fit min-h-[45vh] md:min-h-[45vh] lg:min-h-[95vh] mb-[5rem] "
         >
           <p className="contactUSbannertitle text-white text-[1.2rem] md:text-[2.5rem] md:leading-12 lg:text-[4rem] leading-7 lg:leading-19 ml-12 lg:ml-48 pt-[40px] lg:pt-[90px] ">
             Contact SVB Infra Projects — Your
@@ -112,7 +112,7 @@ const Contactus = () => {
                     <div className="flex gap-6  mx-auto lg:mx-0 lg:gap-7   w-[80vw] lg:w-[26vw] h-fit ">
                       <img
                         src={address}
-                        className="w-[3vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[2vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh] mt-3"
+                        className="w-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[2vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh] mt-3"
                       />
                       <div className="flex flex-col">
                         <span className="popins text-[10px] md:text-[0.9rem] lg:text-[1rem] text-[#FDC000]">
@@ -128,7 +128,7 @@ const Contactus = () => {
                     <div className="flex gap-6  mx-auto lg:mx-0 lg:gap-7   w-[80vw] lg:w-[26vw] h-fit ">
                       <img
                         src={address}
-                        className="w-[3vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[2vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh] mt-3"
+                        className="w-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[2vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh] mt-3"
                       />
                       <div className="flex flex-col">
                         <span className="popins text-[10px] md:text-[0.9rem] lg:text-[1rem] text-[#FDC000]">
@@ -147,7 +147,7 @@ const Contactus = () => {
                       <a href="tel:9036354261" className="flex gap-6">
                         <img
                           src={phone}
-                          className="[@media(min-width:800px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[2vw] w-[3vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh]"
+                          className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[2vw] w-[3vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh]"
                         />
                         <p className="text-[#333333] popins-contact text-[0.9rem] lg:text-[1rem]">
                           +91 9036354261 , +91 9980851508
@@ -161,7 +161,7 @@ const Contactus = () => {
                       >
                         <img
                           src={mail}
-                          className="[@media(min-width:800px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[2vw] w-[4vw] h-[1.7vh] lg:w-[1.5vw] lg:h-[2.8vh]"
+                          className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[2vw] w-[4vw] h-[1.7vh] lg:w-[1.5vw] lg:h-[2.8vh]"
                         />
                         <p className="text-[#333333] popins-contact text-[0.9rem] lg:text-[1rem]">
                           info@svbinfraprojects.com
@@ -182,7 +182,7 @@ const Contactus = () => {
                       >
                         <img
                           src={yt}
-                          className="w-[5vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[4vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[2vw]  h-[2vh] md:w-[3vw] md:h-[2vh] lg:w-[1.1vw] lg:h-[2vh]"
+                          className="w-[5vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[4vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[2vw]  h-[2vh] md:w-[3vw] md:h-[2vh] lg:w-[1.1vw] lg:h-[2vh]"
                           alt=""
                         />
                       </a>
@@ -193,7 +193,7 @@ const Contactus = () => {
                       >
                         <img
                           src={fb}
-                          className="w-[5vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[6vh] [@media(min-width:800px)_and_(max-width:1200px)]:w-[3vw]  h-[2.6vh] md:w-[3vw] md:h-[2vh] lg:w-[1.3vw] lg:h-[2.9vh]"
+                          className="w-[5vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[6vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[3vw]  h-[2.6vh] md:w-[3vw] md:h-[2vh] lg:w-[1.3vw] lg:h-[2.9vh]"
                           alt=""
                         />
                       </a>
@@ -215,7 +215,7 @@ const Contactus = () => {
                       placeholder="Name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="px-3 lg:px-4 [@media(min-width:800px)_and_(max-width:1200px)]:h-[10vh] [@media(min-width:300px)_and_(max-width:400px)]:h-[5vh] w-[40vw] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md placeholder:text-sm lg:placeholder:text-base"
+                      className="px-3 lg:px-4 [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] [@media(min-width:300px)_and_(max-width:400px)]:h-[5vh] w-[40vw] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md placeholder:text-sm lg:placeholder:text-base"
                     />
                     <input
                       type="email"
@@ -223,9 +223,9 @@ const Contactus = () => {
                       placeholder="Email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="px-3 lg:px-4 w-[40vw] [@media(min-width:300px)_and_(max-width:400px)]:h-[5vh] [@media(min-width:800px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md placeholder:text-sm lg:placeholder:text-base"
+                      className="px-3 lg:px-4 w-[40vw] [@media(min-width:300px)_and_(max-width:400px)]:h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md placeholder:text-sm lg:placeholder:text-base"
                     />
-                    <div className="flex items-center px-3 lg:px-4 w-[40vw] [@media(min-width:300px)_and_(max-width:400px)]:h-[5vh] [@media(min-width:800px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[13vw] lg:h-[7vh] border  rounded-md bg-white">
+                    <div className="flex items-center px-3 lg:px-4 w-[40vw] [@media(min-width:300px)_and_(max-width:400px)]:h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[13vw] lg:h-[7vh] border  rounded-md bg-white">
                       <span className="text-gray-500 mr-1">+91</span>
                       <input
                         type="tel"
@@ -242,21 +242,21 @@ const Contactus = () => {
                       placeholder="Address"
                       value={formData.address}
                       onChange={handleChange}
-                      className="px-3 lg:px-4 w-[40vw] [@media(min-width:300px)_and_(max-width:400px)]:h-[5vh] [@media(min-width:800px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md placeholder:text-sm lg:placeholder:text-base"
+                      className="px-3 lg:px-4 w-[40vw] [@media(min-width:300px)_and_(max-width:400px)]:h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[13vw] lg:h-[7vh] border rounded-md placeholder:text-sm lg:placeholder:text-base"
                     />
                   </div>
                   <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="lg:w-[27.2vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[25vh] w-[82vw] lg:h-[14vh] p-3 rounded-md mt-5 border"
+                    className="lg:w-[27.2vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] w-[82vw] lg:h-[14vh] p-3 rounded-md mt-5 border"
                     placeholder="Message"
                     id=""
                   ></textarea>
                   <div className=" w-full    lg:w-[27.2vw] flex justify-end mt-[33px]">
                     <button
                       //   type="submit"
-                      className="contactUSBannerFormButton font-semibold text-[#333333] w-[60vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[9vw] lg:h-[6vh] rounded-md bg-[#FDC000] mx-auto lg:mx-0  transition duration-300 transform
+                      className="contactUSBannerFormButton font-semibold text-[#333333] w-[60vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[9vw] lg:h-[6vh] rounded-md bg-[#FDC000] mx-auto lg:mx-0  transition duration-300 transform
   hover:bg-[#ffcf00] hover:scale-105 hover:shadow-lg cursor-pointer"
                     >
                       Send Now
