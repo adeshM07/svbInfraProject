@@ -14,8 +14,6 @@ const Menu = () => {
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
 
-  
-
   useEffect(() => {
     if (!isLandingPage) {
       setShowMenu(true); // always show menu on other pages
@@ -57,15 +55,17 @@ const Menu = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isLandingPage]);
 
-  const handleResize = () => {
-    const width = window.innerWidth;
+  useEffect(() => {
+    // const handleResize = () => {
+      const width = window.innerWidth;
 
-    if (width < 740) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
+      if (width < 740) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    // };
+  }, []);
 
   useEffect(() => {
     handleResize(); // Run once when mounted
