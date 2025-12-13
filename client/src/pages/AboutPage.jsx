@@ -105,7 +105,7 @@ const AboutPage = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:mx-auto [@media(min-width:600px)_and_(max-width:1200px)]:h-[130vh]   [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 pt-[50px] lg:pt-[120px] mx-2">
+        <div className="lg:mx-auto [@media(min-width:600px)_and_(max-width:1200px)]:h-[140vh]   [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 pt-[50px] lg:pt-[120px] mx-2">
           <motion.p
             className="text-black popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 40 }}
