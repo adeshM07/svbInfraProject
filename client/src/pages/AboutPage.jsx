@@ -153,15 +153,15 @@ const AboutPage = () => {
                 <p className="text-[#4D4D4D] md:text-[0.8rem] xl:text-[1.1rem] 2xl:text-[1rem]   lg:w-[32vw] lg:text-[1rem]">
                   <span className="font-semibold mr-1">SVB Infra Projects</span>
                   is a 3rd generation family-run business. SVB has{" "}
-                  <br className="xl:hidden 2xl:block" /> been managing
+                  <br className="hidden md:block xl:hidden 2xl:block" /> been managing
                   earthmoving projects since 2003. Based in{" "}
-                  <br className="xl:hidden 2xl:block" /> Bangalore, we provide a
+                  <br className="hidden md:block xl:hidden 2xl:block" /> Bangalore, we provide a
                   fast, flexible, reliable and professional{" "}
-                  <br className="xl:hidden 2xl:block" /> service statewide. We
+                  <br className="hidden md:block xl:hidden 2xl:block" /> service statewide. We
                   offer contract earthmoving services across{" "}
-                  <br className="xl:hidden 2xl:block" /> the state providing a
+                  <br className="hidden md:block xl:hidden 2xl:block" /> the state providing a
                   professional and reliable service to the main{" "}
-                  <br className="xl:hidden 2xl:block" /> and sub contract civil
+                  <br className="hidden md:block xl:hidden 2xl:block" /> and sub contract civil
                   engineering sector.
                 </p>
               )}
