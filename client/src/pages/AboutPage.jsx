@@ -168,7 +168,7 @@ const AboutPage = () => {
 
               {/* 🧱 Stats below */}
               <motion.div
-                className="flex  [@media(min-width:300px)_and_(max-width:410px)]:w-screen  absolute lg:relative [@media(min-width:300px)_and_(max-width:410px)]:gap-4 [@media(min-width:300px)_and_(max-width:410px)]:justify-center gap-7 lg:gap-14 lg:-left-0 -left-[180px] md:-left-[340px] top-[230px] md:top-[400px] lg:top-0 place-items-center lg:mx-5 lg:mt-5"
+                className="flex  [@media(min-width:300px)_and_(max-width:410px)]:w-screen  absolute lg:relative [@media(min-width:300px)_and_(max-width:410px)]:gap-4 [@media(min-width:300px)_and_(max-width:410px)]:justify-center gap-7 lg:gap-14 lg:-left-0 -left-[180px] md:-left-[340px] [@media(min-width:600px)_and_(max-width:1200px)]:top-[200px] top-[230px] md:top-[400px] lg:top-0 place-items-center lg:mx-5 lg:mt-5"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
