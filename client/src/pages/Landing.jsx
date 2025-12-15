@@ -437,7 +437,7 @@ const Landing = () => {
               </motion.div>
             </div>
           </div>
-          <div className="pl-4 md:pl-34">
+          <div className="pl-4 md:pl-34 ">
             <div className="custom-shape-container">
               {/* Put anything inside this shape */}
               <video
@@ -453,7 +453,7 @@ const Landing = () => {
                 }}
               />
             </div>
-            <div className=" flex w-full py-2 lg:py-6 relative ">
+            <div className="  flex w-full py-2 lg:py-6 relative ">
               {isMobile ? (
                 <p className="text-[#4D4D4D]  w-[40vw]  popins  text-[8px] lg:text-[16px]  lg:mt-5 font-semibold ">
                   We have successfully completed a wide range of earthwork and
@@ -462,11 +462,11 @@ const Landing = () => {
                   developments delivered with quality and precision.
                 </p>
               ) : (
-                <p className="text-[#4D4D4D] popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
-                  We have successfully completed a wide range of <br />{" "}
-                  earthwork and excavation projects for leading <br /> clients
-                  across Karnataka and Andhra Pardesh. Our portfolio includes <br /> residential,
-                  commercial, and infrastructure <br /> developments delivered
+                <p className="text-[#4D4D4D] w-[50%] popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
+                  We have successfully completed a wide range of 
+                  earthwork and excavation projects for leading  clients
+                  across Karnataka and Andhra Pardesh.  Our portfolio includes  residential,
+                  commercial,   and infrastructure developments delivered
                   with quality and precision.
                 </p>
               )}
@@ -563,256 +563,7 @@ const Landing = () => {
             </div>
           </div>
 
-          {/* <div className=" px-2 ">
-          <div className="relative w-[90vw]  h-[20vh]  lg:w-[85vw] md:h-[70vh] mx-auto overflow-hidden banner-shape shadow-lg">
-           
-            <video
-              className="absolute top-1/2 left-1/2 min-w-full min-h-full object-cover "
-              src={`${projectVideo}`}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-
           
-            <div className="absolute  inset-0 bg-black/40 "></div>
-
-            
-          </div>
-          <div className=" flex w-full py-2 lg:py-6 relative ">
-            {isMobile ? (
-              <p className="text-[#4D4D4D]  w-[40vw]  popins  text-[8px] lg:text-[16px] ml-3 lg:mt-5 font-semibold ">
-                We have successfully completed a wide range of earthwork and
-                excavation projects for leading clients across Karnataka. Our
-                portfolio includes residential, commercial, and  infrastructure developments delivered
-                with quality and precision.
-              </p>
-            ) : (
-              <p className="text-[#4D4D4D] popins pl-25  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
-                We have successfully completed a wide range of <br /> earthwork
-                and excavation projects for leading <br /> clients across
-                Karnataka. Our portfolio includes <br /> residential,
-                commercial, and infrastructure <br /> developments delivered
-                with quality and precision.
-              </p>
-            )}
-            <div className="absolute  left-[57vw] md:left-[50.2vw] lg:left-[58.2vw] -top-[9vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[40vw] py-2 lg:py-4  overflow-hidden ">
-              <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
-                {[
-                  {
-                    src: c1,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
-                  },
-                  {
-                    src: c2,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
-                  },
-                  {
-                    src: c3,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
-                  },
-                  {
-                    src: c4,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
-                  },
-                  {
-                    src: c5,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
-                  },
-                  {
-                    src: c6,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
-                  },
-                  {
-                    src: c7,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
-                  },
-                  {
-                    src: c8,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
-                  },
-                  {
-                    src: c9,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
-                  },
-                  {
-                    src: c10,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
-                  },
-                  {
-                    src: c11,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
-                  },
-                  {
-                    src: c12,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
-                  },
-                  {
-                    src: c13,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
-                  },
-                  {
-                    src: c14,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
-                  },
-                  {
-                    src: c15,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
-                  },
-                ].map((item, index) => (
-                  <img
-                    key={index}
-                    src={`${item.src}`}
-                    onClick={() => setProjectVideo(item.video)}
-                    alt=""
-                    className="w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] object-cover 
-           transition-transform duration-300 hover:scale-115 cursor-pointer"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>  */}
-          {/* <div className="flex gap-14 mx-auto">
-         
-          <div className="relative w-[40vw] h-[84vh] overflow-hidden">
-            <video
-              src={`${projectVideo}`}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute rounded-lg inset-0 h-full w-auto object-cover"
-            ></video>
-          </div>
-          <div className="w-[42vw] flex flex-col gap-7">
-            <div className="flex flex-col gap-3">
-              <p className="fontMon text-[4rem] font-bold leading-16 text-[#333333]">
-                <span className="text-[#FDC000]">SVB Infra</span> – Next- <br />{" "}
-                Gen Infra
-              </p>
-              <p className="popins-noweight text-[#4D4D4D] text-[1.4rem]">
-                We have successfully completed a wide range of earthwork and
-                excavation projects for leading clients across Karnataka. Our
-                portfolio includes residential, commercial, and infrastructure
-                developments delivered with quality and precision.
-              </p>
-            </div>
-            <div className="    lg:w-[40vw] py-2 lg:py-4  overflow-hidden ">
-              <div className=" flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
-                {[
-                  {
-                    src: c1,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
-                  },
-                  {
-                    src: c2,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
-                  },
-                  {
-                    src: c3,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
-                  },
-                  {
-                    src: c4,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
-                  },
-                  {
-                    src: c5,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
-                  },
-                  {
-                    src: c6,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
-                  },
-                  {
-                    src: c7,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
-                  },
-                  {
-                    src: c8,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
-                  },
-                  {
-                    src: c9,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
-                  },
-                  {
-                    src: c10,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
-                  },
-                  {
-                    src: c11,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770087/v5_fdufpc.mp4",
-                  },
-                  {
-                    src: c12,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769879/v2_ytnjry.mp4",
-                  },
-                  {
-                    src: c13,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769819/v1_xf3sac.mp4",
-                  },
-                  {
-                    src: c14,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764769930/v3_mtbw5a.mp4",
-                  },
-                  {
-                    src: c15,
-                    video:
-                      "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
-                  },
-                ].map((item, index) => (
-                  <img
-                    key={index}
-                    src={`${item.src}`}
-                    onClick={() => setProjectVideo(item.video)}
-                    alt=""
-                    className="w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[40vh] object-cover 
-           transition-transform duration-300 hover:scale-115 cursor-pointer"
-                  />
-                ))}
-              </div>
-            </div>
-            <div className="w-full flex justify-end">
-              <Link to="/fleet">
-                <button className="popins px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300">
-                  Explore All
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div> */}
           <div
             id="landing-contact"
             className="lg:w-[78vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
@@ -822,7 +573,7 @@ const Landing = () => {
                 Let's Build Your Next Project Together
               </p>
               <p className="fontMon [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem] font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]">
-                Contact With Us!
+                Contact  Us!
               </p>
             </div>
             <Link to="/contact">
