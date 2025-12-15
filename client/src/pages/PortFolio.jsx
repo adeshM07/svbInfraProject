@@ -269,7 +269,7 @@ const PortFolio = () => {
               viewport={{ once: true, amount: 0.4 }}
             >
               <p className="popins-bold text-[#FDC000] text-[1.3rem] lg:text-[4rem]">
-                30+
+                45+
               </p>
               <p className="text-[0.8rem] lg:text-[2rem] text-[#333333] popins-bold lg:leading-10">
                 Total number <br /> of machinery

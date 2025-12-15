@@ -176,7 +176,7 @@ const Fleet = () => {
               viewport={{ once: true, amount: 0.4 }}
             >
               {[
-                ["Total Machines", "30+ Machines"],
+                ["Total Machines", "45+ Machines"],
                 ["Availability", "Immediate"],
                 ["Fleet Diversity", "Heavy Machinery"],
                 ["Successful Projects", "185+ Projects"],

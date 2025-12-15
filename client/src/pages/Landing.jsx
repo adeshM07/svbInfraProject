@@ -251,7 +251,7 @@ const Landing = () => {
                     </span>
                     is a 3rd generation family-run business. SVB has been
                     managing earthmoving projects since 2003. Based in
-                    Bangalore, we provide a fast, flexible, reliable and
+                    Karnataka  and Andhra Pradesh, we provide a fast, flexible, reliable and
                     professional service statewide. We offer contract
                     earthmoving services across the state providing a
                     professional and reliable service to the main and sub
@@ -304,7 +304,7 @@ const Landing = () => {
               {/* Box 2 */}
               <div className="border [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
                 <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold">
-                  <Counter from={0} to={30} duration={1.5} />+
+                  <Counter from={0} to={45} duration={1.5} />+
                 </p>
                 <p className="popins font-medium text-[9px]  md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start">
                   Machines <br /> Equipments
@@ -457,7 +457,7 @@ const Landing = () => {
               {isMobile ? (
                 <p className="text-[#4D4D4D]  w-[40vw]  popins  text-[8px] lg:text-[16px]  lg:mt-5 font-semibold ">
                   We have successfully completed a wide range of earthwork and
-                  excavation projects for leading clients across Karnataka. Our
+                  excavation projects for leading clients across Karnataka and Andhra Pardesh. Our
                   portfolio includes residential, commercial, and infrastructure
                   developments delivered with quality and precision.
                 </p>
@@ -465,7 +465,7 @@ const Landing = () => {
                 <p className="text-[#4D4D4D] popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
                   We have successfully completed a wide range of <br />{" "}
                   earthwork and excavation projects for leading <br /> clients
-                  across Karnataka. Our portfolio includes <br /> residential,
+                  across Karnataka and Andhra Pardesh. Our portfolio includes <br /> residential,
                   commercial, and infrastructure <br /> developments delivered
                   with quality and precision.
                 </p>
