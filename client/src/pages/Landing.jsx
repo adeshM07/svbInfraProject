@@ -246,7 +246,7 @@ const Landing = () => {
 
                 <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10">
                   <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]  md:w-[32vw] lg:w-[32vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.2rem] 2xl:text-[1.25rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5">
-                    <span className="font-semibold mr-2">
+                    <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
                     </span>
                     is a 3rd generation family-run business. SVB has been
