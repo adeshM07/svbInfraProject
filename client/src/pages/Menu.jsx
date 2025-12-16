@@ -168,7 +168,7 @@ const Menu = () => {
         {isMobile ? (
           <div className="flex gap-7  ">
             <Link to='/contact'>
-            <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:py-[0.1rem] [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex ">Contact Us</button>
+            <button className="text-white bg-[#FDC000] text-[0.8rem] [@media(min-width:300px)_and_(max-width:700px)]:py-[0.1rem] [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex ">Contact Us</button>
             </Link>
             <i
               id="hamburgerIcon"
