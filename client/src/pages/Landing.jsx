@@ -223,7 +223,6 @@ const Landing = () => {
                   src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4"
                   //  src="https://www.dropbox.com/scl/fi/of9fvfwuakx55meeokabt/boxVideo.MOV?rlkey=ufy3suzkctcwu33gxusr467s9&raw=1"
                   autoPlay
-                  muted
                   loop
                   playsInline
                   className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh] w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[45vw] xl:h-[90vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] object-cover"
@@ -239,14 +238,14 @@ const Landing = () => {
                 viewport={{ once: true, amount: 0.4 }}
               >
                 <p className="fontMon bg-[#F8F8F8] z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] xl:text-[3.5rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
-                  Great Relationships,
+                  Great Relationships
                   <br /> Great
-                  <span className="text-[#FDC000]">Infrastructure</span>
+                  <span className="text-[#FDC000] ml-2">Infrastructure</span>
                 </p>
 
                 <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10">
                   <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]  md:w-[32vw] lg:w-[32vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.2rem] 2xl:text-[1.25rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5">
-                    <span className="font-semibold lg:mr-1">
+                    <span className="font-semibold mr-2">
                       SVB Infra Projects
                     </span>
                     is a 3rd generation family-run business. SVB has been
@@ -443,7 +442,6 @@ const Landing = () => {
               <video
                 src={projectVideo}
                 autoPlay
-                muted
                 loop
                 playsInline
                 style={{

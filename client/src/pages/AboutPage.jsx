@@ -128,7 +128,7 @@ const AboutPage = () => {
 
             {/* 🟢 Text slides from right */}
             <motion.div
-              className="flex flex-col lg:h-[59vh] gap-3 lg:gap-7 relative"
+              className="flex flex-col lg:h-[59vh] gap-1 lg:gap-5 relative"
               initial={{ opacity: 0, x: 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -152,13 +152,11 @@ const AboutPage = () => {
               ) : (
                 <p className="text-[#4D4D4D] md:text-[0.8rem] xl:text-[1.1rem] 2xl:text-[1rem]   lg:w-[32vw] lg:text-[1rem]">
                   <span className="font-semibold mr-1">SVB Infra Projects</span>
-                  is a 3rd generation family-run business. SVB has{" "}
+                  is a 3rd generation family-run business. SVB has
                   <br className="hidden md:block xl:hidden 2xl:block" /> been managing
                   earthmoving projects since 2003. Based in
                   <br className="hidden md:block xl:hidden 2xl:block" />  Karnataka and Andhra Pardesh, we provide a
-                  fast, flexible, reliable and professional{" "}
-                  <br className="hidden md:block xl:hidden 2xl:block" /> service statewide. We
-                  offer contract earthmoving services across{" "}
+                  fast, flexible, reliable and professional  <br className="hidden md:block xl:hidden 2xl:block" /> service statewide. We offer contract earth moving services across{" "}
                   <br className="hidden md:block xl:hidden 2xl:block" /> the state providing a
                   professional and reliable service to the main{" "}
                   <br className="hidden md:block xl:hidden 2xl:block" /> and sub contract civil

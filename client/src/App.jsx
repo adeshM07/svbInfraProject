@@ -34,7 +34,6 @@ const App = () => {
             src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
             autoPlay
             loop
-            muted
             playsInline
           />
           {/* <video
