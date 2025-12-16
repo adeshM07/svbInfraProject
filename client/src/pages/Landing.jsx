@@ -241,7 +241,7 @@ const Landing = () => {
                 <p className="fontMon bg-[#F8F8F8] z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] xl:text-[3.5rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">
                   Great Relationships
                   <br /> Great
-                  <span className="text-[#FDC000] ml-4">Infrastructure</span>
+                  <span className="text-[#FDC000] ml-3 md:ml-4">Infrastructure</span>
                 </p>
 
                 <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10">
