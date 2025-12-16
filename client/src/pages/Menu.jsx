@@ -123,7 +123,7 @@ const Menu = () => {
           <Link to="/">
             <img
               src={svbLogo}
-              className="w-[15vw] h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[9vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[7vw] lg:w-[8vw] xl:w-[8vw] xl:h-[8vh] lg:h-[8vh]"
+              className="w-[15vw] h-[3vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[7vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[7vw] lg:w-[8vw] xl:w-[8vw] xl:h-[7vh] lg:h-[7vh]"
             />
           </Link>
         </div>
