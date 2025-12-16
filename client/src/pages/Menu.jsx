@@ -149,7 +149,6 @@ const Menu = () => {
                 { name: "Our Fleet", link: "/our-fleet-2" },
                 { name: "Portfolio", link: "/portfolio" },
                 { name: "HSE", link: "/hse" },
-                { name: "Contact Us", link: "/contact" },
               ].map((item) => (
                 <li key={item.link} className=" relative group">
                   <Link
@@ -168,7 +167,10 @@ const Menu = () => {
 
         {isMobile ? (
           <div className="flex gap-7">
+            <Link to='/contact'>
+            
             <button className="text-white bg-[#FDC000] [@media(min-width:300px)_and_(max-width:700px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:700px)]:w-[25vw] rounded-sm flex place-items-center justify-center">Contact Us</button>
+            </Link>
             <i
               id="hamburgerIcon"
               class="fa-solid fa-bars text-[21px] text-white z-[1000]"
