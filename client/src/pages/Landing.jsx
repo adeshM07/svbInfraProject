@@ -337,7 +337,7 @@ const Landing = () => {
             {/* Animated Image */}
             <motion.img
               src={pillarImg}
-              className="lg:w-[75vw] lg:h-[101vh] mx-4 lg:mx-auto"
+              className="lg:w-[75vw] lg:h-[90vh] mx-4 lg:mx-auto"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
