@@ -49,8 +49,8 @@ const REP = () => {
               <span className="text-[#FDC000]">Rock Excavation</span> Services
             </p>
             <p className="popins text-[14px] md:text-[20px] lg:text-[20px] text-[#333333]">
-              Rock excavation involves precise removal of hard rock layers to{" "}
-              <br className="hidden md:block" /> prepare the site for safe and stable construction.
+              Rock excavation involves precise removal of hard rock layers to
+              <br className="[@media(min-width:300px)_and_(max-width:700px)]:hidden md:block" /> prepare the site for safe and stable construction.
             </p>
           </div>
         </div>
