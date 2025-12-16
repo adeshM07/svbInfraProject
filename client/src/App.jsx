@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { useState,useEffect } from "react";
 
 import Menu from "./pages/Menu";
 import Landing from "./pages/Landing";
@@ -15,12 +16,25 @@ import REP from "./pages/REP";
 import DS from "./pages/DS";
 import SRP from "./pages/SRP";
 
+import WhatsAppFloat from "./pages/WhatsAppFloat ";
+
 // import lvideo from "./assets/landingVideo.mov";
 // import lvideo from './videos/LandingVideoTrimmed.mp4'
 import lvideo from "./videos/LandingVideoTrimmed.mp4";
 import "./App.css";
 
 const App = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const width = window.innerWidth;
+
+    if (width < 740) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
 
@@ -57,7 +71,10 @@ const App = () => {
           <Route path="/" element={<Landing />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/services/excavators-dumpers-on-hire" element={<Service />} />
+          <Route
+            path="/services/excavators-dumpers-on-hire"
+            element={<Service />}
+          />
           <Route path="/our-fleet-2" element={<Fleet />} />
           <Route path="/portfolio" element={<PortFolio />} />
           <Route path="/gallery" element={<PortFolio />} />
@@ -69,11 +86,11 @@ const App = () => {
           <Route path="/srp" element={<SRP />} />
           <Route path="/services/mass-earth-excavation-2" element={<ESE />} />
           <Route path="/services/mass-rock-excavation" element={<REP />} />
-
         </Routes>
 
         <Footer />
       </div>
+   <WhatsAppFloat />
     </>
   );
 };
