@@ -223,6 +223,7 @@ const Landing = () => {
                   src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4"
                   //  src="https://www.dropbox.com/scl/fi/of9fvfwuakx55meeokabt/boxVideo.MOV?rlkey=ufy3suzkctcwu33gxusr467s9&raw=1"
                   autoPlay
+                  muted
                   loop
                   playsInline
                   className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh] w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[45vw] xl:h-[90vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] object-cover"
@@ -442,6 +443,7 @@ const Landing = () => {
               <video
                 src={projectVideo}
                 autoPlay
+                muted
                 loop
                 playsInline
                 style={{
