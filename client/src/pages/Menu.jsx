@@ -166,14 +166,14 @@ const Menu = () => {
         )}
 
         {isMobile ? (
-          <div className="flex gap-7">
+          <div className="flex gap-7  place-items-center">
             <Link to='/contact'>
             
-            <button className="text-white bg-[#FDC000] [@media(min-width:300px)_and_(max-width:700px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:700px)]:w-[25vw] rounded-sm flex place-items-center justify-center">Contact Us</button>
+            <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:h-[3vh] [@media(min-width:300px)_and_(max-width:700px)]:w-[23vw] rounded-sm flex place-items-center justify-center">Contact Us</button>
             </Link>
             <i
               id="hamburgerIcon"
-              class="fa-solid fa-bars text-[21px] text-white z-[1000]"
+              class="fa-solid fa-bars [@media(min-width:300px)_and_(max-width:700px)]:text-[1.7rem] text-white z-[1000]"
               onClick={() => setPopup(!popup)}
             ></i>
           </div>
