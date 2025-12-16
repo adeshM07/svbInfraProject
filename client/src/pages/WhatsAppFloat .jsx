@@ -11,9 +11,12 @@ const WhatsAppFloat = () => {
       rel="noopener noreferrer"
       className="fixed bottom-10 right-5 z-[9999]"
     >
-      <div className="  rounded-full flex items-center justify-center  hover:scale-110 transition">
-        <i class="fa-brands fa-whatsapp text-green-500  [@media(min-width:300px)_and_(max-width:700px)]:text-[2rem] text-[4rem]"></i>
-      </div>
+      <div className="rounded-full flex items-center justify-center transition whatsapp-pulse">
+  <i className="fa-brands fa-whatsapp text-green-500
+    [@media(min-width:300px)_and_(max-width:700px)]:text-[2.5rem]
+    text-[4rem]">
+  </i>
+</div>
     </a>
   );
 };
