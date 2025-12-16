@@ -233,9 +233,7 @@ const Landing = () => {
               {/* === TEXT SECTION === */}
               <motion.div
                 className="lg:w-[33vw]  w-[50vw] xl:w-[39vw] 2xl:w-[33vw] h-fit flex flex-col "
-                initial={{ opacity: 0, x: 80 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
+               
                 viewport={{ once: true, amount: 0.4 }}
               >
                 <p className="fontMon bg-[#F8F8F8] z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 text-[1.5rem] xl:text-[3.5rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold">

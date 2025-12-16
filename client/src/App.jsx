@@ -64,7 +64,7 @@ const App = () => {
 
       {/* FIX → Add margin only for landing, top padding for other pages */}
       <div
-        className="w-screen"
+        className="w-[screen]"
         style={{ marginTop: isLandingPage ? "100vh" : "9vh" }}
       >
         <Routes>
