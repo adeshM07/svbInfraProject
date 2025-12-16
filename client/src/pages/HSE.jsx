@@ -17,8 +17,6 @@ import ic4 from "../assets/infoCardIMG4.png";
 import { useState, useEffect } from "react";
 
 const HSE = () => {
-   
-
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
@@ -39,11 +37,14 @@ const HSE = () => {
   }, []);
   return (
     <>
-    <Helmet>
-            <title>HSE | SVB Infra Projects</title>
-            <meta name="description" content="SVB Infra PROJECTS is a 3rd generation family-run business..." />
-            <link rel="canonical" href="https://svbinfraprojects.com/hse" />
-          </Helmet>
+      <Helmet>
+        <title>HSE | SVB Infra Projects</title>
+        <meta
+          name="description"
+          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
+        />
+        <link rel="canonical" href="https://svbinfraprojects.com/hse" />
+      </Helmet>
       <div className="bg-[F8F8F8]">
         <div
           className="h-[45vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh] md:h-[45vh] lg:h-[95vh] w-screen"
@@ -200,267 +201,408 @@ const HSE = () => {
             </motion.p>
           </motion.div>
         </div>
-        <div className=" w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px]">
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic1}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
 
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring Entry From Right + Slight Down) */}
-              <motion.p
-                className=" text-[#FDC000] text-[1.4rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem]   lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Commitment to health & safety
-              </motion.p>
+        {isMobile ? (
+          <div className="w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px]">
+            {/* ===== BLOCK 1 ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic1}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </div>
 
-              {/* List (Spring Entry With Slight Delay, Same Direction) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] bg-white  lg:-ml-20 lg:text-[18px] pl-7  lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl md:text-[15px] lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">Setting out of corner benchmarks</li>
-                <li className="HSEUL">Surveying ground levels</li>
-                <li className="HSEUL">Surveying top levels</li>
-                <li className="HSEUL">Excavation to approved depth</li>
-                <li className="HSEUL">Dressing of loose soil</li>
-                <li className="HSEUL">Making up to cut-off level</li>
-              </motion.ul>
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Commitment to health & safety
+                </p>
+
+                <ul className="text-[#333333] popins text-[14px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl md:text-[15px] lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                  <li className="HSEUL">Setting out of corner benchmarks</li>
+                  <li className="HSEUL">Surveying ground levels</li>
+                  <li className="HSEUL">Surveying top levels</li>
+                  <li className="HSEUL">Excavation to approved depth</li>
+                  <li className="HSEUL">Dressing of loose soil</li>
+                  <li className="HSEUL">Making up to cut-off level</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* ===== BLOCK 2 ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic2}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[40vw] lg:h-[52vh]"
+                  alt="Monitoring & risk management"
+                />
+              </div>
+
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.4rem] md:text-[2rem] xl:text-[1.7rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Monitoring & risk management
+                </p>
+
+                <ul className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300">
+                  <li className="HSEUL">
+                    Continuous monitoring is used to maintain a safe work
+                    environment.
+                  </li>
+                  <li className="HSEUL">
+                    Health and Safety Managers supervise all site operations.
+                  </li>
+                  <li className="HSEUL">
+                    Regular inspections and toolbox talks support ongoing safety
+                    awareness.
+                  </li>
+                  <li className="HSEUL">
+                    Real-time risk assessments help identify potential hazards
+                    early.
+                  </li>
+                  <li className="HSEUL">
+                    Corrective actions are taken promptly to ensure safety and
+                    maintain productivity.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* ===== BLOCK 3 ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic1}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[65vw] lg:w-[40vw] lg:h-[52vh]"
+                  alt="Certified Equipment operators"
+                />
+              </div>
+
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Certified Equipment operators
+                </p>
+
+                <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                  <li className="HSEUL">
+                    Certified operators handle all heavy machinery and equipment
+                    safely and efficiently.
+                  </li>
+                  <li className="HSEUL">
+                    Regular training and evaluations keep operators current with
+                    the latest safety protocols.
+                  </li>
+                  <li className="HSEUL">
+                    Third-party inspections verify compliance with industry
+                    standards and regulations.
+                  </li>
+                  <li className="HSEUL">
+                    These measures ensure smooth, reliable operations while
+                    maintaining a safe work environment.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* ===== BLOCK 4 ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 lg:flex-row-reverse px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col gap-7 lg:gap-[39px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic2}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[70vw] lg:w-[60vw] lg:h-[52vh]"
+                  alt="Compliance & Adaptability"
+                />
+              </div>
+
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Compliance & Adaptability
+                </p>
+
+                <ul className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300">
+                  <li className="HSEUL">
+                    Strict adherence to site-specific HSE guidelines, statutory
+                    regulations, and client safety policies.
+                  </li>
+                  <li className="HSEUL">
+                    Regular audits ensure full compliance with legal and
+                    operational standards.
+                  </li>
+                  <li className="HSEUL">
+                    Teams remain adaptable to changing site conditions and
+                    project requirements.
+                  </li>
+                  <li className="HSEUL">
+                    These practices ensure operations are conducted safely,
+                    efficiently, and without risk.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic2}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[40vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px] ">
-              {/* Title (Spring from Left → Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.4rem] md:text-[2rem]  xl:text-[1.7rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
+        ) : (
+          <div className=" w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px]">
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                Monitoring & risk management
-              </motion.p>
+                <img
+                  src={ic1}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
 
-              {/* List (Spring Entry from Left, Slight Delay) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring Entry From Right + Slight Down) */}
+                <motion.p
+                  className=" text-[#FDC000] text-[1.4rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem]   lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Commitment to health & safety
+                </motion.p>
+
+                {/* List (Spring Entry With Slight Delay, Same Direction) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] bg-white  lg:-ml-20 lg:text-[18px] pl-7  lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl md:text-[15px] lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">Setting out of corner benchmarks</li>
+                  <li className="HSEUL">Surveying ground levels</li>
+                  <li className="HSEUL">Surveying top levels</li>
+                  <li className="HSEUL">Excavation to approved depth</li>
+                  <li className="HSEUL">Dressing of loose soil</li>
+                  <li className="HSEUL">Making up to cut-off level</li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <li className="HSEUL">
-                  Continuous monitoring is used to maintain a safe work
-                  environment.
-                </li>
-                <li className="HSEUL">
-                  Health and Safety Managers supervise all site operations.
-                </li>
-                <li className="HSEUL">
-                  Regular inspections and toolbox talks support ongoing safety
-                  awareness.
-                </li>
-                <li className="HSEUL">
-                  Real-time risk assessments help identify potential hazards
-                  early.
-                </li>
-                <li className="HSEUL">
-                  Corrective actions are taken promptly to ensure safety and
-                  maintain productivity.
-                </li>
-              </motion.ul>
+                <img
+                  src={ic2}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[40vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px] ">
+                {/* Title (Spring from Left → Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.4rem] md:text-[2rem]  xl:text-[1.7rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Monitoring & risk management
+                </motion.p>
+
+                {/* List (Spring Entry from Left, Slight Delay) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Continuous monitoring is used to maintain a safe work
+                    environment.
+                  </li>
+                  <li className="HSEUL">
+                    Health and Safety Managers supervise all site operations.
+                  </li>
+                  <li className="HSEUL">
+                    Regular inspections and toolbox talks support ongoing safety
+                    awareness.
+                  </li>
+                  <li className="HSEUL">
+                    Real-time risk assessments help identify potential hazards
+                    early.
+                  </li>
+                  <li className="HSEUL">
+                    Corrective actions are taken promptly to ensure safety and
+                    maintain productivity.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic1}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[65vw] xl:w-[75vw] xl:h-[60vh] lg:w-[40vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring Entry From Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Certified Equipment operators
+                </motion.p>
+
+                {/* List (Spring Entry With Slight Delay, Same Direction) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Certified operators handle all heavy machinery and equipment
+                    safely and efficiently.
+                  </li>
+                  <li className="HSEUL">
+                    Regular training and evaluations keep operators current with
+                    the latest safety protocols.
+                  </li>
+                  <li className="HSEUL">
+                    Third-party inspections verify compliance with industry
+                    standards and regulations.
+                  </li>
+                  <li className="HSEUL">
+                    These measures ensure smooth, reliable operations while
+                    maintaining a safe work environment.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 lg:flex-row-reverse px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col gap-7 lg:gap-[39px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic2}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw]  md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[70vw] lg:w-[60vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring from Left → Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Compliance & Adaptability
+                </motion.p>
+
+                {/* List (Spring Entry from Left, Slight Delay) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Strict adherence to site-specific HSE guidelines, statutory
+                    regulations, and client safety policies.
+                  </li>
+                  <li className="HSEUL">
+                    Regular audits ensure full compliance with legal and
+                    operational standards.
+                  </li>
+                  <li className="HSEUL">
+                    Teams remain adaptable to changing site conditions and
+                    project requirements.
+                  </li>
+                  <li className="HSEUL">
+                    These practices ensure operations are conducted safely,
+                    efficiently, and without ri2sk to employees, the public, or
+                    surrounding environments.
+                  </li>
+                </motion.ul>
+              </div>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic1}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[65vw] xl:w-[75vw] xl:h-[60vh] lg:w-[40vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring Entry From Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Certified Equipment operators
-              </motion.p>
-
-              {/* List (Spring Entry With Slight Delay, Same Direction) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Certified operators handle all heavy machinery and equipment
-                  safely and efficiently.
-                </li>
-                <li className="HSEUL">
-                  Regular training and evaluations keep operators current with
-                  the latest safety protocols.
-                </li>
-                <li className="HSEUL">
-                  Third-party inspections verify compliance with industry
-                  standards and regulations.
-                </li>
-                <li className="HSEUL">
-                  These measures ensure smooth, reliable operations while
-                  maintaining a safe work environment.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 lg:flex-row-reverse px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col gap-7 lg:gap-[39px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic2}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw]  md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[70vw] lg:w-[60vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring from Left → Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Compliance & Adaptability
-              </motion.p>
-
-              {/* List (Spring Entry from Left, Slight Delay) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Strict adherence to site-specific HSE guidelines, statutory
-                  regulations, and client safety policies.
-                </li>
-                <li className="HSEUL">
-                  Regular audits ensure full compliance with legal and
-                  operational standards.
-                </li>
-                <li className="HSEUL">
-                  Teams remain adaptable to changing site conditions and project
-                  requirements.
-                </li>
-                <li className="HSEUL">
-                  These practices ensure operations are conducted safely,
-                  efficiently, and without ri2sk to employees, the public, or
-                  surrounding environments.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-        </div>
-     
+        )}
       </div>
     </>
   );
