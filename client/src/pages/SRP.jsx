@@ -60,6 +60,74 @@ const SRP = () => {
             </p>
           </div>
         </div>
+        {isMobile?<div className="w-full flex flex-col px-2 lg:px-0 gap-[27px] my-21 md:gap-[150px] lg:gap-[150px] place-items-center">
+
+  {/* ===== Micro Piling ===== */}
+  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+    <div>
+      <img src={ic1} className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]" />
+    </div>
+    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">Micro Piling</p>
+      <ul className="text-[#333333] popins text-[14px] bg-white lg:-ml-20 md:text-[15px] lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+        <li className="HSEUL">Small-diameter piles used to strengthen existing foundations or weak soils.</li>
+        <li className="HSEUL">Can be installed in confined areas with minimal vibration.</li>
+        <li className="HSEUL">Common in retrofitting and slope stabilization projects.</li>
+        <li className="HSEUL">Transfers load to deeper, more stable soil layers.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* ===== Sheet Piling ===== */}
+  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+    <div>
+      <img src={ic2} className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]" />
+    </div>
+    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">Sheet Piling</p>
+      <ul className="text-[#333333] popins md:text-[15px] text-[14px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+        <li className="HSEUL">Uses interlocking steel, vinyl, or concrete sheets driven into the ground.</li>
+        <li className="HSEUL">Prevents soil collapse in deep excavations or waterfronts.</li>
+        <li className="HSEUL">Reusable and provides temporary or permanent soil support.</li>
+        <li className="HSEUL">Quick installation suitable for tight timelines.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* ===== RCC Piling ===== */}
+  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+    <div>
+      <img src={ic3} className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]" />
+    </div>
+    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">RCC Piling</p>
+      <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+        <li className="HSEUL">Reinforced concrete piles for load-bearing support.</li>
+        <li className="HSEUL">Transfers heavy loads to deep stable strata.</li>
+        <li className="HSEUL">Ensures minimal settlement.</li>
+        <li className="HSEUL">Used in bridges, towers, and industrial foundations.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* ===== Soil Nailing ===== */}
+  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+    <div>
+      <img src={ic4} className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]" />
+    </div>
+    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">Soil Nailing</p>
+      <ul className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+        <li className="HSEUL">Steel bars inserted to reinforce soil slopes.</li>
+        <li className="HSEUL">Prevents landslides.</li>
+        <li className="HSEUL">Cost-effective solution.</li>
+        <li className="HSEUL">Used with shotcrete.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+:
         <div className=" w-full flex flex-col px-2 lg:px-0  gap-[27px] my-21 md:gap-[150px] lg:gap-[150px]  place-items-center">
           <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
@@ -569,7 +637,7 @@ const SRP = () => {
               </motion.ul>
             </div>
           </div>
-        </div>
+        </div>}
         
         {isMobile ? (
           <div className="relative w-full overflow-hidden my-20">

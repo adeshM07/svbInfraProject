@@ -55,6 +55,83 @@ const DS = () => {
             </p>
           </div>
         </div>
+        {isMobile?<div className="w-full flex flex-col px-2 lg:px-0 gap-[27px] my-21 md:gap-[150px] lg:gap-[150px] place-items-center">
+
+  {/* ===== BLOCK 1 ===== */}
+  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+    <div>
+      <img
+        src={ic1}
+        className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+        alt="Well Point System"
+      />
+    </div>
+
+    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+        Well Point System
+      </p>
+
+      <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+        <li className="HSEUL">Series of shallow wells connected to a vacuum pump to remove groundwater.</li>
+        <li className="HSEUL">Used for controlling water levels during shallow excavations.</li>
+        <li className="HSEUL">Enables dry working conditions and prevents soil instability.</li>
+        <li className="HSEUL">Quick setup and suitable for sandy or loose soils.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* ===== BLOCK 2 ===== */}
+  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+    <div>
+      <img
+        src={ic2}
+        className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+        alt="Deep Well System"
+      />
+    </div>
+
+    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+        Deep Well System
+      </p>
+
+      <ul className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300">
+        <li className="HSEUL">Involves installation of deep wells with submersible pumps for high water table areas.</li>
+        <li className="HSEUL">Handles large volumes of groundwater efficiently.</li>
+        <li className="HSEUL">Used in basement, shaft, or deep foundation works.</li>
+        <li className="HSEUL">Ensures long-term dewatering for complex excavation sites.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* ===== BLOCK 3 ===== */}
+  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+    <div>
+      <img
+        src={ic3}
+        className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+        alt="Automated Dewatering System"
+      />
+    </div>
+
+    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+        Automated Dewatering System
+      </p>
+
+      <ul className="text-[#333333] popins md:text-[15px] text-[14px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+        <li className="HSEUL">Uses smart sensors and automated pumps for efficient groundwater management.</li>
+        <li className="HSEUL">Reduces manpower and ensures real-time water level monitoring.</li>
+        <li className="HSEUL">Energy-efficient and adaptable for varying site conditions.</li>
+        <li className="HSEUL">Provides consistent control to maintain dry and safe excavation zones.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+:
+        
         <div className=" w-full flex flex-col px-2 lg:px-0  gap-[27px] my-21 md:gap-[150px] lg:gap-[150px]  place-items-center">
           <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
@@ -246,7 +323,7 @@ const DS = () => {
               </motion.ul>
             </div>
           </div>
-        </div>
+        </div>}
         
         {isMobile ? (
           <div className="relative w-full overflow-hidden my-20">
