@@ -255,7 +255,7 @@ const Landing = () => {
                     professional service statewide. We offer contract
                     earthmoving services across the state providing a
                     professional and reliable service to the main and sub
-                    contract civil engineering sector. We have had over 15
+                    contract civil engineering sector. We have had over 22
                     years’ experience for total excavation solution. We work
                     with some of the biggest names in construction and civil
                     engineering sector.
