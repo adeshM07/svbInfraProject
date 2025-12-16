@@ -17,6 +17,8 @@ import ic4 from "../assets/infoCardIMG4.png";
 import { useState, useEffect } from "react";
 
 const HSE = () => {
+   
+
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
@@ -37,14 +39,11 @@ const HSE = () => {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>HSE | SVB Infra Projects</title>
-        <meta
-          name="description"
-          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
-        />
-        <link rel="canonical" href="https://svbinfraprojects.com/hse" />
-      </Helmet>
+    <Helmet>
+            <title>HSE | SVB Infra Projects</title>
+            <meta name="description" content="SVB Infra PROJECTS is a 3rd generation family-run business..." />
+            <link rel="canonical" href="https://svbinfraprojects.com/hse" />
+          </Helmet>
       <div className="bg-[F8F8F8]">
         <div
           className="h-[45vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh] md:h-[45vh] lg:h-[95vh] w-screen"
@@ -224,17 +223,13 @@ const HSE = () => {
                 className=" text-[#FDC000] text-[1.4rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem]   lg:text-[2rem] fontMon font-semibold"
                 initial={{ opacity: 0, x: 120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={
-                  !isMobile
-                    ? {
-                        type: "spring",
-                        stiffness: 80,
-                        damping: 15,
-                        duration: 0.9,
-                      }
-                    : undefined
-                }
-                viewport={!isMobile ? { once: true, amount: 0.4 } : undefined}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 15,
+                  duration: 0.9,
+                }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 Commitment to health & safety
               </motion.p>
@@ -243,19 +238,15 @@ const HSE = () => {
               <motion.ul
                 id="HSEUL"
                 className="text-[#333333] popins text-[14px] bg-white  lg:-ml-20 lg:text-[18px] pl-7  lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl md:text-[15px] lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={!isMobile ? { opacity: 0, x: 120, y: -30 } : false}
-                whileInView={!isMobile ? { opacity: 1, x: 0, y: 0 } : false}
-                transition={
-                  !isMobile
-                    ? {
-                        type: "spring",
-                        stiffness: 80,
-                        damping: 15,
-                        delay: 0.25,
-                      }
-                    : undefined
-                }
-                viewport={!isMobile ? { once: true, amount: 0.4 } : undefined}
+                initial={{ opacity: 0, x: 120, y: -30 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 15,
+                  delay: 0.25,
+                }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 <li className="HSEUL">Setting out of corner benchmarks</li>
                 <li className="HSEUL">Surveying ground levels</li>
@@ -288,17 +279,13 @@ const HSE = () => {
                 className="text-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.4rem] md:text-[2rem]  xl:text-[1.7rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={
-                  !isMobile
-                    ? {
-                        type: "spring",
-                        stiffness: 80,
-                        damping: 15,
-                        duration: 0.9,
-                      }
-                    : undefined
-                }
-                viewport={!isMobile ? { once: true, amount: 0.4 } : undefined}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 15,
+                  duration: 0.9,
+                }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 Monitoring & risk management
               </motion.p>
@@ -307,19 +294,15 @@ const HSE = () => {
               <motion.ul
                 id="HSEUL"
                 className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={!isMobile ? { opacity: 0, x: -120, y: -30 } : false}
-                whileInView={!isMobile ? { opacity: 1, x: 0, y: 0 } : false}
-                transition={
-                  !isMobile
-                    ? {
-                        type: "spring",
-                        stiffness: 80,
-                        damping: 15,
-                        delay: 0.25,
-                      }
-                    : undefined
-                }
-                viewport={!isMobile ? { once: true, amount: 0.4 } : undefined}
+                initial={{ opacity: 0, x: -120, y: -30 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 15,
+                  delay: 0.25,
+                }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 <li className="HSEUL">
                   Continuous monitoring is used to maintain a safe work
@@ -365,17 +348,13 @@ const HSE = () => {
                 className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
                 initial={{ opacity: 0, x: 120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={
-                  !isMobile
-                    ? {
-                        type: "spring",
-                        stiffness: 80,
-                        damping: 15,
-                        duration: 0.9,
-                      }
-                    : undefined
-                }
-                viewport={!isMobile ? { once: true, amount: 0.4 } : undefined}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 15,
+                  duration: 0.9,
+                }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 Certified Equipment operators
               </motion.p>
@@ -384,19 +363,15 @@ const HSE = () => {
               <motion.ul
                 id="HSEUL"
                 className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={!isMobile ? { opacity: 0, x: 120, y: -30 } : false}
-                whileInView={!isMobile ? { opacity: 1, x: 0, y: 0 } : false}
-                transition={
-                  !isMobile
-                    ? {
-                        type: "spring",
-                        stiffness: 80,
-                        damping: 15,
-                        delay: 0.25,
-                      }
-                    : undefined
-                }
-                viewport={!isMobile ? { once: true, amount: 0.4 } : undefined}
+                initial={{ opacity: 0, x: 120, y: -30 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 15,
+                  delay: 0.25,
+                }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 <li className="HSEUL">
                   Certified operators handle all heavy machinery and equipment
@@ -439,17 +414,13 @@ const HSE = () => {
                 className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
                 initial={{ opacity: 0, x: -120, y: -30 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={
-                  !isMobile
-                    ? {
-                        type: "spring",
-                        stiffness: 80,
-                        damping: 15,
-                        duration: 0.9,
-                      }
-                    : undefined
-                }
-                viewport={!isMobile ? { once: true, amount: 0.4 } : undefined}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 15,
+                  duration: 0.9,
+                }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 Compliance & Adaptability
               </motion.p>
@@ -458,19 +429,15 @@ const HSE = () => {
               <motion.ul
                 id="HSEUL"
                 className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={!isMobile ? { opacity: 0, x: -120, y: -30 } : false}
-                whileInView={!isMobile ? { opacity: 1, x: 0, y: 0 } : false}
-                transition={
-                  !isMobile
-                    ? {
-                        type: "spring",
-                        stiffness: 80,
-                        damping: 15,
-                        delay: 0.25,
-                      }
-                    : undefined
-                }
-                viewport={!isMobile ? { once: true, amount: 0.4 } : undefined}
+                initial={{ opacity: 0, x: -120, y: -30 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 80,
+                  damping: 15,
+                  delay: 0.25,
+                }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 <li className="HSEUL">
                   Strict adherence to site-specific HSE guidelines, statutory
@@ -493,6 +460,7 @@ const HSE = () => {
             </div>
           </div>
         </div>
+     
       </div>
     </>
   );
