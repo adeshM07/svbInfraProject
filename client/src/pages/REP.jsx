@@ -50,7 +50,7 @@ const REP = () => {
             </p>
             <p className="popins text-[14px] md:text-[20px] lg:text-[20px] text-[#333333]">
               Rock excavation involves precise removal of hard rock layers to{" "}
-              <br /> prepare the site for safe and stable construction.
+              <br className="hidden md:block" /> prepare the site for safe and stable construction.
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const REP = () => {
             >
               <img
                 src={ic1}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh]  md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh]  md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -130,7 +130,7 @@ const REP = () => {
             >
               <img
                 src={ic2}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -194,7 +194,7 @@ const REP = () => {
             >
               <img
                 src={ic3}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -258,7 +258,7 @@ const REP = () => {
             >
               <img
                 src={ic4}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -323,7 +323,7 @@ const REP = () => {
             >
               <img
                 src={ic5}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
@@ -387,7 +387,7 @@ const REP = () => {
             >
               <img
                 src={ic6}
-                className="w-[85vw] [@media(min-width:800px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
                 alt="Commitment to health & safety"
               />
             </motion.div>
