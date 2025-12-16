@@ -59,7 +59,6 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex  flex-col gap-5 lg:gap-8 w-fit lg:mx-0 place-items-center lg:place-items-start">
-              
               <ul className="flex lg:flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0">
                 <ul className="flex flex-col gap-3">
                   {[
@@ -88,7 +87,32 @@ const Footer = () => {
               </ul>
             </div>
             {isMobile ? (
-              <div className="text-white [@media(min-width:650px)_and_(max-width:1200px)]:text-start  md:text-center flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:flex-col md:flex-row"> <a href="tel:9036354261">+91 9036354261</a>   <span className="hidden [@media(min-width:800px)_and_(max-width:1200px)]:hidden md:block">,</span>  <a href="tel:9980851508">+91 9980851508</a>  </div>
+              <div className="flex flex-col gap-4 ">
+                <div className="flex flex-col gap-2  ">
+                  <div className="flex gap-1 place-items-center">
+                    <img src={address} className="h-[3vh]" />
+                    <p className="text-white">Karnataka</p>
+                    <a href="https://maps.app.goo.gl/TkDRbzDVX1RRaXATA">
+                      <i class="fa-solid fa-arrow-up-right-from-square text-[#FDC000]"></i>
+                    </a>
+                  </div>
+                  <div className="flex gap-1 place-items-center">
+                    <img src={address} className="h-[3vh]" />
+                    <p className="text-white">Andhra Pradesh</p>
+                    <a href="https://maps.app.goo.gl/jQgCtc5rAtjt9jJ47">
+                      <i class="fa-solid fa-arrow-up-right-from-square text-[#FDC000]"></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="text-white [@media(min-width:650px)_and_(max-width:1200px)]:text-start  md:text-center flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:flex-col md:flex-row">
+                  {" "}
+                  <a href="tel:9036354261">+91 9036354261</a>{" "}
+                  <span className="hidden [@media(min-width:800px)_and_(max-width:1200px)]:hidden md:block">
+                    ,
+                  </span>{" "}
+                  <a href="tel:9980851508">+91 9980851508</a>{" "}
+                </div>
+              </div>
             ) : (
               <div className="flex flex-col gap-8">
                 <p className="text-white text-[1rem] lg:text-[1.4rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
@@ -134,6 +158,7 @@ const Footer = () => {
                   </div>
 
                   {/* 📞 Phone */}
+
                   <div className="flex items-start gap-3 md:gap-4">
                     <a href="tel:9036354261" className="flex gap-3 md:gap-4">
                       <img
@@ -141,14 +166,17 @@ const Footer = () => {
                         className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[3.6vh]"
                       />
                       <p className="text-white popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
-                          +91 9036354261 , +91 9980851508 
+                        +91 9036354261 , +91 9980851508
                       </p>
                     </a>
                   </div>
 
                   {/* ✉️ Email */}
                   <div className="flex items-start gap-3 md:gap-4">
-                    <a href="mailto:info@svbinfraprojects.com" className="flex gap-3 md:gap-4">
+                    <a
+                      href="mailto:info@svbinfraprojects.com"
+                      className="flex gap-3 md:gap-4"
+                    >
                       <img
                         src={mail}
                         className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[4vh]"
