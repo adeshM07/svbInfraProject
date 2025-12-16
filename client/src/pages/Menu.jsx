@@ -113,8 +113,8 @@ const Menu = () => {
     <>
       <div
         className={`
-    fixed top-0 left-0  [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] w-full flex px-5 md:px-6 justify-between 
-    h-[9vh] lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
+    fixed top-0 left-0   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
+     lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
     transition-all duration-500 z-[999]
     ${isColored ? "bg-[#333333]" : "bg-transparent"}
   `}
@@ -166,10 +166,9 @@ const Menu = () => {
         )}
 
         {isMobile ? (
-          <div className="flex gap-7  place-items-center">
+          <div className="flex gap-7  ">
             <Link to='/contact'>
-            
-            <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:h-[3vh] [@media(min-width:300px)_and_(max-width:700px)]:w-[23vw] rounded-sm flex place-items-center justify-center">Contact Us</button>
+            <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:py-[0.1rem] [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex ">Contact Us</button>
             </Link>
             <i
               id="hamburgerIcon"
