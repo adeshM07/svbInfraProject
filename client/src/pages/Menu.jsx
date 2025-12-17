@@ -114,7 +114,7 @@ const Menu = () => {
       <div
         className={`
     fixed top-0 left-0   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
-     lg:h-[11vh] xl:h-[11vh] place-items-center lg:px-30 
+     lg:h-[10vh] xl:h-[10vh] place-items-center lg:px-30 
     transition-all duration-500 z-[999]
     ${isColored ? "bg-[#333333]" : "bg-transparent"}
   `}
@@ -123,7 +123,7 @@ const Menu = () => {
           <Link to="/">
             <img
               src={svbLogo}
-              className="w-[15vw] h-[3.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[7.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[7vw] lg:w-[8vw] xl:w-[8vw] xl:h-[7vh] lg:h-[7vh]"
+              className="w-[15vw] h-[3.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[7.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[7vw] lg:w-[7vw] xl:w-[7vw] xl:h-[6vh] lg:h-[6vh]"
             />
           </Link>
         </div>
