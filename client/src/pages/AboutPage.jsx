@@ -119,7 +119,7 @@ const AboutPage = () => {
             {/* 🟡 Image comes from left */}
             <motion.img
               src={bgIMG}
-              className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw] 2xl:w-[32vw] lg:h-[59vh] xl:w-[40vw] xl:h-[66vh] 2xl:h-[62vh]"
+              className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw] 2xl:w-[32vw] lg:h-[59vh] xl:w-[34vw] xl:h-[69vh] 2xl:h-[62vh]"
               initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -156,7 +156,7 @@ const AboutPage = () => {
                   <br className="hidden md:block xl:hidden 2xl:block" /> been managing
                   earthmoving projects since 2003. Based in
                   <br className="hidden md:block xl:hidden 2xl:block" />  Karnataka and Andhra Pardesh, we provide a
-                  fast, flexible, reliable and professional  <br className="hidden md:block xl:hidden 2xl:block" /> service statewide. We offer contract earth moving services across{" "}
+                  fast, flexible, reliable and professional  <br className="hidden md:block xl:hidden 2xl:hidden" /> service statewide. We offer contract earth moving services across{" "}
                   <br className="hidden md:block xl:hidden 2xl:block" /> the state providing a
                   professional and reliable service to the main{" "}
                   <br className="hidden md:block xl:hidden 2xl:block" /> and sub contract civil
