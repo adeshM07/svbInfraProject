@@ -88,7 +88,7 @@ const Service = () => {
         >
           {/* Section Heading */}
           <motion.p
-            className="font-semibold text-white text-[1rem] md:text-[1.4rem] lg:text-[1.4rem] underline decoration-[#FDC000] underline-offset-8 pl-3 [@media(min-width:650px)_and_(max-width:1200px)]:pl-5 xl:pl-10"
+            className="font-semibold text-white text-[1rem] md:text-[1.4rem] lg:text-[1.4rem] underline decoration-[#FDC000] underline-offset-8 pl-3 [@media(min-width:650px)_and_(max-width:1200px)]:pl-5 xl:pl-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
