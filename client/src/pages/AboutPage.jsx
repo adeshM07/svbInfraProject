@@ -134,7 +134,7 @@ const AboutPage = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] lg:leading-14">
+              <p className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] xl:text-[2.6rem] 2xl:text-[3rem] lg:leading-14 xl:leading-12 2xl:leading-14">
                 Excellence, <br />
                 <span className="text-[#FDC000]">Expertise,</span> Efficiency
               </p>
