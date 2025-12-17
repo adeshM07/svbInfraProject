@@ -241,7 +241,7 @@ const Fleet = () => {
             {cardDetails.map((item, index) => (
               <motion.div
                 key={index}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] lg:h-[50vh] xl:h-[53vh] flex flex-col gap-2 lg:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] lg:h-[50vh] xl:h-[53vh] flex flex-col gap-2 lg:gap-5 xl:gap-3 2xl:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
