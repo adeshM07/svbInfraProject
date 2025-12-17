@@ -29,7 +29,7 @@ const AboutHighlights = () => {
       viewport={{ once: true, amount: 0.3 }}
     >
       {/* ========== ROW 1 ========== */}
-      <div className="flex flex-col  md:flex-row md:flex-wrap justify-center items-center gap-10 md:gap-7 xl:gap-20 2xl:gap-20 lg:gap-20">
+      <div className="flex flex-col  md:flex-row md:flex-wrap justify-center  items-center gap-10 md:gap-7 xl:gap-20 2xl:gap-20 lg:gap-20">
         {/* Left Item */}
         <motion.div
           className="flex  flex-col items-center xl:w-[21vw] 2xl:w-[19vw] md:items-start text-center md:text-left w-[80vw] sm:w-[60vw] md:w-[28vw] lg:w-[19vw] h-auto"
@@ -84,7 +84,7 @@ const AboutHighlights = () => {
       </div>
 
       {/* ========== ROW 2 ========== */}
-      <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center  gap-10 md:gap-10 xl:gap-20 2xl:gap-20 lg:gap-20  mt-10  md:-mt-[100px] xl:-mt-40 2xl:-mt-40">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center  gap-10 md:gap-10 xl:gap-20 2xl:gap-20 lg:gap-20  mt-10  md:-mt-[100px] xl:-mt-35 2xl:-mt-30">
         {/* Bottom Left */}
         <motion.div
           className="flex flex-col items-center  md:items-start text-center md:text-left w-[80vw] sm:w-[60vw] md:w-[28vw] xl:w-[21vw] 2xl:w-[19vw] lg:w-[19vw] h-auto"
