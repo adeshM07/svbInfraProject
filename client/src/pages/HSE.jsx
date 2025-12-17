@@ -418,7 +418,7 @@ const HSE = () => {
               <div className="flex flex-col gap-[10px] lg:gap-[20px] ">
                 {/* Title (Spring from Left → Right + Slight Down) */}
                 <motion.p
-                  className="text-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.4rem] md:text-[2rem]  xl:text-[1.7rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  className="text-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.4rem] md:text-[2rem]  xl:text-[1.4rem] 2xl:text-[2rem] lg:text-[2rem] fontMon font-semibold"
                   initial={{ opacity: 0, x: -120, y: -30 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   transition={{
