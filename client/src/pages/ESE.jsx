@@ -511,7 +511,7 @@ const ESE = () => {
             </div>
           </div>
         ) : (
-          <div className="flex w-full   my-20  md:text-[1.3rem] font-semibold justify-between mx-2 md:justify-evenly  overfow-hidden">
+          <div className="flex w-full   my-20 xl:my-30 2xl:my-20  md:text-[1.3rem] font-semibold justify-between mx-2 md:justify-evenly  overfow-hidden">
             <Link to="/ese" className="text-[#FDC000] hover:underline">
               Excavation Soil / Earth
             </Link>
