@@ -51,7 +51,7 @@ const AboutHighlights = () => {
 
         {/* Center Image */}
         <motion.div
-          className="order-first md:order-0 mt-10 md:mt-[190px] lg:mt-[120px] z-999"
+          className="order-first md:order-0 mt-10 md:mt-[190px] lg:mt-[120px] xl:mt-[140px] 2xl:mt-[120px] z-999"
           variants={fadeUp}
           transition={{ delay: 0.2, duration: 1 }}
         >
