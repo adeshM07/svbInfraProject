@@ -114,7 +114,7 @@ const Menu = () => {
       <div
         className={`
     fixed top-0 left-0   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
-     lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
+     lg:h-[11vh] xl:h-[11vh] place-items-center lg:px-30 
     transition-all duration-500 z-[999]
     ${isColored ? "bg-[#333333]" : "bg-transparent"}
   `}
