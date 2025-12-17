@@ -60,585 +60,635 @@ const SRP = () => {
             </p>
           </div>
         </div>
-        {isMobile?<div className="w-full flex flex-col px-2 lg:px-0 gap-[27px] my-21 md:gap-[150px] lg:gap-[150px] place-items-center">
+        {isMobile ? (
+          <div className="w-full flex flex-col px-2 lg:px-0 gap-[27px] my-21 md:gap-[150px] lg:gap-[150px] place-items-center">
+            {/* ===== Micro Piling ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic1}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                />
+              </div>
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Micro Piling
+                </p>
+                <ul className="text-[#333333] popins text-[14px] bg-white lg:-ml-20 md:text-[15px] lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                  <li className="HSEUL">
+                    Small-diameter piles used to strengthen existing foundations
+                    or weak soils.
+                  </li>
+                  <li className="HSEUL">
+                    Can be installed in confined areas with minimal vibration.
+                  </li>
+                  <li className="HSEUL">
+                    Common in retrofitting and slope stabilization projects.
+                  </li>
+                  <li className="HSEUL">
+                    Transfers load to deeper, more stable soil layers.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-  {/* ===== Micro Piling ===== */}
-  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-    <div>
-      <img src={ic1} className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]" />
-    </div>
-    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">Micro Piling</p>
-      <ul className="text-[#333333] popins text-[14px] bg-white lg:-ml-20 md:text-[15px] lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-        <li className="HSEUL">Small-diameter piles used to strengthen existing foundations or weak soils.</li>
-        <li className="HSEUL">Can be installed in confined areas with minimal vibration.</li>
-        <li className="HSEUL">Common in retrofitting and slope stabilization projects.</li>
-        <li className="HSEUL">Transfers load to deeper, more stable soil layers.</li>
-      </ul>
-    </div>
-  </div>
+            {/* ===== Sheet Piling ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic2}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                />
+              </div>
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Sheet Piling
+                </p>
+                <ul className="text-[#333333] popins md:text-[15px] text-[14px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                  <li className="HSEUL">
+                    Uses interlocking steel, vinyl, or concrete sheets driven
+                    into the ground.
+                  </li>
+                  <li className="HSEUL">
+                    Prevents soil collapse in deep excavations or waterfronts.
+                  </li>
+                  <li className="HSEUL">
+                    Reusable and provides temporary or permanent soil support.
+                  </li>
+                  <li className="HSEUL">
+                    Quick installation suitable for tight timelines.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-  {/* ===== Sheet Piling ===== */}
-  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-    <div>
-      <img src={ic2} className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]" />
-    </div>
-    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">Sheet Piling</p>
-      <ul className="text-[#333333] popins md:text-[15px] text-[14px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-        <li className="HSEUL">Uses interlocking steel, vinyl, or concrete sheets driven into the ground.</li>
-        <li className="HSEUL">Prevents soil collapse in deep excavations or waterfronts.</li>
-        <li className="HSEUL">Reusable and provides temporary or permanent soil support.</li>
-        <li className="HSEUL">Quick installation suitable for tight timelines.</li>
-      </ul>
-    </div>
-  </div>
+            {/* ===== RCC Piling ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic3}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                />
+              </div>
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  RCC Piling
+                </p>
+                <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                  <li className="HSEUL">
+                    Reinforced concrete piles for load-bearing support.
+                  </li>
+                  <li className="HSEUL">
+                    Transfers heavy loads to deep stable strata.
+                  </li>
+                  <li className="HSEUL">Ensures minimal settlement.</li>
+                  <li className="HSEUL">
+                    Used in bridges, towers, and industrial foundations.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-  {/* ===== RCC Piling ===== */}
-  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-    <div>
-      <img src={ic3} className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]" />
-    </div>
-    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">RCC Piling</p>
-      <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-        <li className="HSEUL">Reinforced concrete piles for load-bearing support.</li>
-        <li className="HSEUL">Transfers heavy loads to deep stable strata.</li>
-        <li className="HSEUL">Ensures minimal settlement.</li>
-        <li className="HSEUL">Used in bridges, towers, and industrial foundations.</li>
-      </ul>
-    </div>
-  </div>
-
-  {/* ===== Soil Nailing ===== */}
-  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-    <div>
-      <img src={ic4} className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]" />
-    </div>
-    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">Soil Nailing</p>
-      <ul className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-        <li className="HSEUL">Steel bars inserted to reinforce soil slopes.</li>
-        <li className="HSEUL">Prevents landslides.</li>
-        <li className="HSEUL">Cost-effective solution.</li>
-        <li className="HSEUL">Used with shotcrete.</li>
-      </ul>
-    </div>
-  </div>
-
-</div>
-:
-        <div className=" w-full flex flex-col px-2 lg:px-0  gap-[27px] my-21 md:gap-[150px] lg:gap-[150px]  place-items-center">
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic1}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring Entry From Right + Slight Down) */}
-              <motion.p
-                className=" text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Micro Piling
-              </motion.p>
-
-              {/* List (Spring Entry With Slight Delay, Same Direction) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] bg-white lg:-ml-20 md:text-[15px] lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Small-diameter piles used to strengthen existing foundations
-                  or weak soils.
-                </li>
-                <li className="HSEUL">
-                  Can be installed in confined areas with minimal vibration.
-                </li>
-                <li className="HSEUL">
-                  Common in retrofitting and slope stabilization projects.
-                </li>
-                <li className="HSEUL">
-                  Transfers load to deeper, more stable soil layers.
-                </li>
-              </motion.ul>
+            {/* ===== Soil Nailing ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic4}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                />
+              </div>
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Soil Nailing
+                </p>
+                <ul className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                  <li className="HSEUL">
+                    Steel bars inserted to reinforce soil slopes.
+                  </li>
+                  <li className="HSEUL">Prevents landslides.</li>
+                  <li className="HSEUL">Cost-effective solution.</li>
+                  <li className="HSEUL">Used with shotcrete.</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic2}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring from Left → Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
+        ) : (
+          <div className=" w-full flex flex-col px-2 lg:px-0  gap-[27px] my-21 md:gap-[150px] lg:gap-[150px]  place-items-center">
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                Sheet Piling
-              </motion.p>
+                <img
+                  src={ic1}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
 
-              {/* List (Spring Entry from Left, Slight Delay) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins md:text-[15px] text-[14px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring Entry From Right + Slight Down) */}
+                <motion.p
+                  className=" text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Micro Piling
+                </motion.p>
+
+                {/* List (Spring Entry With Slight Delay, Same Direction) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] bg-white lg:-ml-20 md:text-[15px] lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Small-diameter piles used to strengthen existing foundations
+                    or weak soils.
+                  </li>
+                  <li className="HSEUL">
+                    Can be installed in confined areas with minimal vibration.
+                  </li>
+                  <li className="HSEUL">
+                    Common in retrofitting and slope stabilization projects.
+                  </li>
+                  <li className="HSEUL">
+                    Transfers load to deeper, more stable soil layers.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <li className="HSEUL">
-                  Uses interlocking steel, vinyl, or concrete sheets driven into
-                  the ground to form retaining walls.
-                </li>
-                <li className="HSEUL">
-                  Prevents soil collapse in deep excavations or waterfronts.
-                </li>
-                <li className="HSEUL">
-                  Reusable and provides temporary or permanent soil support.
-                </li>
-                <li className="HSEUL">
-                  Quick installation suitable for tight construction timelines.
-                </li>
-              </motion.ul>
+                <img
+                  src={ic2}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring from Left → Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Sheet Piling
+                </motion.p>
+
+                {/* List (Spring Entry from Left, Slight Delay) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins md:text-[15px] text-[14px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Uses interlocking steel, vinyl, or concrete sheets driven
+                    into the ground to form retaining walls.
+                  </li>
+                  <li className="HSEUL">
+                    Prevents soil collapse in deep excavations or waterfronts.
+                  </li>
+                  <li className="HSEUL">
+                    Reusable and provides temporary or permanent soil support.
+                  </li>
+                  <li className="HSEUL">
+                    Quick installation suitable for tight construction
+                    timelines.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic3}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring Entry From Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  RCC Piling
+                </motion.p>
+
+                {/* List (Spring Entry With Slight Delay, Same Direction) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Reinforced concrete piles driven or bored into the ground
+                    for load-bearing support.
+                  </li>
+                  <li className="HSEUL">
+                    Transfers heavy structural loads to deep stable strata.
+                  </li>
+                  <li className="HSEUL">
+                    Ensures minimal settlement and increased foundation
+                    stability.
+                  </li>
+                  <li className="HSEUL">
+                    Widely used in bridges, towers, and industrial foundation
+                    projects.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic4}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring from Left → Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Soil Nailing
+                </motion.p>
+
+                {/* List (Spring Entry from Left, Slight Delay) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Reinforces soil slopes by inserting steel bars (nails) into
+                    pre-drilled holes.
+                  </li>
+                  <li className="HSEUL">
+                    Stabilizes excavations and prevents landslides or soil
+                    movement.
+                  </li>
+                  <li className="HSEUL">
+                    Cost-effective and suitable for both temporary and permanent
+                    applications.
+                  </li>
+                  <li className="HSEUL">
+                    Combined with shotcrete for added surface strength.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic5}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring Entry From Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Short Creating
+                </motion.p>
+
+                {/* List (Spring Entry With Slight Delay, Same Direction) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Spraying of concrete mix onto soil or rock surfaces under
+                    high pressure.
+                  </li>
+                  <li className="HSEUL">
+                    Provides an instant protective and stabilizing layer.
+                  </li>
+                  <li className="HSEUL">
+                    Used along with soil nailing for retaining structures.
+                  </li>
+                  <li className="HSEUL">
+                    Increases the durability of excavation faces.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic6}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring from Left → Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Grouting
+                </motion.p>
+
+                {/* List (Spring Entry from Left, Slight Delay) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Injection of cementitious or chemical mixtures into soil or
+                    rock voids.
+                  </li>
+                  <li className="HSEUL">
+                    Increases density, strength, and reduces permeability.
+                  </li>
+                  <li className="HSEUL">
+                    Used to control groundwater seepage or stabilize weak zones.
+                  </li>
+                  <li className="HSEUL">
+                    Customizable depending on soil type and project
+                    requirements.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic7}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring Entry From Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Weep Holes
+                </motion.p>
+
+                {/* List (Spring Entry With Slight Delay, Same Direction) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Small openings provided in retaining walls to allow water
+                    drainage.
+                  </li>
+                  <li className="HSEUL">
+                    Simple yet essential for long-term soil retention
+                    performance.
+                  </li>
+                  <li className="HSEUL">
+                    Increases wall stability and longevity.
+                  </li>
+                  <li className="HSEUL">
+                    Prevents hydrostatic pressure buildup behind walls.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic8}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring from Left → Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  PT & Rock Anchors
+                </motion.p>
+
+                {/* List (Spring Entry from Left, Slight Delay) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Post-tensioned anchors used to stabilize deep excavations or
+                    rock faces.
+                  </li>
+                  <li className="HSEUL">
+                    Transfers load from retaining structures to stable rock or
+                    soil layers.
+                  </li>
+                  <li className="HSEUL">
+                    Allows adjustable tensioning for performance monitoring.
+                  </li>
+                  <li className="HSEUL">
+                    Common in tunnel portals, bridges, and high retaining walls.
+                  </li>
+                </motion.ul>
+              </div>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic3}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
+        )}
 
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring Entry From Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                RCC Piling
-              </motion.p>
-
-              {/* List (Spring Entry With Slight Delay, Same Direction) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Reinforced concrete piles driven or bored into the ground for
-                  load-bearing support.
-                </li>
-                <li className="HSEUL">
-                  Transfers heavy structural loads to deep stable strata.
-                </li>
-                <li className="HSEUL">
-                  Ensures minimal settlement and increased foundation stability.
-                </li>
-                <li className="HSEUL">
-                  Widely used in bridges, towers, and industrial foundation
-                  projects.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic4}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring from Left → Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Soil Nailing
-              </motion.p>
-
-              {/* List (Spring Entry from Left, Slight Delay) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Reinforces soil slopes by inserting steel bars (nails) into
-                  pre-drilled holes.
-                </li>
-                <li className="HSEUL">
-                  Stabilizes excavations and prevents landslides or soil
-                  movement.
-                </li>
-                <li className="HSEUL">
-                  Cost-effective and suitable for both temporary and permanent
-                  applications.
-                </li>
-                <li className="HSEUL">
-                  Combined with shotcrete for added surface strength.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic5}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring Entry From Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Short Creating
-              </motion.p>
-
-              {/* List (Spring Entry With Slight Delay, Same Direction) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Spraying of concrete mix onto soil or rock surfaces under high
-                  pressure.
-                </li>
-                <li className="HSEUL">
-                  Provides an instant protective and stabilizing layer.
-                </li>
-                <li className="HSEUL">
-                  Used along with soil nailing for retaining structures.
-                </li>
-                <li className="HSEUL">
-                  Increases the durability of excavation faces.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic6}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring from Left → Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Grouting
-              </motion.p>
-
-              {/* List (Spring Entry from Left, Slight Delay) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Injection of cementitious or chemical mixtures into soil or
-                  rock voids.
-                </li>
-                <li className="HSEUL">
-                  Increases density, strength, and reduces permeability.
-                </li>
-                <li className="HSEUL">
-                  Used to control groundwater seepage or stabilize weak zones.
-                </li>
-                <li className="HSEUL">
-                  Customizable depending on soil type and project requirements.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic7}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring Entry From Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Weep Holes
-              </motion.p>
-
-              {/* List (Spring Entry With Slight Delay, Same Direction) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Small openings provided in retaining walls to allow water
-                  drainage.
-                </li>
-                <li className="HSEUL">
-                  Simple yet essential for long-term soil retention performance.
-                </li>
-                <li className="HSEUL">
-                  Increases wall stability and longevity.
-                </li>
-                <li className="HSEUL">
-                  Prevents hydrostatic pressure buildup behind walls.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic8}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring from Left → Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                PT & Rock Anchors
-              </motion.p>
-
-              {/* List (Spring Entry from Left, Slight Delay) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Post-tensioned anchors used to stabilize deep excavations or
-                  rock faces.
-                </li>
-                <li className="HSEUL">
-                  Transfers load from retaining structures to stable rock or
-                  soil layers.
-                </li>
-                <li className="HSEUL">
-                  Allows adjustable tensioning for performance monitoring.
-                </li>
-                <li className="HSEUL">
-                  Common in tunnel portals, bridges, and high retaining walls.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-        </div>}
-        
         {isMobile ? (
           <div className="relative w-full overflow-hidden my-20">
             <div className="marquee flex items-center whitespace-nowrap">

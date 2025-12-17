@@ -104,11 +104,11 @@ const PortFolio = () => {
         />
         <link rel="canonical" href="https://svbinfraprojects.com/portfolio" />
       </Helmet>
-      <div className="flex flex-col gap-[13vh] py-20 bg-[#F8F8F8]">
+      <div className="flex  flex-col gap-10 lg:gap-[13vh] py-10 lg:py-30 bg-[#F8F8F8]">
         <section className="flex flex-col gap-8 lg:gap-8">
           {/* ===== Animated Heading ===== */}
           <motion.p
-            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
+            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[95px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -222,11 +222,11 @@ const PortFolio = () => {
             ))}
           </div>
         </section>
-        <section className="flex flex-col gap-12 overflow-hidden"></section>
-         <p className="lg:text-[2rem] text-[1.2rem] pl-[2rem] lg:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
+        {/* <section className="  flex flex-col gap-12 overflow-hidden"></section> */}
+         <p className="lg:text-[2rem] text-[1.2rem] pl-[1.3rem] lg:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
             Reviews and ratings
           </p>
-        <div className="flex flex-col lg:flex-row lg:w-fit lg:gap-30 mx-4 lg:mx-30">
+        <div className="flex  flex-col lg:flex-row lg:w-fit lg:gap-30 gap-y-5 mx-4 lg:mx-30">
           {/* Left Side - Texts + Button */}
           <motion.div
             className="flex flex-col gap-5  md:w-[50%]"
