@@ -226,7 +226,7 @@ const Landing = () => {
                   muted
                   loop
                   playsInline
-                  className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[45vw] xl:h-[84vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh]  object-cover"
+                  className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[42vw] xl:h-[85vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh]  object-cover"
                 />
               </motion.div>
 
