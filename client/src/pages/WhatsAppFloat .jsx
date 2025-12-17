@@ -12,7 +12,7 @@ const WhatsAppFloat = () => {
         <i
           className="fa-brands fa-whatsapp text-green-500
     [@media(min-width:300px)_and_(max-width:700px)]:text-[2.5rem]
-    text-[4rem]"
+    text-[4rem] xl:text-[3.4rem] 2xl:text-[4rem]"
         ></i>
       </div>
     </a>
