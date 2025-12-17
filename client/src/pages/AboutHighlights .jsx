@@ -39,12 +39,12 @@ const AboutHighlights = () => {
             className="bg-[#FFE26C] rounded-full aspect-square w-[18vw] sm:w-[10vw] md:w-[5vw] flex items-center justify-center shadow-sm mb-3"
             variants={scaleIn}
           >
-            <img src={icon1} className="w-[7vw] sm:w-[4vw] md:w-[2vw] h-auto" />
+            <img src={icon1} className="w-[7vw] sm:w-[4vw] md:w-[2vw] lg:w-[2vw]  2xl:w-[2vw] h-auto" />
           </motion.div>
-          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] fontMon text-[#333333]">
+          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] fontMon text-[#333333]">
             Upgraded Fleet
           </p>
-          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] popins">
+          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] xl:text-[1rem] 2xl:text-[1.3rem] popins">
             Advanced equipment for every project need
           </p>
         </motion.div>
@@ -58,7 +58,7 @@ const AboutHighlights = () => {
           <img
             src={midIMG}
             alt="SVB Infra Projects"
-            className="w-[65vw] sm:w-[45vw] md:w-[30vw] lg:w-[21vw] h-auto object-cover rounded-[2rem]"
+            className="w-[65vw] sm:w-[45vw] md:w-[30vw] lg:w-[21vw] xl:w-[19vw] 2xl:w-[21vw] h-auto object-cover rounded-[2rem]"
           />
         </motion.div>
 
@@ -74,10 +74,10 @@ const AboutHighlights = () => {
           >
             <img src={icon2} className="w-[7vw] sm:w-[4vw] md:w-[2vw] h-auto" />
           </motion.div>
-          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] fontMon text-[#333333]">
+          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] fontMon text-[#333333]">
             Qualified Team
           </p>
-          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] popins">
+          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] xl:text-[1rem] 2xl:text-[1.3rem] popins">
             Skilled Workforce Delivering Exceptional Results
           </p>
         </motion.div>
@@ -97,10 +97,10 @@ const AboutHighlights = () => {
           >
             <img src={icon3} alt="" className="w-[7vw] sm:w-[4vw] md:w-[2vw] h-auto" />
           </motion.div>
-          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] fontMon text-[#333333]">
+          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] fontMon text-[#333333]">
             Reliable Results
           </p>
-          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] popins">
+          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] xl:text-[1rem] 2xl:text-[1.3rem] popins">
             Trusted since 2003, delivering projects across Karnataka and AP
           </p>
         </motion.div>
@@ -117,10 +117,10 @@ const AboutHighlights = () => {
           >
             <img src={icon4} alt="" className="w-[7vw] sm:w-[4vw] md:w-[2vw] h-auto" />
           </motion.div>
-          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] fontMon text-[#333333]">
+          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] fontMon text-[#333333]">
             Safety Priority
           </p>
-          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] popins">
+          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] xl:text-[1rem] 2xl:text-[1.3rem] popins">
             Safety is our top priority in every project.
           </p>
         </motion.div>
@@ -137,10 +137,11 @@ const AboutHighlights = () => {
           >
             <img src={icon5} alt="" className="w-[7vw] sm:w-[4vw] md:w-[2vw] h-auto" />
           </motion.div>
-          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] fontMon text-[#333333]">
+          <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] fontMon text-[#333333]">
             Client Priority
           </p>
-          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] popins">
+          <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] lg:text-[1.3rem] 
+          xl:text-[1rem] 2xl:text-[1.3rem] popins">
             Building strong partnerships with tailored client solutions
           </p>
         </motion.div>
