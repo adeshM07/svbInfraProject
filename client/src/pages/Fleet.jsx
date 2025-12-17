@@ -169,7 +169,7 @@ const Fleet = () => {
 
             {/* Stats Box */}
             <motion.div
-              className="w-[82vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] h-[6vh] lg:w-[52vw] lg:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
+              className="w-[82vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] h-[6vh] lg:w-[52vw] lg:h-[17vh]  xl:w-[65vw] xl:h-[19vh] 2xl:w-[52vw] 2xl:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
               initial={{ opacity: 0, scale: 0.85, y: 30 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
@@ -182,11 +182,11 @@ const Fleet = () => {
                 ["Successful Projects", "185+ Projects"],
               ].map(([title, value], i) => (
                 <React.Fragment key={i}>
-                  <div className="flex flex-col gap-[3px] lg:gap-[20px] text-center">
-                    <p className="popins-noweight [@media(min-width:300px)_and_(max-width:410px)]:text-[0.5rem] text-[0.6rem] md:text-[0.8rem] lg:text-[1.3rem] font-semibold text-[#333333]">
+                  <div className="flex flex-col  gap-[3px] lg:gap-[20px] text-center">
+                    <p className="popins-noweight [@media(min-width:300px)_and_(max-width:410px)]:text-[0.5rem] text-[0.6rem] md:text-[0.8rem] lg:text-[1.3rem] xl:text-[1.1rem] font-semibold text-[#333333]">
                       {title}
                     </p>
-                    <p className="popins-noweight text-[0.4rem] md:text-[0.6rem] lg:text-[1rem] font-normal text-[#333333]">
+                    <p className="popins-noweight text-[0.4rem] md:text-[0.6rem] lg:text-[1rem] xl:text-[0.9rem] font-normal text-[#333333]">
                       {value}
                     </p>
                   </div>
@@ -241,7 +241,7 @@ const Fleet = () => {
             {cardDetails.map((item, index) => (
               <motion.div
                 key={index}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] lg:h-[50vh] flex flex-col gap-2 lg:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] lg:h-[50vh] xl:h-[53vh] flex flex-col gap-2 lg:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -253,15 +253,15 @@ const Fleet = () => {
                 <motion.img
                   src={item.img}
                   alt={item.title}
-                  className="h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] w-[80vw] lg:w-[22vw] lg:h-[30vh]"
+                  className="h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] w-[80vw] lg:w-[22vw] lg:h-[30vh] xl:w-[24vw] xl:h-[33vh]"
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.3 }}
                 />
                 <div className="flex flex-col gap-2">
-                  <p className="text-[#333333] text-[1.5rem] md:text-[2.5rem] lg:text-[1.5rem] font-semibold fontMon">
+                  <p className="text-[#333333] text-[1.5rem] md:text-[2.5rem] lg:text-[1.5rem] xl:text-[1.3rem] font-semibold fontMon">
                     {item.title}
                   </p>
-                  <p className="text-[1rem] md:text-[1.3rem] lg:text-[1rem] popins">
+                  <p className="text-[1rem] md:text-[1.3rem] lg:text-[1rem] xl:text-[0.8rem] popins">
                     {item.desc}
                   </p>
                 </div>

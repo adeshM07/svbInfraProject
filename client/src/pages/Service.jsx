@@ -38,7 +38,7 @@ const Service = () => {
         {/* ===== BANNER SECTION ===== */}
         <div
           id="serviceBanner"
-          className="w-screen [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  h-[45vh] md:h-[45vh] lg:h-[95vh]"
+          className="w-screen [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  h-[45vh] md:h-[45vh] lg:h-[95vh] xl:h-[95vh]"
         >
           <div className="pt-[80px] ml-[30px] [@media(min-width:300px)_and_(max-width:410px)]:pt-[60px] lg:pt-[120px] lg:ml-[120px]">
             {/* Heading Animation */}
@@ -80,7 +80,7 @@ const Service = () => {
 
         {/* ===== SERVICE CARDS ===== */}
         <motion.div
-          className="w-fit flex flex-col gap-6 lg:gap-5  mx-auto [@media(min-width:650px)_and_(max-width:1200px)]:-mt-[140px] -mt-[100px] md:-mt-[150px] lg:-mt-[150px] pb-20"
+          className="w-fit flex flex-col gap-6 lg:gap-5  mx-auto [@media(min-width:650px)_and_(max-width:1200px)]:-mt-[140px] -mt-[100px] md:-mt-[150px] lg:-mt-[150px] xl:-mt-[130px] pb-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -88,7 +88,7 @@ const Service = () => {
         >
           {/* Section Heading */}
           <motion.p
-            className="font-semibold text-white text-[1rem] md:text-[1.4rem] lg:text-[1.4rem] underline decoration-[#FDC000] underline-offset-8 pl-3 [@media(min-width:650px)_and_(max-width:1200px)]:pl-5"
+            className="font-semibold text-white text-[1rem] md:text-[1.4rem] lg:text-[1.4rem] underline decoration-[#FDC000] underline-offset-8 pl-3 [@media(min-width:650px)_and_(max-width:1200px)]:pl-5 xl:pl-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
@@ -124,7 +124,7 @@ const Service = () => {
                 >
                   <img
                     src={src}
-                    className="w-[23vw] h-[13vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[19vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[40vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[17vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[24vw]  md:h-[20vh] lg:w-[20vw] xl:w-[22vw] 2xl:w-[18vw]   lg:h-[47vh] xl:h-[52vh] xl:w-[24vw] object-cover 
+                    className="w-[23vw] h-[13vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[19vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[40vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[17vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[24vw]  md:h-[20vh] lg:w-[20vw] xl:w-[20vw] 2xl:w-[18vw] 2xl:h-[47vh]   lg:h-[47vh] xl:h-[52vh] xl:w-[24vw] object-cover 
            transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md"
                     alt={`Service ${index + 1}`}
                   />

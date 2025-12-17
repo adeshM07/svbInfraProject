@@ -105,10 +105,10 @@ const PortFolio = () => {
         <link rel="canonical" href="https://svbinfraprojects.com/portfolio" />
       </Helmet>
       <div className="flex  flex-col gap-10 lg:gap-[13vh] py-10 lg:py-30 bg-[#F8F8F8]">
-        <section className="flex flex-col gap-8 lg:gap-8">
+        <section className="flex  flex-col gap-8 lg:gap-8">
           {/* ===== Animated Heading ===== */}
           <motion.p
-            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[95px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
+            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[95px] xl:pl-[35px] 2xl:pl-[95px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -118,22 +118,22 @@ const PortFolio = () => {
           </motion.p>
 
           {/* ===== Content Section ===== */}
-          <div className="flex flex-col lg:flex-row lg:w-fit lg:gap-30 mx-4 lg:mx-auto">
+          <div className="flex flex-col  lg:flex-row lg:w-fit lg:gap-30 xl:gap-10 2xl:gap-30 mx-4 lg:mx-auto ">
             {/* Left Side - Texts + Button */}
             <motion.div
-              className="flex flex-col gap-3"
+              className="flex flex-col gap-3 "
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
               {isMobile ? (
-                <p className="popins-bold leading-8 text-[1.7rem] text-[#333333] lg:leading-20">
-                  Innovation That Strengthens{" "}
+                <p className="popins-bold leading-8 text-[1.7rem]  text-[#333333] lg:leading-20">
+                  Innovation That Strengthens
                   <span className="text-[#FDC000]">Infrastructure</span>
                 </p>
               ) : (
-                <p className="popins-bold md:text-[2.4rem] lg:text-[4.5rem] text-[#333333] lg:leading-20">
+                <p className="popins-bold md:text-[2.4rem] lg:text-[4.5rem] xl:text-[4rem] 2xl:text-[4.5rem] text-[#333333] lg:leading-20 xl:leading-20">
                   Innovation That <br /> Strengthens{" "}
                   <br className="md:hidden lg:block" />{" "}
                   <span className="text-[#FDC000]">Infrastructure</span>
@@ -178,7 +178,7 @@ const PortFolio = () => {
                     key={index}
                     src={src}
                     alt={`Project ${index + 1}`}
-                    className="w-[30vw] h-[20vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh]   xl:w-[22vw] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg "
+                    className="w-[30vw] h-[20vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh]   xl:w-[22vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] 2xl:h-[47vh] lg:object-cover rounded-lg "
                   />
                 ))}
               </div>
@@ -186,11 +186,11 @@ const PortFolio = () => {
           </div>
         </section>
         <section className="flex flex-col gap-12 overflow-hidden">
-          <p className="lg:text-[2rem] text-[1.2rem] pl-[2rem] lg:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
+          <p className="lg:text-[2rem] text-[1.2rem] pl-[2rem] lg:pl-[110px] xl:pl-[35px] 2xl:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
             Our Latest Projects
           </p>
 
-          <div className="relative  w-[92vw] mx-auto lg:mx-0 lg:w-[92vw] lg:ml-[60px] lg:mr-[60px] overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
+          <div className="relative   w-[92vw] mx-auto lg:mx-0 lg:w-[92vw] lg:ml-[60px] lg:mr-[60px] overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
             {[
               c1,
               c2,
@@ -223,10 +223,10 @@ const PortFolio = () => {
           </div>
         </section>
         {/* <section className="  flex flex-col gap-12 overflow-hidden"></section> */}
-        <p className="lg:text-[2rem] text-[1.2rem] pl-[1.3rem] lg:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
+        <p className="lg:text-[2rem] text-[1.2rem] pl-[1.3rem] lg:pl-[110px] xl:pl-[35px] 2xl:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
           Reviews and ratings
         </p>
-        <div className="flex  flex-col lg:flex-row lg:w-fit lg:gap-30 gap-y-5 mx-4 lg:mx-30">
+        <div className="flex  flex-col lg:flex-row lg:w-fit lg:gap-30 xl:gap-10 2xl:gap-30 gap-y-5 mx-4 lg:mx-30 xl:mx-10 2xl:mx-30">
           {/* Left Side - Texts + Button */}
           <motion.div
             className="flex flex-col gap-5  md:w-[50%]"
@@ -243,7 +243,7 @@ const PortFolio = () => {
                 </span>
               </p>
             ) : (
-              <p className="popins-bold md:text-[2.4rem] lg:text-[4.5rem] text-[#333333] lg:leading-20">
+              <p className="popins-bold md:text-[2.4rem] lg:text-[4.5rem] xl:text-[4rem] 2xl:text-[4.5rem] text-[#333333] lg:leading-20">
                 Industry{" "}
                 <span className="text-[#FDC000]">
                   Trusted <br className="md:hidden lg:block" /> Feedback
@@ -298,7 +298,7 @@ const PortFolio = () => {
               // transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               // viewport={{ once: true, amount: 0.4 }}
             >
-              <img src={reviewsIMG} className="lg:w-[37vw] lg:h-[57vh]" />
+              <img src={reviewsIMG} className="lg:w-[37vw] lg:h-[57vh]   2xl:w-[37vw] 2xl:h-[57vh]" />
             </div>
           ) : (
             <motion.div
@@ -337,7 +337,7 @@ const PortFolio = () => {
                 <p className="text-[0.8rem] lg:text-[1rem] text-[#333333] font-semibold">
                   Explore our gallery to see SVB Infra Projects’ commitment to
                   quality,
-                  <br className="hidden lg:block" /> precision, and trusted
+                  <br className="hidden lg:block xl:hidden 2xl:block" /> precision, and trusted
                   execution in every project we deliver.
                 </p>
               </div>
@@ -347,7 +347,7 @@ const PortFolio = () => {
                 <p className="popins-bold text-[#FDC000] text-[1.3rem] lg:text-[4rem]">
                   45+
                 </p>
-                <p className="text-[0.8rem] lg:text-[2rem] text-[#333333] popins-bold lg:leading-10">
+                <p className="text-[0.8rem] lg:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem] text-[#333333] popins-bold lg:leading-10">
                   Total number <br /> of machinery
                 </p>
               </div>
