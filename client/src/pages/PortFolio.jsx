@@ -347,7 +347,7 @@ const PortFolio = () => {
                 <p className="popins-bold text-[#FDC000] text-[1.3rem] lg:text-[4rem]">
                   45+
                 </p>
-                <p className="text-[0.8rem] lg:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem] text-[#333333] popins-bold lg:leading-10">
+                <p className="text-[0.8rem] lg:text-[2rem] xl:text-[1.6rem] 2xl:text-[2rem] text-[#333333] popins-bold lg:leading-10">
                   Total number <br /> of machinery
                 </p>
               </div>
