@@ -55,276 +55,309 @@ const DS = () => {
             </p>
           </div>
         </div>
-        {isMobile?<div className="w-full flex flex-col px-2 lg:px-0 gap-[27px] my-21 md:gap-[150px] lg:gap-[150px] place-items-center">
+        {isMobile ? (
+          <div className="w-full flex flex-col px-2 lg:px-0 gap-[27px] my-21 md:gap-[150px] lg:gap-[150px] place-items-center">
+            {/* ===== BLOCK 1 ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic1}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Well Point System"
+                />
+              </div>
 
-  {/* ===== BLOCK 1 ===== */}
-  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-    <div>
-      <img
-        src={ic1}
-        className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-        alt="Well Point System"
-      />
-    </div>
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Well Point System
+                </p>
 
-    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
-        Well Point System
-      </p>
+                <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                  <li className="HSEUL">
+                    Series of shallow wells connected to a vacuum pump to remove
+                    groundwater.
+                  </li>
+                  <li className="HSEUL">
+                    Used for controlling water levels during shallow
+                    excavations.
+                  </li>
+                  <li className="HSEUL">
+                    Enables dry working conditions and prevents soil
+                    instability.
+                  </li>
+                  <li className="HSEUL">
+                    Quick setup and suitable for sandy or loose soils.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-      <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-        <li className="HSEUL">Series of shallow wells connected to a vacuum pump to remove groundwater.</li>
-        <li className="HSEUL">Used for controlling water levels during shallow excavations.</li>
-        <li className="HSEUL">Enables dry working conditions and prevents soil instability.</li>
-        <li className="HSEUL">Quick setup and suitable for sandy or loose soils.</li>
-      </ul>
-    </div>
-  </div>
+            {/* ===== BLOCK 2 ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic2}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Deep Well System"
+                />
+              </div>
 
-  {/* ===== BLOCK 2 ===== */}
-  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-    <div>
-      <img
-        src={ic2}
-        className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-        alt="Deep Well System"
-      />
-    </div>
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Deep Well System
+                </p>
 
-    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
-        Deep Well System
-      </p>
+                <ul className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300">
+                  <li className="HSEUL">
+                    Involves installation of deep wells with submersible pumps
+                    for high water table areas.
+                  </li>
+                  <li className="HSEUL">
+                    Handles large volumes of groundwater efficiently.
+                  </li>
+                  <li className="HSEUL">
+                    Used in basement, shaft, or deep foundation works.
+                  </li>
+                  <li className="HSEUL">
+                    Ensures long-term dewatering for complex excavation sites.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-      <ul className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300">
-        <li className="HSEUL">Involves installation of deep wells with submersible pumps for high water table areas.</li>
-        <li className="HSEUL">Handles large volumes of groundwater efficiently.</li>
-        <li className="HSEUL">Used in basement, shaft, or deep foundation works.</li>
-        <li className="HSEUL">Ensures long-term dewatering for complex excavation sites.</li>
-      </ul>
-    </div>
-  </div>
+            {/* ===== BLOCK 3 ===== */}
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              <div>
+                <img
+                  src={ic3}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
+                  alt="Automated Dewatering System"
+                />
+              </div>
 
-  {/* ===== BLOCK 3 ===== */}
-  <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-    <div>
-      <img
-        src={ic3}
-        className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-        alt="Automated Dewatering System"
-      />
-    </div>
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
+                  Automated Dewatering System
+                </p>
 
-    <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-      <p className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold">
-        Automated Dewatering System
-      </p>
-
-      <ul className="text-[#333333] popins md:text-[15px] text-[14px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-        <li className="HSEUL">Uses smart sensors and automated pumps for efficient groundwater management.</li>
-        <li className="HSEUL">Reduces manpower and ensures real-time water level monitoring.</li>
-        <li className="HSEUL">Energy-efficient and adaptable for varying site conditions.</li>
-        <li className="HSEUL">Provides consistent control to maintain dry and safe excavation zones.</li>
-      </ul>
-    </div>
-  </div>
-
-</div>
-:
-        
-        <div className=" w-full flex flex-col px-2 lg:px-0  gap-[27px] my-21 md:gap-[150px] lg:gap-[150px]  place-items-center">
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic1}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring Entry From Right + Slight Down) */}
-              <motion.p
-                className=" text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Well Point System
-              </motion.p>
-
-              {/* List (Spring Entry With Slight Delay, Same Direction) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Series of shallow wells connected to a vacuum pump to remove
-                  groundwater.
-                </li>
-                <li className="HSEUL">
-                  Used for controlling water levels during shallow excavations.
-                </li>
-                <li className="HSEUL">
-                  Enables dry working conditions and prevents soil instability.
-                </li>
-                <li className="HSEUL">
-                  Quick setup and suitable for sandy or loose soils.
-                </li>
-              </motion.ul>
+                <ul className="text-[#333333] popins md:text-[15px] text-[14px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                  <li className="HSEUL">
+                    Uses smart sensors and automated pumps for efficient
+                    groundwater management.
+                  </li>
+                  <li className="HSEUL">
+                    Reduces manpower and ensures real-time water level
+                    monitoring.
+                  </li>
+                  <li className="HSEUL">
+                    Energy-efficient and adaptable for varying site conditions.
+                  </li>
+                  <li className="HSEUL">
+                    Provides consistent control to maintain dry and safe
+                    excavation zones.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic2}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
-
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring from Left → Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
+        ) : (
+          <div className=" w-full flex flex-col px-2 lg:px-0  gap-[27px] my-21 md:gap-[150px] lg:gap-[150px]  place-items-center">
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                Deep Well System
-              </motion.p>
+                <img
+                  src={ic1}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh] xl:h-[65vh] 2xl:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
 
-              {/* List (Spring Entry from Left, Slight Delay) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
-                initial={{ opacity: 0, x: -120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring Entry From Right + Slight Down) */}
+                <motion.p
+                  className=" text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Well Point System
+                </motion.p>
+
+                {/* List (Spring Entry With Slight Delay, Same Direction) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Series of shallow wells connected to a vacuum pump to remove
+                    groundwater.
+                  </li>
+                  <li className="HSEUL">
+                    Used for controlling water levels during shallow
+                    excavations.
+                  </li>
+                  <li className="HSEUL">
+                    Enables dry working conditions and prevents soil
+                    instability.
+                  </li>
+                  <li className="HSEUL">
+                    Quick setup and suitable for sandy or loose soils.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <li className="HSEUL">
-                  Involves installation of deep wells with submersible pumps for
-                  high water table areas.
-                </li>
-                <li className="HSEUL">
-                  Handles large volumes of groundwater efficiently.
-                </li>
-                <li className="HSEUL">
-                  Used in basement, shaft, or deep foundation works.
-                </li>
-                <li className="HSEUL">
-                  Ensures long-term dewatering for complex excavation sites.
-                </li>
-              </motion.ul>
+                <img
+                  src={ic2}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh] xl:h-[65vh] 2xl:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring from Left → Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Deep Well System
+                </motion.p>
+
+                {/* List (Spring Entry from Left, Slight Delay) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins text-[14px] md:text-[15px] lg:text-[18px] lg:-mr-22 bg-white pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)] z-300"
+                  initial={{ opacity: 0, x: -120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Involves installation of deep wells with submersible pumps
+                    for high water table areas.
+                  </li>
+                  <li className="HSEUL">
+                    Handles large volumes of groundwater efficiently.
+                  </li>
+                  <li className="HSEUL">
+                    Used in basement, shaft, or deep foundation works.
+                  </li>
+                  <li className="HSEUL">
+                    Ensures long-term dewatering for complex excavation sites.
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
+            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+              {/* ===== IMAGE (Fades In Smoothly) ===== */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <img
+                  src={ic3}
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh] xl:h-[65vh] 2xl:h-[52vh]"
+                  alt="Commitment to health & safety"
+                />
+              </motion.div>
+
+              {/* ===== TEXT SECTION ===== */}
+              <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
+                {/* Title (Spring Entry From Right + Slight Down) */}
+                <motion.p
+                  className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    duration: 0.9,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  Automated Dewatering System
+                </motion.p>
+
+                {/* List (Spring Entry With Slight Delay, Same Direction) */}
+                <motion.ul
+                  id="HSEUL"
+                  className="text-[#333333] popins md:text-[15px] text-[14px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  initial={{ opacity: 0, x: 120, y: -30 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15,
+                    delay: 0.25,
+                  }}
+                  viewport={{ once: true, amount: 0.4 }}
+                >
+                  <li className="HSEUL">
+                    Uses smart sensors and automated pumps for efficient
+                    groundwater management.
+                  </li>
+                  <li className="HSEUL">
+                    Reduces manpower and ensures real-time water level
+                    monitoring.
+                  </li>
+                  <li className="HSEUL">
+                    Energy-efficient and adaptable for varying site conditions.
+                  </li>
+                  <li className="HSEUL">
+                    Provides consistent control to maintain dry and safe
+                    excavation zones.
+                  </li>
+                </motion.ul>
+              </div>
             </div>
           </div>
-          <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 xl:w-[90vw] 2xl:w-[78vw] lg:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
-            {/* ===== IMAGE (Fades In Smoothly) ===== */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <img
-                src={ic3}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[50vw] lg:h-[52vh]"
-                alt="Commitment to health & safety"
-              />
-            </motion.div>
+        )}
 
-            {/* ===== TEXT SECTION ===== */}
-            <div className="flex flex-col  gap-[10px] lg:gap-[20px]">
-              {/* Title (Spring Entry From Right + Slight Down) */}
-              <motion.p
-                className="text-[#FDC000] text-[1.4rem] md:text-[2rem] lg:text-[2rem] fontMon font-semibold"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  duration: 0.9,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                Automated Dewatering System
-              </motion.p>
-
-              {/* List (Spring Entry With Slight Delay, Same Direction) */}
-              <motion.ul
-                id="HSEUL"
-                className="text-[#333333] popins md:text-[15px] text-[14px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                initial={{ opacity: 0, x: 120, y: -30 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 15,
-                  delay: 0.25,
-                }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <li className="HSEUL">
-                  Uses smart sensors and automated pumps for efficient
-                  groundwater management.
-                </li>
-                <li className="HSEUL">
-                  Reduces manpower and ensures real-time water level monitoring.
-                </li>
-                <li className="HSEUL">
-                  Energy-efficient and adaptable for varying site conditions.
-                </li>
-                <li className="HSEUL">
-                  Provides consistent control to maintain dry and safe
-                  excavation zones.
-                </li>
-              </motion.ul>
-            </div>
-          </div>
-        </div>}
-        
         {isMobile ? (
           <div className="relative w-full overflow-hidden my-20">
             <div className="marquee flex items-center whitespace-nowrap">
@@ -332,14 +365,14 @@ const DS = () => {
                 Excavation Soil / Earth
               </Link>
 
-              <Link
-                to="/rep"
-                className="mx-8 md:text-[1.3rem] font-semibold "
-              >
+              <Link to="/rep" className="mx-8 md:text-[1.3rem] font-semibold ">
                 Rock Excavation
               </Link>
 
-              <Link to="/ds" className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]">
+              <Link
+                to="/ds"
+                className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
+              >
                 Reliable Dewatering System
               </Link>
 
@@ -352,14 +385,14 @@ const DS = () => {
                 Excavation Soil / Earth
               </Link>
 
-              <Link
-                to="/rep"
-                className="mx-8 md:text-[1.3rem] font-semibold "
-              >
+              <Link to="/rep" className="mx-8 md:text-[1.3rem] font-semibold ">
                 Rock Excavation
               </Link>
 
-              <Link to="/ds" className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]">
+              <Link
+                to="/ds"
+                className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
+              >
                 Reliable Dewatering System
               </Link>
 
@@ -373,21 +406,21 @@ const DS = () => {
           </div>
         ) : (
           <div className="flex w-full   my-20  md:text-[1.3rem] font-semibold justify-between mx-2 md:justify-evenly  overfow-hidden">
-           <Link to="/ese" className=" hover:underline">
-                         Excavation Soil / Earth
-                       </Link>
-           
-                       <Link to="/rep" className="hover:underline">
-                         Rock Excavation
-                       </Link>
-           
-                       <Link to="/ds" className=" text-[#FDC000] hover:underline">
-                         Reliable Dewatering System
-                       </Link>
-           
-                       <Link to="/srp" className=" hover:underline">
-                         Soil Retention System
-                       </Link>
+            <Link to="/ese" className=" hover:underline">
+              Excavation Soil / Earth
+            </Link>
+
+            <Link to="/rep" className="hover:underline">
+              Rock Excavation
+            </Link>
+
+            <Link to="/ds" className=" text-[#FDC000] hover:underline">
+              Reliable Dewatering System
+            </Link>
+
+            <Link to="/srp" className=" hover:underline">
+              Soil Retention System
+            </Link>
           </div>
         )}
       </div>
