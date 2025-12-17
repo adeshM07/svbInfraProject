@@ -108,7 +108,7 @@ const PortFolio = () => {
         <section className="flex  flex-col gap-8 lg:gap-8">
           {/* ===== Animated Heading ===== */}
           <motion.p
-            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[95px] xl:pl-[35px] 2xl:pl-[95px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
+            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[95px] xl:pl-[55px] 2xl:pl-[95px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
