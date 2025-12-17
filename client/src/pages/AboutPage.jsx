@@ -153,18 +153,18 @@ const AboutPage = () => {
                 <p className="text-[#4D4D4D] md:text-[0.8rem] xl:text-[1.1rem] 2xl:text-[1rem]   lg:w-[32vw] xl:w-[38vw] 2xl:w-[32vw] lg:text-[1rem]">
                   <span className="font-semibold mr-1">SVB Infra Projects</span>
                   is a 3rd generation family-run business. SVB has
-                  <br className="hidden md:block xl:hidden 2xl:block" /> been managing
+                  <br className="hidden md:block xl:hidden " /> been managing
                   earthmoving projects since 2003. Based in
-                  <br className="hidden md:block xl:hidden 2xl:block" />  Karnataka and Andhra Pardesh, we provide a
-                  fast, flexible, reliable and professional  <br className="hidden md:block xl:hidden 2xl:hidden" /> service statewide. We offer contract earth moving services across{" "}
-                  <br className="hidden md:block xl:hidden 2xl:block" /> the state providing a
-                  professional and reliable service to the main{" "}
-                  <br className="hidden md:block xl:hidden 2xl:block" /> and sub contract civil
+                  <br className="hidden md:block xl:hidden " />  Karnataka and Andhra Pardesh, we provide a
+                  fast, flexible, reliable and professional  <br className="hidden md:block xl:hidden 2xl:hidden" /> service state wide. We offer contract earth moving services across
+                  <br className="hidden md:block xl:hidden " /> the state providing a
+                  professional and reliable service to the main
+                  <br className="hidden md:block xl:hidden " /> and sub contract civil
                   engineering sector.
                 </p>
               )}
 
-              {/* 🧱 Stats below */}
+           
               <motion.div
                 className="flex  [@media(min-width:300px)_and_(max-width:410px)]:w-screen  absolute lg:relative [@media(min-width:300px)_and_(max-width:410px)]:gap-4 [@media(min-width:300px)_and_(max-width:410px)]:justify-center gap-7 lg:gap-14 lg:-left-0 -left-[180px] md:-left-[340px]  top-[230px] md:top-[400px] lg:top-0 place-items-center lg:mx-5 lg:mt-5"
                 initial={{ opacity: 0, y: 50 }}
@@ -184,7 +184,7 @@ const AboutPage = () => {
 
                 <div className="h-[4vh] md:h-[8vh] lg:h-[6vh] bg-black w-[1px] lg:w-0.5"></div>
 
-                {/* Projects */}
+              
                 <div className="flex flex-col place-items-center">
                   <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
                     <Counter from={0} to={185} duration={1.0} />+
@@ -196,7 +196,7 @@ const AboutPage = () => {
 
                 <div className="h-[4vh] md:h-[8vh] lg:h-[6vh] bg-black w-[1px] lg:w-0.5"></div>
 
-                {/* Machines */}
+                
                 <div className="flex flex-col place-items-center">
                   <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
                     <Counter from={0} to={45} duration={1.3} />+
