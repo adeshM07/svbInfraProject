@@ -150,7 +150,7 @@ const HSE = () => {
           </motion.div>
         )}
 
-        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:mt-[120px] mx-[20px] lg:pl-[125px] xl:pl-[125px]">
+        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:mt-[120px] mx-[20px] lg:pl-[115px] xl:pl-[115px]">
           {/* Section Heading */}
           <motion.p
             className="text-[14px] md:text-[1.3rem] lg:text-[2rem] underline decoration-[#FDC000] underline-offset-8 fontMon font-semibold text-[#333333]"
