@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "../CSS/Landing.css";
 import { Helmet } from "react-helmet";
 import { useState, useEffect } from "react";
-import star from '../assets/star.png'
+import star from "../assets/star.png";
 import reviewsIMG from "../assets/potfolioReviewIMG.png";
 import c1 from "../assets/globalCard1.png";
 import c2 from "../assets/globalCard2.png";
@@ -223,9 +223,9 @@ const PortFolio = () => {
           </div>
         </section>
         {/* <section className="  flex flex-col gap-12 overflow-hidden"></section> */}
-         <p className="lg:text-[2rem] text-[1.2rem] pl-[1.3rem] lg:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
-            Reviews and ratings
-          </p>
+        <p className="lg:text-[2rem] text-[1.2rem] pl-[1.3rem] lg:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
+          Reviews and ratings
+        </p>
         <div className="flex  flex-col lg:flex-row lg:w-fit lg:gap-30 gap-y-5 mx-4 lg:mx-30">
           {/* Left Side - Texts + Button */}
           <motion.div
@@ -265,25 +265,52 @@ const PortFolio = () => {
               </p>
             )}
 
-           <div className="flex gap-4">
-            <img src={star} className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]" />
-            <img src={star} className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]" />
-            <img src={star} className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]" />
-            <img src={star} className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]" />
-            <img src={star} className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]" />
-           </div>
+            <div className="flex gap-4">
+              <img
+                src={star}
+                className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]"
+              />
+              <img
+                src={star}
+                className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]"
+              />
+              <img
+                src={star}
+                className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]"
+              />
+              <img
+                src={star}
+                className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]"
+              />
+              <img
+                src={star}
+                className="h-[5vh] w-[10vw] md:h-[10vh] md:w-[4.5vw]"
+              />
+            </div>
           </motion.div>
 
           {/* Right Side - Image */}
-          <motion.div
-            className=""
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            viewport={{ once: true, amount: 0.4 }}
-          >
-            <img src={reviewsIMG} className="lg:w-[37vw] lg:h-[57vh]" />
-          </motion.div>
+          {isMobile ? (
+            <div
+              className=""
+              // initial={{ opacity: 0, x: 60 }}
+              // whileInView={{ opacity: 1, x: 0 }}
+              // transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+              // viewport={{ once: true, amount: 0.4 }}
+            >
+              <img src={reviewsIMG} className="lg:w-[37vw] lg:h-[57vh]" />
+            </div>
+          ) : (
+            <motion.div
+              className=""
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+              viewport={{ once: true, amount: 0.4 }}
+            >
+              <img src={reviewsIMG} className="lg:w-[37vw] lg:h-[57vh]" />
+            </motion.div>
+          )}
         </div>
         <section className="flex flex-col gap-20">
           {/* ===== HEADING ===== */}
@@ -298,43 +325,72 @@ const PortFolio = () => {
           </motion.p>
 
           {/* ===== INTRO TEXT & COUNTER ===== */}
-          <div className="flex w-fit mx-4 lg:mx-30 lg:gap-80">
-            {/* Left text */}
-            <motion.div
-              className="flex flex-col w-[65%] lg:w-fit gap-3"
-              initial={{ opacity: 0, x: -60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <p className="text-[1.3rem] lg:text-[4.2rem] xl:text-[3rem] 2xl:text-[4rem] text-[#333333] popins-bold leading-7 xl:leading-16 2xl:leading-20 lg:leading-20">
-                Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
-                Captured in Action
-              </p>
-              <p className="text-[0.8rem] lg:text-[1rem] text-[#333333] font-semibold">
-                Explore our gallery to see SVB Infra Projects’ commitment to
-                quality,
-                <br className="hidden lg:block" /> precision, and trusted
-                execution in every project we deliver.
-              </p>
-            </motion.div>
 
-            {/* Right stats */}
-            <motion.div
-              className="flex flex-col w-[45%] lg:w-fit place-items-center"
-              initial={{ opacity: 0, x: 60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-              viewport={{ once: true, amount: 0.4 }}
-            >
-              <p className="popins-bold text-[#FDC000] text-[1.3rem] lg:text-[4rem]">
-                45+
-              </p>
-              <p className="text-[0.8rem] lg:text-[2rem] text-[#333333] popins-bold lg:leading-10">
-                Total number <br /> of machinery
-              </p>
-            </motion.div>
-          </div>
+          {isMobile ? (
+            <div className="flex w-fit mx-4 lg:mx-30 lg:gap-80">
+              {/* Left text */}
+              <div className="flex flex-col w-[65%] lg:w-fit gap-3">
+                <p className="text-[1.3rem] lg:text-[4.2rem] xl:text-[3rem] 2xl:text-[4rem] text-[#333333] popins-bold leading-7 xl:leading-16 2xl:leading-20 lg:leading-20">
+                  Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
+                  Captured in Action
+                </p>
+                <p className="text-[0.8rem] lg:text-[1rem] text-[#333333] font-semibold">
+                  Explore our gallery to see SVB Infra Projects’ commitment to
+                  quality,
+                  <br className="hidden lg:block" /> precision, and trusted
+                  execution in every project we deliver.
+                </p>
+              </div>
+
+              {/* Right stats */}
+              <div className="flex flex-col w-[45%] lg:w-fit place-items-center">
+                <p className="popins-bold text-[#FDC000] text-[1.3rem] lg:text-[4rem]">
+                  45+
+                </p>
+                <p className="text-[0.8rem] lg:text-[2rem] text-[#333333] popins-bold lg:leading-10">
+                  Total number <br /> of machinery
+                </p>
+              </div>
+            </div>
+          ) : (
+            <div className="flex w-fit mx-4 lg:mx-30 lg:gap-80">
+              {/* Left text */}
+              <motion.div
+                className="flex flex-col w-[65%] lg:w-fit gap-3"
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.9, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <p className="text-[1.3rem] lg:text-[4.2rem] xl:text-[3rem] 2xl:text-[4rem] text-[#333333] popins-bold leading-7 xl:leading-16 2xl:leading-20 lg:leading-20">
+                  Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
+                  Captured in Action
+                </p>
+                <p className="text-[0.8rem] lg:text-[1rem] text-[#333333] font-semibold">
+                  Explore our gallery to see SVB Infra Projects’ commitment to
+                  quality,
+                  <br className="hidden lg:block" /> precision, and trusted
+                  execution in every project we deliver.
+                </p>
+              </motion.div>
+
+              {/* Right stats */}
+              <motion.div
+                className="flex flex-col w-[45%] lg:w-fit place-items-center"
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                <p className="popins-bold text-[#FDC000] text-[1.3rem] lg:text-[4rem]">
+                  45+
+                </p>
+                <p className="text-[0.8rem] lg:text-[2rem] text-[#333333] popins-bold lg:leading-10">
+                  Total number <br /> of machinery
+                </p>
+              </motion.div>
+            </div>
+          )}
 
           {/* ===== GALLERY (ORIGINAL DESIGN KEPT) ===== */}
           <div className="columns-2 md:columns-3 gap-4 [column-fill:_balance] mx-5 lg:mx-30">
