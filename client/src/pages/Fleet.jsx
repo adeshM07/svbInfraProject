@@ -257,7 +257,7 @@ const Fleet = () => {
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.3 }}
                 />
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 xl:gap-1 2xl:gap-2">
                   <p className="text-[#333333] text-[1.5rem] md:text-[2.5rem] lg:text-[1.5rem] xl:text-[1.3rem] font-semibold fontMon">
                     {item.title}
                   </p>
