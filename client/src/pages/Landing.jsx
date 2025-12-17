@@ -283,7 +283,7 @@ const Landing = () => {
 
             {/* === COUNTER BOXES === */}
             <motion.div
-              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10  mx-auto lg:mx-0 lg:my-2 xl:my-2 2xl:my-2 pl-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  md:pl-34"
+              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10  mx-auto lg:mx-0 lg:my-2 xl:my-3 2xl:my-2 pl-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  md:pl-34"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}

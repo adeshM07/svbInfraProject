@@ -119,7 +119,7 @@ const AboutPage = () => {
             {/* 🟡 Image comes from left */}
             <motion.img
               src={bgIMG}
-              className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw] lg:h-[59vh] xl:h-[62vh]"
+              className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw] 2xl:w-[32vw] lg:h-[59vh] xl:w-[40vw] xl:h-[66vh] 2xl:h-[62vh]"
               initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
