@@ -209,7 +209,7 @@ const HSE = () => {
               <div>
                 <img
                   src={ic1}
-                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh] xl:h-[60vh] 2xl:h-[52vh]"
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh] xl:h-[65vh] 2xl:h-[52vh]"
                   alt="Commitment to health & safety"
                 />
               </div>
@@ -235,7 +235,7 @@ const HSE = () => {
               <div>
                 <img
                   src={ic2}
-                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[40vw] lg:h-[52vh] xl:h-[60vh] 2xl:h-[52vh] xl:h-[60vh] 2xl:h-[52vh]"
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[65vh] 2xl:h-[52vh] 2xl:w-[40vw] lg:w-[40vw] lg:h-[52vh] xl:h-[60vh] 2xl:h-[52vh] xl:h-[60vh] 2xl:h-[52vh]"
                   alt="Monitoring & risk management"
                 />
               </div>
@@ -274,7 +274,7 @@ const HSE = () => {
               <div>
                 <img
                   src={ic1}
-                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[65vw] lg:w-[40vw] lg:h-[52vh]"
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[75vw] xl:h-[65vh] 2xl:h-[52vh] 2xl:w-[65vw] lg:w-[40vw] lg:h-[52vh]"
                   alt="Certified Equipment operators"
                 />
               </div>
@@ -284,7 +284,7 @@ const HSE = () => {
                   Certified Equipment operators
                 </p>
 
-                <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                <ul className="text-[#333333] popins text-[14px] md:text-[15px] bg-white lg:-ml-20 lg:text-[18px] xl:text-[0.9rem] 2xl:text-[18px] pl-7 lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]">
                   <li className="HSEUL">
                     Certified operators handle all heavy machinery and equipment
                     safely and efficiently.
@@ -310,7 +310,7 @@ const HSE = () => {
               <div>
                 <img
                   src={ic2}
-                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[95vw] xl:h-[60vh] 2xl:h-[52vh] 2xl:w-[70vw] lg:w-[60vw] lg:h-[52vh] xl:h-[60vh] 2xl:h-[52vh]"
+                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] xl:w-[95vw] xl:h-[65vh] 2xl:h-[52vh] 2xl:w-[70vw] lg:w-[60vw] lg:h-[52vh] xl:h-[60vh] 2xl:h-[52vh]"
                   alt="Compliance & Adaptability"
                 />
               </div>
