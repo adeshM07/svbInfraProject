@@ -150,7 +150,7 @@ const AboutPage = () => {
                   main and sub contract civil engineering sector.
                 </p>
               ) : (
-                <p className="text-[#4D4D4D] md:text-[0.8rem] xl:text-[1.1rem] 2xl:text-[1rem]   lg:w-[32vw] xl:w-[38vw] 2xl:w-[32vw] lg:text-[1rem]">
+                <p className="text-[#4D4D4D] md:text-[0.8rem] xl:text-[1.1rem] 2xl:text-[1rem] [@media(min-width:2500px)]:text-[2rem]   lg:w-[32vw] xl:w-[38vw] 2xl:w-[32vw] lg:text-[1rem]">
                   <span className="font-semibold mr-1">SVB Infra Projects</span>
                   is a 3rd generation family-run business. SVB has
                   <br className="hidden md:block xl:hidden " /> been managing
