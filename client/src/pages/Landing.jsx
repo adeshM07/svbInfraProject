@@ -364,12 +364,12 @@ const Landing = () => {
                 transition={{ duration: 0.9, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="fontMon bold leading-9 md:leading-12 lg:leading-18 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] lg:text-[4rem] font-bold text-center lg:text-start bg-[#F8F8F8]">
+                <p className="fontMon bold leading-9 md:leading-12 lg:leading-18 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-20 lg:text-[4rem] font-bold text-center lg:text-start bg-[#F8F8F8]">
                   Force Behind <br /> Every
-                  <span className="text-[#FDC000]">Foundation</span>
+                  <span className="text-[#FDC000] mr-2">Foundation</span>
                 </p>
 
-                <p className="text-[#4D4D4D] text-[0.8rem] md:text-[1.3rem] lg:text-[1rem] font-medium text-center lg:text-start [@media(min-width:2500px)]:text-[2rem]">
+                <p className="text-[#4D4D4D] text-[0.8rem] md:text-[1.3rem] lg:text-[1rem] font-medium text-center lg:text-start [@media(min-width:2500px)]:text-[2rem] [@media(min-width:2500px)]:text-[1.2rem]leading-16">
                   Starting out with only one JCB 3D, we now keep a well-
                   <br />
                   maintained fleet of trucks and equipment.
