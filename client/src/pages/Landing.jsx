@@ -155,7 +155,7 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.6 }}
             >
               <motion.p
-                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-[5.2rem]"
+                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-32"
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
@@ -236,7 +236,7 @@ const Landing = () => {
                
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-16 2xl:leading-20 text-[1.5rem] xl:text-[3rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold [@media(min-width:2500px)]:leading-[5.2rem] [@media(min-width:2500px)]:text-[6rem]">
+                <p className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-16 2xl:leading-20 text-[1.5rem] xl:text-[3rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold [@media(min-width:2500px)]:leading-32 [@media(min-width:2500px)]:text-[6rem]">
                   Great Relationships
                   <br /> Great
                   <span className="text-[#FDC000] ml-2 md:ml-4">Infrastructure</span>
