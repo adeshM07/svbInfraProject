@@ -37,6 +37,7 @@ const App = () => {
   }, []);
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
+  const isfleet = location.pathname === "/our-fleet-2";
 
   return (
     <>
@@ -51,14 +52,20 @@ const App = () => {
             muted
             playsInline
           />
-          {/* <video
-  src="https://www.dropbox.com/scl/fi/zaa7la43gnisr3qhyuzto/landingVideo.MOV?rlkey=rj9jrqt1jifxyxvml8fcwmx8i&raw=1"
-  autoPlay
-  loop
-  muted
-  playsInline
-  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-/> */}
+          
+        </div>
+      )}
+
+      {isfleet && (
+        <div className="hero-video-container  w-screen ">
+          <video
+            src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          
         </div>
       )}
 

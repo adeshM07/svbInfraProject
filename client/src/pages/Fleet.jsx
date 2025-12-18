@@ -121,10 +121,10 @@ const Fleet = () => {
         <link rel="canonical" href="https://svbinfraprojects.com/fleet
         " />
       </Helmet>
-      <div>
+      <div className="">
         {/* ===== Fleet Banner ===== */}
         <motion.div
-          id="fleetBanner"
+          // id="fleetBanner"
           className="w-screen [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[45vh] md:h-[45vh] lg:h-[95vh]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -139,13 +139,13 @@ const Fleet = () => {
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="text-[1.5rem] md:text-[3.2rem] lg:text-[4rem] fontMon font-bold text-white leading-8 md:leading-14 lg:leading-20">
+              <p className="text-[1.5rem] md:text-[3.2rem] lg:text-[4rem] fontMon font-bold text-white leading-8 md:leading-14 lg:leading-20 z-300">
                 Powering <span className="text-[#FDC000]">Progress</span> with{" "}
                 <br /> Modern Machinery
               </p>
 
               <motion.p
-                className="text-white text-[10px] md:text-[16px] lg:text-[1rem] popins-noweight"
+                className="text-white text-[10px] md:text-[16px] lg:text-[1rem] popins-noweight z-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
@@ -158,7 +158,7 @@ const Fleet = () => {
                     project scales.
                   </>
                 ) : (
-                  <>
+                  < >
                     Equipped with advanced machinery, we deliver efficient,
                     precise, and dependable <br /> results across all project
                     scales.
@@ -169,7 +169,7 @@ const Fleet = () => {
 
             {/* Stats Box */}
             <motion.div
-              className="w-[82vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] mt-10 [@media(min-width:420px)_and_(max-width:700px)]:mt-30  md:mt-40 h-[6vh] lg:w-[52vw] lg:h-[17vh]  xl:w-[65vw] xl:h-[19vh] 2xl:w-[52vw] 2xl:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
+              className="w-[82vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] z-300  h-[6vh] lg:w-[52vw] lg:h-[17vh]  xl:w-[65vw] xl:h-[19vh] 2xl:w-[52vw] 2xl:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
               initial={{ opacity: 0, scale: 0.85, y: 30 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
@@ -204,7 +204,7 @@ const Fleet = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="overflow-hidden"
+          className="overflow-hidden bg-white"
         >
           {/* Section Title */}
           <motion.div
