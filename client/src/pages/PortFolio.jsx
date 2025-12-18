@@ -133,7 +133,7 @@ const PortFolio = () => {
                   <span className="text-[#FDC000]">Infrastructure</span>
                 </p>
               ) : (
-                <p className="popins-bold md:text-[2.4rem] lg:text-[4.5rem] xl:text-[4rem] 2xl:text-[4.5rem] text-[#333333] lg:leading-20 xl:leading-20">
+                <p className="popins-bold md:text-[2.4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4.5rem] xl:text-[4rem] 2xl:text-[4.5rem] text-[#333333] lg:leading-20 xl:leading-20">
                   Innovation That <br /> Strengthens{" "}
                   <br className="md:hidden lg:block" />{" "}
                   <span className="text-[#FDC000]">Infrastructure</span>
