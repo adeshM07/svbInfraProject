@@ -564,7 +564,7 @@ const Landing = () => {
           
           <div
             id="landing-contact"
-            className="lg:w-[78vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh]  rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
+            className="lg:w-[78vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
           >
             <div className="">
               <p className="text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.7rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
