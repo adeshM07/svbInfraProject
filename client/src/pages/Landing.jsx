@@ -283,7 +283,7 @@ const Landing = () => {
 
             {/* === COUNTER BOXES === */}
             <motion.div
-              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10  mx-auto lg:mx-0 lg:my-2 xl:my-3 2xl:my-2 [@media(min-width:2500px)]:my-5 pl-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  md:pl-34"
+              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10  mx-auto lg:mx-0 lg:my-2 xl:my-3 2xl:my-2 [@media(min-width:2500px)]:my-8 pl-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  md:pl-34"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -364,12 +364,12 @@ const Landing = () => {
                 transition={{ duration: 0.9, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="fontMon bold leading-9 md:leading-12 lg:leading-18 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4rem] lg:text-[4rem] font-bold text-center lg:text-start bg-[#F8F8F8]">
+                <p className="fontMon bold leading-9 md:leading-12 lg:leading-18 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] lg:text-[4rem] font-bold text-center lg:text-start bg-[#F8F8F8]">
                   Force Behind <br /> Every
                   <span className="text-[#FDC000]">Foundation</span>
                 </p>
 
-                <p className="text-[#4D4D4D] text-[0.8rem] md:text-[1.3rem] lg:text-[1rem] font-medium text-center lg:text-start">
+                <p className="text-[#4D4D4D] text-[0.8rem] md:text-[1.3rem] lg:text-[1rem] font-medium text-center lg:text-start [@media(min-width:2500px)]:text-[2rem]">
                   Starting out with only one JCB 3D, we now keep a well-
                   <br />
                   maintained fleet of trucks and equipment.
