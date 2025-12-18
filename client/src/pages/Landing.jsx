@@ -148,14 +148,14 @@ const Landing = () => {
           >
             {/* Text Block */}
             <motion.div
-              className="flex flex-col gap-[calc(0.5rem+0.4vw)] md:gap-[1vh] lg:gap-[calc(0.5rem+0.4vw)] z-800"
+              className="flex flex-col gap-[calc(0.5rem+0.4vw)] md:gap-[1vh] lg:gap-[calc(0.5rem+0.4vw)] z-800 [@media(min-width:2500px)]:gap-[5vh]"
               initial={{ opacity: 0, y: 10 }} // small movement
               whileInView={{ opacity: 1, y: 0 }} // trigger on scroll
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.6 }}
             >
               <motion.p
-                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-[4rem]"
+                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-[5.2rem]"
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
@@ -236,14 +236,14 @@ const Landing = () => {
                
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-16 2xl:leading-20 text-[1.5rem] xl:text-[3rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold [@media(min-width:2500px)]:leading-[4rem] [@media(min-width:2500px)]:text-[6rem]">
+                <p className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-16 2xl:leading-20 text-[1.5rem] xl:text-[3rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold [@media(min-width:2500px)]:leading-[5.2rem] [@media(min-width:2500px)]:text-[6rem]">
                   Great Relationships
                   <br /> Great
                   <span className="text-[#FDC000] ml-2 md:ml-4">Infrastructure</span>
                 </p>
 
                 <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10 xl:pt-5 2xl:pt-10">
-                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.1rem] 2xl:text-[1.25rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5">
+                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.1rem] 2xl:text-[1.25rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 [@media(min-width:2500px)]:text-[3.5rem]">
                     <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
                     </span>
