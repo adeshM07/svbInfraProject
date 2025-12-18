@@ -155,7 +155,7 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.6 }}
             >
               <motion.p
-                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)]"
+                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)] [@media(min-width:2500px)]:text-[3.2rem]"
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
@@ -178,7 +178,7 @@ const Landing = () => {
                     machinery and expert execution.
                   </p>
                 ) : (
-                  <p className="text-white text-[1.3rem] popins">
+                  <p className="text-white text-[1.3rem] popins [@media(min-width:2500px)]:text-[2rem]">
                     Delivering reliable infrastructure solutions with modern
                     machinery <br /> and expert execution.
                   </p>
@@ -189,7 +189,7 @@ const Landing = () => {
             {/* Button Animation */}
             <Link to="/our-fleet-2" className="block z-400 customCursor">
               <motion.button
-                className="w-[30vw] [@media(min-width:300px)_and_(max-width:460px)]:h-[4.9vh] md:w-[25vw] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] popins-noweight font-semibold mt-[2.5rem]"
+                className="w-[30vw] [@media(min-width:300px)_and_(max-width:460px)]:h-[4.9vh] md:w-[25vw] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh] [@media(min-width:2500px)]:h-[6vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] [@media(min-width:2500px)]:text-[25px] popins-noweight font-semibold mt-[2.5rem]"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
