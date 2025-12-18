@@ -283,7 +283,7 @@ const Landing = () => {
 
             {/* === COUNTER BOXES === */}
             <motion.div
-              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10  mx-auto lg:mx-0 lg:my-2 xl:my-3 2xl:my-2 pl-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  md:pl-34"
+              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10  mx-auto lg:mx-0 lg:my-2 xl:my-3 2xl:my-2 [@media(min-width:2500px)]:my-5 pl-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  md:pl-34"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -291,30 +291,30 @@ const Landing = () => {
             >
               {/* Box 1 */}
               <div className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center [@media(min-width:2500px)]:h-[9vh]">
-                <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl  font-semibold">
+                <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl  font-semibold [@media(min-width:2500px)]:text-[2.2rem]">
                   <Counter from={0} to={185} duration={1.2} />+
                 </p>
-                <p className="popins font-medium text-[9px] md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start">
+                <p className="popins font-medium text-[9px] md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start [@media(min-width:2500px)]:text-[1.2rem]">
                   Successfull <br /> Project
                 </p>
               </div>
 
               {/* Box 2 */}
               <div className="border [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center [@media(min-width:2500px)]:h-[9vh]">
-                <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold">
+                <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold [@media(min-width:2500px)]:text-[2.2rem]">
                   <Counter from={0} to={45} duration={1.5} />+
                 </p>
-                <p className="popins font-medium text-[9px]  md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start">
+                <p className="popins font-medium text-[9px]  md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start [@media(min-width:2500px)]:text-[1.2rem]">
                   Machines <br /> Equipments
                 </p>
               </div>
 
               {/* Box 3 */}
               <div className="border [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] lg:border-2 border-[#FDC000] rounded-md flex [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center [@media(min-width:2500px)]:h-[9vh]">
-                <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] text-lg md:text-[1.5rem] lg:text-3xl font-semibold">
+                <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] text-lg md:text-[1.5rem] lg:text-3xl font-semibold [@media(min-width:2500px)]:text-[2.2rem]">
                   24/7
                 </p>
-                <p className="popins font-medium text-[9px]   md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start">
+                <p className="popins font-medium text-[9px]   md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start [@media(min-width:2500px)]:text-[1.2rem]">
                   Anywhere <br /> Assistance
                 </p>
               </div>
