@@ -226,7 +226,7 @@ const Landing = () => {
                   muted
                   loop
                   playsInline
-                  className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[40vw] xl:h-[85vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh]  object-cover"
+                  className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[40vw] xl:h-[85vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] [@media(min-width:2500px)]:h-[80vh]  object-cover"
                 />
               </motion.div>
 
@@ -243,7 +243,7 @@ const Landing = () => {
                 </p>
 
                 <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10 xl:pt-5 2xl:pt-10">
-                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw] [@media(min-width:2500px)]:w-[34vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.1rem] 2xl:text-[1.25rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 [@media(min-width:2500px)]:text-[2rem]">
+                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.1rem] 2xl:text-[1.25rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 [@media(min-width:2500px)]:text-[2rem]">
                     <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
                     </span>
