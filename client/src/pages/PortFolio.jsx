@@ -118,7 +118,7 @@ const PortFolio = () => {
           </motion.p>
 
           {/* ===== Content Section ===== */}
-          <div className="flex flex-col  lg:flex-row lg:w-fit lg:gap-30 xl:gap-10 2xl:gap-30 mx-4 lg:mx-auto [@media(min-width:2500px)]:gap-50">
+          <div className="flex flex-col  lg:flex-row lg:w-fit lg:gap-30 xl:gap-10 2xl:gap-30 mx-4 lg:mx-auto [@media(min-width:2500px)]:gap-90">
             {/* Left Side - Texts + Button */}
             <motion.div
               className="flex flex-col gap-3 "
