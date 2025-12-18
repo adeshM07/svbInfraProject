@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [hideOnScroll, setHideOnScroll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [popup, setPopup] = useState(false);
   const [isColored, setIsColored] = useState(false);
@@ -14,7 +15,28 @@ const Menu = () => {
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
 
-  
+  useEffect(() => {
+  let lastScrollY = window.scrollY;
+
+  const handleScrollDirection = () => {
+    const currentScrollY = window.scrollY;
+
+    // scrolling down → hide
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      setHideOnScroll(true);
+    }
+    // scrolling up → show
+    else {
+      setHideOnScroll(false);
+    }
+
+    lastScrollY = currentScrollY;
+  };
+
+  window.addEventListener("scroll", handleScrollDirection);
+  return () => window.removeEventListener("scroll", handleScrollDirection);
+}, []);
+
 
   useEffect(() => {
     if (!isLandingPage) {
@@ -117,6 +139,7 @@ const Menu = () => {
      lg:h-[10vh] xl:h-[10vh] place-items-center lg:px-30 
     transition-all duration-500 z-[999]
     ${isColored ? "bg-[#333333]" : "bg-transparent"}
+    ${hideOnScroll ? "-translate-y-full" : "translate-y-0"}
   `}
       >
         <div className="">

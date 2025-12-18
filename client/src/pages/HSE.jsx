@@ -595,7 +595,7 @@ const HSE = () => {
                   </li>
                   <li className="HSEUL">
                     These practices ensure operations are conducted safely,
-                    efficiently, and without ri2sk to employees, the public, or
+                    efficiently, and without risk to employees, the public, or
                     surrounding environments.
                   </li>
                 </motion.ul>
