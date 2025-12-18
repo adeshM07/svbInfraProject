@@ -169,7 +169,7 @@ const Fleet = () => {
 
             {/* Stats Box */}
             <motion.div
-              className="w-[82vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] h-[6vh] lg:w-[52vw] lg:h-[17vh]  xl:w-[65vw] xl:h-[19vh] 2xl:w-[52vw] 2xl:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
+              className="w-[82vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] mt-10 [@media(min-width:420px)_and_(max-width:700px)]:mt-30  md:mt-40 h-[6vh] lg:w-[52vw] lg:h-[17vh]  xl:w-[65vw] xl:h-[19vh] 2xl:w-[52vw] 2xl:h-[17vh] bg-white [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-xl lg:rounded-2xl flex justify-evenly place-items-center"
               initial={{ opacity: 0, scale: 0.85, y: 30 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
