@@ -98,7 +98,7 @@ const Service = () => {
           </motion.p>
 
           {/* Service Image Grid */}
-          <div className="flex  [@media(min-width:300px)_and_(max-width:410px)]:gap-0.5 [@media(min-width:650px)_and_(max-width:1200px)]:gap-0 gap-1 lg:gap-3 xl:gap-3 2xl:gap-3 ">
+          <div className="flex  [@media(min-width:300px)_and_(max-width:410px)]:gap-0.5 [@media(min-width:650px)_and_(max-width:1200px)]:gap-0 gap-1 lg:gap-3 xl:gap-3 2xl:gap-3 [@media(min-width:2500px)]:gap-5 ">
             {[s1, s2, s3, s4].map((src, index) => (
               <motion.div
                 key={index}
@@ -125,7 +125,7 @@ const Service = () => {
                   <img
                     src={src}
                     className="w-[23vw] h-[13vh] [@media(min-width:1400px)_and_(max-width:1500px)]:w-[22vw] [@media(min-width:1400px)_and_(max-width:1500px)]:h-[40vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[19vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[40vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[17vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[24vw]  md:h-[20vh] lg:w-[20vw] xl:w-[20vw] 2xl:w-[18vw] 2xl:h-[47vh]   lg:h-[47vh] xl:h-[50vh]  object-cover 
-           transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md"
+           transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md [@media(min-width:2500px)]:text-[19vw]"
                     alt={`Service ${index + 1}`}
                   />
                 </Link>
