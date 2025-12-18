@@ -207,7 +207,7 @@ const Landing = () => {
 
         <div
           id="secondSection"
-          className="flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[10vh]   gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30   bg-[#F8F8F8]"
+          className="flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[20vh]   gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30   bg-[#F8F8F8]"
         >
           <div>
             <section className="flex flex-row w-full px-4 lg:mx-0  lg:justify-center text-gray-800 ">
