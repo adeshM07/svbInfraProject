@@ -72,7 +72,7 @@ const AboutPage = () => {
         >
           <div className="pl-[30px] [@media(min-width:300px)_and_(max-width:700px)]:pt-[50px] [@media(min-width:650px)_and_(max-width:1200px)]:pt-[60px] pt-[100px] lg:pl-[120px] lg:pt-[150px]">
             <motion.p
-              className="text-white [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.7rem] md:text-[3.2rem] lg:text-[4rem] aboutCom [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-8 md:leading-14 lg:leading-19"
+              className="text-white [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.7rem]  md:text-[3.2rem] lg:text-[4rem] [@media(min-width:2500px)]:text-[6rem] aboutCom [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-8 md:leading-14 lg:leading-19 [@media(min-width:2500px)]:leading-28"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -82,7 +82,7 @@ const AboutPage = () => {
             </motion.p>
 
             <motion.p
-              className="popins text-[10px] md:text-[1.3rem] lg:text-[20px] text-white mt-[18px]"
+              className="popins text-[10px] md:text-[1.3rem] lg:text-[20px] text-white mt-[18px] [@media(min-width:2500px)]:text-[2rem]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
@@ -93,7 +93,7 @@ const AboutPage = () => {
 
             <Link to="/contact">
               <motion.button
-                className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[13vh] lg:mt-10 mt-5 w-[21vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.8rem]  [@media(min-width:300px)_and_(max-width:410px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[25vw]  h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
+                className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[13vh] lg:mt-10 mt-5 w-[21vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.8rem]  [@media(min-width:300px)_and_(max-width:410px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[25vw]  h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[12vw] 2xl:w-[9vw] md:h-[5vh] lg:w-[9vw] lg:h-[7vh] [@media(min-width:2500px)]:h-[6vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
