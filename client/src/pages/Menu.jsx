@@ -192,7 +192,7 @@ const Menu = () => {
                 <li key={item.link} className=" relative group">
                   <Link
                     to={item.link}
-                    className="relative text-white transition-all duration-300 ease-in-out"
+                    className="relative text-white transition-all duration-300 ease-in-out [@media(min-width:2500px)]:text-[1.1rem]"
                   >
                     {item.name}
                     {/* Animated underline */}
