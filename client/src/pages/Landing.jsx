@@ -290,7 +290,7 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               {/* Box 1 */}
-              <div className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center">
+              <div className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center [@media(min-width:2500px)]:h-[10vh]">
                 <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold">
                   <Counter from={0} to={185} duration={1.2} />+
                 </p>
