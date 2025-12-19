@@ -57,7 +57,7 @@ const Contactus = () => {
     }
 
     const url =
-      "https://script.google.com/macros/s/AKfycbyx8kWsBD_k2oorbACC1JWlH3qdtaEnVTVPaeRdtOt0ytCvEFVUOinKu2e4HBH6CUy7XQ/exec";
+      "https://script.google.com/macros/s/AKfycbxP-roj2iur4-w4nHWJ8lqp8y7mWy9APEnllJ3_77_CnfaHVeOcPFpLCXFa9dT3Bm1qRg/exec";
 
     const formBody = `Email=${encodeURIComponent(
       formData.email
