@@ -56,7 +56,7 @@ useEffect(() => {
 
  
   const isLandingPage = location.pathname === "/";
-  const isfleet = location.pathname === "/our-fleet-2";
+  // const isfleet = location.pathname === "/our-fleet-2";
 
   return (
     <>
@@ -75,7 +75,7 @@ useEffect(() => {
         </div>
       )}
 
-      {isfleet && (
+      {/* {isfleet && (
         <div className="hero-video-container  w-screen ">
           <video
             src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
@@ -85,7 +85,7 @@ useEffect(() => {
             playsInline
           />
         </div>
-      )}
+      )} */}
 
       {/* FIX → Add margin only for landing, top padding for other pages */}
       <div
