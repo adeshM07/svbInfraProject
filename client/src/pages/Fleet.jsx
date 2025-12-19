@@ -16,6 +16,7 @@ import f10 from "../assets/f10.png";
 import f11 from "../assets/f11.png";
 import f12 from "../assets/f12.png";
 import "../CSS/Landing.css";
+import fleetVideo from '../assets/fleetVideo.MOV'
 
 const Fleet = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -118,18 +119,27 @@ const Fleet = () => {
           name="description"
           content="SVB Infra PROJECTS is a 3rd generation family-run business..."
         />
-        <link rel="canonical" href="https://svbinfraprojects.com/fleet
-        " />
+        <link
+          rel="canonical"
+          href="https://svbinfraprojects.com/fleet
+        "
+        />
       </Helmet>
       <div className="">
         {/* ===== Fleet Banner ===== */}
-        <motion.div
-          // id="fleetBanner"
-          className="w-screen [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[45vh] md:h-[45vh] lg:h-[95vh]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+        <div className="relative w-screen h-[45vh] md:h-[45vh] lg:h-[95vh] overflow-hidden">
+          {/* ===== VIDEO BACKGROUND ===== */}
+          <video
+            src="https://player.cloudinary.com/embed/?cloud_name=dsf0pohxi&public_id=fleetVideo_gd5ojx&profile=cld-default"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+
+          {/* ===== DARK OVERLAY (OPTIONAL BUT RECOMMENDED) ===== */}
+          <div className="absolute inset-0 bg-black/40 z-10" />
           <div className="flex flex-col gap-7 w-fit lg:mx-auto mx-auto pt-[60px] lg:pt-[107px]">
             {/* Heading & Subtext */}
             <motion.div
@@ -158,7 +168,7 @@ const Fleet = () => {
                     project scales.
                   </>
                 ) : (
-                  < >
+                  <>
                     Equipped with advanced machinery, we deliver efficient,
                     precise, and dependable <br /> results across all project
                     scales.
@@ -197,7 +207,7 @@ const Fleet = () => {
               ))}
             </motion.div>
           </div>
-        </motion.div>
+        </div>
 
         {/* ===== Section: Fleet Cards ===== */}
         <motion.section
