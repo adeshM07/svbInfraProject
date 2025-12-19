@@ -171,6 +171,7 @@ const Menu = () => {
                 { name: "Service", link: "/services" },
                 { name: "Our Fleet", link: "/our-fleet-2" },
                 { name: "Portfolio", link: "/portfolio" },
+                { name: "Gallery", link: "/portfolio#gallery" },
                 { name: "HSE", link: "/hse" },
               ].map((item) => (
                 <li key={item.link} className=" relative group">
@@ -210,6 +211,7 @@ const Menu = () => {
                 { name: "Service", link: "/services" },
                 { name: "Our Fleet", link: "/our-fleet-2" },
                 { name: "Portfolio", link: "/portfolio" },
+                { name: "Gallery", link: "/portfolio#gallery" },
                 { name: "HSE", link: "/hse" },
               ].map((item) => (
                 <li key={item.link} className=" relative group">

@@ -312,7 +312,7 @@ const PortFolio = () => {
             </motion.div>
           )}
         </div>
-        <section className="flex flex-col gap-20">
+        <section id="gallery" className="flex flex-col gap-20">
           {/* ===== HEADING ===== */}
           <motion.p
             className="text-[#333333] text-[1.2rem] font-semibold lg:text-[2rem] pl-[2rem] lg:pl-[110px] underline decoration-[#FDC000] underline-offset-8"

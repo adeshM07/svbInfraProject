@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import Menu from "./pages/Menu";
 import Landing from "./pages/Landing";
@@ -15,7 +15,7 @@ import ESE from "./pages/ESE";
 import REP from "./pages/REP";
 import DS from "./pages/DS";
 import SRP from "./pages/SRP";
-
+import ScrollToHash from "./pages/ScrollToHash ";
 import WhatsAppFloat from "./pages/WhatsAppFloat ";
 
 // import lvideo from "./assets/landingVideo.mov";
@@ -35,14 +35,15 @@ const App = () => {
       setIsMobile(false);
     }
   }, []);
+
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
   const isfleet = location.pathname === "/our-fleet-2";
 
   return (
     <>
+      <ScrollToHash />
       <Menu />
-
       {isLandingPage && (
         <div className="hero-video-container  w-screen ">
           <video
@@ -52,7 +53,6 @@ const App = () => {
             muted
             playsInline
           />
-          
         </div>
       )}
 
@@ -65,7 +65,6 @@ const App = () => {
             muted
             playsInline
           />
-          
         </div>
       )}
 
@@ -84,7 +83,7 @@ const App = () => {
           />
           <Route path="/our-fleet-2" element={<Fleet />} />
           <Route path="/portfolio" element={<PortFolio />} />
-          <Route path="/gallery" element={<PortFolio />} />
+          {/* <Route path="/gallery" element={<PortFolio />} /> */}
           <Route path="/contact" element={<Contactus />} />
           <Route path="/hse" element={<HSE />} />
           <Route path="/ese" element={<ESE />} />
@@ -97,7 +96,7 @@ const App = () => {
 
         <Footer />
       </div>
-   <WhatsAppFloat />
+      <WhatsAppFloat />
     </>
   );
 };
