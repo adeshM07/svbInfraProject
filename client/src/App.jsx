@@ -17,6 +17,7 @@ import DS from "./pages/DS";
 import SRP from "./pages/SRP";
 import ScrollToHash from "./pages/ScrollToHash ";
 import WhatsAppFloat from "./pages/WhatsAppFloat ";
+import PageLoader from "./pages/PageLoader ";
 
 // import lvideo from "./assets/landingVideo.mov";
 // import lvideo from './videos/LandingVideoTrimmed.mp4'
@@ -25,6 +26,10 @@ import "./App.css";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isPageLoading, setIsPageLoading] = useState(false);
+
+
+   const location = useLocation();
 
   useEffect(() => {
     const width = window.innerWidth;
@@ -36,12 +41,26 @@ const App = () => {
     }
   }, []);
 
-  const location = useLocation();
+
+
+useEffect(() => {
+  setIsPageLoading(true);
+
+  const timer = setTimeout(() => {
+    setIsPageLoading(false);
+  }, 600); // adjust time if needed
+
+  return () => clearTimeout(timer);
+}, [location.pathname]);
+
+
+ 
   const isLandingPage = location.pathname === "/";
   const isfleet = location.pathname === "/our-fleet-2";
 
   return (
     <>
+      {isPageLoading && <PageLoader />}
       <ScrollToHash />
       <Menu />
       {isLandingPage && (
