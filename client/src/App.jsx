@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import Menu from "./pages/Menu";
@@ -84,6 +84,10 @@ const App = () => {
           <Route path="/our-fleet-2" element={<Fleet />} />
           <Route path="/portfolio" element={<PortFolio />} />
           {/* <Route path="/gallery" element={<PortFolio />} /> */}
+          <Route
+            path="/gallery"
+            element={<Navigate to="/portfolio#gallery" replace />}
+          />
           <Route path="/contact" element={<Contactus />} />
           <Route path="/hse" element={<HSE />} />
           <Route path="/ese" element={<ESE />} />
