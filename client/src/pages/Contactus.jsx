@@ -20,6 +20,8 @@ const Contactus = () => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -55,7 +57,7 @@ const Contactus = () => {
     }
 
     const url =
-      "https://script.google.com/macros/s/AKfycbxMXXpLSjDzpyndl3juxYhJuiNTXMTnHjMbZELESB_2lnrbVgLOp43iZzaoGw8ESi7TDg/exec";
+      "https://script.google.com/macros/s/AKfycbyx8kWsBD_k2oorbACC1JWlH3qdtaEnVTVPaeRdtOt0ytCvEFVUOinKu2e4HBH6CUy7XQ/exec";
 
     const formBody = `Email=${encodeURIComponent(
       formData.email
@@ -64,7 +66,7 @@ const Contactus = () => {
     )}&Address=${encodeURIComponent(
       formData.address
     )}&Message=${encodeURIComponent(formData.message)}`;
-
+    setIsSubmitting(true);
     fetch(url, {
       method: "POST",
       mode: "no-cors",
@@ -80,6 +82,7 @@ const Contactus = () => {
           address: "",
           message: "",
         });
+        setIsSubmitting(false);
       })
       .catch((err) => {
         alert("Something went wrong. Try again.");
@@ -87,7 +90,7 @@ const Contactus = () => {
       });
   };
 
-   const downloadResume = () => {
+  const downloadResume = () => {
     const link = document.createElement("a");
     link.href = "/SVB_Brochure.pdf";
     link.download = "SVB_Brochure.pdf";
@@ -103,17 +106,23 @@ const Contactus = () => {
         >
           <p className="contactUSbannertitle text-white text-[1.2rem] md:text-[2.5rem] md:leading-12 lg:text-[4rem] leading-7 lg:leading-19 ml-12 lg:ml-48 pt-[40px] lg:pt-[90px] ">
             Contact SVB Infra Projects — Your
-            <br className="[@media(min-width:300px)_and_(max-width:410px)]:hidden md:block xl:hidden 2xl:block" /> Partner for Reliable{" "}
+            <br className="[@media(min-width:300px)_and_(max-width:410px)]:hidden md:block xl:hidden 2xl:block" />{" "}
+            Partner for Reliable{" "}
             <span className="text-[#FDC000]">
               Construction <br className="xl:hidden 2xl:block" /> Solutions
             </span>{" "}
           </p>
           <div className="w-[88vw]  lg:w-[69vw] min-h-fit  lg:pl-[5rem]   bg-white rounded-lg lg:py-[60px] lg:gap-[80px] lg:pr-[48px] mx-auto">
             <p className="contactUSBannerInfoTitle  flex flex-col gap-y-2 md:flex-row justify-between font-semibold text-[1.2rem] text-center lg:text-[2rem] text-[#333333] my-10 lg:my-0 lg:text-start lg:mb-14">
-
               Get in touch
-              <div onClick={downloadResume} className="contactUSBannerFormButton font-normal   text-[#333333] flex justify-evenly place-items-center text-center bg-[#FDC000] border-none md:bg-transparent w-[40vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] h-[5vh] md:w-[13vw] lg:h-[7vh] rounded-md md:border hover:border-none mx-auto lg:mx-0  transition duration-300 transform
-  hover:bg-[#ffcf00] hover:scale-105 hover:shadow-lg cursor-pointer text-[1rem] md:text-[1.5rem]">Brochure <i class="fa-solid fa-download text-[1rem] md:text-[1.5rem]"></i></div>
+              <div
+                onClick={downloadResume}
+                className="contactUSBannerFormButton font-normal   text-[#333333] flex justify-evenly place-items-center text-center bg-[#FDC000] border-none md:bg-transparent w-[40vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] h-[5vh] md:w-[13vw] lg:h-[7vh] rounded-md md:border hover:border-none mx-auto lg:mx-0  transition duration-300 transform
+  hover:bg-[#ffcf00] hover:scale-105 hover:shadow-lg cursor-pointer text-[1rem] md:text-[1.5rem]"
+              >
+                Brochure{" "}
+                <i class="fa-solid fa-download text-[1rem] md:text-[1.5rem]"></i>
+              </div>
             </p>
             <div className="flex   flex-col-reverse lg:flex-row gap-[4rem]">
               <div className="lg:w-[30vw]   h-fit">
@@ -265,11 +274,17 @@ const Contactus = () => {
                   ></textarea>
                   <div className=" w-full    lg:w-[27.2vw] flex justify-end mt-[33px]">
                     <button
+                      disabled={isSubmitting}
                       //   type="submit"
-                      className="contactUSBannerFormButton font-semibold text-[#333333] w-[60vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[9vw] lg:h-[6vh] rounded-md bg-[#FDC000] mx-auto lg:mx-0  transition duration-300 transform
-  hover:bg-[#ffcf00] hover:scale-105 hover:shadow-lg cursor-pointer"
+                      className={`contactUSBannerFormButton font-semibold text-[#333333] w-[60vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] h-[4vh] lg:w-[9vw] lg:h-[6vh] rounded-md bg-[#FDC000] mx-auto lg:mx-0  transition duration-300 transform 
+                       ${
+                         isSubmitting
+                           ? "bg-[#f1d36a] opacity-70 cursor-not-allowed"
+                           : "bg-[#FDC000] hover:bg-[#ffcf00] hover:scale-105 hover:shadow-lg cursor-pointer"
+                       }
+  hover:bg-[#ffcf00] hover:scale-105 hover:shadow-lg cursor-pointer`}
                     >
-                      Send Now
+                      {isSubmitting ? "Sending..." : "Send Now"}
                     </button>
                   </div>
                 </form>
