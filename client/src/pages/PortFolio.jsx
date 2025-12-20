@@ -178,7 +178,7 @@ const PortFolio = () => {
                     key={index}
                     src={src}
                     alt={`Project ${index + 1}`}
-                    className="w-[30vw] h-[20vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] [@media(min-width:1400px)_and_(max-width:1500px)]:w-[20vw] [@media(min-width:1400px)_and_(max-width:1500px)]:h-[40vh]   xl:w-[20vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] 2xl:h-[47vh] lg:object-cover rounded-lg [@media(min-width:2500px)]:w-[19vw]"
+                    className="w-[30vw] h-[20vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] [@media(min-width:1400px)_and_(max-width:1500px)]:w-[20vw] [@media(min-width:1400px)_and_(max-width:1500px)]:h-[45vh]   xl:w-[20vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] 2xl:h-[47vh] lg:object-cover rounded-lg [@media(min-width:2500px)]:w-[19vw]"
                   />
                 ))}
               </div>
