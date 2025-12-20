@@ -9,7 +9,7 @@ import ic2 from "../assets/SRPCardIMG2.png";
 import ic3 from "../assets/SRPCardIMG3.png";
 import ic4 from "../assets/SRPCardIMG4.png";
 import ic5 from "../assets/SRPCardIMG5.png";
-import ic6 from "../assets/SRPCardIMG6.png";
+import ic6 from "../assets/SRPCardIMG6.JPEG";
 import ic7 from "../assets/SRPCardIMG7.png";
 import ic8 from "../assets/SRPCardIMG8.JPEG";
 import fb from "../assets/forwardButton.png";
