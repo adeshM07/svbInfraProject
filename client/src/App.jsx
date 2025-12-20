@@ -92,7 +92,7 @@ useEffect(() => {
 
       {/* FIX → Add margin only for landing, top padding for other pages */}
       <div
-        className="w-full"
+        className="w-full overflow-x-hidden"
         style={{ marginTop: isLandingPage ? "100vh" : "9vh" }}
       >
         <Routes>
