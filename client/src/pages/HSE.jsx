@@ -203,7 +203,7 @@ const HSE = () => {
         </div>
 
         {isMobile ? (
-          <div className="w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px]">
+          <div className="w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[200px] lg:my-[81px]">
             {/* ===== BLOCK 1 ===== */}
             <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
               <div>
