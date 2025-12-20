@@ -127,7 +127,7 @@ const Fleet = () => {
       </Helmet>
       <div className="">
         {/* ===== Fleet Banner ===== */}
-        <div className="relative w-screen h-[45vh] md:h-[45vh] lg:h-[95vh] overflow-hidden">
+        <div className="relative w-full h-[45vh] md:h-[45vh] lg:h-[95vh] overflow-hidden">
           {/* ===== VIDEO BACKGROUND ===== */}
           <video
             src="https://res.cloudinary.com/dsf0pohxi/video/upload/fleetVideo_gd5ojx.mp4"

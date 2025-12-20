@@ -60,11 +60,14 @@ useEffect(() => {
 
   return (
     <>
+    <div className="w-full">
+
+   
       {isPageLoading && <PageLoader />}
       <ScrollToHash />
       <Menu />
       {isLandingPage && (
-        <div className="hero-video-container  w-screen ">
+        <div className="hero-video-container  w-full ">
           <video
             src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
             autoPlay
@@ -89,7 +92,7 @@ useEffect(() => {
 
       {/* FIX → Add margin only for landing, top padding for other pages */}
       <div
-        className="w-screen"
+        className="w-full"
         style={{ marginTop: isLandingPage ? "100vh" : "9vh" }}
       >
         <Routes>
@@ -120,6 +123,7 @@ useEffect(() => {
         <Footer />
       </div>
       <WhatsAppFloat />
+       </div>
     </>
   );
 };

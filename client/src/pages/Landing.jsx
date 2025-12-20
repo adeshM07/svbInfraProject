@@ -134,21 +134,21 @@ const Landing = () => {
         />
         <link rel="canonical" href="https://svbinfraprojects.com" />
       </Helmet>
-      <div className=" bg-transparent ">
+      <div className=" bg-transparent w-full">
         {/* <LandingBanner></LandingBanner> */}
         <div
           // id="landingBanner"
-          className={`w-screen  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 
+          className={`w-full  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 
   ${applyEffect ? "banner-active" : ""}`}
         >
           <div
             className=" pl-[calc(1.5rem+1vw)] 
                lg:pt-[calc(6rem+1vw)] lg:pl-32 
-               flex flex-col justify-center "
+               flex flex-col justify-center w-full"
           >
             {/* Text Block */}
             <motion.div
-              className="flex flex-col gap-[calc(0.5rem+0.4vw)] md:gap-[1vh] lg:gap-[calc(0.5rem+0.4vw)] z-800 [@media(min-width:2500px)]:gap-[4vh]"
+              className="flex w-full flex-col gap-[calc(0.5rem+0.4vw)] md:gap-[1vh] lg:gap-[calc(0.5rem+0.4vw)] z-800 [@media(min-width:2500px)]:gap-[4vh]"
               initial={{ opacity: 0, y: 10 }} // small movement
               whileInView={{ opacity: 1, y: 0 }} // trigger on scroll
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -358,7 +358,7 @@ const Landing = () => {
             <div className="flex flex-col  lg:flex-row lg:mx-30 xl:mx-30 2xl:mx-30  gap-7 lg:gap-5 lg:my-5">
               {/* ===== LEFT TEXT CONTENT ===== */}
               <motion.div
-                className="flex flex-col w-screen  place-items-center lg:place-items-start xl:w-[43vw] 2xl:w-[40vw] lg:w-[40vw] gap-4 lg:py-10 lg:gap-5"
+                className="flex flex-col w-full  place-items-center lg:place-items-start xl:w-[43vw] 2xl:w-[40vw] lg:w-[40vw] gap-4 lg:py-10 lg:gap-5"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9, ease: "easeOut" }}

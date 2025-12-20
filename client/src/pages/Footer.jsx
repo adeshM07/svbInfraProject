@@ -43,7 +43,7 @@ const Footer = () => {
       <div className="bg-[#F8F8F8] w-full">
         <div
           id="footer"
-          className=" h-full lg:h-[80vh] w-screen flex flex-col gap-5 md:gap-14  z-999"
+          className=" h-full lg:h-[80vh] w-full flex flex-col gap-5 md:gap-14  z-999"
         >
           <div className=" lg:h-[65%] flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:pl-4 pl-4 md:pl-0 lg:flex-row justify-evenly pt-10 lg:pt-20 gap-8 lg:gap-40">
             <div className="flex flex-col gap-7">

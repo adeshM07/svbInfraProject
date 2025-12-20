@@ -47,7 +47,7 @@ const HSE = () => {
       </Helmet>
       <div className="bg-[F8F8F8]">
         <div
-          className="h-[45vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh] md:h-[45vh] lg:h-[95vh] w-screen"
+          className="h-[45vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh] md:h-[45vh] lg:h-[95vh] w-full"
           id="hseBanner"
         >
           <div className="lg:pl-[135px] pl-[20px] flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">

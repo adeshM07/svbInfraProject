@@ -34,11 +34,11 @@ const Service = () => {
         />
         <link rel="canonical" href="https://svbinfraprojects.com/services" />
       </Helmet>
-      <div className="w-screen">
+      <div className="w-full">
         {/* ===== BANNER SECTION ===== */}
         <div
           id="serviceBanner"
-          className="w-screen [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  h-[45vh] md:h-[45vh] lg:h-[95vh] xl:h-[95vh]"
+          className="w-full [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  h-[45vh] md:h-[45vh] lg:h-[95vh] xl:h-[95vh]"
         >
           <div className="pt-[80px] ml-[30px] [@media(min-width:300px)_and_(max-width:410px)]:pt-[60px] [@media(min-width:2500px)]:pt-[250px] lg:pt-[120px] lg:ml-[120px]">
             {/* Heading Animation */}
@@ -124,7 +124,7 @@ const Service = () => {
                 >
                   <img
                     src={src}
-                    className="w-[23vw] h-[13vh] [@media(min-width:1400px)_and_(max-width:1500px)]:w-[22vw] [@media(min-width:1400px)_and_(max-width:1500px)]:h-[40vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[19vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[40vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[17vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[24vw]  md:h-[20vh] lg:w-[20vw] xl:w-[20vw] 2xl:w-[18vw] 2xl:h-[47vh]   lg:h-[47vh] xl:h-[50vh]  object-cover 
+                    className="w-[23vw] h-[13vh] [@media(min-width:1400px)_and_(max-width:1500px)]:w-[20vw] [@media(min-width:1400px)_and_(max-width:1500px)]:h-[20vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[19vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[40vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[17vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[24vw]  md:h-[20vh] lg:w-[20vw] xl:w-[20vw] 2xl:w-[18vw] 2xl:h-[47vh]   lg:h-[47vh] xl:h-[50vh]  object-cover 
            transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md [@media(min-width:2500px)]:w-[19vw]"
                     alt={`Service ${index + 1}`}
                   />
