@@ -105,35 +105,38 @@ const PortFolio = () => {
         <link rel="canonical" href="https://svbinfraprojects.com/portfolio" />
       </Helmet>
       <div className="flex  flex-col gap-10 lg:gap-[13vh] py-10 lg:py-30 bg-[#F8F8F8]">
-        <section className="flex  flex-col gap-8 lg:gap-8 lg:mx-[70px]  2xl:mx-[120px]">
+        <section className="flex  flex-col gap-8 lg:gap-8 lg:mx-[120px]">
           {/* ===== Animated Heading ===== */}
-          <motion.p
-            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[95px] xl:pl-[55px] 2xl:pl-0 text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.4 }}
-          >
-            Our Ongoing projects
-          </motion.p>
 
           {/* ===== Content Section ===== */}
           <div className="flex flex-col  lg:flex-row   lg:w-full lg:justify-between  mx-4 lg:mx-0 [@media(min-width:2500px)]:gap-90">
             {/* Left Side - Texts + Button */}
             <motion.div
-              className="flex flex-col gap-3 "
+              className="flex flex-col gap-3  lg:gap-[44px]"
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
+              <motion.p
+                className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-0 text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
+                Our Ongoing projects
+              </motion.p>
+              <div className="flex flex-col gap-4">
+
+              
               {isMobile ? (
                 <p className="popins-bold leading-8 text-[1.7rem]  text-[#333333] lg:leading-20">
                   Innovation That Strengthens
                   <span className="text-[#FDC000]">Infrastructure</span>
                 </p>
               ) : (
-                <p className="popins-bold md:text-[2.4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4.5rem] xl:text-[4rem] 2xl:text-[4.5rem] text-[#333333] lg:leading-20 xl:leading-20">
+                <p className="popins-bold md:text-[2.4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24  xl:text-[3rem] 2xl:text-[4rem] text-[#333333] lg:leading-20 xl:leading-15 2xl:leading-19">
                   Innovation That <br /> Strengthens{" "}
                   <br className="md:hidden lg:block" />{" "}
                   <span className="text-[#FDC000]">Infrastructure</span>
@@ -151,17 +154,7 @@ const PortFolio = () => {
                   portfolio.
                 </p>
               )}
-
-              <Link to="/contact">
-                <motion.button
-                  className="mt-3 lg:mt-5 w-[30%] md:py-4 [@media(min-width:300px)_and_(max-width:410px)]:w-[40%] xl:w-[9vw] 2xl:w-[8vw] lg:w-[8vw] bg-[#FDC000] text-[#333333] font-bold [@media(min-width:300px)_and_(max-width:410px)]:py-2 py-1.5 lg:py-2 rounded-md"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  Contact Now
-                </motion.button>
-              </Link>
+              </div>
             </motion.div>
 
             {/* Right Side - Image */}
@@ -172,7 +165,7 @@ const PortFolio = () => {
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <div className="relative   lg:mx-0  lg:ml-[60px]  overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
+              <div className="relative   lg:mx-0  lg:ml-[60px]  overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] ">
                 {[onc1, c3].map((src, index) => (
                   <img
                     key={index}
@@ -185,13 +178,15 @@ const PortFolio = () => {
             </motion.div>
           </div>
         </section>
-        <section className="flex flex-col gap-12 overflow-hidden 2xl:mx-[120px]
-        ">
-          <p className="lg:text-[2rem] text-[1.2rem] pl-[2rem] lg:pl-[110px] xl:pl-[35px] 2xl:pl-0 text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
+        <section
+          className="flex flex-col gap-12 overflow-hidden lg:mx-[120px]
+        "
+        >
+          <p className="lg:text-[2rem] text-[1.2rem] pl-[2rem] lg:pl-0 text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
             Our Latest Projects
           </p>
 
-          <div className="relative   w-[92vw] mx-auto lg:mx-0 lg:w-[92vw] lg:ml-[60px] 2xl:ml-0 lg:mr-[60px] overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
+          <div className="relative   w-[92vw] mx-auto lg:mx-0 lg:w-[92vw] lg:ml-0 lg:mr-[60px] overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
             {[
               c1,
               c2,
@@ -299,7 +294,10 @@ const PortFolio = () => {
               // transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               // viewport={{ once: true, amount: 0.4 }}
             >
-              <img src={reviewsIMG} className="lg:w-[37vw] lg:h-[57vh]   2xl:w-[37vw] 2xl:h-[57vh]" />
+              <img
+                src={reviewsIMG}
+                className="lg:w-[37vw] lg:h-[57vh]   2xl:w-[37vw] 2xl:h-[57vh]"
+              />
             </div>
           ) : (
             <motion.div
@@ -316,7 +314,7 @@ const PortFolio = () => {
         <section id="gallery" className="flex flex-col gap-20">
           {/* ===== HEADING ===== */}
           <motion.p
-            className="text-[#333333] text-[1.2rem] font-semibold lg:text-[2rem] pl-[2rem] lg:pl-[110px] underline decoration-[#FDC000] underline-offset-8"
+            className="text-[#333333] text-[1.2rem] font-semibold lg:text-[2rem] pl-[2rem] lg:pl-0 lg:mx-[120px] underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -330,7 +328,7 @@ const PortFolio = () => {
           {isMobile ? (
             <div className="flex w-fit mx-4 lg:mx-30 lg:gap-80">
               {/* Left text */}
-              <div className="flex flex-col w-[65%] lg:w-fit gap-3">
+              <div className="flex  flex-col w-[65%] lg:w-fit gap-3">
                 <p className="text-[1.3rem] lg:text-[4.2rem] xl:text-[3rem] 2xl:text-[4rem] text-[#333333] popins-bold leading-7 xl:leading-16 2xl:leading-20 lg:leading-20">
                   Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
                   Captured in Action
@@ -338,8 +336,8 @@ const PortFolio = () => {
                 <p className="text-[0.8rem] lg:text-[1rem] text-[#333333] font-semibold">
                   Explore our gallery to see SVB Infra Projects’ commitment to
                   quality,
-                  <br className="hidden lg:block xl:hidden 2xl:block" /> precision, and trusted
-                  execution in every project we deliver.
+                  <br className="hidden lg:block xl:hidden 2xl:block" />{" "}
+                  precision, and trusted execution in every project we deliver.
                 </p>
               </div>
 
@@ -354,7 +352,7 @@ const PortFolio = () => {
               </div>
             </div>
           ) : (
-            <div className="flex w-fit mx-4 lg:mx-30 lg:gap-80">
+            <div className="flex w-fit  mx-4 2xl:w-[83vw] lg:mx-30 lg:gap-80 justify-between">
               {/* Left text */}
               <motion.div
                 className="flex flex-col w-[65%] lg:w-fit gap-3"

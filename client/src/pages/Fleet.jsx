@@ -140,7 +140,7 @@ const Fleet = () => {
 
           {/* ===== DARK OVERLAY (OPTIONAL BUT RECOMMENDED) ===== */}
           <div className="absolute inset-0 bg-black/40 z-10" />
-          <div className="flex flex-col gap-7 w-fit lg:mx-auto mx-auto pt-[60px] lg:pt-[107px]">
+          <div className="flex flex-col gap-7 lg:gap-8 w-fit lg:mx-auto mx-auto pt-[60px] lg:pt-[107px]">
             {/* Heading & Subtext */}
             <motion.div
               className="flex flex-col gap-4"
