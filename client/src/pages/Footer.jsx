@@ -43,24 +43,25 @@ const Footer = () => {
       <div className="bg-[#F8F8F8] w-full">
         <div
           id="footer"
-          className=" h-full lg:h-[80vh] w-full flex flex-col gap-5 md:gap-14  z-999"
+          className=" h-full lg:h-[80vh]  w-full flex flex-col gap-5 md:gap-8  z-300 px-5 lg:px-10"
         >
-          <div className=" lg:h-[65%] flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:pl-4 pl-4 md:pl-0 lg:flex-row justify-evenly pt-10 lg:pt-20 gap-8 lg:gap-40">
+          <div className=" lg:h-fit flex flex-col   lg:flex-row justify-evenly pt-10 lg:pt-20  gap-8 lg:gap-40">
             <div className="flex flex-col gap-7">
               <img
                 src={logo}
                 className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[12vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] w-[20vw] h-[5vh] lg:w-[9vw] lg:h-[8vh]  lg:mx-0"
               />
-              <p className=" popins text-white text-start lg:text-[0.8rem] lg:text-start">
+              <p className=" popins text-[#ECECEC] text-start lg:text-[1rem] lg:text-start">
                 At SVB Infra Projects, we are a trusted <br /> provider of
                 comprehensive infrastructure <br /> solutions, specializing in
                 construction, <br /> earthmoving, land development, and <br />{" "}
                 project execution.
               </p>
             </div>
-            <div className="flex  flex-col gap-5 lg:gap-8 w-fit lg:mx-0 place-items-center lg:place-items-start">
-              <ul className="flex lg:flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0">
-                <ul className="flex flex-col gap-3">
+            <div className="flex  flex-col gap-5 lg:gap-11 w-fit lg:mx-0 place-items-center lg:place-items-start ">
+              {/* <ul className="flex lg:flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0"> */}
+              <p className="md:text-[24px] text-[#ECECEC] font-semibold underline decoration-[#FDC000] underline-offset-8">Quick Links</p>
+                <ul className="flex  flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[1rem]">
                   {[
                     { label: "About Us", to: "/about-us" },
                     { label: "Services", to: "/services" },
@@ -84,7 +85,7 @@ const Footer = () => {
                     </Link>
                   ))}
                 </ul>
-              </ul>
+              {/* </ul> */}
             </div>
             {isMobile ? (
               <div className="flex flex-col gap-4 ">
@@ -114,8 +115,8 @@ const Footer = () => {
                 </div>
               </div>
             ) : (
-              <div className="flex flex-col gap-8">
-                <p className="text-white text-[1rem] lg:text-[1.4rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
+              <div className="flex flex-col gap-11">
+                <p className="text-[#ECECEC] text-[1rem] lg:text-[1.5rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
                   Get in Touch
                 </p>
                 <div className="flex flex-col gap-6 md:gap-8 lg:gap-4 w-full">
@@ -129,7 +130,7 @@ const Footer = () => {
                       <span className="popins text-[10px] md:text-[0.9rem] lg:text-[1rem] text-[#FDC000]">
                         Karnataka Office
                       </span>
-                      <p className="text-white popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
+                      <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
                         UB Tower, UB City, 24, Vittal Mallya Road,
                         <br />
                         Bengaluru, Karnataka - 560001
@@ -147,7 +148,7 @@ const Footer = () => {
                       <span className="popins text-[10px] md:text-[0.9rem] lg:text-[1rem] text-[#FDC000]">
                         Andhra / Telangana Office
                       </span>
-                      <p className="text-white popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
+                      <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
                         PCS Business Centre 40-6/3-3,
                         <br />
                         Co-operative, State Bank Colony, Labbipet,
@@ -165,7 +166,7 @@ const Footer = () => {
                         src={phone}
                         className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[3.6vh]"
                       />
-                      <p className="text-white popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
+                      <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
                         +91 9036354261 , +91 9980851508
                       </p>
                     </a>
@@ -181,7 +182,7 @@ const Footer = () => {
                         src={mail}
                         className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[4vh]"
                       />
-                      <p className="text-white popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
+                      <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
                         info@svbinfraprojects.com
                       </p>
                     </a>
@@ -190,8 +191,8 @@ const Footer = () => {
               </div>
             )}
           </div>
-          <hr className="border-none h-[2px] bg-white opacity-50 mx-10 md:mx-33" />
-          <div className=" lg:h-[35%] flex flex-col gap-4 place-items-center justify-center">
+          <hr className="border-none h-[2px] bg-white opacity-50 mx-2 lg:mx-20" />
+          <div className=" lg:h-fit  flex flex-col gap-4 place-items-center justify-center">
             <div className="flex gap-2  lg:mt-0">
               <a
                 href="https://www.facebook.com/share/17Yn7q28DJ/"

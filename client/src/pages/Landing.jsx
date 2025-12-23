@@ -135,9 +135,7 @@ const Landing = () => {
         <link rel="canonical" href="https://svbinfraprojects.com" />
       </Helmet>
       <div className=" bg-transparent w-full">
-        {/* <LandingBanner></LandingBanner> */}
         <div
-          // id="landingBanner"
           className={`w-full  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 
   ${applyEffect ? "banner-active" : ""}`}
         >
@@ -155,7 +153,7 @@ const Landing = () => {
               viewport={{ once: true, amount: 0.6 }}
             >
               <motion.p
-                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-28"
+                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] xl:text-[4rem] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)]  xl:leading-[78px] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-28"
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
@@ -189,7 +187,7 @@ const Landing = () => {
             {/* Button Animation */}
             <Link to="/our-fleet-2" className="block z-400 customCursor">
               <motion.button
-                className="w-[30vw] [@media(min-width:300px)_and_(max-width:460px)]:h-[4.9vh] md:w-[25vw] xl:w-[15vw] 2xl:w-[10vw] 2xl:h-[7vh] [@media(min-width:2500px)]:h-[6vh]  lg:w-[10vw] lg:h-[7vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[20px] [@media(min-width:2500px)]:text-[25px] popins-noweight font-semibold mt-[2.5rem]"
+                className="w-[30vw] [@media(min-width:300px)_and_(max-width:460px)]:h-[4.9vh] md:w-[25vw] md:h-[6vh] xl:w-[9vw] 2xl:w-[9vw] 2xl:h-[6vh] [@media(min-width:2500px)]:h-[6vh]  lg:w-[9vw] lg:h-[6vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[19px] [@media(min-width:2500px)]:text-[25px] popins-noweight font-semibold mt-[2.5rem]"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -207,10 +205,10 @@ const Landing = () => {
 
         <div
           id="secondSection"
-          className="flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[30vh]   gap-[10vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30   bg-[#F8F8F8]"
+          className="flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[30vh]   gap-[7vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30   bg-[#F8F8F8]"
         >
-          <div>
-            <section className="flex flex-row w-full px-4 lg:mx-0  lg:justify-center text-gray-800 ">
+          <div className=" flex   flex-col md:gap-10 px-[10px] md:px-[148px]">
+            <section className="flex flex-row w-full    text-gray-800 ">
               {/* === VIDEO === */}
               <motion.div
                 initial={{ opacity: 0 }}
@@ -226,7 +224,7 @@ const Landing = () => {
                   muted
                   loop
                   playsInline
-                  className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[40vw] xl:h-[85vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] [@media(min-width:2500px)]:h-[80vh]  object-cover"
+                  className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  [@media(min-width:1300px)_and_(max-width:1490px)]:h-[70vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[40vw] xl:h-[84vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] [@media(min-width:2500px)]:h-[80vh]  object-cover"
                 />
               </motion.div>
 
@@ -236,14 +234,14 @@ const Landing = () => {
                
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-16 2xl:leading-20 text-[1.5rem] xl:text-[3rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-0 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-semibold [@media(min-width:2500px)]:leading-28 [@media(min-width:2500px)]:text-[6rem]">
+                <p className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-19 2xl:leading-19 text-[1.5rem] xl:text-[4rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-1 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-bold [@media(min-width:2500px)]:leading-28 [@media(min-width:2500px)]:text-[6rem] ">
                   Great Relationships
                   <br /> Great
                   <span className="text-[#FDC000] ml-2 md:ml-4">Infrastructure</span>
                 </p>
 
-                <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10 xl:pt-5 2xl:pt-1">
-                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem] xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 [@media(min-width:2500px)]:text-[2rem]">
+                <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10 xl:pt-5 2xl:pt-10">
+                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem]   xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 [@media(min-width:2500px)]:text-[2rem]">
                     <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
                     </span>
@@ -262,7 +260,7 @@ const Landing = () => {
                   {/* Button animation */}
                   <Link to="/about-us" className="flex w-full justify-end">
                     <motion.button
-                      className="popins mr-3 px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300"
+                      className="popins mr-3 px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300 "
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
@@ -283,7 +281,7 @@ const Landing = () => {
 
             {/* === COUNTER BOXES === */}
             <motion.div
-              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10  mx-auto lg:mx-0 lg:my-2 xl:my-3 2xl:my-2 [@media(min-width:2500px)]:my-8 pl-[3vw] [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  md:pl-34"
+              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10    lg:my-2 xl:my-3 2xl:my-2 [@media(min-width:2500px)]:my-8  [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  "
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -320,10 +318,10 @@ const Landing = () => {
               </div>
             </motion.div>
           </div>
-          <div className="flex flex-col gap-10 bg-[#F8F8F8]">
+          <div className="flex flex-col gap-10 bg-[#F8F8F8] lg:px-[114px]">
             {/* Animated Heading */}
             <motion.p
-              className="fontMon text-[1.2rem] lg:text-[1.9rem] lg:pl-34 pl-[1.9rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
+              className="fontMon text-[1.2rem] lg:text-[2rem] lg:pl-0 pl-[1.9rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -335,7 +333,7 @@ const Landing = () => {
             {/* Animated Image */}
             <motion.img
               src={pillarImg}
-              className="lg:w-[75vw] lg:h-[90vh] mx-4 lg:mx-auto"
+              className="lg:w-[78vw] lg:h-[106vh] mx-4 lg:mx-0"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
@@ -343,10 +341,10 @@ const Landing = () => {
               alt="Pillars of Trust"
             />
           </div>
-          <div className="w-full flex flex-col gap-15 lg:gap-10">
+          <div className="w-full flex flex-col gap-15 lg:gap-10 px-7 lg:px-[114px]">
             {/* ===== Heading ===== */}
             <motion.p
-              className="fontMon pl-[1.9rem] lg:pl-34 lg:text-[1.9rem] text-[1.2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
+              className="fontMon  lg:pl-0 lg:text-[2rem] text-[1.2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
@@ -355,21 +353,21 @@ const Landing = () => {
               Our Fleet
             </motion.p>
 
-            <div className="flex flex-col  lg:flex-row lg:mx-30 xl:mx-30 2xl:mx-30  gap-7 lg:gap-5 lg:my-5">
+            <div className="flex flex-col  lg:flex-row lg:mx-0  gap-7 lg:gap-5 lg:my-5">
               {/* ===== LEFT TEXT CONTENT ===== */}
               <motion.div
-                className="flex flex-col w-full  place-items-center lg:place-items-start xl:w-[43vw] 2xl:w-[40vw] lg:w-[40vw] gap-4 lg:py-10 lg:gap-5"
+                className="flex flex-col w-full  place-items-start lg:place-items-start xl:w-[43vw] 2xl:w-[40vw] lg:w-[40vw] gap-4 lg:py-10 lg:gap-5"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="fontMon bold leading-9 md:leading-12 lg:leading-18 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4rem] font-bold text-center lg:text-start bg-[#F8F8F8]">
+                <p className="fontMon bold leading-8 md:leading-12 lg:leading-19 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[4rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4rem] font-bold text-start lg:text-start bg-[#F8F8F8]">
                   Force Behind <br /> Every
                   <span className="text-[#FDC000] ml-2">Foundation</span>
                 </p>
 
-                <p className="text-[#4D4D4D] text-[0.8rem] md:text-[1.3rem] lg:text-[1rem] font-medium text-center lg:text-start [@media(min-width:2500px)]:text-[2rem] [@media(min-width:2500px)]:leading-12">
+                <p className="text-[#4D4D4D] text-[0.8rem] md:text-[1.3rem] lg:leading-8 lg:text-[1.3rem] font-medium text-start lg:text-start [@media(min-width:2500px)]:text-[2rem] [@media(min-width:2500px)]:leading-12">
                   Starting out with only one JCB 3D, we now keep a well-
                   <br />
                   maintained fleet of trucks and equipment.
@@ -377,7 +375,7 @@ const Landing = () => {
 
                 {/* Button — static now */}
                 <Link to="/our-fleet-2">
-                  <button className="popins px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300">
+                  <button className="popins-noweight text-[#333333] font-semibold text-[calc(0.8rem+0.3vw)] bg-[#FDC000] lg:text-[20px] w-[20vw] h-[3vh] lg:w-[9vw] lg:h-[6vh] rounded-md hover:bg-[#ffcf33] transition-all duration-300">
                     Explore All
                   </button>
                 </Link>
@@ -564,7 +562,7 @@ const Landing = () => {
           
           <div
             id="landing-contact"
-            className="lg:w-[78vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
+            className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto lg:mx-[114px] flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
           >
             <div className="">
               <p className="text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.7rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">

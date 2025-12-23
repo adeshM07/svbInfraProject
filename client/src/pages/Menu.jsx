@@ -133,13 +133,15 @@ const Menu = () => {
 
   return (
     <>
+     {/* ${hideOnScroll ? "-translate-y-full" : "translate-y-0"} */}
       <div
         className={`
     fixed top-0 left-0   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
-     lg:h-[10vh] xl:h-[10vh] place-items-center lg:px-30 
+     lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
     transition-all duration-500 z-[999]
+    
     ${isColored ? "bg-[#333333]" : "bg-transparent"}
-    ${hideOnScroll ? "-translate-y-full" : "translate-y-0"}
+   
   `}
       >
         <div className="">
@@ -229,7 +231,7 @@ const Menu = () => {
 
             <Link to="/contact">
               <button
-                className="menuButton [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] [@media(min-width:2500px)]:h-[5vh] bg-[#FDC000] text-black text-[1rem] rounded-[9px] [@media(min-width:2500px)]:text-[1.4rem] transition duration-300 transform
+                className="menuButton [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] xl:h-[6vh] xl:w-[9vw] [@media(min-width:2500px)]:h-[5vh] bg-[#FDC000] text-black text-[1rem] rounded-[9px]  xl:text-[1rem] [@media(min-width:2500px)]:text-[1.4rem] transition duration-300 transform
   hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
               >
                 Contact Us
