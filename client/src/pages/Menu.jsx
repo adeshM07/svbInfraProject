@@ -141,7 +141,6 @@ const Menu = () => {
     transition-all duration-500 z-[999]
     
     ${isColored ? "bg-[#333333]" : "bg-transparent"}
-    ${hideOnScroll ? "-translate-y-full" : "translate-y-0"}
    
   `}
       >
