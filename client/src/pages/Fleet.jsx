@@ -218,7 +218,7 @@ const Fleet = () => {
         >
           {/* Section Title */}
           <motion.div
-            className="flex flex-col gap-2 w-fit mx-10  lg:mx-40 xl:mx-25 2xl:mx-40 my-30 lg:my-30"
+            className="flex flex-col gap-2 w-fit mx-10  lg:mx-[120px] my-30 lg:my-30"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -247,11 +247,11 @@ const Fleet = () => {
           </motion.div>
 
           {/* Cards */}
-          <motion.div className="flex gap-x-8 gap-y-10 w-[85vw] md:w-[77vw] xl:w-[85vw] 2xl:w-[78vw] justify-between flex-wrap mx-auto mb-20">
+          <motion.div className="flex gap-x-8 gap-y-10 w-[85vw] md:w-[77vw] xl:w-[85vw] 2xl:w-[78vw] justify-between flex-wrap mx-auto lg:mx-[120px] mb-20">
             {cardDetails.map((item, index) => (
               <motion.div
                 key={index}
-                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] lg:h-[50vh] xl:h-[53vh] flex flex-col gap-2 lg:gap-5 xl:gap-3 2xl:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
+                className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] 2xl:h-[50vh] lg:h-[50vh] xl:h-[53vh] flex flex-col gap-2 lg:gap-5 xl:gap-3 2xl:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -263,15 +263,15 @@ const Fleet = () => {
                 <motion.img
                   src={item.img}
                   alt={item.title}
-                  className="h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] w-[80vw] lg:w-[22vw] lg:h-[30vh] xl:w-[24vw] xl:h-[33vh]"
+                  className="h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] w-[80vw] lg:w-[22vw] lg:h-[30vh] xl:w-[24vw] xl:h-[33vh] 2xl:w-[22vw] 2xl:h-[30vh]"
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.3 }}
                 />
                 <div className="flex flex-col gap-2 xl:gap-1 2xl:gap-2">
-                  <p className="text-[#333333] text-[1.5rem] md:text-[2.5rem] lg:text-[1.5rem] xl:text-[1.3rem] font-semibold fontMon">
+                  <p className="text-[#333333] text-[1.5rem] md:text-[2.5rem] lg:text-[1.5rem] xl:text-[1.3rem] 2xl:text-[1.5rem] font-semibold fontMon">
                     {item.title}
                   </p>
-                  <p className="text-[1rem] md:text-[1.3rem] lg:text-[1rem] xl:text-[0.8rem] popins">
+                  <p className="text-[1rem] text-[#4D4D4D] md:text-[1.3rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem] popins">
                     {item.desc}
                   </p>
                 </div>

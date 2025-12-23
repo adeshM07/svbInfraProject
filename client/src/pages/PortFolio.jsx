@@ -105,10 +105,10 @@ const PortFolio = () => {
         <link rel="canonical" href="https://svbinfraprojects.com/portfolio" />
       </Helmet>
       <div className="flex  flex-col gap-10 lg:gap-[13vh] py-10 lg:py-30 bg-[#F8F8F8]">
-        <section className="flex  flex-col gap-8 lg:gap-8">
+        <section className="flex  flex-col gap-8 lg:gap-8 lg:mx-[70px]  2xl:mx-[120px]">
           {/* ===== Animated Heading ===== */}
           <motion.p
-            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[95px] xl:pl-[55px] 2xl:pl-[95px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
+            className="lg:text-[2rem] md:text-[2.5rem] text-[1.2rem] pl-[0.8rem] lg:pl-[95px] xl:pl-[55px] 2xl:pl-0 text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -118,7 +118,7 @@ const PortFolio = () => {
           </motion.p>
 
           {/* ===== Content Section ===== */}
-          <div className="flex flex-col  lg:flex-row lg:w-fit lg:gap-30 xl:gap-10 2xl:gap-30 mx-4 lg:mx-auto [@media(min-width:2500px)]:gap-90">
+          <div className="flex flex-col  lg:flex-row   lg:w-full lg:justify-between  mx-4 lg:mx-0 [@media(min-width:2500px)]:gap-90">
             {/* Left Side - Texts + Button */}
             <motion.div
               className="flex flex-col gap-3 "
@@ -185,12 +185,13 @@ const PortFolio = () => {
             </motion.div>
           </div>
         </section>
-        <section className="flex flex-col gap-12 overflow-hidden">
-          <p className="lg:text-[2rem] text-[1.2rem] pl-[2rem] lg:pl-[110px] xl:pl-[35px] 2xl:pl-[110px] text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
+        <section className="flex flex-col gap-12 overflow-hidden 2xl:mx-[120px]
+        ">
+          <p className="lg:text-[2rem] text-[1.2rem] pl-[2rem] lg:pl-[110px] xl:pl-[35px] 2xl:pl-0 text-[#333333] font-semibold underline decoration-[#FDC000] underline-offset-8">
             Our Latest Projects
           </p>
 
-          <div className="relative   w-[92vw] mx-auto lg:mx-0 lg:w-[92vw] lg:ml-[60px] lg:mr-[60px] overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
+          <div className="relative   w-[92vw] mx-auto lg:mx-0 lg:w-[92vw] lg:ml-[60px] 2xl:ml-0 lg:mr-[60px] overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
             {[
               c1,
               c2,
