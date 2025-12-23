@@ -16,27 +16,26 @@ const Menu = () => {
   const isLandingPage = location.pathname === "/";
 
   useEffect(() => {
-  let lastScrollY = window.scrollY;
+    let lastScrollY = window.scrollY;
 
-  const handleScrollDirection = () => {
-    const currentScrollY = window.scrollY;
+    const handleScrollDirection = () => {
+      const currentScrollY = window.scrollY;
 
-    // scrolling down → hide
-    if (currentScrollY > lastScrollY && currentScrollY > 100) {
-      setHideOnScroll(true);
-    }
-    // scrolling up → show
-    else {
-      setHideOnScroll(false);
-    }
+      // scrolling down → hide
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setHideOnScroll(true);
+      }
+      // scrolling up → show
+      else {
+        setHideOnScroll(false);
+      }
 
-    lastScrollY = currentScrollY;
-  };
+      lastScrollY = currentScrollY;
+    };
 
-  window.addEventListener("scroll", handleScrollDirection);
-  return () => window.removeEventListener("scroll", handleScrollDirection);
-}, []);
-
+    window.addEventListener("scroll", handleScrollDirection);
+    return () => window.removeEventListener("scroll", handleScrollDirection);
+  }, []);
 
   useEffect(() => {
     if (!isLandingPage) {
@@ -78,7 +77,6 @@ const Menu = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isLandingPage]);
-  
 
   // const handleResize = () => {
   //   const width = window.innerWidth;
@@ -96,23 +94,22 @@ const Menu = () => {
 
   //   return () => window.removeEventListener("resize", handleResize);
   // }, []);
-  
+
   useEffect(() => {
-  const mediaQuery = window.matchMedia("(max-width: 739px)");
+    const mediaQuery = window.matchMedia("(max-width: 739px)");
 
-  const handleChange = (e) => {
-    setIsMobile(e.matches);
-  };
+    const handleChange = (e) => {
+      setIsMobile(e.matches);
+    };
 
-  // Run once on mount
-  setIsMobile(mediaQuery.matches);
+    // Run once on mount
+    setIsMobile(mediaQuery.matches);
 
-  mediaQuery.addEventListener("change", handleChange);
+    mediaQuery.addEventListener("change", handleChange);
 
-  return () => mediaQuery.removeEventListener("change", handleChange);
-}, []);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
-  
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (popup) {
@@ -133,22 +130,31 @@ const Menu = () => {
 
   return (
     <>
-     {/* ${hideOnScroll ? "-translate-y-full" : "translate-y-0"} */}
-      <div
+      {/* ${hideOnScroll ? "-translate-y-full" : "translate-y-0"} */}
+      {/* <div
         className={`
-    fixed top-0 left-0   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
+    fixed top-0 left-0 border-2 border-red-500   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
      lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
-    transition-all duration-500 z-[999]
     
+    
+    ${isColored ? "bg-[#333333]" : "bg-transparent"}
+   
+  `} */}
+      <div
+        className={`w-full fixed top-0 left-0 transition-all duration-500 z-999 flex  justify-between place-items-center h-12 md:h-17 lg:h-18 xl:h-25   px-2.5 md:px-8 lg:px-15 xl:px-30  
     ${isColored ? "bg-[#333333]" : "bg-transparent"}
    
   `}
       >
         <div className="">
           <Link to="/">
-            <img
+            {/* <img
               src={svbLogo}
               className="w-[15vw] h-[3.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[7.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[7vw] lg:w-[7vw] xl:w-[7vw] xl:h-[6vh] lg:h-[6vh]"
+            /> */}
+            <img
+              src={svbLogo}
+              className=" w-11 h-6 md:w-19 md:h-9 lg:w-25 lg:h-10 xl:w-35 xl:h-13"
             />
           </Link>
         </div>
@@ -193,8 +199,10 @@ const Menu = () => {
 
         {isMobile ? (
           <div className="flex gap-7  ">
-            <Link to='/contact'>
-            <button className="text-white bg-[#FDC000] text-[0.8rem] [@media(min-width:300px)_and_(max-width:700px)]:py-[0.1rem] [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex ">Contact Us</button>
+            <Link to="/contact">
+              <button className="text-white bg-[#FDC000] text-[0.8rem] [@media(min-width:300px)_and_(max-width:700px)]:py-[0.1rem] [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex ">
+                Contact Us
+              </button>
             </Link>
             <i
               id="hamburgerIcon"
@@ -219,7 +227,8 @@ const Menu = () => {
                 <li key={item.link} className=" relative group">
                   <Link
                     to={item.link}
-                    className="relative text-white transition-all duration-300 ease-in-out [@media(min-width:2500px)]:text-[1.1rem]"
+                    // className=" transition-all  [@media(min-width:2500px)]:text-[1.1rem]"
+                    className="popins relative transition-all text-[#ECECEC] duration-300 ease-in-out md:text-sm lg:text-lg xl:text-xl"
                   >
                     {item.name}
                     {/* Animated underline */}
@@ -231,8 +240,9 @@ const Menu = () => {
 
             <Link to="/contact">
               <button
-                className="menuButton [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] xl:h-[6vh] xl:w-[9vw] [@media(min-width:2500px)]:h-[5vh] bg-[#FDC000] text-black text-[1rem] rounded-[9px]  xl:text-[1rem] [@media(min-width:2500px)]:text-[1.4rem] transition duration-300 transform
-  hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
+                // className="menuButton [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] xl:h-[6vh] xl:w-[9vw] [@media(min-width:2500px)]:h-[5vh] bg-[#FDC000] text-black text-[1rem] rounded-[9px]  xl:text-[1rem] [@media(min-width:2500px)]:text-[1.4rem] transition duration-300 transform
+                // hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
+                className="menuButton bg-[#FDC000] text-[#333333] font-semibold rounded-lg  transition duration-300 transform hover:scale-105 hover:bg-[#ffcf33] cursor-pointer md:text-lg lg:text-xl md:w-28 md:h-9 lg:w-34 lg:h-9 xl:w-37 xl:h-12"
               >
                 Contact Us
               </button>
