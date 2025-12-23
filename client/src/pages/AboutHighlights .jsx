@@ -40,7 +40,7 @@ const   AboutHighlights = () => {
   return (
     <div className="flex flex-col gap-[80px]">
       <motion.div
-        className="flex flex-col gap-2 w-fit mx-10  lg:mx-40 xl:mx-25 2xl:mx-40  "
+        className="flex flex-col gap-2 w-fit mx-10  lg:mx-40 xl:mx-[120px]  "
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}

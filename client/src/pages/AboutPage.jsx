@@ -106,7 +106,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[120px]  my-[120px]">
-          <div className="lg:mx-auto  [@media(min-width:650px)_and_(max-width:1200px)]:h-[140vh]   [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 mx-2">
+          <div className="lg:mx-[120px]  [@media(min-width:650px)_and_(max-width:1200px)]:h-[140vh]   [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 mx-2">
             <motion.p
               className="text-black popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] xl:text-[2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
               initial={{ opacity: 0, y: 40 }}
@@ -120,7 +120,7 @@ const AboutPage = () => {
               {/* 🟡 Image comes from left */}
               <motion.img
                 src={bgIMG}
-                className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw]  lg:h-[59vh] xl:w-[31vw] xl:h-[65vh] "
+                className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw]  lg:h-[59vh] xl:w-[35vw] xl:h-[60vh] 2xl:w-[31vw] 2xl:h-[65vh]"
                 initial={{ opacity: 0, x: -80 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -135,7 +135,7 @@ const AboutPage = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] xl:text-[4rem]  lg:leading-14 xl:leading-19  [@media(min-width:2500px)]:text-[5rem] [@media(min-width:2500px)]:leading-24">
+                <p className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] xl:text-[3rem] 2xl:text-[44rem]  lg:leading-14 xl:leading-16 2xl:leading-19  [@media(min-width:2500px)]:text-[5rem] [@media(min-width:2500px)]:leading-24">
                   Excellence, <br />
                   <span className="text-[#FDC000]">Expertise,</span> Efficiency
                 </p>
@@ -183,10 +183,10 @@ const AboutPage = () => {
                 >
                   {/* Clients */}
                   <div className="flex flex-col place-items-center">
-                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
+                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
                       <Counter from={0} to={125} duration={0.8} />+
                     </p>
-                    <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[1rem]">
+                    <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem]">
                       Clients
                     </p>
                   </div>
@@ -194,10 +194,10 @@ const AboutPage = () => {
                   <div className="h-[4vh] md:h-[8vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
 
                   <div className="flex flex-col place-items-center">
-                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
+                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
                       <Counter from={0} to={185} duration={1.0} />+
                     </p>
-                    <p className="popins text-[#4D4D4D] [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[10px] md:text-[1.4rem] lg:text-[1rem]">
+                    <p className="popins text-[#4D4D4D] [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[10px] md:text-[1.4rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem]">
                       Successful project
                     </p>
                   </div>
@@ -205,10 +205,10 @@ const AboutPage = () => {
                   <div className="h-[4vh] md:h-[8vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
 
                   <div className="flex flex-col place-items-center">
-                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] popins-bold">
+                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
                       <Counter from={0} to={45} duration={1.3} />+
                     </p>
-                    <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[1rem]">
+                    <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem]">
                       Machines & Equipments
                     </p>
                   </div>

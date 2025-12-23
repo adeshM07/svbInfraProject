@@ -192,7 +192,7 @@ const Footer = () => {
             )}
           </div>
           <hr className="border-none h-[2px] bg-white opacity-50 mx-2 lg:mx-20" />
-          <div className=" lg:h-fit  flex flex-col gap-4 place-items-center justify-center">
+          <div className=" lg:h-fit  flex flex-col gap-1 md:gap-4 place-items-center justify-center">
             <div className="flex gap-2  lg:mt-0">
               <a
                 href="https://www.facebook.com/share/17Yn7q28DJ/"
