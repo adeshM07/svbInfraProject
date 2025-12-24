@@ -217,9 +217,9 @@ const Landing = () => {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 <video
-                  src={boxvideo}
+                  // src={boxvideo}
                   // src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4"
-                  //  src="https://www.dropbox.com/scl/fi/of9fvfwuakx55meeokabt/boxVideo.MOV?rlkey=ufy3suzkctcwu33gxusr467s9&raw=1"
+                  src="https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov"
                   autoPlay
                   muted
                   loop

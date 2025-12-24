@@ -71,7 +71,8 @@ useEffect(() => {
         <div className="hero-video-container  w-full ">
           <video
             // src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
-            src={lvideo}
+            src="https://res.cloudinary.com/dtculdtll/video/upload/LandingVideoTrimmed_yj2zr6.mp4"
+            // src={lvideo}
             autoPlay
             loop
             muted
