@@ -462,9 +462,8 @@ const Landing = () => {
               </motion.div>
             </div>
           </div>
-          <div className="">
+          {/* <div className="">
             <div className="custom-shape-container">
-              {/* Put anything inside this shape */}
               <video
                 src={projectVideo}
                 autoPlay
@@ -495,9 +494,7 @@ const Landing = () => {
                   with quality and precision.
                 </p>
               )}
-              <div 
-              // className="absolute [@media(min-width:650px)_and_(max-width:1200px)]:left-[55vw] [@media(min-width:720px)_and_(max-width:1200px)]:w-[25vw]   left-[68vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[6vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden "
-              className="absolute overflow-hidden -top-4 w-29 left-[65%] md:w-70 md:left-[60%] md:-top-10 lg:w-110 lg:left-1/2 lg:-top-24 xl:w-160 xl:left-1/2 xl:-top-20"
+              <div className="absolute overflow-hidden -top-4 w-29 left-[65%] md:w-70 md:left-[60%] md:-top-10 lg:w-110 lg:left-1/2 lg:-top-24 xl:w-160 xl:left-1/2 xl:-top-20"
               >
                 <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                   {[
@@ -589,7 +586,7 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div
             id="landing-contact"
             className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw]   text-white md:h-[23vh] lg:h-[37vh]   flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
