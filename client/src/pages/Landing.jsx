@@ -11,7 +11,7 @@ import "../CSS/ProjectVideoBanner.css";
 import "../CSS/CustomShape.css";
 import "../CSS/Landing.css";
 import { Helmet } from "react-helmet";
-import boxvideo from "../videos/Boxvideo.mp4";
+import boxvideo from "/public/boxVideoTrimmed.mov";
 import { useState, useEffect } from "react";
 import fleet1 from "../assets/fleet-img1.png";
 import fleet2 from "../assets/fleet-img2.png";
@@ -205,9 +205,9 @@ const Landing = () => {
 
         <div
           id="secondSection"
-          className="flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[30vh]   gap-[7vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30   bg-[#F8F8F8]"
+          className="flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[30vh]   gap-[7vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30 px-2.5 md:px-8 lg:px-15 xl:px-30   bg-[#F8F8F8]"
         >
-          <div className=" flex   flex-col md:gap-10 px-[10px] md:px-[148px]">
+          <div className=" flex   flex-col md:gap-10 ">
             <section className="flex flex-row w-full    text-gray-800 ">
               {/* === VIDEO === */}
               <motion.div
@@ -217,14 +217,15 @@ const Landing = () => {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 <video
-                  // src={boxvideo}
-                  src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4"
+                  src={boxvideo}
+                  // src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4"
                   //  src="https://www.dropbox.com/scl/fi/of9fvfwuakx55meeokabt/boxVideo.MOV?rlkey=ufy3suzkctcwu33gxusr467s9&raw=1"
                   autoPlay
                   muted
                   loop
                   playsInline
-                  className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  [@media(min-width:1300px)_and_(max-width:1490px)]:h-[70vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[40vw] xl:h-[84vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] [@media(min-width:2500px)]:h-[80vh]  object-cover"
+                  // className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  [@media(min-width:1300px)_and_(max-width:1490px)]:h-[70vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[40vw] xl:h-[84vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] [@media(min-width:2500px)]:h-[80vh]  object-cover"
+                  className="rounded-2xl shadow-lg w-[50vw] h-[32vh] md:w-100 md:h-130  lg:w-150 lg:h-150 xl:w-155 xl:h-155 object-cover"
                 />
               </motion.div>
 
@@ -234,14 +235,23 @@ const Landing = () => {
                
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-19 2xl:leading-19 text-[1.5rem] xl:text-[4rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-1 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-bold [@media(min-width:2500px)]:leading-28 [@media(min-width:2500px)]:text-[6rem] ">
+                <p 
+                // className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-19 2xl:leading-19 text-[1.5rem] xl:text-[4rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-1 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-bold [@media(min-width:2500px)]:leading-28 [@media(min-width:2500px)]:text-[6rem] "
+                className="text-[#333333] fontMon bg-[#F8F8F8] p-2 rounded-b-2xl z-300 font-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-7 text-[1.5rem] leading-8 -ml-20 md:text-4xl md:leading-12 md:-ml-40 lg:text-5xl lg:leading-15 lg:-ml-48  xl:text-6xl xl:leading-19 xl:-ml-52"
+                >
                   Great Relationships
-                  <br /> Great
+                  <br /> Greater
                   <span className="text-[#FDC000] ml-2 md:ml-4">Infrastructure</span>
                 </p>
 
-                <div className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10 xl:pt-5 2xl:pt-10">
-                  <p className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem]   xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 [@media(min-width:2500px)]:text-[2rem]">
+                <div 
+                // className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10 xl:pt-5 2xl:pt-10"
+                className="flex flex-col  my-2 md:my-5 w-50 gap-5 md:gap-5 lg:gap-8 xl:gap-10 pl-2 md:pl-3 lg:pl-5 [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw] md:w-90  lg:w-95 xl:pl-5 xl:w-150 "
+                >
+                  <p 
+                  // className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem]   xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 xl:pl-0  [@media(min-width:2500px)]:text-[2rem]"
+                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-xl xl:leading-8"
+                  >
                     <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
                     </span>
@@ -281,47 +291,57 @@ const Landing = () => {
 
             {/* === COUNTER BOXES === */}
             <motion.div
-              className="flex gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10    lg:my-2 xl:my-3 2xl:my-2 [@media(min-width:2500px)]:my-8  [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  "
+              // className="flex border-2 gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10    lg:my-2 xl:my-3 2xl:my-2 [@media(min-width:2500px)]:my-8  [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  "
+              className="flex [@media(min-width:300px)_and_(max-width:410px)]:gap-2 gap-4 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10    lg:my-2 xl:my-3"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }}
             >
               {/* Box 1 */}
-              <div className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center [@media(min-width:2500px)]:h-[9vh]">
-                <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl  font-semibold [@media(min-width:2500px)]:text-[2.2rem]">
+              <div 
+              // className="border [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center [@media(min-width:2500px)]:h-[9vh]"
+              className="flex place-items-center  justify-evenly [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-lg border md:border-2 border-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:h-[5.5vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[35vw] w-35 h-12 md:w-45 md:h-16 lg:w-50 lg:h-19 xl:w-54 xl:h-21"
+              >
+                <p 
+                // className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl  font-semibold [@media(min-width:2500px)]:text-[2.2rem]"
+                className="popins font-semibold [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] text-[1rem] md:text-[1.2rem]  lg:text-[1.5rem]  xl:text-[2rem]"
+                >
                   <Counter from={0} to={185} duration={1.2} />+
                 </p>
-                <p className="popins font-medium text-[9px] md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start [@media(min-width:2500px)]:text-[1.2rem]">
+                <p 
+                // className="popins font-medium text-[9px] md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start [@media(min-width:2500px)]:text-[1.2rem]"
+                className="popins text-[#4D4D4D] font-semibold [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[0.7rem] md:text-[0.9rem] lg:text-lg xl:text-xl"
+                >
                   Successfull <br /> Project
                 </p>
               </div>
 
               {/* Box 2 */}
-              <div className="border [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:border-2 border-[#FDC000] rounded-md flex lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center [@media(min-width:2500px)]:h-[9vh]">
-                <p className="popins text-lg [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] md:text-[1.5rem] lg:text-3xl font-semibold [@media(min-width:2500px)]:text-[2.2rem]">
+              <div className="flex place-items-center  justify-evenly [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-lg border md:border-2 border-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:h-[5.5vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[35vw]  w-35 h-12 md:w-45 md:h-16 lg:w-50 lg:h-19 xl:w-54 xl:h-21">
+                <p className="popins font-semibold  [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] text-[1rem] md:text-[1.2rem]  lg:text-[1.5rem]  xl:text-[2rem]">
                   <Counter from={0} to={45} duration={1.5} />+
                 </p>
-                <p className="popins font-medium text-[9px]  md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start [@media(min-width:2500px)]:text-[1.2rem]">
+                <p className="popins text-[#4D4D4D] font-semibold [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[0.7rem] md:text-[0.9rem] lg:text-lg xl:text-xl">
                   Machines <br /> Equipments
                 </p>
               </div>
 
               {/* Box 3 */}
-              <div className="border [@media(min-width:650px)_and_(max-width:1200px)]:h-[15vh] lg:border-2 border-[#FDC000] rounded-md flex [@media(min-width:300px)_and_(max-width:410px)]:w-[30vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[6vh] lg:w-[12vw] w-[27vw] xl:w-[15vw] 2xl:w-[12vw] justify-evenly h-[5vh] lg:h-[11vh] place-items-center [@media(min-width:2500px)]:h-[9vh]">
-                <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] text-lg md:text-[1.5rem] lg:text-3xl font-semibold [@media(min-width:2500px)]:text-[2.2rem]">
+              <div className="flex place-items-center  justify-evenly [@media(min-width:300px)_and_(max-width:410px)]:rounded-md rounded-lg border md:border-2 [@media(min-width:300px)_and_(max-width:410px)]:gap-1 border-[#FDC000] [@media(min-width:300px)_and_(max-width:410px)]:h-[5.5vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[35vw]  w-35 h-12 md:w-45 md:h-16 lg:w-50 lg:h-19 xl:w-54 xl:h-21">
+                <p className="popins font-semibold [@media(min-width:300px)_and_(max-width:410px)]:text-[0.9rem] text-[1rem] md:text-[1.2rem]  lg:text-[1.5rem]  xl:text-[2rem]">
                   24/7
                 </p>
-                <p className="popins font-medium text-[9px]   md:text-[1rem] lg:text-[15px] text-[#4D4D4D] text-start [@media(min-width:2500px)]:text-[1.2rem]">
+                <p className="popins text-[#4D4D4D] font-semibold [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[0.7rem] md:text-[0.9rem] lg:text-lg xl:text-xl">
                   Anywhere <br /> Assistance
                 </p>
               </div>
             </motion.div>
           </div>
-          <div className="flex flex-col gap-10 bg-[#F8F8F8] lg:px-[114px]">
+          <div className="flex flex-col gap-10 bg-[#F8F8F8] ">
             {/* Animated Heading */}
             <motion.p
-              className="fontMon text-[1.2rem] lg:text-[2rem] lg:pl-0 pl-[1.9rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
+              className="fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -333,7 +353,7 @@ const Landing = () => {
             {/* Animated Image */}
             <motion.img
               src={pillarImg}
-              className="lg:w-[78vw] lg:h-[106vh] mx-4 lg:mx-0"
+              className="lg:w-[85vw] lg:h-[106vh] "
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
@@ -341,10 +361,10 @@ const Landing = () => {
               alt="Pillars of Trust"
             />
           </div>
-          <div className="w-full flex flex-col gap-15 lg:gap-10 px-7 lg:px-[114px]">
+          <div className="w-full flex flex-col gap-15 lg:gap-10 ">
             {/* ===== Heading ===== */}
             <motion.p
-              className="fontMon  lg:pl-0 lg:text-[2rem] text-[1.2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
+              className="fontMon   lg:text-[2rem] text-[1.2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
@@ -362,12 +382,18 @@ const Landing = () => {
                 transition={{ duration: 0.9, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="fontMon bold leading-8 md:leading-12 lg:leading-19 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[4rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4rem] font-bold text-start lg:text-start bg-[#F8F8F8]">
+                <p 
+                // className="fontMon bold leading-8 md:leading-12 lg:leading-19 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[4rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4rem] font-bold text-start lg:text-start bg-[#F8F8F8]"
+                className="fontMon font-bold text-[#333333] text-start text-[1.8rem] leading-10 md:text-[3.5rem] md:leading-15 lg:leading-14 lg:text-[2.7rem] xl:leading-19 xl:text-[4rem]"
+                >
                   Force Behind <br /> Every
                   <span className="text-[#FDC000] ml-2">Foundation</span>
                 </p>
 
-                <p className="text-[#4D4D4D] text-[0.8rem] md:text-[1.3rem] lg:leading-8 lg:text-[1.3rem] font-medium text-start lg:text-start [@media(min-width:2500px)]:text-[2rem] [@media(min-width:2500px)]:leading-12">
+                <p 
+                // className="text-[#4D4D4D] text-[0.8rem] md:text-[1.3rem] lg:leading-8 lg:text-[1.3rem] font-medium text-start lg:text-start [@media(min-width:2500px)]:text-[2rem] [@media(min-width:2500px)]:leading-12"
+                className="text-[#4D4D4D] text-start font-semibold text-[0.7rem] md:text-[1rem] lg:text-[1rem] xl:text-[1.3rem]"
+                >
                   Starting out with only one JCB 3D, we now keep a well-
                   <br />
                   maintained fleet of trucks and equipment.
@@ -375,7 +401,10 @@ const Landing = () => {
 
                 {/* Button — static now */}
                 <Link to="/our-fleet-2">
-                  <button className="popins-noweight text-[#333333] font-semibold text-[calc(0.8rem+0.3vw)] bg-[#FDC000] lg:text-[20px] w-[20vw] h-[3vh] lg:w-[9vw] lg:h-[6vh] rounded-md hover:bg-[#ffcf33] transition-all duration-300">
+                  <button 
+                  // className="popins-noweight text-[#333333] font-semibold text-[calc(0.8rem+0.3vw)] bg-[#FDC000] lg:text-[20px] w-[20vw] h-[3vh] lg:w-[9vw] lg:h-[6vh] rounded-md hover:bg-[#ffcf33] transition-all duration-300"
+                  className="popins-noweight text-[#333333] font-semibold bg-[#FDC000] rounded-md text-[8px] md:text-xl md:rounded-lg w-20 h-7 md:w-30 md:h-10 lg:w-35 lg:h-10 xl:w-37 xl:h-12"
+                  >
                     Explore All
                   </button>
                 </Link>
@@ -433,7 +462,7 @@ const Landing = () => {
               </motion.div>
             </div>
           </div>
-          <div className="pl-4 md:pl-34 ">
+          <div className="">
             <div className="custom-shape-container">
               {/* Put anything inside this shape */}
               <video
@@ -466,7 +495,10 @@ const Landing = () => {
                   with quality and precision.
                 </p>
               )}
-              <div className="absolute [@media(min-width:650px)_and_(max-width:1200px)]:left-[55vw] [@media(min-width:720px)_and_(max-width:1200px)]:w-[25vw]   left-[68vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[6vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden ">
+              <div 
+              // className="absolute [@media(min-width:650px)_and_(max-width:1200px)]:left-[55vw] [@media(min-width:720px)_and_(max-width:1200px)]:w-[25vw]   left-[68vw] md:left-[50.2vw] lg:left-[54.2vw] -top-[6vw]  md:-top-[6vw] lg:-top-[7vw] lg:w-[37vw] py-2 lg:py-4  overflow-hidden "
+              className="absolute overflow-hidden -top-4 w-29 left-[65%] md:w-70 md:left-[60%] md:-top-10 lg:w-110 lg:left-1/2 lg:-top-24 xl:w-160 xl:left-1/2 xl:-top-20"
+              >
                 <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                   {[
                     {
@@ -558,11 +590,9 @@ const Landing = () => {
               </div>
             </div>
           </div>
-
-          
           <div
             id="landing-contact"
-            className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw] px-3 lg:px-0  text-white md:h-[23vh] lg:h-[37vh]  mx-auto lg:mx-[114px] flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
+            className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw]   text-white md:h-[23vh] lg:h-[37vh]   flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
           >
             <div className="">
               <p className="text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.7rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">

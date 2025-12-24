@@ -1,14 +1,14 @@
 .custom-shape-container {
-  width: 78vw;
+  width: 80vw;
   height: 70vh;
-  background: #FDC000;   /* replace with video/image if needed */
+  background: #FDC000;
   clip-path: polygon(
-    0% 0%,       /* top-left */
-    100% 0%,     /* top-right */
-    100% 80%,    /* right vertical bottom */
-    70% 80%,     /* start slant left */
-    60% 100%,    /* bottom slanted point */
-    0% 100%      /* bottom-left */
+    0% 0%,
+    100% 0%,
+    100% 78%,
+    55% 78%,  
+    45% 100%, 
+    0% 100%
   );
   border-radius: 12px;
   overflow: hidden;
@@ -24,31 +24,60 @@
   font-weight: bold;
 }
 
-@media (max-width: 720px) {
+@media (min-width: 701px) and (max-width: 1023px) {
   .custom-shape-container {
     width: 92vw;
-    height: 20vh;
+    height: 30vh;
 
-   
     clip-path: polygon(
       0% 0%,
       100% 0%,
-      100% 88%,
-      75% 88%,
-      60% 100%,
+      100% 82%,   /* less vertical drop */
+      60% 82%,    /* cut starts earlier */
+      50% 100%,   /* slant endpoint */
       0% 100%
     );
+
+    border-radius: 12px;
+    overflow: hidden;
   }
 
- 
+  .custom-shape-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 700px) {
+  .custom-shape-container {
+    width: 92vw;
+    height: 22vh;   /* 🔴 reduced for mobile balance */
+
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 86%,   /* 🔴 slightly deeper for visibility */
+      68% 86%,    /* 🔴 cut starts later (mobile-friendly) */
+      56% 100%,   /* 🔴 smoother slant */
+      0% 100%
+    );
+
+    border-radius: 12px;
+    overflow: hidden;
+  }
 
   .custom-shape-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-weight: bold;
-}
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+  }
 }
