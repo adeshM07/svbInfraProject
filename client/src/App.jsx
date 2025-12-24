@@ -21,7 +21,8 @@ import PageLoader from "./pages/PageLoader ";
 
 // import lvideo from "./assets/landingVideo.mov";
 // import lvideo from './videos/LandingVideoTrimmed.mp4'
-import lvideo from "/LandingVideoTrimmed.mp4";
+// import lvideo from "/LandingVideoTrimmed.mp4";
+import lvideo from "../src/videos/LandingVideoTrimmed.mp4"
 import "./App.css";
 
 const App = () => {
@@ -70,7 +71,7 @@ useEffect(() => {
         <div className="hero-video-container  w-full ">
           <video
             // src="https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
-            src='/LandingVideoTrimmed.mp4'
+            src={lvideo}
             autoPlay
             loop
             muted

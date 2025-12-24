@@ -219,7 +219,7 @@ const Menu = () => {
             >
               {[
                 { name: "About Us", link: "/about-us" },
-                { name: "Service", link: "/services" },
+                { name: "Services", link: "/services" },
                 { name: "Our Fleet", link: "/our-fleet-2" },
                 { name: "Portfolio", link: "/portfolio" },
                 { name: "Gallery", link: "/portfolio#gallery" },
