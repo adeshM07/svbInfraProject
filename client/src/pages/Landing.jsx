@@ -462,7 +462,7 @@ const Landing = () => {
               </motion.div>
             </div>
           </div>
-          {/* <div className="">
+          <div className="">
             <div className="custom-shape-container">
               <video
                 src={projectVideo}
@@ -501,77 +501,77 @@ const Landing = () => {
                     {
                       src: c1,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
                     },
                     {
                       src: c2,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175406/MarkSquareProjectVideo_v7fof2.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
                     },
                     {
                       src: c3,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175519/VellaraJunctionProjectVideo_wsgwwi.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
                     },
                     {
                       src: c4,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
                     },
                     {
                       src: c5,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
                     },
                     {
                       src: c6,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175618/ProjectVideo_regqnp.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
                     },
                     {
                       src: c7,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
                     },
                     {
                       src: c8,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171762/Boxvideo_m3mcys.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
                     },
                     {
                       src: c9,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175618/ProjectVideo_regqnp.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
                     },
                     {
                       src: c10,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
                     },
                     {
                       src: c11,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
                     },
                     {
                       src: c12,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175618/ProjectVideo_regqnp.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
                     },
                     {
                       src: c13,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765175406/MarkSquareProjectVideo_v7fof2.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
                     },
                     {
                       src: c14,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765177074/MarkSquare_xiglio.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
                     },
                     {
                       src: c15,
                       video:
-                        "https://res.cloudinary.com/dsf0pohxi/video/upload/v1764770035/v4_c2f1o6.mp4",
+                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
                     },
                   ].map((item, index) => (
                     <img
@@ -586,7 +586,7 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           <div
             id="landing-contact"
             className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw]   text-white md:h-[23vh] lg:h-[37vh]   flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
