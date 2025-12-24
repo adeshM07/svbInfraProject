@@ -48,9 +48,9 @@ import c3 from "../assets/globalCard15.png";
 
 const Landing = () => {
   const [applyEffect, setApplyEffect] = useState(false);
-  let [projectVideo, setProjectVideo] = useState(
-    "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
-  );
+  // let [projectVideo, setProjectVideo] = useState(
+  //   "https://res.cloudinary.com/dsf0pohxi/video/upload/v1765171912/LandingVideoTrimmed_i8mru3.mp4"
+  // );
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
