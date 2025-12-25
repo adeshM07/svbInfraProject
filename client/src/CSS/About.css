@@ -49,7 +49,7 @@ body, * {
   position: absolute;
   background: url('../assets/aboutBannerIMG.png') no-repeat center center;
   width: 100%;
-  height: 95vh;
+  height: 100%;
   background-size: cover;
   z-index: -1;
 }
@@ -60,7 +60,7 @@ body, * {
   #aboutBanner::before {
     background: url('../assets/aboutBannerIMG.png') no-repeat center top;
     background-size: cover;       /* keeps full image visible */
-    height: 45vh;                   /* smaller height for mobile */
+    height: 100%;                   /* smaller height for mobile */
   }
 }
 
@@ -68,7 +68,7 @@ body, * {
   #aboutBanner::before {
     background: url('../assets/aboutBannerIMG.png') no-repeat center top;
     background-size: cover;       /* keeps full image visible */
-    height: 100vh;                   /* smaller height for mobile */
+    height: 100%;                   /* smaller height for mobile */
   }
 }
 
@@ -77,7 +77,7 @@ body, * {
     background: url('../assets/aboutBannerIMG.png') no-repeat center top;
     background-size: cover;
     /* keeps full image visible */
-    height: 45vh;
+    height: 100%;
     /* smaller height for mobile */
   }
 }
@@ -86,8 +86,8 @@ body, * {
   #aboutBanner::before {
     background: url('../assets/aboutBannerIMG.png') no-repeat center top;
     background-size: cover;       /* keeps full image visible */
-    height: 50vh;              /* smaller height for mobile */
-    width: 102vw;
+    height: 100%;              /* smaller height for mobile */
+    width: 100%;
   }
 }
 

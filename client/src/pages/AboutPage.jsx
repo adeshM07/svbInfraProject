@@ -65,24 +65,25 @@ const AboutPage = () => {
         <link rel="canonical" href="https://svbinfraprojects.com/about" />
       </Helmet>
       {/* new line  */}
-      <div className="flex flex-col  ">
+      <div className="flex flex-col ">
         <div
           id="aboutBanner"
-          className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] md:h-[45vh] lg:h-[100vh]"
+          className="flex flex-col justify-center relative [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] md:h-[45vh] lg:h-[100vh]"
         >
-          <div className="pl-[30px] [@media(min-width:300px)_and_(max-width:700px)]:pt-[50px] [@media(min-width:650px)_and_(max-width:1200px)]:pt-[60px] pt-[100px] lg:pl-[120px] lg:pt-[150px] [@media(min-width:2500px)]:pt-[250px]">
+          <div className=" ">
             <motion.p
-              className="text-white [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.7rem]  md:text-[3.2rem] lg:text-[4rem] [@media(min-width:2500px)]:text-[6rem] aboutCom [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-8 md:leading-14 lg:leading-19 [@media(min-width:2500px)]:leading-28"
+              // className="text-white [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.7rem]  md:text-[3.2rem] lg:text-[4rem] [@media(min-width:2500px)]:text-[6rem] aboutCom [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-8 md:leading-14 lg:leading-19 [@media(min-width:2500px)]:leading-28"
+              className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-white font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
             >
-              <span className="text-[#FDC000]">SVB Infra</span> <br /> Building
+              <span className="text-[#FDC000] ">SVB Infra</span> <br /> Building
               the Future with <br /> Experience and Excellence
             </motion.p>
 
             <motion.p
-              className="popins text-[10px] md:text-[1.3rem] lg:text-[20px] text-white mt-[18px] [@media(min-width:2500px)]:text-[2rem]"
+              className="px-2.5 md:px-8 lg:px-15 xl:px-30 text-white popins text-[0.6rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem] mt-4 md:mt-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
@@ -93,7 +94,7 @@ const AboutPage = () => {
 
             <Link to="/contact">
               <motion.button
-                className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[13vh] lg:mt-10 mt-5 w-[21vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.8rem]  [@media(min-width:300px)_and_(max-width:410px)]:h-[4vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[25vw]  h-[3.2vh] text-[12px] md:w-[24vw] xl:w-[9.5vw] 2xl:w-[9.5vw] md:h-[6.5vh] lg:w-[9.5vw] lg:h-[6.5vh] [@media(min-width:2500px)]:h-[6.5vh] bg-[#FDC000] text-[#333333] popins-noweight font-semibold md:text-[1.5rem] lg:text-[20px] rounded-sm lg:rounded-lg"
+                className="mx-2.5 md:mx-8 lg:mx-15 xl:mx-30 mt-6 md:mt-10 bg-[#FDC000] z-999 rounded-md popins font-semibold text-[0.6rem] h-7 w-26 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5 "
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
@@ -105,8 +106,8 @@ const AboutPage = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col gap-[120px]  my-[120px]">
-          <div className="lg:mx-[120px]  [@media(min-width:650px)_and_(max-width:1200px)]:h-[140vh]   [@media(min-width:300px)_and_(max-width:410px)]:h-[60vh] [@media(min-width:411px)_and_(max-width:710px)]:h-[50vh]   w-fit flex flex-col gap-10 mx-2">
+        <div className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-30 md:gap-20 my-[50px] md:my-[120px]">
+          <div className=" w-fit flex flex-col gap-10 ">
             <motion.p
               className="text-black popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] xl:text-[2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
               initial={{ opacity: 0, y: 40 }}
@@ -120,7 +121,8 @@ const AboutPage = () => {
               {/* 🟡 Image comes from left */}
               <motion.img
                 src={bgIMG}
-                className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw]  lg:h-[59vh] xl:w-[35vw] xl:h-[60vh] 2xl:w-[31vw] 2xl:h-[65vh]"
+                // className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw]  lg:h-[59vh] xl:w-[35vw] xl:h-[60vh] 2xl:w-[31vw] 2xl:h-[65vh]"
+                className="h-45 w-45 md:h-85 md:w-85 lg:w-110 lg:h-110 xl:w-120 xl:h-120"
                 initial={{ opacity: 0, x: -80 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -129,53 +131,37 @@ const AboutPage = () => {
 
               {/* 🟢 Text slides from right */}
               <motion.div
-                className="flex flex-col lg:h-[59vh] gap-1 lg:gap-4 relative"
+                className="flex flex-col w-43 md:w-95 lg:w-172 lg:h-88 gap-1 lg:gap-4 relative"
                 initial={{ opacity: 0, x: 80 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] xl:text-[3rem] 2xl:text-[4rem]  lg:leading-14 xl:leading-16 2xl:leading-19  [@media(min-width:2500px)]:text-[5rem] [@media(min-width:2500px)]:leading-24">
+                <p
+                  // className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] xl:text-[3rem] 2xl:text-[4rem]  lg:leading-14 xl:leading-16 2xl:leading-19  [@media(min-width:2500px)]:text-[5rem] [@media(min-width:2500px)]:leading-24"
+                  className="fontMon text-[#333333] font-bold text-[0.9rem] leading-5 md:text-[2rem] md:leading-12 lg:text-[2.5rem] lg:leading-13  xl:text-[4rem] xl:leading-19"
+                >
                   Excellence, <br />
                   <span className="text-[#FDC000]">Expertise,</span> Efficiency
                 </p>
 
-                {isMobile ? (
-                  <p className="text-[#4D4D4D] w-[49vw] xl:w-[52vw] 2xl:w-[49vw] [@media(min-width:300px)_and_(max-width:410px)]:text-[8px] text-[8px]">
+               
+                  <p className="text-[#4D4D4D] text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.3rem] ">
                     <span className="font-semibold mr-1">
                       SVB Infra Projects
                     </span>
                     is a 3rd generation family-run business. SVB has been
                     managing earthmoving projects since 2003. Based in Karnataka
                     and Andhra Pardesh, we provide a fast, flexible, reliable
-                    and professional service statewide. We offer contract
-                    earthmoving services across the state providing a
-                    professional and reliable service to the main and sub
-                    contract civil engineering sector.
+                    and professional service state wide. We offer contract earth
+                    moving services across the state providing a professional
+                    and reliable service to the main and sub contract civil
+                    engineering sector.
                   </p>
-                ) : (
-                  <p className="text-[#4D4D4D] md:text-[0.8rem] xl:text-[1.3rem]  [@media(min-width:2500px)]:text-[2rem]   lg:w-[32vw] xl:w-[43vw]  lg:text-[1rem]">
-                    <span className="font-semibold mr-1">
-                      SVB Infra Projects
-                    </span>
-                    is a 3rd generation family-run business. SVB has
-                    <br className="hidden md:block xl:hidden " /> been managing
-                    earthmoving projects since 2003. Based in
-                    <br className="hidden md:block xl:hidden " /> Karnataka and
-                    Andhra Pardesh, we provide a fast, flexible, reliable and
-                    professional{" "}
-                    <br className="hidden md:block xl:hidden 2xl:hidden" />{" "}
-                    service state wide. We offer contract earth moving services
-                    across
-                    <br className="hidden md:block xl:hidden " /> the state
-                    providing a professional and reliable service to the main
-                    <br className="hidden md:block xl:hidden " /> and sub
-                    contract civil engineering sector.
-                  </p>
-                )}
+                
 
                 <motion.div
-                  className="flex  [@media(min-width:300px)_and_(max-width:410px)]:w-screen  absolute lg:relative [@media(min-width:300px)_and_(max-width:410px)]:gap-4 [@media(min-width:300px)_and_(max-width:410px)]:justify-center gap-7 lg:gap-14 lg:-left-0 -left-[180px] md:-left-[340px]  top-[230px] md:top-[400px] lg:top-0 place-items-center  "
+                  className="flex [@media(min-width:300px)_and_(max-width:430px)]:w-screen [@media(min-width:300px)_and_(max-width:430px)]:place-items-center [@media(min-width:300px)_and_(max-width:410px)]:justify-center  absolute lg:relative gap-5   md:gap-4 lg:gap-7 top-[200px] -left-[120%] md:-left-0   md:top-[255px]  lg:top-0  "
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
@@ -183,32 +169,32 @@ const AboutPage = () => {
                 >
                   {/* Clients */}
                   <div className="flex flex-col place-items-center">
-                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
+                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
                       <Counter from={0} to={125} duration={0.8} />+
                     </p>
-                    <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem]">
+                    <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
                       Clients
                     </p>
                   </div>
 
-                  <div className="h-[4vh] md:h-[8vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
+                  <div className="h-[4vh] md:h-[4vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
 
                   <div className="flex flex-col place-items-center">
-                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
+                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
                       <Counter from={0} to={185} duration={1.0} />+
                     </p>
-                    <p className="popins text-[#4D4D4D] [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[10px] md:text-[1.4rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem]">
+                    <p className="popins text-[#4D4D4D] [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
                       Successful project
                     </p>
                   </div>
 
-                  <div className="h-[4vh] md:h-[8vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
+                  <div className="h-[4vh] md:h-[4vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
 
-                  <div className="flex flex-col place-items-center">
-                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
+                  <div className="flex flex-col  place-items-center ">
+                    <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
                       <Counter from={0} to={45} duration={1.3} />+
                     </p>
-                    <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[1.4rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem]">
+                    <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
                       Machines & Equipments
                     </p>
                   </div>

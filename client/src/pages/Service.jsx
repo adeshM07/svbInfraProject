@@ -38,12 +38,12 @@ const Service = () => {
         {/* ===== BANNER SECTION ===== */}
         <div
           id="serviceBanner"
-          className="w-full [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  h-[45vh] md:h-[45vh] lg:h-[95vh] xl:h-[95vh]"
+          className="w-full [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  h-[45vh] md:h-[45vh] lg:h-[95vh] xl:h-[95vh] flex flex-col "
         >
-          <div className="pt-[80px] ml-[30px] [@media(min-width:300px)_and_(max-width:410px)]:pt-[60px] [@media(min-width:2500px)]:pt-[250px] lg:pt-[120px] lg:ml-[120px]">
+          <div className="flex flex-col gap-4 pt-[30%] md:pt-[9%]">
             {/* Heading Animation */}
             <motion.p
-              className="text-white text-[1.5rem] [@media(min-width:650px)_and_(max-width:1200px)]:text-[1.5rem] [@media(min-width:650px)_and_(max-width:1200px)]:leading-7 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6  md:text-[3.2rem] lg:text-[4rem] aboutCom leading-8 md:leading-14 lg:leading-19 [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24"
+              className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-white font-bold text-[1.2rem] leading-6 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -61,19 +61,13 @@ const Service = () => {
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              {isMobile ? (
-                <p className="popins text-[10px] [@media(min-width:650px)_and_(max-width:1200px)]:text-[7px] lg:text-[20px] text-white mt-[18px]">
-                  Delivering top-quality machinery and equipment <br />
-                  to ensure every project runs smoothly, <br />
-                  safely, and efficiently.
-                </p>
-              ) : (
-                <p className="popins text-[10px] md:text-[1.2rem] lg:text-[20px] text-white mt-[18px] [@media(min-width:2500px)]:text-[2rem]">
+             
+                <p className="px-2.5 md:px-8 lg:px-15 xl:px-30 text-white popins text-[0.6rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]">
                   Delivering top-quality machinery and equipment to ensure every
-                  project runs smoothly, <br className="md:hidden lg:block" />
+                  project runs smoothly, 
                   safely, and efficiently.
                 </p>
-              )}
+              
             </motion.div>
           </div>
         </div>
@@ -96,8 +90,6 @@ const Service = () => {
           >
             Our Services
           </motion.p>
-
-          {/* Service Image Grid */}
           <div className="flex flex-col md:flex-row mx-10  [@media(min-width:300px)_and_(max-width:410px)]:gap-0.5 [@media(min-width:650px)_and_(max-width:1200px)]:gap-0 gap-8 lg:gap-3 xl:gap-3 2xl:gap-6 [@media(min-width:2500px)]:gap-5 ">
             {[s1, s2, s3, s4].map((src, index) => (
               <motion.div

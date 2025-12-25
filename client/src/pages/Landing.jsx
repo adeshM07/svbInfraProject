@@ -136,24 +136,25 @@ const Landing = () => {
       </Helmet>
       <div className=" bg-transparent w-full">
         <div
-          className={`w-full  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 
+          className={`w-full  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 px-2.5 md:px-8 lg:px-15 xl:px-30
   ${applyEffect ? "banner-active" : ""}`}
         >
           <div
-            className=" pl-[calc(1.5rem+1vw)] 
-               lg:pt-[calc(6rem+1vw)] lg:pl-32 
+            className=" 
+               lg:pt-[calc(6rem+1vw)] 
                flex flex-col justify-center w-full"
           >
             {/* Text Block */}
             <motion.div
-              className="flex w-full flex-col gap-[calc(0.5rem+0.4vw)] md:gap-[1vh] lg:gap-[calc(0.5rem+0.4vw)] z-800 [@media(min-width:2500px)]:gap-[4vh]"
+              className="flex  w-full flex-col gap-[calc(0.5rem+0.4vw)] md:gap-[1vh] lg:gap-[calc(0.5rem+0.4vw)] z-800 [@media(min-width:2500px)]:gap-[4vh]"
               initial={{ opacity: 0, y: 10 }} // small movement
               whileInView={{ opacity: 1, y: 0 }} // trigger on scroll
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.6 }}
             >
               <motion.p
-                className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] xl:text-[4rem] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)]  xl:leading-[78px] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-28"
+                // className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] xl:text-[4rem] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)]  xl:leading-[78px] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-28"
+                className="fontMon text-white font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
@@ -170,24 +171,23 @@ const Landing = () => {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                {isMobile ? (
-                  <p className="text-white w-[88%] text-[calc(0.9rem+0.3vw)] popins leading-[calc(1.4rem+0.3vw)]">
-                    Delivering reliable infrastructure solutions with modern
-                    machinery and expert execution.
-                  </p>
-                ) : (
-                  <p className="text-white text-[1.3rem] popins [@media(min-width:2500px)]:text-[2rem]">
+                
+                  <p 
+                  // className="text-white text-[1.3rem] popins [@media(min-width:2500px)]:text-[2rem]"
+                  className="text-white popins text-[0.6rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]"
+                  >
                     Delivering reliable infrastructure solutions with modern
                     machinery <br /> and expert execution.
                   </p>
-                )}
+                
               </motion.div>
             </motion.div>
 
             {/* Button Animation */}
             <Link to="/our-fleet-2" className="block z-400 customCursor">
               <motion.button
-                className="w-[30vw] [@media(min-width:300px)_and_(max-width:460px)]:h-[4.9vh] md:w-[25vw] md:h-[6vh] xl:w-[9vw] 2xl:w-[9vw] 2xl:h-[6vh] [@media(min-width:2500px)]:h-[6vh]  lg:w-[9vw] lg:h-[6vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[19px] [@media(min-width:2500px)]:text-[25px] popins-noweight font-semibold mt-[2.5rem]"
+                // className="w-[30vw] [@media(min-width:300px)_and_(max-width:460px)]:h-[4.9vh] md:w-[25vw] md:h-[6vh] xl:w-[9vw] 2xl:w-[9vw] 2xl:h-[6vh] [@media(min-width:2500px)]:h-[6vh]  lg:w-[9vw] lg:h-[6vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[19px] [@media(min-width:2500px)]:text-[25px] popins-noweight font-semibold mt-[2.5rem]"
+                className="mt-6 md:mt-10 bg-[#FDC000] z-999 rounded-md popins font-semibold text-[0.6rem] h-7 w-26 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5 "
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -225,7 +225,7 @@ const Landing = () => {
                   loop
                   playsInline
                   // className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  [@media(min-width:1300px)_and_(max-width:1490px)]:h-[70vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[40vw] xl:h-[84vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] [@media(min-width:2500px)]:h-[80vh]  object-cover"
-                  className="rounded-2xl shadow-lg w-[50vw] h-[32vh] md:w-100 md:h-130  lg:w-150 lg:h-150 xl:w-155 xl:h-155 object-cover"
+                  className="rounded-2xl shadow-lg w-[50vw] h-[35vh] md:w-100 md:h-130  lg:w-150 lg:h-150 xl:w-155 xl:h-155 object-cover"
                 />
               </motion.div>
 
@@ -250,7 +250,7 @@ const Landing = () => {
                 >
                   <p 
                   // className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem]   xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 xl:pl-0  [@media(min-width:2500px)]:text-[2rem]"
-                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-xl xl:leading-8"
+                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[6px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-xl xl:leading-8"
                   >
                     <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
@@ -361,7 +361,7 @@ const Landing = () => {
               alt="Pillars of Trust"
             />
           </div>
-          <div className="w-full flex flex-col gap-15 lg:gap-10 ">
+          <div className="w-full flex flex-col gap- md:gap-10 ">
             {/* ===== Heading ===== */}
             <motion.p
               className="fontMon   lg:text-[2rem] text-[1.2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
@@ -494,7 +494,7 @@ const Landing = () => {
                   with quality and precision.
                 </p>
               )}
-              <div className="absolute overflow-hidden -top-4 w-29 left-[65%] md:w-70 md:left-[60%] md:-top-10 lg:w-110 lg:left-1/2 lg:-top-24 xl:w-160 xl:left-1/2 xl:-top-20"
+              <div className="absolute overflow-hidden -top-4 w-29 left-[65%] md:w-70 md:left-[60%] md:-top-10 lg:w-110 lg:left-[55%] lg:-top-24 xl:w-160 xl:left-[55%] xl:-top-20"
               >
                 <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                   {[
@@ -589,23 +589,26 @@ const Landing = () => {
           </div>
           <div
             id="landing-contact"
-            className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw]   text-white md:h-[23vh] lg:h-[37vh]   flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
+            // className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw]   text-white md:h-[23vh] lg:h-[37vh]   flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
+            className="relative flex justify-evenly  place-items-center z-200 text-white h-30  md:h-50  lg:h-70  xl:h-74 rounded-md"
           >
             <div className="">
-              <p className="text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.7rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold ">
+              <p 
+              // className="text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.7rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold "
+              className="popins-bold text-[0.7rem] md:text-[1rem] lg:text-[1.3rem] xl:text-[2rem]"
+              >
                 Let's Build Your Next Project Together
               </p>
-              <p className="fontMon [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem] font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]">
+              <p 
+              // className="fontMon [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem] font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]"
+              className="fontMon font-bold md:text-[2.5rem] lg:text-[3.4rem] xl:text-[4rem]"
+              >
                 Contact  Us!
               </p>
             </div>
             <Link to="/contact">
               <motion.button
-                className="lg:w-[calc(9vw+0px)] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] md:w-[18vw] w-[calc(17vw+0px)] 
-             rounded-sm lg:rounded-lg 
-             text-[calc(9px+0px)] md:text-[20px] lg:text-[calc(16px+0px)] 
-             h-[calc(3vh+0px)] md:h-[4vh] lg:h-[calc(6vh+0px)] 
-             bg-[#FDC000] hover:bg-[#ffcf33] transition-all duration-300"
+                className=" bg-[#FDC000] z-999 rounded-md popins font-semibold text-[0.6rem] h-7 w-20 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5 "
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
