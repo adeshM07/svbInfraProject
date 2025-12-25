@@ -137,7 +137,7 @@ const PortFolio = () => {
               
 
               
-                <p className="text-[#333333] popins text-[0.6rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]"
+                <p className="text-[#333333] popins text-[1rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]"
                   >
                   Experience our proven track record through our diverse 
                   portfolio.
@@ -220,7 +220,7 @@ const PortFolio = () => {
             viewport={{ once: true, amount: 0.4 }}
           >
             
-              <p className="fontMon text-[#333333] font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3rem] lg:leading-15  xl:text-[3.5rem] xl:leading-19"
+              <p className="fontMon text-[#333333] font-bold text-[2rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3rem] lg:leading-15  xl:text-[3.5rem] xl:leading-19"
                 >
                 Industry{" "}
                 <span className="text-[#FDC000]">
@@ -230,7 +230,7 @@ const PortFolio = () => {
             
 
           
-              <p  className="text-[#4D4D4D] popins text-[0.6rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1.3rem]">
+              <p  className="text-[#4D4D4D] popins text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1.3rem]">
                 Real feedback from clients who rely on our expertise for
                 excavation, rock work, soil retention, and dewatering services.
                 Every rating reflects our dedication to quality and reliability.
@@ -310,11 +310,11 @@ const PortFolio = () => {
                 transition={{ duration: 0.9, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p  className="fontMon text-[#333333] font-bold text-[0.9rem] leading-5 md:text-[2rem] md:leading-12 lg:text-[2.2rem] lg:leading-13  xl:text-[3.5rem]  xl:leading-19">
+                <p  className="fontMon text-[#333333] font-bold text-[2rem] leading-8 md:text-[2rem] md:leading-12 lg:text-[2.2rem] lg:leading-13  xl:text-[3.5rem]  xl:leading-19">
                   Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
                   Captured in Action
                 </p>
-                <p className="text-[0.5rem] md:text-[1.3rem]  lg:text-[1rem] text-[#333333] font-semibold">
+                <p className="text-[1rem] md:text-[1.3rem]  lg:text-[1rem] text-[#333333] font-semibold">
                   Explore our gallery to see SVB Infra Projects’ commitment to
                   quality,
                    precision, and trusted
