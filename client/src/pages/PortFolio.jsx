@@ -220,7 +220,7 @@ const PortFolio = () => {
             viewport={{ once: true, amount: 0.4 }}
           >
             
-              <p className="fontMon text-[#333333] font-bold text-[2rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3rem] lg:leading-15  xl:text-[3.5rem] xl:leading-19"
+              <p className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3rem] lg:leading-15  xl:text-[3.5rem] xl:leading-19"
                 >
                 Industry{" "}
                 <span className="text-[#FDC000]">
@@ -304,13 +304,13 @@ const PortFolio = () => {
             <div className="flex w-full   justify-between">
               {/* Left text */}
               <motion.div
-                className="flex flex-col w-[50%] md:w-[65%] lg:w-[70%] xl:w-[55%]  gap-3"
+                className="flex flex-col w-full md:w-[65%] lg:w-[70%] xl:w-[55%]  gap-3"
                 initial={{ opacity: 0, x: -60 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               >
-                <p  className="fontMon text-[#333333] font-bold text-[2rem] leading-8 md:text-[2rem] md:leading-12 lg:text-[2.2rem] lg:leading-13  xl:text-[3.5rem]  xl:leading-19">
+                <p  className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[2rem] md:leading-12 lg:text-[2.2rem] lg:leading-13  xl:text-[3.5rem]  xl:leading-19">
                   Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
                   Captured in Action
                 </p>
