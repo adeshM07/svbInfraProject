@@ -141,7 +141,7 @@ const Menu = () => {
    
   `} */}
       <div
-        className={`w-full fixed top-0 left-0 transition-all duration-500 z-999 flex  justify-between place-items-center h-12 md:h-17 lg:h-18 xl:h-25   px-2.5 md:px-8 lg:px-15 xl:px-30  
+        className={`w-full fixed top-0 left-0 transition-all duration-500 z-999 flex  justify-between place-items-center h-12 md:h-17 lg:h-18 xl:h-25   px-2.5 md:px-8 lg:px-15 xl:px-30 
     ${isColored ? "bg-[#333333]" : "bg-transparent"}
     ${hideOnScroll ? "-translate-y-full" : "translate-y-0"}
    
