@@ -154,7 +154,7 @@ const Landing = () => {
             >
               <motion.p
                 // className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] xl:text-[4rem] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)]  xl:leading-[78px] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-28"
-                className="fontMon text-white font-bold text-[2rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
+                className="fontMon text-white font-bold text-[1.8rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
@@ -174,7 +174,7 @@ const Landing = () => {
                 
                   <p 
                   // className="text-white text-[1.3rem] popins [@media(min-width:2500px)]:text-[2rem]"
-                  className="text-white popins text-[0.9rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]"
+                  className="text-white popins text-[0.7rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]"
                   >
                     Delivering reliable infrastructure solutions with modern
                     machinery <br /> and expert execution.
