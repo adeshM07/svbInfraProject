@@ -154,7 +154,7 @@ const Landing = () => {
             >
               <motion.p
                 // className="text-[calc(1.2rem+1vw)] md:text-[3.2rem] lg:text-[calc(2.5rem+1.5vw)] xl:text-[4rem] text-white aboutCom font-bold leading-[calc(1.8rem+0.6vw)] md:leading-16 lg:leading-[calc(3rem+1vw)]  xl:leading-[78px] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-28"
-                className="fontMon text-white font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
+                className="fontMon text-white font-bold text-[2rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
@@ -174,7 +174,7 @@ const Landing = () => {
                 
                   <p 
                   // className="text-white text-[1.3rem] popins [@media(min-width:2500px)]:text-[2rem]"
-                  className="text-white popins text-[0.6rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]"
+                  className="text-white popins text-[0.9rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]"
                   >
                     Delivering reliable infrastructure solutions with modern
                     machinery <br /> and expert execution.
@@ -205,12 +205,13 @@ const Landing = () => {
 
         <div
           id="secondSection"
-          className="flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[30vh]   gap-[7vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30 px-2.5 md:px-8 lg:px-15 xl:px-30   bg-[#F8F8F8]"
+          className="w-full flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[30vh]   gap-[7vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30 px-2.5 md:px-8 lg:px-15 xl:px-30   bg-[#F8F8F8]"
         >
-          <div className=" flex   flex-col md:gap-10 ">
+          <div className=" flex   flex-col gap-5 md:gap-7 ">
             <section className="flex flex-row w-full    text-gray-800 ">
               {/* === VIDEO === */}
               <motion.div
+              className="w-[60%] xl:w-[50%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[37vh] md:h-130 lg:h-150 xl:min-h-155 "
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
@@ -225,7 +226,8 @@ const Landing = () => {
                   loop
                   playsInline
                   // className="rounded-2xl shadow-lg [@media(min-width:650px)_and_(max-width:1200px)]:h-[95vh]  [@media(min-width:1300px)_and_(max-width:1490px)]:h-[70vh]  w-[50vw] h-[32vh] lg:w-[40vw] xl:w-[40vw] xl:h-[84vh] lg:h-[84vh] 2xl:w-[40vw] 2xl:h-[84vh] [@media(min-width:2500px)]:h-[80vh]  object-cover"
-                  className="rounded-2xl shadow-lg w-[50vw] h-[35vh] md:w-100 md:h-130  lg:w-150 lg:h-150 xl:w-155 xl:h-155 object-cover"
+                  // className="rounded-2xl  shadow-lg w-[50vw] h-[35vh] md:w-100 md:h-130  lg:w-150 lg:h-150 xl:w-full xl:h-155 object-cover"
+                  className="rounded-2xl w-full shadow-lg h-full  object-cover"
                 />
               </motion.div>
 
@@ -246,7 +248,7 @@ const Landing = () => {
 
                 <div 
                 // className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10 xl:pt-5 2xl:pt-10"
-                className="flex flex-col  my-2 md:my-5 w-50 gap-5 md:gap-5 lg:gap-8 xl:gap-10 pl-2 md:pl-3 lg:pl-5 [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw] md:w-90  lg:w-95 xl:pl-5 xl:w-150 "
+                className="flex flex-col  my-2 md:my-5 w-50 gap-5 md:gap-5 lg:gap-8 xl:gap-10 pl-2 md:pl-3 lg:pl-5 [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw] md:w-90  lg:w-95 xl:pl-5 xl:w-140 "
                 >
                   <p 
                   // className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem]   xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 xl:pl-0  [@media(min-width:2500px)]:text-[2rem]"
@@ -292,7 +294,7 @@ const Landing = () => {
             {/* === COUNTER BOXES === */}
             <motion.div
               // className="flex border-2 gap-3 md:gap-5 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10    lg:my-2 xl:my-3 2xl:my-2 [@media(min-width:2500px)]:my-8  [@media(min-width:650px)_and_(max-width:1200px)]:pl-10  "
-              className="flex [@media(min-width:300px)_and_(max-width:410px)]:gap-2 gap-4 [@media(min-width:300px)_and_(max-width:410px)]:my-6 my-10    lg:my-2 xl:my-3"
+              className="flex [@media(min-width:300px)_and_(max-width:410px)]:gap-2 gap-4 "
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
