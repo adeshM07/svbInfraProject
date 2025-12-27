@@ -383,7 +383,7 @@ const HSE = () => {
                 <motion.div
                   id="HSEUL"
                   // className="text-[#333333] popins text-[14px] bg-white  lg:-ml-20 lg:text-[18px] pl-7  lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl md:text-[15px] lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
-                  className="text-[#333333] popins md:h-[70%] bg-white rounded-xl flex flex-col p-5 gap-3 lg:gap-5  shadow-[0_0_20px_rgba(0,0,0,0.4)] w-full"
+                  className="text-[#333333] popins md:h-[65%] lg:h-[70%] bg-white rounded-xl flex flex-col p-5 gap-3 lg:gap-5  shadow-[0_0_20px_rgba(0,0,0,0.4)] w-full"
                   initial={{ opacity: 0, x: 120, y: -30 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   transition={{
@@ -394,7 +394,7 @@ const HSE = () => {
                   }}
                   viewport={{ once: true, amount: 0.4 }}
                 >
-                  <p className="text-[#FDC000] md:text-[1rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">Commitment to health & safety</p>
+                  <p className="text-[#FDC000] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">Commitment to health & safety</p>
                   <div className="flex flex-col gap-2 list-none popins md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                     <li className="">Setting out of corner benchmarks</li>
                     <li className="">Surveying ground levels</li>
