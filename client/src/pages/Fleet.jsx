@@ -210,7 +210,7 @@ const Fleet = () => {
         >
           {/* Section Title */}
           <motion.div
-            className=" px-2.5 md:px-8 lg:px-15 xl:px-30flex flex-col gap-2 w-fit   my-30 lg:my-30"
+            className=" px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-2 w-fit   my-30 lg:my-30"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -248,7 +248,7 @@ const Fleet = () => {
               <motion.div
                 key={index}
                 // className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] 2xl:h-[50vh] lg:h-[50vh] xl:h-[53vh] flex flex-col gap-2 lg:gap-5 xl:gap-3 2xl:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
-                className="shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-lg flex flex-col gap-3 md:gap-6 lg:gap-4 md:p-8 md:w-full p-3 w-full  md:h-160 lg:p-5 lg:w-100 lg:h-100 xl:gap-4 xl:p-5 xl:w-95 xl:h-93"
+                className="shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-lg flex flex-col gap-3 md:gap-6 lg:gap-4 md:p-8 md:w-full p-3 w-full  md:h-160 lg:p-5 lg:w-100 lg:h-100 xl:w-80 xl:h-85 2xl:gap-4 2xl:p-5 2xl:w-95 2xl:h-93"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{

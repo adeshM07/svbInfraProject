@@ -40,7 +40,7 @@ const Service = () => {
           id="serviceBanner"
           className="w-full [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  h-[45vh] md:h-[45vh] lg:h-[95vh] xl:h-[95vh] flex flex-col "
         >
-          <div className="flex flex-col gap-4 pt-[30%] md:pt-[9%]">
+          <div className="flex flex-col gap-4 pt-[30%] md:pt-[12%]">
             {/* Heading Animation */}
             <motion.p
               className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-white font-bold text-[1.2rem] leading-6 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"

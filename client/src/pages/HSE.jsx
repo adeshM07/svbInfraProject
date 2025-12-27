@@ -50,10 +50,11 @@ const HSE = () => {
           className="h-[45vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh] md:h-[45vh] lg:h-[95vh] w-full"
           id="hseBanner"
         >
-          <div className="lg:pl-[135px] pl-[20px] flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">
+          <div className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">
             {/* Animated Title */}
             <motion.p
-              className="hseBannerTitle [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.5rem] md:text-[2.5rem] md:leading-10 leading-6 lg:text-[4rem] text-[#FDC000] lg:leading-20"
+              // className="hseBannerTitle [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.5rem] md:text-[2.5rem] md:leading-10 leading-6 lg:text-[4rem] text-[#FDC000] lg:leading-20"
+              className="px-2.5 md:px-0 lg:px-0 xl:px-0 fontMon text-[#FDC000] font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  2xl:text-[4rem] 2xl:leading-19 z-300 hseBannerTitle"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -65,7 +66,8 @@ const HSE = () => {
 
             {/* Animated Description */}
             <motion.p
-              className="hseBannerDesc text-white text-[14px] md:text-[1.5rem] lg:text-[20px]"
+              // className="hseBannerDesc text-white text-[14px] md:text-[1.5rem] lg:text-[20px]"
+              className="text-white popins text-[0.7rem] md:text-[1.2rem] lg:text-[1.2rem] 2xl:text-[1.3rem] hseBannerDesc"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -150,10 +152,11 @@ const HSE = () => {
           </motion.div>
         )}
 
-        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:mt-[120px] mx-[20px] lg:pl-[115px] xl:pl-[115px]">
+        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:mt-[120px] px-2.5 md:px-8 lg:px-15 xl:px-30">
           {/* Section Heading */}
           <motion.p
-            className="text-[14px] md:text-[1.3rem] lg:text-[2rem] underline decoration-[#FDC000] underline-offset-8 fontMon font-semibold text-[#333333]"
+            // className="text-[14px] md:text-[1.3rem] lg:text-[2rem] underline decoration-[#FDC000] underline-offset-8 fontMon font-semibold text-[#333333]"
+            className="text-[#333333] popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] xl:text-[2rem]  underline font-semibold decoration-[#FDC000] underline-offset-8"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -177,7 +180,7 @@ const HSE = () => {
           >
             {/* Main Title */}
             <motion.p
-              className="lg:text-[4rem] md:text-[2.5rem] text-[1.4rem] text-[#333333] fontMon font-bold"
+              className="fontMon text-[#333333] font-bold text-[1.8rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
@@ -189,7 +192,7 @@ const HSE = () => {
 
             {/* Description */}
             <motion.p
-              className="popins text-[14px] md:text-[1.3rem] lg:text-[20px] text-[#333333]"
+              className="text-[#333333] popins text-[0.7rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.2rem]"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
@@ -342,26 +345,26 @@ const HSE = () => {
             </div>
           </div>
         ) : (
-          <div className=" w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px]">
-            <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col lg:flex-row gap-7 lg:gap-[20px] rounded-lg justify-center">
+          <div className=" px-2.5 md:px-8 lg:px-15 xl:px-30  w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px]">
+            <div className=" md:mx-0 py-5 md:py-0  w-full border-2 md:max-h-100 lg:max-h-100  2xl:max-h-110 flex flex-col md:flex-row  rounded-lg place-items-center">
               {/* ===== IMAGE (Fades In Smoothly) ===== */}
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
+                className="w-[50%] h-full"
               >
                 <img
                   src={ic1}
-                  className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh] xl:h-[70vh] 2xl:h-[52vh] rounded-lg"
+                  // className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[85vw] md:h-[34vh] lg:w-[40vw] xl:w-[50vw] 2xl:w-[40vw] lg:h-[52vh] xl:h-[70vh] 2xl:h-[52vh] rounded-lg"
+                  className="w-full h-full rounded-lg"
                   alt="Commitment to health & safety"
                 />
               </motion.div>
-
-              {/* ===== TEXT SECTION ===== */}
-              <div className="flex flex-col gap-[10px] lg:gap-[20px]">
+              <div className=" h-full  w-[50%] -ml-[8%]  flex ">
                 {/* Title (Spring Entry From Right + Slight Down) */}
-                <motion.p
+                {/* <motion.p
                   className=" text-[#FDC000] text-[1.4rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[2rem] xl:text-[1.8rem] 2xl:text-[2rem]   lg:text-[2rem] fontMon font-semibold"
                   initial={{ opacity: 0, x: 120, y: -30 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -374,12 +377,13 @@ const HSE = () => {
                   viewport={{ once: true, amount: 0.4 }}
                 >
                   Commitment to health & safety
-                </motion.p>
+                </motion.p> */}
 
                 {/* List (Spring Entry With Slight Delay, Same Direction) */}
-                <motion.ul
+                <motion.div
                   id="HSEUL"
-                  className="text-[#333333] popins text-[14px] bg-white  lg:-ml-20 lg:text-[18px] pl-7  lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl md:text-[15px] lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  // className="text-[#333333] popins text-[14px] bg-white  lg:-ml-20 lg:text-[18px] pl-7  lg:pl-12 font-semibold flex flex-col gap-[12px] py-2 rounded-xl md:text-[15px] lg:gap-[15px] shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                  className="text-[#333333] popins md:h-[70%] bg-white rounded-xl flex flex-col p-5 gap-3 lg:gap-5  shadow-[0_0_20px_rgba(0,0,0,0.4)] w-full"
                   initial={{ opacity: 0, x: 120, y: -30 }}
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   transition={{
@@ -390,13 +394,16 @@ const HSE = () => {
                   }}
                   viewport={{ once: true, amount: 0.4 }}
                 >
-                  <li className="HSEUL">Setting out of corner benchmarks</li>
-                  <li className="HSEUL">Surveying ground levels</li>
-                  <li className="HSEUL">Surveying top levels</li>
-                  <li className="HSEUL">Excavation to approved depth</li>
-                  <li className="HSEUL">Dressing of loose soil</li>
-                  <li className="HSEUL">Making up to cut-off level</li>
-                </motion.ul>
+                  <p className="text-[#FDC000] md:text-[1.1rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">Commitment to health & safety</p>
+                  <div className="flex flex-col gap-2 list-none popins md:text-[0.7rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                    <li className="">Setting out of corner benchmarks</li>
+                    <li className="">Surveying ground levels</li>
+                    <li className="">Surveying top levels</li>
+                    <li className="">Excavation to approved depth</li>
+                    <li className="">Dressing of loose soil</li>
+                    <li className="">Making up to cut-off level</li>
+                  </div>
+                </motion.div>
               </div>
             </div>
             <div className="mx-2 md:mx-0 py-5 md:py-0 px-4 md:px-0 lg:w-[78vw] xl:w-[90vw] 2xl:w-[78vw] h-fit lg:h-[59vh] flex flex-col md:flex-col lg:flex-row-reverse gap-7 lg:gap-[39px] rounded-lg justify-center">
