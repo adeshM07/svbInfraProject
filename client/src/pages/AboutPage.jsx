@@ -139,7 +139,7 @@ const AboutPage = () => {
               >
                 <p
                   // className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] xl:text-[3rem] 2xl:text-[4rem]  lg:leading-14 xl:leading-16 2xl:leading-19  [@media(min-width:2500px)]:text-[5rem] [@media(min-width:2500px)]:leading-24"
-                  className="fontMon text-[#333333] font-bold text-[0.9rem] leading-5 md:text-[2rem] md:leading-12 lg:text-[3rem] lg:leading-17   2xl:text-[4rem] "
+                  className="fontMon text-[#333333] font-bold text-[0.9rem] leading-5 md:text-[2rem] md:leading-12 lg:text-[2.5rem] lg:leading-14   2xl:text-[4rem] "
                 >
                   Excellence, <br />
                   <span className="text-[#FDC000]">Expertise,</span> Efficiency
