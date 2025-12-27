@@ -117,13 +117,13 @@ const AboutPage = () => {
             >
               About our company
             </motion.p>
-            <div className="  flex gap-4 [@media(min-width:300px)_and_(max-width:410px)]:gap-2 lg:gap-7 w-full  h-40 sm:h-70 md:h-80 lg:h-100 xl:h-120">
+            <div className="  flex gap-4 [@media(min-width:300px)_and_(max-width:410px)]:gap-2 lg:gap-7 w-full  h-45 sm:h-70 md:h-80 lg:h-100 xl:h-120">
               {/* 🟡 Image comes from left */}
               <motion.img
                 src={bgIMG}
                 // className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw]  lg:h-[59vh] xl:w-[35vw] xl:h-[60vh] 2xl:w-[31vw] 2xl:h-[65vh]"
                 // className="h-45 w-45 md:h-85 md:w-85 lg:w-110 lg:h-110 xl:w-120 xl:h-120"
-                className="h-full w-[55%] sm:w-[60%] md:w-[45%] lg:w-[50%] xl:w-[50%]"
+                className="h-full w-[50%] sm:w-[60%] md:w-[45%] lg:w-[50%] xl:w-[50%]"
                 initial={{ opacity: 0, x: -80 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -132,7 +132,7 @@ const AboutPage = () => {
 
               {/* 🟢 Text slides from right */}
               <motion.div
-                className="flex flex-col w-full sm:w-95 md:w-95 lg:w-172 lg:h-88 gap-1 lg:gap-4 relative"
+                className="flex flex-col  w-50 sm:w-95 md:w-95 lg:w-172 lg:h-88 gap-1 lg:gap-4 relative"
                 initial={{ opacity: 0, x: 80 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
