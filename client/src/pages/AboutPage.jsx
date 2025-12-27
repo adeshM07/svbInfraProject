@@ -242,7 +242,7 @@ const AboutPage = () => {
               </div>
             </motion.div>
           )}
-          <div className="">
+          <div className="mt-8">
             <AboutHighlights></AboutHighlights>
           </div>
         </div>
