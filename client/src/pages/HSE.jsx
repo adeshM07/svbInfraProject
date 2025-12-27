@@ -394,8 +394,8 @@ const HSE = () => {
                   }}
                   viewport={{ once: true, amount: 0.4 }}
                 >
-                  <p className="text-[#FDC000] md:text-[1.1rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">Commitment to health & safety</p>
-                  <div className="flex flex-col gap-2 list-none popins md:text-[0.7rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                  <p className="text-[#FDC000] md:text-[1rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">Commitment to health & safety</p>
+                  <div className="flex flex-col gap-2 list-none popins md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                     <li className="">Setting out of corner benchmarks</li>
                     <li className="">Surveying ground levels</li>
                     <li className="">Surveying top levels</li>
