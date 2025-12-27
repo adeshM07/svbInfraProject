@@ -211,7 +211,7 @@ const Landing = () => {
             <section className="flex flex-row w-full    text-gray-800 ">
               {/* === VIDEO === */}
               <motion.div
-              className="w-[60%] xl:w-[50%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[37vh] md:h-130 lg:h-150 xl:min-h-155 "
+              className="w-[60%] sm:w-[50%] lg:w-[50%] xl:w-[50%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[47vh] md:h-130 lg:h-160 xl:min-h-155 "
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
@@ -239,7 +239,7 @@ const Landing = () => {
               >
                 <p 
                 // className="fontMon bg-[#F8F8F8]  z-300 [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem]  mobile:absolute mobile:top-[5%] mobile:left-[5%] lg:leading-20 xl:leading-19 2xl:leading-19 text-[1.5rem] xl:text-[4rem] 2xl:text-[4rem] md:text-[2rem] leading-7 md:leading-10 lg:py-1 lg:px-2 rounded-bl-2xl -ml-20 p-2 lg:-ml-56  text-[#333333] lg:text-[4rem] font-bold [@media(min-width:2500px)]:leading-28 [@media(min-width:2500px)]:text-[6rem] "
-                className="text-[#333333] fontMon bg-[#F8F8F8] p-2 rounded-b-2xl z-300 font-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-7 text-[1.5rem] leading-8 -ml-20 md:text-4xl md:leading-12 md:-ml-40 lg:text-5xl lg:leading-15 lg:-ml-48  xl:text-6xl xl:leading-19 xl:-ml-52"
+                className="text-[#333333] fontMon bg-[#F8F8F8] p-2 rounded-b-2xl z-300 font-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-7 text-[1.5rem] leading-8 -ml-20 md:text-4xl md:leading-12 md:-ml-40 sm:text-3xl lg:text-5xl lg:leading-15 lg:-ml-48  xl:text-6xl xl:leading-19 xl:-ml-52"
                 >
                   Great Relationships
                   <br /> Greater
@@ -248,11 +248,11 @@ const Landing = () => {
 
                 <div 
                 // className="flex flex-col  lg:place-items-end xl:place-items-start 2xl:place-items-end gap-4 px-2 pt-2 lg:pt-10 xl:pt-5 2xl:pt-10"
-                className="flex flex-col  my-2 md:my-5 w-50 gap-5 md:gap-5 lg:gap-8 xl:gap-10 pl-2 md:pl-3 lg:pl-5 [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw] md:w-90  lg:w-95 xl:pl-5 xl:w-140 "
+                className="flex flex-col   my-2 md:my-5 gap-5 md:gap-5 lg:gap-8 xl:gap-10 pl-2 md:pl-3 lg:pl-5 [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw] w-full  xl:pl-5  "
                 >
                   <p 
                   // className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem]   xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 xl:pl-0  [@media(min-width:2500px)]:text-[2rem]"
-                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[6px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-xl xl:leading-8"
+                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[6px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] sm:text-[0.9rem] sm:leading-6 md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-xl xl:leading-8"
                   >
                     <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
@@ -272,8 +272,8 @@ const Landing = () => {
                   {/* Button animation */}
                   <Link to="/about-us" className="flex w-full justify-end">
                     <motion.button
-                      className="popins mr-3 px-[calc(0.8rem+0.5vw)] py-[calc(0.4rem+0.3vw)] [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[calc(0.8rem+0.3vw)] bg-[#FDC000] rounded-md hover:bg-[#ffcf33] transition-all duration-300 "
-                      initial={{ opacity: 0, y: 40 }}
+                      className="popins-noweight text-[#333333] font-semibold bg-[#FDC000] rounded-md text-[8px] md:text-xl md:rounded-lg w-20 h-7 md:w-30 md:h-10 lg:w-35 lg:h-10 xl:w-37 xl:h-12"
+                  initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
                         duration: 0.9,
@@ -386,7 +386,7 @@ const Landing = () => {
               >
                 <p 
                 // className="fontMon bold leading-8 md:leading-12 lg:leading-19 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[4rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4rem] font-bold text-start lg:text-start bg-[#F8F8F8]"
-                className="fontMon font-bold text-[#333333] text-start text-[1.8rem] leading-10 md:text-[3.5rem] md:leading-15 lg:leading-14 lg:text-[2.7rem] xl:leading-19 xl:text-[4rem]"
+                className="fontMon font-bold text-[#333333] text-start text-[1.8rem] leading-10 md:text-[3.5rem] md:leading-15 lg:leading-14 lg:text-[2.7rem] xl:leading-15 xl:text-[3.5rem]"
                 >
                   Force Behind <br /> Every
                   <span className="text-[#FDC000] ml-2">Foundation</span>

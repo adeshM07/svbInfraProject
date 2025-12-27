@@ -242,13 +242,13 @@ const Fleet = () => {
           <motion.div 
           // className="flex gap-x-8 gap-y-10 w-[85vw] md:w-[77vw] xl:w-[85vw] 2xl:w-[78vw] justify-between flex-wrap  mb-20"
           //
-          className=" px-5 md:px-8 lg:px-15 xl:px-30 my-5 gap-y-10 flex flex-wrap w-full justify-evenly xl:justify-between"
+          className=" px-5 md:px-8 lg:px-15 xl:px-30 my-5 gap-y-10 flex flex-wrap w-full justify-evenly md:justify-between lg:justify-evenly xl:justify-between"
            >
             {cardDetails.map((item, index) => (
               <motion.div
                 key={index}
                 // className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] 2xl:h-[50vh] lg:h-[50vh] xl:h-[53vh] flex flex-col gap-2 lg:gap-5 xl:gap-3 2xl:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
-                className="shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-lg flex flex-col gap-3 md:gap-6 lg:gap-4 md:p-8 md:w-full p-3 w-full  md:h-160 lg:p-5 lg:w-100 lg:h-100 xl:w-80 xl:h-85 2xl:gap-4 2xl:p-5 2xl:w-95 2xl:h-93"
+                className="shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-lg flex flex-col gap-3 md:gap-6 lg:gap-4  md:w-85 p-3 w-full md:min-h-90 lg:p-5 lg:w-100 lg:h-100 xl:w-80 xl:h-85 2xl:gap-4 2xl:p-5 2xl:w-95 2xl:h-93"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -266,10 +266,10 @@ const Fleet = () => {
                   transition={{ duration: 0.3 }}
                 />
                 <div className="flex flex-col gap-2 xl:gap-1 2xl:gap-2">
-                  <p className="text-[#333333] text-[1.5rem] md:text-[2.5rem] lg:text-[1.5rem] xl:text-[1.3rem] 2xl:text-[1.5rem] font-semibold fontMon">
+                  <p className="text-[#333333] text-[1.5rem] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[1.3rem] 2xl:text-[1.5rem] font-semibold fontMon">
                     {item.title}
                   </p>
-                  <p className="text-[1rem] text-[#4D4D4D] md:text-[1.3rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem] popins">
+                  <p className="text-[1rem] text-[#4D4D4D] md:text-[1rem] lg:text-[1rem] xl:text-[0.8rem] 2xl:text-[1rem] popins">
                     {item.desc}
                   </p>
                 </div>
