@@ -479,7 +479,7 @@ const Landing = () => {
             </div>
             <div className="  flex w-full py-2 lg:py-6 relative ">
               {isMobile ? (
-                <p className="text-[#4D4D4D]  w-[45vw]  popins  text-[8px] lg:text-[16px]  lg:mt-5 font-semibold ">
+                <p className="text-[#4D4D4D]  w-[45vw] text-justify  popins  text-[8px] lg:text-[16px]  lg:mt-5 font-semibold ">
                   We have successfully completed a wide range of earthwork and
                   excavation projects for leading clients across Karnataka and Andhra Pardesh. Our
                   portfolio includes residential, commercial, and infrastructure
