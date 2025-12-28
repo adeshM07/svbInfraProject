@@ -171,7 +171,7 @@ const PortFolio = () => {
             Our Latest Projects
           </p>
 
-          <div className="relative   w-full overflow-hidden  rounded-xl flex  md:gap-[40px] py-4">
+          <div className="relative   w-full overflow-hidden  rounded-xl flex gap-2 md:gap-[40px] py-4">
             {[
               c1,
               c2,
