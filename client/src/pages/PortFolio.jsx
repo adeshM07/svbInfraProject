@@ -230,7 +230,7 @@ const PortFolio = () => {
               </span>
             </p>
 
-            <p className="text-[#4D4D4D] popins text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1.3rem]">
+            <p className="text-[#4D4D4D] text-justify popins text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1.3rem] ">
               Real feedback from clients who rely on our expertise for
               excavation, rock work, soil retention, and dewatering services.
               Every rating reflects our dedication to quality and reliability.
@@ -303,17 +303,17 @@ const PortFolio = () => {
           <div className="flex w-full   justify-between">
             {/* Left text */}
             <motion.div
-              className="flex flex-col w-full md:w-[65%] lg:w-[70%] xl:w-[55%]  gap-3"
+              className="flex flex-col  w-full [@media(min-width:500px)_and_(max-width:639px)]:w-[60%] md:w-[65%] lg:w-[70%] xl:w-[55%]  gap-3"
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[2rem] md:leading-12 lg:text-[2.2rem] lg:leading-13  xl:text-[3.5rem]  xl:leading-19">
+              <p className="fontMon text-[#333333] font-bold [@media(min-width:500px)_and_(max-width:639px)]:text-[1.5rem] text-[2rem] leading-9 md:text-[2rem] md:leading-12 lg:text-[2.2rem] lg:leading-13  xl:text-[3.5rem]  xl:leading-19">
                 Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
                 Captured in Action
               </p>
-              <p className="text-[1rem] md:text-[1.3rem]  lg:text-[1rem] text-[#333333] font-semibold">
+              <p className="[@media(min-width:500px)_and_(max-width:639px)]:text-[0.6rem] text-[1rem] md:text-[1.3rem]  lg:text-[1rem] text-[#333333] font-semibold">
                 Explore our gallery to see SVB Infra Projects’ commitment to
                 quality, precision, and trusted execution in every project we
                 deliver.
@@ -322,16 +322,16 @@ const PortFolio = () => {
 
             {/* Right stats */}
             <motion.div
-              className="flex flex-col  place-items-center"
+              className="hidden [@media(min-width:500px)]:block flex flex-col  place-items-center"
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="fontMon text-[#FDC000] font-bold text-[1rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19">
+              <p className="fontMon text-[#FDC000] font-bold [@media(min-width:500px)_and_(max-width:639px)]:text-[1.5rem] text-[1rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19">
                 45+
               </p>
-              <p className="popins-bold text-[#333333] text-[0.6rem] md:text-[1.3rem] md:leading-7 lg:text-[1.5rem] lg:leading-8 xl:leading-11 xl:text-[2rem]">
+              <p className="popins-bold text-[#333333] [@media(min-width:500px)_and_(max-width:639px)]:text-[1rem] text-[0.6rem] md:text-[1.3rem] md:leading-7 lg:text-[1.5rem] lg:leading-8 xl:leading-11 xl:text-[2rem]">
                 Total number <br /> of machinery
               </p>
             </motion.div>

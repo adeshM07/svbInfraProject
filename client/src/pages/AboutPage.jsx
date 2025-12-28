@@ -146,7 +146,7 @@ const AboutPage = () => {
                   <span className="text-[#FDC000]">Expertise,</span> Efficiency
                 </p>
 
-                <p className="text-[#4D4D4D] text-[0.5rem] sm:text-[0.8rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.3rem] ">
+                <p className="text-[#4D4D4D] text-[0.5rem] sm:text-[0.8rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.3rem] text-justify">
                   <span className="font-semibold mr-1">SVB Infra Projects</span>
                   is a 3rd generation family-run business. SVB has been managing
                   earthmoving projects since 2003. Based in Karnataka and Andhra

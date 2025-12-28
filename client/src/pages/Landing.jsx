@@ -251,7 +251,7 @@ const Landing = () => {
                 >
                   <p 
                   // className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem]   xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 xl:pl-0  [@media(min-width:2500px)]:text-[2rem]"
-                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[6px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] sm:text-[0.9rem] sm:leading-6 md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-xl xl:leading-8"
+                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[6px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] sm:text-[0.9rem] sm:leading-6 md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-xl xl:leading-8 text-justify"
                   >
                     <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
@@ -462,7 +462,7 @@ const Landing = () => {
               </motion.div>
             </div>
           </div>
-          <div className="">
+          <div className=" overflow-x-hidden">
             <div className="custom-shape-container">
               <video
                 src={projectVideo}
@@ -486,7 +486,7 @@ const Landing = () => {
                   developments delivered with quality and precision.
                 </p>
               ) : (
-                <p className="text-[#4D4D4D] w-[50%] text-justify popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
+                <p className="text-[#4D4D4D] w-[48%] text-justify popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
                   We have successfully completed a wide range of 
                   earthwork and excavation projects for leading  clients
                   across Karnataka and Andhra Pardesh.  Our portfolio includes  residential,
@@ -494,7 +494,9 @@ const Landing = () => {
                   with quality and precision.
                 </p>
               )}
-              <div className="absolute overflow-hidden -top-4 w-29 left-[65%] md:w-70 md:left-[60%] md:-top-10 lg:w-110 lg:left-[55%] lg:-top-24 xl:w-160 xl:left-[55%] xl:-top-20"
+              <div 
+              className="absolute overflow-hidden -top-4 w-full left-[65%]  md:left-[60%] md:-top-10  lg:left-[55%] lg:-top-24  xl:left-[55%] xl:-top-20"
+              // className="absolute -top-4  md:-top-10 lg:-top-24 xl:-top-20"
               >
                 <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll ">
                   {[
