@@ -43,15 +43,15 @@ const Footer = () => {
       <div className="bg-[#F8F8F8] w-full">
         <div
           id="footer"
-          className=" h-full lg:h-[80vh]  w-full flex flex-col gap-5 md:gap-8  z-300 px-5 lg:px-10"
+          className=" h-full lg:h-[80vh]  w-full flex flex-col gap-5 md:gap-8  z-300 px-2.5 md:px-8 lg:px-15 xl:px-30"
         >
-          <div className=" lg:h-fit flex flex-col   lg:flex-row justify-evenly pt-10 lg:pt-20  gap-8 lg:gap-40">
+          <div className=" lg:h-fit flex flex-col   md:flex-row  pt-10 lg:pt-20  justify-between">
             <div className="flex flex-col gap-7">
               <img
                 src={logo}
-                className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[12vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[10vh] w-[20vw] h-[5vh] lg:w-[9vw] lg:h-[8vh]  lg:mx-0"
+                className="w-[20vw] h-[5vh] md:w-[10vw] md:h-[3vh] lg:w-[9vw] lg:h-[8vh]  lg:mx-0"
               />
-              <p className=" popins text-[#ECECEC] text-start lg:text-[1rem] lg:text-start">
+              <p className=" popins text-[#ECECEC] text-start md:text-[0.7rem] lg:text-[1rem] lg:text-start">
                 At SVB Infra Projects, we are a trusted <br /> provider of
                 comprehensive infrastructure <br /> solutions, specializing in
                 construction, <br /> earthmoving, land development, and <br />{" "}
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div className="flex  flex-col gap-5 lg:gap-11 w-fit lg:mx-0 place-items-center lg:place-items-start ">
               {/* <ul className="flex lg:flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0"> */}
-              <p className="md:text-[24px] text-[#ECECEC] font-semibold underline decoration-[#FDC000] underline-offset-8">Quick Links</p>
+              <p className="md:text-[17px] lg:text-[20px] xl:text-[24px] text-[#ECECEC] font-semibold underline decoration-[#FDC000] underline-offset-8">Quick Links</p>
                 <ul className="flex  flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[1rem]">
                   {[
                     { label: "About Us", to: "/about-us" },
@@ -89,6 +89,9 @@ const Footer = () => {
             </div>
             {isMobile ? (
               <div className="flex flex-col gap-4 ">
+                <p className="text-[#ECECEC] hidden md:block text-[17px] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
+                  Get in Touch
+                </p>
                 <div className="flex flex-col gap-2  ">
                   <div className="flex gap-1 place-items-center">
                     <img src={address} className="h-[3vh]" />
@@ -105,18 +108,16 @@ const Footer = () => {
                     </a>
                   </div>
                 </div>
-                <div className="text-white [@media(min-width:650px)_and_(max-width:1200px)]:text-start  md:text-center flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:flex-col md:flex-row">
+                <div className="text-white [@media(min-width:650px)_and_(max-width:1200px)]:text-start  md:text-center flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:flex-col md:flex-row gap-y-1">
                   {" "}
                   <a href="tel:9036354261">+91 9036354261</a>{" "}
-                  <span className="hidden [@media(min-width:800px)_and_(max-width:1200px)]:hidden md:block">
-                    ,
-                  </span>{" "}
+                
                   <a href="tel:9980851508">+91 9980851508</a>{" "}
                 </div>
               </div>
             ) : (
               <div className="flex flex-col gap-11">
-                <p className="text-[#ECECEC] text-[1rem] lg:text-[1.5rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
+                <p className="text-[#ECECEC] text-[1rem] md:text-[17px] lg:text-[1.1rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
                   Get in Touch
                 </p>
                 <div className="flex flex-col gap-6 md:gap-8 lg:gap-4 w-full">
@@ -142,7 +143,7 @@ const Footer = () => {
                   <div className="flex items-start gap-3 md:gap-4">
                     <img
                       src={address}
-                      className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[4vh]"
+                      className="w-[6vw] h-[4vh] md:w-[1vw] md:h-[1vh] lg:w-[2vw] lg:h-[4vh]"
                     />
                     <div className="flex flex-col">
                       <span className="popins text-[10px] md:text-[0.9rem] lg:text-[1rem] text-[#FDC000]">
@@ -167,7 +168,7 @@ const Footer = () => {
                         className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[3.6vh]"
                       />
                       <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
-                        +91 9036354261 , +91 9980851508
+                        +91 9036354261  +91 9980851508
                       </p>
                     </a>
                   </div>
@@ -201,7 +202,7 @@ const Footer = () => {
               >
                 <img
                   src={fb}
-                  className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[7vh]  h-[3vh] lg:h-[4vh] cursor-pointer"
+                  className="md:h-[3vh] h-[3vh] lg:h-[4vh] cursor-pointer"
                   alt="Facebook"
                 />
               </a>
@@ -213,13 +214,13 @@ const Footer = () => {
               >
                 <img
                   src={yt}
-                  className="h-[3vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[7vh] lg:h-[4vh] cursor-pointer"
+                  className="md:h-[3vh] h-[3vh] lg:h-[4vh] cursor-pointer"
                   alt="YouTube"
                 />
               </a>
               {/* <img src={ins} className="h-[3vh] lg:h-[4vh]" alt="" /> */}
             </div>
-            <p className="text-white popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[1rem] text-[0.5rem] lg:text-[0.8rem] mb-4 lg:mb-0">
+            <p className="text-white popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[1rem] text-[0.5rem] md:text-[0.9rem] lg:text-[0.8rem] mb-4 lg:mb-0">
               Copyright 2025 SVB Infra Projects. All rights reserved.
             </p>
           </div>
