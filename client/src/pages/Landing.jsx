@@ -486,7 +486,7 @@ const Landing = () => {
                   developments delivered with quality and precision.
                 </p>
               ) : (
-                <p className="text-[#4D4D4D] w-[50%] popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
+                <p className="text-[#4D4D4D] w-[50%] text-justify popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem] lg:text-[1.5rem] lg:mt-3 font-semibold ">
                   We have successfully completed a wide range of 
                   earthwork and excavation projects for leading  clients
                   across Karnataka and Andhra Pardesh.  Our portfolio includes  residential,
