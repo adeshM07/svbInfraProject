@@ -153,7 +153,7 @@ const PortFolio = () => {
                     src={src}
                     alt={`Project ${index + 1}`}
                     // className="lg:w-71 lg:h-86 object-cover"
-                    className=" w-[30vw] h-[20vh] h-fit
+                    className=" w-[30vw] h-[20vh] 
               sm:w-[170px] sm:h-fit
               md:w-[240px] md:h-fit
               lg:w-[230px] lg:fit
