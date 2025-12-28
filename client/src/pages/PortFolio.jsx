@@ -146,7 +146,7 @@ const PortFolio = () => {
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <div className="relative      overflow-hidden  rounded-xl flex lg:justify-between gap-2 md:gap-0  ">
+              <div className="relative      overflow-hidden  rounded-xl flex lg:justify-between  ">
                 {[onc1, c3].map((src, index) => (
                   <img
                     key={index}
@@ -154,11 +154,11 @@ const PortFolio = () => {
                     alt={`Project ${index + 1}`}
                     // className="lg:w-71 lg:h-86 object-cover"
                     className=" min-w-[30vw] h-[20vh] 
-              sm:w-[170px] sm:h-fit
-              md:w-[240px] md:h-fit
-              lg:w-[230px] lg:fit
-              xl:w-[240px] xl:h-fit
-              2xl:w-[284px] 2xl:h-fit
+              sm:min-w-[170px] sm:h-fit
+              md:min-w-[240px] md:h-fit
+              lg:min-w-[230px] lg:fit
+              xl:min-w-[240px] xl:h-fit
+              2xl:min-w-[284px] 2xl:h-fit
               object-cover "
                   />
                 ))}
@@ -198,7 +198,14 @@ const PortFolio = () => {
                 key={index}
                 src={src}
                 alt={`Project ${index + 1}`}
-                className="max-w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] [@media(min-width:2500px)]:w-[19vw]   max-h-[20vh] lg:w-[18vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
+                // className="w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] [@media(min-width:2500px)]:w-[19vw]   h-[20vh] lg:w-[18vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
+                className="animate-cardScroll min-w-[30vw] h-[20vh] 
+              sm:min-w-[170px] sm:h-fit
+              md:min-w-[240px] md:h-fit
+              lg:min-w-[230px] lg:fit
+              xl:min-w-[240px] xl:h-fit
+              2xl:min-w-[284px] 2xl:h-fit
+              object-cover "
               />
             ))}
           </div>
