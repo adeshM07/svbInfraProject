@@ -140,7 +140,7 @@ const PortFolio = () => {
 
             {/* Right Side - Image */}
             <motion.div
-              className=" lg:w-[70%] xl:w-[50%] 2xl:w-[45%]"
+              className="w-full border-2 lg:w-[70%] xl:w-[50%] 2xl:w-[45%]"
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
@@ -153,7 +153,7 @@ const PortFolio = () => {
                     src={src}
                     alt={`Project ${index + 1}`}
                     // className="lg:w-71 lg:h-86 object-cover"
-                    className=" w-[140px] h-fit
+                    className=" w-[30vw] h-[20vh] h-fit
               sm:w-[170px] sm:h-fit
               md:w-[240px] md:h-fit
               lg:w-[230px] lg:fit
