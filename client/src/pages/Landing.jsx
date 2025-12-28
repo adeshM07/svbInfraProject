@@ -339,7 +339,7 @@ const Landing = () => {
               </div>
             </motion.div>
           </div>
-          <div className="w-full flex flex-col gap-10 bg-[#F8F8F8] ">
+          <div className="w-full  flex flex-col gap-10 bg-[#F8F8F8] ">
             {/* Animated Heading */}
             <motion.p
               className="fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8"
@@ -354,7 +354,7 @@ const Landing = () => {
             {/* Animated Image */}
             <motion.img
               src={pillarImg}
-              className="w-full lg:h-[106vh] "
+              className="w-full sm:h-80 md:h-115 lg:h-150 xl:h-165 2xl:h-180.5"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}

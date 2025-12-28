@@ -43,13 +43,13 @@ const Footer = () => {
       <div className="bg-[#F8F8F8] w-full">
         <div
           id="footer"
-          className=" h-full lg:h-[80vh]  w-full flex flex-col gap-5 md:gap-8  z-300 px-2.5 md:px-8 lg:px-15 xl:px-30"
+          className=" py-5 h-fit lg:max-h-fit  w-full flex flex-col gap-5 md:gap-8  z-300 px-2.5 md:px-8 lg:px-15 xl:px-30  md:py-7"
         >
-          <div className=" lg:h-fit flex flex-col   md:flex-row  pt-10 lg:pt-20  justify-between">
+          <div className=" lg:h-fit flex flex-col gap-y-4  md:flex-row    justify-between">
             <div className="flex flex-col gap-7">
               <img
                 src={logo}
-                className="w-[20vw] h-[5vh] md:w-[10vw] md:h-[3vh] lg:w-[9vw] lg:h-[8vh]  lg:mx-0"
+                className="w-[20vw] h-[5vh] md:w-[10vw] md:h-[3vh] lg:w-[9vw] lg:h-[5vh] 2xl:h-[8vh]  lg:mx-0"
               />
               <p className=" popins text-[#ECECEC] text-start md:text-[0.7rem] lg:text-[1rem] lg:text-start">
                 At SVB Infra Projects, we are a trusted <br /> provider of
@@ -125,7 +125,7 @@ const Footer = () => {
                   <div className="flex items-start gap-3 md:gap-4">
                     <img
                       src={address}
-                      className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[4vh]"
+                      className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[3vw] lg:h-[3vh] 2xl:w-[2vw]  2xl:h-[4vh]"
                     />
                     <div className="flex flex-col">
                       <span className="popins text-[10px] md:text-[0.9rem] lg:text-[1rem] text-[#FDC000]">
@@ -143,7 +143,7 @@ const Footer = () => {
                   <div className="flex items-start gap-3 md:gap-4">
                     <img
                       src={address}
-                      className="w-[6vw] h-[4vh] md:w-[1vw] md:h-[1vh] lg:w-[2vw] lg:h-[4vh]"
+                      className="w-[6vw] h-[4vh] md:w-[1vw] md:h-[1vh] lg:w-[3vw] lg:h-[3vh] 2xl:w-[2vw]  2xl:h-[4vh]"
                     />
                     <div className="flex flex-col">
                       <span className="popins text-[10px] md:text-[0.9rem] lg:text-[1rem] text-[#FDC000]">
@@ -162,10 +162,10 @@ const Footer = () => {
                   {/* 📞 Phone */}
 
                   <div className="flex items-start gap-3 md:gap-4">
-                    <a href="tel:9036354261" className="flex gap-3 md:gap-4">
+                    <a href="tel:9036354261" className="flex gap-3 md:gap-4 place-items-center">
                       <img
                         src={phone}
-                        className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[3.6vh]"
+                        className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[3vw] lg:h-[3vh] 2xl:w-[2vw] 2xl:h-[3.6vh]"
                       />
                       <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
                         +91 9036354261  +91 9980851508
@@ -177,11 +177,11 @@ const Footer = () => {
                   <div className="flex items-start gap-3 md:gap-4">
                     <a
                       href="mailto:info@svbinfraprojects.com"
-                      className="flex gap-3 md:gap-4"
+                      className="flex gap-3 md:gap-4 place-items-center"
                     >
                       <img
                         src={mail}
-                        className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[2vw] lg:h-[4vh]"
+                        className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[3vw] lg:h-[3vh] 2xl:w-[2vw] 2xl:h-[4vh]"
                       />
                       <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
                         info@svbinfraprojects.com
