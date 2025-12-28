@@ -140,7 +140,7 @@ const PortFolio = () => {
 
             {/* Right Side - Image */}
             <motion.div
-              className="w-full border-2 lg:w-[70%] xl:w-[50%] 2xl:w-[45%]"
+              className="w-full  lg:w-[70%] xl:w-[50%] 2xl:w-[45%]"
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
@@ -153,7 +153,7 @@ const PortFolio = () => {
                     src={src}
                     alt={`Project ${index + 1}`}
                     // className="lg:w-71 lg:h-86 object-cover"
-                    className=" w-[30vw] h-[20vh] 
+                    className=" max-w-[30vw] h-[20vh] 
               sm:w-[170px] sm:h-fit
               md:w-[240px] md:h-fit
               lg:w-[230px] lg:fit
@@ -198,7 +198,7 @@ const PortFolio = () => {
                 key={index}
                 src={src}
                 alt={`Project ${index + 1}`}
-                className="w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] [@media(min-width:2500px)]:w-[19vw]   h-[20vh] lg:w-[18vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
+                className="max-w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] [@media(min-width:2500px)]:w-[19vw]   max-h-[20vh] lg:w-[18vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
               />
             ))}
           </div>
