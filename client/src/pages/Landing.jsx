@@ -374,10 +374,10 @@ const Landing = () => {
               Our Fleet
             </motion.p>
 
-            <div className="flex flex-col  lg:flex-row lg:mx-0  gap-7 lg:gap-5 lg:my-5">
+            <div className="flex flex-col   lg:flex-row lg:mx-0  gap-7 lg:gap-10  lg:h-70 xl:h-80 ">
               {/* ===== LEFT TEXT CONTENT ===== */}
               <motion.div
-                className="flex flex-col w-full  place-items-start lg:place-items-start xl:w-[43vw] 2xl:w-[40vw] lg:w-[40vw] gap-4 lg:py-10 lg:gap-5"
+                className="flex flex-col w-full  place-items-start  xl:w-[43vw] 2xl:w-[40vw] lg:w-[40vw] gap-4 lg:gap-5"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9, ease: "easeOut" }}
@@ -385,7 +385,7 @@ const Landing = () => {
               >
                 <p 
                 // className="fontMon bold leading-8 md:leading-12 lg:leading-19 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[4rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4rem] font-bold text-start lg:text-start bg-[#F8F8F8]"
-                className="fontMon font-bold text-[#333333] text-start text-[1.8rem] leading-10 md:text-[3.5rem] md:leading-15 lg:leading-14 lg:text-[2.7rem] xl:leading-15 xl:text-[3.5rem]"
+                className="fontMon font-bold text-[#333333] text-start text-[1.8rem] leading-8 md:text-[3.5rem] md:leading-15 lg:leading-14 lg:text-[2.7rem] xl:leading-15 xl:text-[3.5rem]"
                 >
                   Force Behind <br /> Every
                   <span className="text-[#FDC000] ml-2">Foundation</span>
@@ -396,7 +396,7 @@ const Landing = () => {
                 className="text-[#4D4D4D] text-start font-semibold text-[0.7rem] md:text-[1rem] lg:text-[1rem] xl:text-[1.3rem]"
                 >
                   Starting out with only one JCB 3D, we now keep a well-
-                  <br />
+                 
                   maintained fleet of trucks and equipment.
                 </p>
 
@@ -414,13 +414,13 @@ const Landing = () => {
               {/* ===== RIGHT IMAGE SCROLLER ===== */}
               <motion.div
                 id="cont-fleet-img"
-                className="relative  mx-auto flex w-[95vw] lg:w-[40vw]  overflow-hidden "
+                className="relative  mx-auto flex w-[95vw] md:w-full lg:w-full overflow-hidden md:px-8 lg:px-0 "
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.4 }}
               > 
-                <div className="flex  animate-fleet-scroll gap-10 will-change-transform">
+                <div className="flex  animate-fleet-scroll gap-6 will-change-transform">
                   {[
                     fleet1,
                     fleet2,
@@ -436,8 +436,7 @@ const Landing = () => {
                     <img
                       key={i}
                       src={src}
-                      className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[40vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[55vh] lg:w-[18vw] lg:h-[43vh] md:w-[46vw] md:h-[20vh] w-[46vw] h-[20vh] object-cover"
-                      loading="lazy"
+                      className="object-cover md:w-70 lg:w-70 xl:w-70 h-30 w-50 md:h-50 lg:h-full"
                     />
                   ))}
                   {[
@@ -455,8 +454,8 @@ const Landing = () => {
                     <img
                       key={i + 10}
                       src={src}
-                      className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[40vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[55vh] lg:w-[18vw] lg:h-[43vh] w-[46vw] h-[20vh] object-cover"
-                      loading="lazy"
+                      className="object-cover md:w-70 lg:w-70 xl:w-70 h-30 w-50 md:h-50 lg:h-full"
+                      
                     />
                   ))}
                 </div>
