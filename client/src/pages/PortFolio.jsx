@@ -146,14 +146,14 @@ const PortFolio = () => {
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <div className="relative      overflow-hidden  rounded-xl flex lg:justify-between  ">
+              <div className="relative      overflow-hidden  rounded-xl flex lg:justify-between gap-2 md:gap-0  ">
                 {[onc1, c3].map((src, index) => (
                   <img
                     key={index}
                     src={src}
                     alt={`Project ${index + 1}`}
                     // className="lg:w-71 lg:h-86 object-cover"
-                    className=" max-w-[30vw] h-[20vh] 
+                    className=" min-w-[30vw] h-[20vh] 
               sm:w-[170px] sm:h-fit
               md:w-[240px] md:h-fit
               lg:w-[230px] lg:fit
