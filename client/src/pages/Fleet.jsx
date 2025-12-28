@@ -210,7 +210,7 @@ const Fleet = () => {
         >
           {/* Section Title */}
           <motion.div
-            className=" px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-2 w-fit   my-30 lg:my-30"
+            className=" px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-2 w-fit  my-10 md:my-25"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}

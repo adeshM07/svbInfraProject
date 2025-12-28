@@ -104,10 +104,9 @@ const PortFolio = () => {
         />
         <link rel="canonical" href="https://svbinfraprojects.com/portfolio" />
       </Helmet>
-      <div className="flex  flex-col gap-10 lg:gap-[13vh] py-10 lg:py-30 bg-[#F8F8F8]">
+      <div className="flex  flex-col gap-10 lg:gap-[13vh] my-10 lg:my-30 bg-[#F8F8F8]">
         <section className="flex  flex-col gap-8 lg:gap-8 px-2.5 md:px-8 lg:px-15 xl:px-30 ">
-          
-          <div className="flex flex-col  lg:flex-row   lg:w-full lg:justify-between  mx-4 lg:mx-0 [@media(min-width:2500px)]:gap-90">
+          <div className="flex flex-col  lg:flex-row   lg:w-full lg:justify-between   [@media(min-width:2500px)]:gap-90">
             {/* Left Side - Texts + Button */}
             <motion.div
               className="flex flex-col gap-3  lg:gap-[44px]"
@@ -126,55 +125,53 @@ const PortFolio = () => {
                 Our Ongoing projects
               </motion.p>
               <div className="flex flex-col gap-4">
-
-              
-             
-                <p className="fontMon text-[#333333] font-bold text-[2rem] leading-10 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[3.5rem] xl:leading-19">
+                <p className="fontMon text-[#333333] font-bold text-[2rem] leading-10 md:text-[3rem] md:leading-16 lg:text-[2.5rem] lg:leading-14 xl:text-[3rem] xl:leading-14 2xl:text-[3.5rem] 2xl:leading-19">
                   Innovation That <br /> Strengthens{" "}
                   <br className="md:hidden lg:block" />{" "}
                   <span className="text-[#FDC000]">Infrastructure</span>
                 </p>
-              
 
-              
-                <p className="text-[#333333] popins text-[1rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]"
-                  >
-                  Experience our proven track record through our diverse 
+                <p className="text-[#333333] popins text-[1rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1rem] 2xl:text-[1.3rem]">
+                  Experience our proven track record through our diverse
                   portfolio.
                 </p>
-              
               </div>
             </motion.div>
 
             {/* Right Side - Image */}
             <motion.div
-              className=""
+              className=" lg:w-[70%] xl:w-[50%] 2xl:w-[45%]"
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <div className="relative   lg:mx-0  lg:ml-[60px]  overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] ">
+              <div className="relative      overflow-hidden  rounded-xl flex lg:justify-between  ">
                 {[onc1, c3].map((src, index) => (
                   <img
                     key={index}
                     src={src}
                     alt={`Project ${index + 1}`}
-                    className="w-[30vw] h-[20vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] [@media(min-width:1400px)_and_(max-width:1500px)]:w-[20vw] [@media(min-width:1400px)_and_(max-width:1500px)]:h-[47vh]   xl:w-[20vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] 2xl:h-[47vh] lg:object-cover rounded-lg [@media(min-width:2500px)]:w-[19vw]"
+                    // className="lg:w-71 lg:h-86 object-cover"
+                    className=" w-[140px] h-fit
+              sm:w-[170px] sm:h-fit
+              md:w-[240px] md:h-fit
+              lg:w-[230px] lg:fit
+              xl:w-[240px] xl:h-fit
+              2xl:w-[284px] 2xl:h-fit
+              object-cover "
                   />
                 ))}
               </div>
             </motion.div>
           </div>
         </section>
-        <section
-          className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-12 overflow-hidden "
-        >
-          <p  className="fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
+        <section className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-12 overflow-hidden ">
+          <p className="fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
             Our Latest Projects
           </p>
 
-          <div className="relative   w-[92vw] mx-auto lg:mx-0 lg:w-[92vw] lg:ml-0 lg:mr-[60px] overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
+          <div className="relative   w-full overflow-hidden  rounded-xl flex gap-2 lg:gap-[40px] py-4">
             {[
               c1,
               c2,
@@ -207,35 +204,30 @@ const PortFolio = () => {
           </div>
         </section>
         {/* <section className="  flex flex-col gap-12 overflow-hidden"></section> */}
-        <p  className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
+        <p className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
           Reviews and ratings
         </p>
-        <div className="flex  flex-col lg:flex-row w-full gap-y-15 justify-between  px-2.5 md:px-8 lg:px-15 xl:px-30">
+        <div className="flex  flex-col lg:flex-row w-full xl:h-117 2xl:h-110 gap-y-15 justify-between  px-2.5 md:px-8 lg:px-15 xl:px-30">
           {/* Left Side - Texts + Button */}
           <motion.div
-            className="flex flex-col gap-5 w-full lg:w-[50%]"
+            className="flex  flex-col gap-5 w-full lg:w-[50%]"
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.4 }}
           >
-            
-              <p className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3rem] lg:leading-15  xl:text-[3.5rem] xl:leading-19"
-                >
-                Industry{" "}
-                <span className="text-[#FDC000]">
-                  Trusted <br className="" /> Feedback
-                </span>
-              </p>
-            
+            <p className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3rem] lg:leading-15  xl:text-[3.5rem] xl:leading-18">
+              Industry{" "}
+              <span className="text-[#FDC000]">
+                Trusted <br className="" /> Feedback
+              </span>
+            </p>
 
-          
-              <p  className="text-[#4D4D4D] popins text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1.3rem]">
-                Real feedback from clients who rely on our expertise for
-                excavation, rock work, soil retention, and dewatering services.
-                Every rating reflects our dedication to quality and reliability.
-              </p>
-            
+            <p className="text-[#4D4D4D] popins text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1.3rem]">
+              Real feedback from clients who rely on our expertise for
+              excavation, rock work, soil retention, and dewatering services.
+              Every rating reflects our dedication to quality and reliability.
+            </p>
 
             <div className="flex gap-4">
               <img
@@ -248,7 +240,7 @@ const PortFolio = () => {
               />
               <img
                 src={star}
-               className="w-10 h-10 md:w-15 md:h-15 lg:w-17 lg:h-17 xl:w-20 xl:h-20"
+                className="w-10 h-10 md:w-15 md:h-15 lg:w-17 lg:h-17 xl:w-20 xl:h-20"
               />
               <img
                 src={star}
@@ -270,10 +262,7 @@ const PortFolio = () => {
               // transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               // viewport={{ once: true, amount: 0.4 }}
             >
-              <img
-                src={reviewsIMG}
-                className="lg:w-[37vw] lg:h-[57vh]   2xl:w-[37vw] 2xl:h-[57vh]"
-              />
+              <img src={reviewsIMG} className="h-full w-full" />
             </div>
           ) : (
             <motion.div
@@ -283,11 +272,14 @@ const PortFolio = () => {
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <img src={reviewsIMG} className="lg:w-[37vw] lg:h-[57vh]" />
+              <img src={reviewsIMG} className="lg:w-[40vw] h-full" />
             </motion.div>
           )}
         </div>
-        <section id="gallery" className=" px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-20">
+        <section
+          id="gallery"
+          className=" px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-20"
+        >
           {/* ===== HEADING ===== */}
           <motion.p
             className=" fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8"
@@ -301,44 +293,42 @@ const PortFolio = () => {
 
           {/* ===== INTRO TEXT & COUNTER ===== */}
 
-            <div className="flex w-full   justify-between">
-              {/* Left text */}
-              <motion.div
-                className="flex flex-col w-full md:w-[65%] lg:w-[70%] xl:w-[55%]  gap-3"
-                initial={{ opacity: 0, x: -60 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.9, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <p  className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[2rem] md:leading-12 lg:text-[2.2rem] lg:leading-13  xl:text-[3.5rem]  xl:leading-19">
-                  Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
-                  Captured in Action
-                </p>
-                <p className="text-[1rem] md:text-[1.3rem]  lg:text-[1rem] text-[#333333] font-semibold">
-                  Explore our gallery to see SVB Infra Projects’ commitment to
-                  quality,
-                   precision, and trusted
-                  execution in every project we deliver.
-                </p>
-              </motion.div>
+          <div className="flex w-full   justify-between">
+            {/* Left text */}
+            <motion.div
+              className="flex flex-col w-full md:w-[65%] lg:w-[70%] xl:w-[55%]  gap-3"
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.4 }}
+            >
+              <p className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[2rem] md:leading-12 lg:text-[2.2rem] lg:leading-13  xl:text-[3.5rem]  xl:leading-19">
+                Our <span className="text-[#FDC000]">Work,</span> <br />{" "}
+                Captured in Action
+              </p>
+              <p className="text-[1rem] md:text-[1.3rem]  lg:text-[1rem] text-[#333333] font-semibold">
+                Explore our gallery to see SVB Infra Projects’ commitment to
+                quality, precision, and trusted execution in every project we
+                deliver.
+              </p>
+            </motion.div>
 
-              {/* Right stats */}
-              <motion.div
-                className="flex flex-col  place-items-center"
-                initial={{ opacity: 0, x: 60 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <p className="fontMon text-[#FDC000] font-bold text-[1rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19">
-                  45+
-                </p>
-                <p className="popins-bold text-[#333333] text-[0.6rem] md:text-[1.3rem] md:leading-7 lg:text-[1.5rem] lg:leading-8 xl:leading-11 xl:text-[2rem]">
-                  Total number <br /> of machinery
-                </p>
-              </motion.div>
-            </div>
-          
+            {/* Right stats */}
+            <motion.div
+              className="flex flex-col  place-items-center"
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true, amount: 0.4 }}
+            >
+              <p className="fontMon text-[#FDC000] font-bold text-[1rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19">
+                45+
+              </p>
+              <p className="popins-bold text-[#333333] text-[0.6rem] md:text-[1.3rem] md:leading-7 lg:text-[1.5rem] lg:leading-8 xl:leading-11 xl:text-[2rem]">
+                Total number <br /> of machinery
+              </p>
+            </motion.div>
+          </div>
 
           {/* ===== GALLERY (ORIGINAL DESIGN KEPT) ===== */}
           <div className="columns-2 md:columns-3 gap-4 [column-fill:_balance] ">

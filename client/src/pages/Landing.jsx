@@ -134,14 +134,13 @@ const Landing = () => {
         />
         <link rel="canonical" href="https://svbinfraprojects.com" />
       </Helmet>
-      <div className=" bg-transparent w-full">
+      <div className=" bg-transparent w-full ">
         <div
           className={`w-full  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 px-2.5 md:px-8 lg:px-15 xl:px-30
   ${applyEffect ? "banner-active" : ""}`}
         >
           <div
             className=" 
-               lg:pt-[calc(6rem+1vw)] 
                flex flex-col justify-center w-full"
           >
             {/* Text Block */}
@@ -205,7 +204,7 @@ const Landing = () => {
 
         <div
           id="secondSection"
-          className="w-full flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:gap-[30vh] [@media(min-width:2500px)]:gap-[30vh]   gap-[7vh] md:gap-[5vh] lg:gap-[7.6rem] pt-[10vh] md:pt-150vh]  py-15 lg:pb-30 px-2.5 md:px-8 lg:px-15 xl:px-30   bg-[#F8F8F8]"
+          className="w-full flex flex-col  px-2.5 md:px-8 lg:px-15 xl:px-30 gap-15 md:gap-25   bg-[#F8F8F8] py-10 md:py-25"
         >
           <div className=" flex   flex-col gap-5 md:gap-7 ">
             <section className="flex flex-row w-full    text-gray-800 ">
@@ -363,7 +362,7 @@ const Landing = () => {
               alt="Pillars of Trust"
             />
           </div>
-          <div className="w-full flex flex-col gap- md:gap-10 ">
+          <div className="w-full flex flex-col gap-5 md:gap-10 ">
             {/* ===== Heading ===== */}
             <motion.p
               className="fontMon   lg:text-[2rem] text-[1.2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"

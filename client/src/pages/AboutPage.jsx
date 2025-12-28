@@ -68,7 +68,7 @@ const AboutPage = () => {
       <div className="flex flex-col ">
         <div
           id="aboutBanner"
-          className="flex flex-col justify-center relative [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]  [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] md:h-[45vh] lg:h-[100vh]"
+          className="flex flex-col justify-center relative   [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] sm:h-[45vh] md:h-[45vh] lg:h-[50vh] xl:h-[100vh]"
         >
           <div className=" ">
             <motion.p
@@ -106,7 +106,7 @@ const AboutPage = () => {
             </Link>
           </div>
         </div>
-        <div className="px-2.5  md:px-8 lg:px-15 xl:px-30 flex flex-col gap-7 md:gap-20 my-[50px] md:my-[120px]">
+        <div className="px-2.5  md:px-8 lg:px-15 xl:px-30 flex flex-col gap-5 md:gap-25 py-10 md:py-25">
           <div className=" w-fit flex flex-col gap-10 ">
             <motion.p
               className="text-black popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] xl:text-[2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
@@ -175,7 +175,7 @@ const AboutPage = () => {
                       </p>
                     </div>
 
-                    <div className="h-[4vh] md:h-[4vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
+                    <div className="h-[4vh] md:h-[4vh] 2xl:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
 
                     <div className="flex flex-col place-items-center">
                       <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
@@ -186,7 +186,7 @@ const AboutPage = () => {
                       </p>
                     </div>
 
-                    <div className="h-[4vh] md:h-[4vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
+                    <div className="h-[4vh] md:h-[4vh] 2xl:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
 
                     <div className="flex flex-col  place-items-center ">
                       <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
