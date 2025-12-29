@@ -205,7 +205,7 @@ const HSE = () => {
           </motion.div>
         </div>
 
-        <div className=" px-2.5 md:px-8 lg:px-15 xl:px-30  w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px] xl:gap-[250px] xl:mb-70">
+        <div className=" px-2.5 md:px-8 lg:px-15 xl:px-30  w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px] xl:gap-[120px] xl:mb-30">
           <div className=" md:mx-0 py-5 md:py-0  w-full  md:max-h-100 lg:max-h-100  2xl:max-h-110 gap-y-5 flex flex-col md:flex-row  rounded-lg place-items-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
