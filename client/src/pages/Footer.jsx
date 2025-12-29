@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div className="flex  flex-col gap-5 lg:gap-11 w-fit lg:mx-0 place-items-center lg:place-items-start ">
               {/* <ul className="flex lg:flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0"> */}
-              <p className="md:text-[17px] lg:text-[20px] xl:text-[24px] text-[#ECECEC] font-semibold underline decoration-[#FDC000] underline-offset-8">Quick Links</p>
+              <p className="md:text-[17px] lg:text-[20px] xl:text-[24px] text-[#ECECEC] font-semibold underline decoration-[#FDC000] underline-offset-8 popins">Quick Links</p>
                 <ul className="flex  flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[1rem]">
                   {[
                     { label: "About Us", to: "/about-us" },
