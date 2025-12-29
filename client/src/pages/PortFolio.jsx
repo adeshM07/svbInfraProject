@@ -217,13 +217,13 @@ const PortFolio = () => {
         <div className="flex  flex-col lg:flex-row w-full xl:h-100 2xl:h-110 gap-y-15 justify-between  px-2.5 md:px-8 lg:px-15 xl:px-30">
           {/* Left Side - Texts + Button */}
           <motion.div
-            className="flex  flex-col gap-5 w-full lg:w-[50%] xl:w-[48%] 2xl:w-[50%]"
+            className="flex  flex-col gap-5 w-full lg:w-[50%] xl:w-[45%] 2xl:w-[50%]"
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.4 }}
           >
-            <p className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3rem] lg:leading-15  xl:text-[3.5rem] xl:leading-18">
+            <p className="fontMon text-[#333333] font-bold text-[2rem] leading-9 md:text-[3rem] md:leading-16 lg:text-[3rem] lg:leading-15  xl:text-[3rem] 2xl:text-[3.5rem] xl:leading-18">
               Industry{" "}
               <span className="text-[#FDC000]">
                 Trusted <br className="" /> Feedback

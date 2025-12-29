@@ -210,7 +210,7 @@ const Landing = () => {
             <section className="flex flex-row w-full    text-gray-800 ">
               {/* === VIDEO === */}
               <motion.div
-              className="w-[60%] sm:w-[50%] lg:w-[50%] xl:w-[45%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[47vh] md:h-130 lg:h-160 xl:min-h-160 "
+              className="w-[60%] sm:w-[50%] lg:w-[50%] xl:w-[45%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[47vh] md:h-130 lg:h-160 xl:min-h-150 2xl:min-h-160 "
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
@@ -251,7 +251,7 @@ const Landing = () => {
                 >
                   <p 
                   // className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:w-[45vw]    md:w-[32vw] lg:w-[32vw] xl:w-[39vw] 2xl:w-[32vw]  [@media(min-width:300px)_and_(max-width:410px)]:text-[7px] text-[0.5rem] md:text-[0.8rem] lg:text-[1.25rem]   xl:text-[1.1rem] 2xl:text-[1.2rem] [@media(min-width:720px)_and_(max-width:1200px)]:pl-4 lg:pl-5 xl:pl-0  [@media(min-width:2500px)]:text-[2rem]"
-                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[6px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] sm:text-[0.9rem] sm:leading-6 md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-xl xl:leading-8 text-justify"
+                  className="text-[#4D4D4D] popins [@media(min-width:300px)_and_(max-width:410px)]:text-[6px] [@media(min-width:300px)_and_(max-width:410px)]:leading-2.5 text-[0.5rem] sm:text-[0.9rem] sm:leading-6 md:text-[1rem] md:leading-5.5 lg:text-[1rem] leading-3 lg:leading-6 xl:text-lg 2xl:text-xl 2xl:leading-8 xl:leading-7 text-justify"
                   >
                     <span className="font-semibold mr-1 md:mr-2">
                       SVB Infra Projects
@@ -354,7 +354,7 @@ const Landing = () => {
             {/* Animated Image */}
             <motion.img
               src={pillarImg}
-              className="w-full sm:h-80 md:h-115 lg:h-150 xl:h-180 2xl:h-180.5"
+              className="w-full sm:h-80 md:h-115 lg:h-150 xl:h-170 2xl:h-180.5"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
