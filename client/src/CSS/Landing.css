@@ -137,13 +137,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-410%);
+    transform: translateX(-325%);
   }
 }
 
 .animate-fleet-scroll {
   display: flex;
-  animation: fleetScroll 35s linear infinite;
+  animation: fleetScroll 25s linear infinite;
   /* 40s = smooth full cycle (adjust speed as you like) */
 }
 
