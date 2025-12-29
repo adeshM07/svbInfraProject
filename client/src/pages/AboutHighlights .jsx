@@ -72,7 +72,7 @@ const   AboutHighlights = () => {
 
       <motion.section
         id="aboutCardBG"
-        className="flex flex-col relative bg-[#F8F8F8] items-center justify-center"
+        className="flex flex-col relative  items-center justify-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
