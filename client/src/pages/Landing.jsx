@@ -2,6 +2,7 @@ import React from "react";
 // import LandingBanner from "./LandingBanner";
 // import ProjectVideoBanner from "./ProjectVideoBanner ";
 import constructionImg from "../assets/cap.png";
+
 import pillarImg from "../assets/pillarsOfTrustIMG.png";
 import { Link } from "react-router-dom";
 import { motion, useMotionValue, animate } from "framer-motion";
@@ -52,7 +53,7 @@ const Landing = () => {
     "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4"
   );
   const [isMobile, setIsMobile] = useState(false);
-
+  const MotionLink = motion(Link);
   const handleResize = () => {
     const width = window.innerWidth;
 
@@ -183,10 +184,10 @@ const Landing = () => {
             </motion.div>
 
             {/* Button Animation */}
-            <Link to="/our-fleet-2" className="block z-400 customCursor">
+            <Link to="/our-fleet-2" className="block z-50 ">
               <motion.button
                 // className="w-[30vw] [@media(min-width:300px)_and_(max-width:460px)]:h-[4.9vh] md:w-[25vw] md:h-[6vh] xl:w-[9vw] 2xl:w-[9vw] 2xl:h-[6vh] [@media(min-width:2500px)]:h-[6vh]  lg:w-[9vw] lg:h-[6vh] z-999 rounded-md text-[0.7rem] px-3 lg:px-0 lg:py-0 py-2 bg-[#FDC000] lg:rounded-md md:text-[1.3rem] lg:text-[19px] [@media(min-width:2500px)]:text-[25px] popins-noweight font-semibold mt-[2.5rem]"
-                className="mt-6 md:mt-10 bg-[#FDC000] z-999 rounded-md popins font-semibold text-[0.6rem] h-7 w-26 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5 "
+                className="mt-6 md:mt-10 bg-[#FDC000] z-50 hover:cursor-pointer rounded-md popins font-semibold text-[0.6rem] h-7 w-26 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -271,7 +272,7 @@ const Landing = () => {
                   {/* Button animation */}
                   <Link to="/about-us" className="flex w-full justify-end">
                     <motion.button
-                      className="popins-noweight text-[#333333] font-semibold bg-[#FDC000] rounded-md text-[8px] md:text-xl md:rounded-lg w-20 h-7 md:w-30 md:h-10 lg:w-35 lg:h-10 xl:w-37 xl:h-12"
+                      className="hover:cursor-pointer popins-noweight text-[#333333] font-semibold bg-[#FDC000] rounded-md text-[8px] md:text-xl md:rounded-lg w-20 h-7 md:w-30 md:h-10 lg:w-35 lg:h-10 xl:w-37 xl:h-12"
                   initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
@@ -404,7 +405,7 @@ const Landing = () => {
                 <Link to="/our-fleet-2">
                   <button 
                   // className="popins-noweight text-[#333333] font-semibold text-[calc(0.8rem+0.3vw)] bg-[#FDC000] lg:text-[20px] w-[20vw] h-[3vh] lg:w-[9vw] lg:h-[6vh] rounded-md hover:bg-[#ffcf33] transition-all duration-300"
-                  className="popins-noweight text-[#333333] font-semibold bg-[#FDC000] rounded-md text-[8px] md:text-xl md:rounded-lg w-20 h-7 md:w-30 md:h-10 lg:w-35 lg:h-10 xl:w-37 xl:h-12"
+                  className="hover:cursor-pointer popins-noweight text-[#333333] font-semibold bg-[#FDC000] rounded-md text-[8px] md:text-xl md:rounded-lg w-20 h-7 md:w-30 md:h-10 lg:w-35 lg:h-10 xl:w-37 xl:h-12"
                   >
                     Explore All
                   </button>
@@ -610,7 +611,7 @@ const Landing = () => {
             </div>
             <Link to="/contact">
               <motion.button
-                className=" bg-[#FDC000] z-999 rounded-md popins font-semibold text-[0.6rem] h-7 w-20 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5 "
+                className="hover:cursor-pointer bg-[#FDC000] z-999 rounded-md popins font-semibold text-[0.6rem] h-7 w-20 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5 "
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}

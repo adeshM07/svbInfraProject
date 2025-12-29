@@ -27,9 +27,7 @@
 }
 
 
-body, * {
-  cursor: url('../src//assets/cursor-icon.png') 10 10, auto;
-}
+
 
 @media (max-width: 700px) {
   #serviceBanner::before {

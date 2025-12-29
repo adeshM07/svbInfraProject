@@ -31,10 +31,7 @@
   background-size: cover;
   z-index: -1;
 }
-body,
-* {
-  cursor: url("../src//assets/cursor-icon.png") 10 10, auto;
-}
+
 @media (min-width: 701px) and (max-width: 1023px) {
   #contactUSBanner::before {
     background: url("../assets/contactUSBannerBG.png") no-repeat center top;
@@ -60,6 +57,4 @@ body,
   }
 }
 
-button:disabled {
-  cursor: not-allowed !important;
-}
+

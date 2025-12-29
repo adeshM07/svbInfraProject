@@ -40,9 +40,7 @@
   background-size: cover;
   z-index: -1; 
 }
-body, * {
-  cursor: url('../src//assets/cursor-icon.png') 10 10, auto;
-}
+
 
 #aboutBanner::before {
   content: "";

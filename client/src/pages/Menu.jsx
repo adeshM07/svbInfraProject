@@ -210,7 +210,7 @@ const Menu = () => {
         {isMobile ? (
           <div className="flex gap-7  ">
             <Link to="/contact">
-              <button className="text-white bg-[#FDC000] text-[0.8rem] [@media(min-width:300px)_and_(max-width:700px)]:py-[0.1rem] [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex ">
+              <button className="text-white bg-[#FDC000] text-[0.8rem] [@media(min-width:300px)_and_(max-width:700px)]:py-[0.1rem] [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex hover:cursor-pointer">
                 Contact Us
               </button>
             </Link>
@@ -257,7 +257,7 @@ const Menu = () => {
               <button
                 // className="menuButton [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] xl:h-[6vh] xl:w-[9vw] [@media(min-width:2500px)]:h-[5vh] bg-[#FDC000] text-black text-[1rem] rounded-[9px]  xl:text-[1rem] [@media(min-width:2500px)]:text-[1.4rem] transition duration-300 transform
                 // hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
-                className="menuButton bg-[#FDC000] text-[#333333] font-semibold rounded-lg  transition duration-300 transform hover:scale-105 hover:bg-[#ffcf33] cursor-pointer md:text-lg lg:text-xl md:w-28 md:h-9 lg:w-34 lg:h-9 xl:w-37 xl:h-12"
+                className="menuButton bg-[#FDC000] text-[#333333] font-semibold rounded-lg  transition duration-300 transform hover:scale-105 hover:bg-[#ffcf33] hover:cursor-pointer md:text-lg lg:text-xl md:w-28 md:h-9 lg:w-34 lg:h-9 xl:w-37 xl:h-12 "
               >
                 Contact Us
               </button>

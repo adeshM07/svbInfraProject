@@ -14,9 +14,7 @@
   font-weight: 600;
   font-style: normal;
 }
-body, * {
-  cursor: url('../src//assets/cursor-icon.png') 10 10, auto;
-}
+
 #fleetBanner::before {
   content: "";
   position: absolute;

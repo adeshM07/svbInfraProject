@@ -18,9 +18,7 @@
   font-style: normal;
 }
 
-body, * {
-  cursor: url('../src//assets/cursor-icon.png') 10 10, auto;
-}
+
 
 .menu-container {
   position: fixed; /* or sticky if you use that */
