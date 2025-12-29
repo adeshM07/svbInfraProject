@@ -2,7 +2,7 @@ import React from "react";
 import svbLogo from "../assets/SVB_Logo.png";
 import "../App.css";
 import "../CSS/Menu.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Menu = () => {
@@ -94,6 +94,15 @@ const Menu = () => {
 
   //   return () => window.removeEventListener("resize", handleResize);
   // }, []);
+
+  const menuItems = [
+    { name: "About Us", link: "/about-us" },
+    { name: "Services", link: "/services" },
+    { name: "Our Fleet", link: "/our-fleet-2" },
+    { name: "Portfolio", link: "/portfolio" },
+    { name: "Gallery", link: "/portfolio#gallery" },
+    { name: "HSE", link: "/hse" },
+  ];
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 739px)");
@@ -213,30 +222,35 @@ const Menu = () => {
           </div>
         ) : (
           <>
-            <nav
-              id="menuNav"
-              className="flex gap-7 h-fit list-none text-white z-[999]"
-            >
-              {[
-                { name: "About Us", link: "/about-us" },
-                { name: "Services", link: "/services" },
-                { name: "Our Fleet", link: "/our-fleet-2" },
-                { name: "Portfolio", link: "/portfolio" },
-                { name: "Gallery", link: "/portfolio#gallery" },
-                { name: "HSE", link: "/hse" },
-              ].map((item) => (
-                <li key={item.link} className=" relative group">
-                  <Link
-                    to={item.link}
-                    // className=" transition-all  [@media(min-width:2500px)]:text-[1.1rem]"
-                    className="popins relative transition-all text-[#ECECEC] duration-300 ease-in-out md:text-sm lg:text-lg xl:text-xl"
-                  >
-                    {item.name}
-                    {/* Animated underline */}
-                    <span className="absolute left-1/2 -bottom-[3px]  w-0  h-[2px]  bg-[#FDC000]  transition-all duration-300 ease-in-out  group-hover:left-0   group-hover:w-full "></span>
-                  </Link>
-                </li>
-              ))}
+            <nav className="flex gap-7 list-none text-white">
+              {menuItems.map((item) => {
+                const isActive =
+                  item.link === "/portfolio"
+                    ? location.pathname === "/portfolio" &&
+                      location.hash !== "#gallery"
+                    : item.link === "/portfolio#gallery"
+                    ? location.pathname === "/portfolio" &&
+                      location.hash === "#gallery"
+                    : location.pathname === item.link;
+
+                return (
+                  <li key={item.link} className="relative group">
+                    <NavLink
+                      to={item.link}
+                      className={`relative popins transition-all duration-300
+            ${isActive ? "text-[#FDC000]" : "text-[#ECECEC]"}`}
+                    >
+                      {item.name}
+
+                      {/* underline */}
+                      <span
+                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#FDC000] transition-all duration-300
+              ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
+                      />
+                    </NavLink>
+                  </li>
+                );
+              })}
             </nav>
 
             <Link to="/contact">
