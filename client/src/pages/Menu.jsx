@@ -180,29 +180,36 @@ const Menu = () => {
   flex flex-col 
   z-[999]"
           >
-            <nav
-              id="menuNav"
-              className="flex flex-col text-[1.6rem]   gap-5 h-fit list-none text-black z-[1000] p-4"
-            >
-              {[
-                { name: "About Us", link: "/about-us" },
-                { name: "Service", link: "/services" },
-                { name: "Our Fleet", link: "/our-fleet-2" },
-                { name: "Portfolio", link: "/portfolio" },
-                { name: "Gallery", link: "/portfolio#gallery" },
-                { name: "HSE", link: "/hse" },
-              ].map((item) => (
-                <li key={item.link} className=" relative group">
-                  <Link
-                    to={item.link}
-                    onClick={() => setPopup(!popup)}
-                    className=" relative text-black transition-all duration-300 ease-in-out z-[1000]"
-                  >
-                    {item.name}
-                    <span className="absolute left-1/2 -bottom-[3px] w-0 h-[2px] bg-[#FDC000] transition-all duration-300 ease-in-out z-[1000] group-hover:left-0 group-hover:w-full"></span>
-                  </Link>
-                </li>
-              ))}
+            <nav className="flex flex-col text-[1.6rem] gap-5 p-4">
+              {menuItems.map((item) => {
+                const isActive =
+                  item.link === "/portfolio"
+                    ? location.pathname === "/portfolio" &&
+                      location.hash !== "#gallery"
+                    : item.link === "/portfolio#gallery"
+                    ? location.pathname === "/portfolio" &&
+                      location.hash === "#gallery"
+                    : location.pathname === item.link;
+
+                return (
+                  <li key={item.link} className="relative list-none">
+                    <NavLink
+                      to={item.link}
+                      onClick={() => setPopup(false)}
+                      className={`relative transition-all duration-300
+            ${isActive ? "text-[#FDC000]" : "text-black"}`}
+                    >
+                      {item.name}
+
+                      {/* underline */}
+                      <span
+                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#FDC000] transition-all duration-300
+              ${isActive ? "w-full" : "w-0"}`}
+                      />
+                    </NavLink>
+                  </li>
+                );
+              })}
             </nav>
           </div>
         )}
