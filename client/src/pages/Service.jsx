@@ -87,7 +87,7 @@ const Service = () => {
           >
             Our Services
           </motion.p>
-          <div className=" flex flex-col md:flex-row justify-center w-full ">
+          <div className=" flex flex-col md:flex-row justify-between w-full ">
             {[s1, s2, s3, s4].map((src, index) => (
               <div
               className=""
