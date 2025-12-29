@@ -414,7 +414,7 @@ const Landing = () => {
               {/* ===== RIGHT IMAGE SCROLLER ===== */}
               <motion.div
                 id="cont-fleet-img"
-                className="relative  mx-auto flex w-[95vw] md:w-full lg:w-[50%]  overflow-hidden md:px-8 lg:px-0 "
+                className="relative  mx-auto flex w-[95vw] md:w-full lg:w-[50%]  overflow-hidden md:px-8 lg:px-0  border-2"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
@@ -462,7 +462,7 @@ const Landing = () => {
               </motion.div>
             </div>
           </div>
-          <div className=" overflow-x-hidden">
+          <div className=" ">
             <div className="custom-shape-container">
               <video
                 src={projectVideo}

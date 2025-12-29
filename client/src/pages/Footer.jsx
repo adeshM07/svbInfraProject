@@ -43,7 +43,7 @@ const Footer = () => {
       <div className="bg-[#F8F8F8] w-full">
         <div
           id="footer"
-          className=" py-5 h-fit lg:max-h-fit  w-full flex flex-col gap-5 md:gap-8  z-300 px-2.5 md:px-8 lg:px-15 xl:px-30  md:py-7"
+          className=" py-5 h-fit lg:max-h-fit  w-full flex flex-col gap-5 md:gap-8  z-300 px-2.5 md:px-8 lg:px-15 xl:px-30  md:py-10"
         >
           <div className=" lg:h-fit flex flex-col gap-y-4  md:flex-row    justify-between">
             <div className="flex flex-col gap-7">
