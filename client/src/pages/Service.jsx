@@ -71,7 +71,7 @@ const Service = () => {
 
         {/* ===== SERVICE CARDS ===== */}
         <motion.div
-          className="px-2.5 md:px-8 lg:px-15 xl:px-30  w-fit flex flex-col  gap-6 lg:gap-10 py-5 md:py-0   [@media(min-width:650px)_and_(max-width:1200px)]:-mt-[140px]  md:-mt-[150px] lg:-mt-[150px] xl:-mt-[130px] pb-20"
+          className="px-2.5 md:px-8 lg:px-15 xl:px-30  w-fit flex flex-col  gap-6 lg:gap-10 py-5 md:py-0   [@media(min-width:650px)_and_(max-width:1200px)]:-mt-[140px]  md:-mt-[150px] lg:-mt-[150px] xl:-mt-[130px] pb-20 w-full"
           // initial={{ opacity: 0, y: 50 }}
           // whileInView={{ opacity: 1, y: 0 }}
           // transition={{ duration: 1, ease: "easeOut" }}
@@ -87,7 +87,7 @@ const Service = () => {
           >
             Our Services
           </motion.p>
-          <div className=" flex flex-col md:flex-row justify-between w-full ">
+          <div className=" flex flex-col md:flex-row justify-evenly w-full ">
             {[s1, s2, s3, s4].map((src, index) => (
               <div
               className=""

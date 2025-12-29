@@ -210,7 +210,7 @@ const Landing = () => {
             <section className="flex flex-row w-full    text-gray-800 ">
               {/* === VIDEO === */}
               <motion.div
-              className="w-[60%] sm:w-[50%] lg:w-[50%] xl:w-[45%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[47vh] md:h-130 lg:h-160 xl:min-h-170 "
+              className="w-[60%] sm:w-[50%] lg:w-[50%] xl:w-[45%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[47vh] md:h-130 lg:h-160 xl:min-h-160 "
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
