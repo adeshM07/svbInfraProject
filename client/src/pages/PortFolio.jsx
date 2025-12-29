@@ -214,10 +214,10 @@ const PortFolio = () => {
         <p className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
           Reviews and ratings
         </p>
-        <div className="flex  flex-col lg:flex-row w-full xl:h-117 2xl:h-110 gap-y-15 justify-between  px-2.5 md:px-8 lg:px-15 xl:px-30">
+        <div className="flex  flex-col lg:flex-row w-full xl:h-100 2xl:h-110 gap-y-15 justify-between  px-2.5 md:px-8 lg:px-15 xl:px-30">
           {/* Left Side - Texts + Button */}
           <motion.div
-            className="flex  flex-col gap-5 w-full lg:w-[50%]"
+            className="flex  flex-col gap-5 w-full lg:w-[50%] xl:w-[48%] 2xl:w-[50%]"
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
@@ -230,7 +230,7 @@ const PortFolio = () => {
               </span>
             </p>
 
-            <p className="text-[#4D4D4D] text-justify popins text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1.3rem] ">
+            <p className="text-[#4D4D4D] text-justify popins text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.3rem]">
               Real feedback from clients who rely on our expertise for
               excavation, rock work, soil retention, and dewatering services.
               Every rating reflects our dedication to quality and reliability.

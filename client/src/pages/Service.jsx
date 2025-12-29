@@ -43,7 +43,7 @@ const Service = () => {
           <div className="flex flex-col gap-4 pt-[30%] md:pt-[12%]">
             {/* Heading Animation */}
             <motion.p
-              className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-white font-bold text-[1.2rem] leading-6 md:text-[2.5rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
+              className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-white font-bold text-[1.2rem] leading-6 md:text-[2.5rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[3rem] 2xl:text-[4rem] xl:leading-19"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
