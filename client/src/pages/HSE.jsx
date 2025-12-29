@@ -54,7 +54,7 @@ const HSE = () => {
             {/* Animated Title */}
             <motion.p
               // className="hseBannerTitle [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.5rem] md:text-[2.5rem] md:leading-10 leading-6 lg:text-[4rem] text-[#FDC000] lg:leading-20"
-              className="px-1.5 md:px-0 lg:px-0 xl:px-0 fontMon text-[#FDC000] font-bold text-[1.2rem] leading-7 md:text-[2.5rem] md:leading-14 lg:text-[3.2rem] lg:leading-18  2xl:text-[4rem] 2xl:leading-19 z-300 hseBannerTitle"
+              className="px-1.5 md:px-0 lg:px-0 xl:px-0 fontMon text-[#FDC000] font-bold text-[1.2rem] leading-7 md:text-[2.5rem] md:leading-14 lg:text-[3.2rem] lg:leading-18 xl:text-[3.5rem] xl:leading-20  2xl:text-[4rem] 2xl:leading-19 z-300 hseBannerTitle"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -152,7 +152,7 @@ const HSE = () => {
           </motion.div>
         )}
 
-        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:mt-[120px] px-2.5 md:px-8 lg:px-15 xl:px-30">
+        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:my-[100px] px-2.5 md:px-8 lg:px-15 xl:px-30">
           {/* Section Heading */}
           <motion.p
             // className="text-[14px] md:text-[1.3rem] lg:text-[2rem] underline decoration-[#FDC000] underline-offset-8 fontMon font-semibold text-[#333333]"
