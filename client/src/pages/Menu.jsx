@@ -164,7 +164,7 @@ const Menu = () => {
             /> */}
             <img
               src={svbLogo}
-              className=" w-11 h-6 md:w-19 md:h-9 lg:w-25 lg:h-10 xl:w-35 xl:h-13"
+              className=" w-13 h-7 md:w-19 md:h-9 lg:w-25 lg:h-10 xl:w-35 xl:h-13"
             />
           </Link>
         </div>
