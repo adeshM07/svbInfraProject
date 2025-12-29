@@ -117,7 +117,7 @@ const Footer = () => {
               </div>
             ) : (
               <div className="flex flex-col gap-11">
-                <p className="text-[#ECECEC] text-[1rem] md:text-[17px] lg:text-[1.1rem] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
+                <p className="text-[#ECECEC] text-[1rem] md:text-[17px] lg:text-[1.1rem] xl:text-[24px] text-start popins font-semibold underline decoration-[#FDC000] underline-offset-8">
                   Get in Touch
                 </p>
                 <div className="flex flex-col gap-6 md:gap-8 lg:gap-4 w-full">
