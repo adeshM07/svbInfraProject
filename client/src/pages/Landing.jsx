@@ -210,7 +210,7 @@ const Landing = () => {
             <section className="flex flex-row w-full    text-gray-800 ">
               {/* === VIDEO === */}
               <motion.div
-              className="w-[60%] sm:w-[50%] lg:w-[50%] xl:w-[50%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[47vh] md:h-130 lg:h-160 xl:min-h-155 "
+              className="w-[60%] sm:w-[50%] lg:w-[50%] xl:w-[45%] min-h-[35vh] [@media(min-width:500px)_and_(max-width:639px)]:min-h-[37vh] sm:min-h-[47vh] md:h-130 lg:h-160 xl:min-h-170 "
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
@@ -354,7 +354,7 @@ const Landing = () => {
             {/* Animated Image */}
             <motion.img
               src={pillarImg}
-              className="w-full sm:h-80 md:h-115 lg:h-150 xl:h-165 2xl:h-180.5"
+              className="w-full sm:h-80 md:h-115 lg:h-150 xl:h-180 2xl:h-180.5"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
@@ -385,7 +385,7 @@ const Landing = () => {
               >
                 <p 
                 // className="fontMon bold leading-8 md:leading-12 lg:leading-19 text-[#333333] text-[1.5rem] md:text-[2.5rem] xl:text-[4rem] 2xl:text-[4rem] [@media(min-width:2500px)]:text-[6rem] [@media(min-width:2500px)]:leading-24 lg:text-[4rem] font-bold text-start lg:text-start bg-[#F8F8F8]"
-                className="fontMon font-bold text-[#333333] text-start text-[1.8rem] leading-8 md:text-[3.5rem] md:leading-15 lg:leading-14 lg:text-[2.7rem] xl:leading-15 xl:text-[3.5rem]"
+                className="fontMon font-bold text-[#333333] text-start text-[1.8rem] leading-8 md:text-[3.5rem] md:leading-15 lg:leading-14 lg:text-[2.7rem] xl:text-[3.7rem] xl:leading-15 2xl:leading-15 2xl:text-[3.7rem]"
                 >
                   Force Behind <br /> Every
                   <span className="text-[#FDC000] ml-2">Foundation</span>
@@ -414,7 +414,7 @@ const Landing = () => {
               {/* ===== RIGHT IMAGE SCROLLER ===== */}
               <motion.div
                 id="cont-fleet-img"
-                className="relative  mx-auto flex w-[95vw] md:w-full lg:w-full overflow-hidden md:px-8 lg:px-0 "
+                className="relative  mx-auto flex w-[95vw] md:w-full lg:w-[50%]  overflow-hidden md:px-8 lg:px-0 "
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
@@ -581,7 +581,7 @@ const Landing = () => {
                       src={`${item.src}`}
                       onClick={() => setProjectVideo(item.video)}
                       alt=""
-                      className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] object-cover 
+                      className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit object-cover 
            transition-transform duration-300 hover:scale-115 cursor-pointer"
                     />
                   ))}

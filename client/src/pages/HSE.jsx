@@ -47,14 +47,14 @@ const HSE = () => {
       </Helmet>
       <div className="bg-[F8F8F8]">
         <div
-          className="h-[45vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh] md:h-[45vh] lg:h-[95vh] w-full"
+          className="h-[45vh]  md:h-[45vh] lg:h-[45vh] xl:h-screen w-full"
           id="hseBanner"
         >
           <div className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">
             {/* Animated Title */}
             <motion.p
               // className="hseBannerTitle [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.5rem] md:text-[2.5rem] md:leading-10 leading-6 lg:text-[4rem] text-[#FDC000] lg:leading-20"
-              className="px-1.5 md:px-0 lg:px-0 xl:px-0 fontMon text-[#FDC000] font-bold text-[1.3rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  2xl:text-[4rem] 2xl:leading-19 z-300 hseBannerTitle"
+              className="px-1.5 md:px-0 lg:px-0 xl:px-0 fontMon text-[#FDC000] font-bold text-[1.2rem] leading-7 md:text-[2.5rem] md:leading-14 lg:text-[3.2rem] lg:leading-18  2xl:text-[4rem] 2xl:leading-19 z-300 hseBannerTitle"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -125,28 +125,28 @@ const HSE = () => {
           </motion.div>
         ) : (
           <motion.div
-            className="relative w-full overflow-hidden -mt-20"
+            className="relative w-full overflow-hidden  -mt-20"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="flex justify-center gap-[2px] lg:gap-[1.5rem] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
+            <div className="flex justify-center gap-[2px] lg:gap-[3px] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
               <img
                 src={c1}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[20vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[25vw]  lg:h-[30vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c2}
-                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] md:w-[25vw] md_h-[17vh] xl:w-[20vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c3}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[20vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c4}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] h-[30vh] md:w-[25vw] md_h-[17vh] xl:w-[20vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[18vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
             </div>
           </motion.div>

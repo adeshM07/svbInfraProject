@@ -106,7 +106,7 @@ const PortFolio = () => {
       </Helmet>
       <div className="flex  flex-col gap-10 lg:gap-[13vh] my-10 lg:my-30 bg-[#F8F8F8]">
         <section className="flex  flex-col gap-8 lg:gap-8 px-2.5 md:px-8 lg:px-15 xl:px-30 ">
-          <div className="flex flex-col  lg:flex-row   lg:w-full lg:justify-between   [@media(min-width:2500px)]:gap-90">
+          <div className="flex flex-col gap-y-4  lg:flex-row   lg:w-full lg:justify-between   [@media(min-width:2500px)]:gap-90">
             {/* Left Side - Texts + Button */}
             <motion.div
               className="flex flex-col gap-3  lg:gap-[44px]"

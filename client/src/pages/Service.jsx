@@ -72,34 +72,34 @@ const Service = () => {
         {/* ===== SERVICE CARDS ===== */}
         <motion.div
           className="px-2.5 md:px-8 lg:px-15 xl:px-30  w-fit flex flex-col  gap-6 lg:gap-10 py-5 md:py-0   [@media(min-width:650px)_and_(max-width:1200px)]:-mt-[140px]  md:-mt-[150px] lg:-mt-[150px] xl:-mt-[130px] pb-20"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.3 }}
+          // initial={{ opacity: 0, y: 50 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 1, ease: "easeOut" }}
+          // viewport={{ once: true, amount: 0.3 }}
         >
           {/* Section Heading */}
           <motion.p
             className="font-semibold text-black md:text-white text-[1rem] md:text-[1.4rem] lg:text-[1.4rem] 2xl:text-[2rem] underline decoration-[#FDC000] underline-offset-8  "
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: true, amount: 0.4 }}
+            // initial={{ opacity: 0, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
+            // viewport={{ once: true, amount: 0.4 }}
           >
             Our Services
           </motion.p>
-          <div className=" flex flex-col md:flex-row justify-between ">
+          <div className=" flex flex-col md:flex-row justify-center w-full ">
             {[s1, s2, s3, s4].map((src, index) => (
-              <motion.div
+              <div
               className=""
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.8,
-                  delay: index * 0.2,
-                  ease: "easeOut",
-                }}
-                viewport={{ once: true, amount: 0.4 }}
+                // initial={{ opacity: 0, scale: 0.9 }}
+                // whileInView={{ opacity: 1, scale: 1 }}
+                // transition={{
+                //   duration: 0.8,
+                //   delay: index * 0.2,
+                //   ease: "easeOut",
+                // }}
+                // viewport={{ once: true, amount: 0.4 }}
               >
                 <Link
                   to={
@@ -116,11 +116,11 @@ const Service = () => {
                     src={src}
                     //           className="w-[90vw] h-[40vh] [@media(min-width:1400px)_and_(max-width:1500px)]:w-[17vw] [@media(min-width:1400px)_and_(max-width:1500px)]:h-[40vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[19vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[40vh]  [@media(min-width:300px)_and_(max-width:410px)]:w-[70vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]  md:h-[20vh] lg:w-[20vw] xl:w-[20vw] 2xl:w-[18vw] 2xl:h-[47vh]   lg:h-[47vh] xl:h-[50vh]  object-cover
                     //  transition-transform duration-300 hover:scale-105 cursor-pointer rounded-md [@media(min-width:2500px)]:w-[19vw]"
-                    className="2xl:w-71 2xl:h-86 object-cover"
+                    className="xl:w-67 xl:h-80 2xl:w-71 2xl:h-86 object-cover"
                     alt={`Service ${index + 1}`}
                   />
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </motion.div>
