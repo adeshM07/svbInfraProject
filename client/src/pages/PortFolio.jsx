@@ -171,7 +171,7 @@ const PortFolio = () => {
             Our Latest Projects
           </p>
 
-          <div className="relative   w-full overflow-hidden  rounded-xl flex gap-[30px]  md:gap-[40px] py-4">
+          <div className="relative   w-full overflow-hidden  rounded-xl flex gap-[20px]  md:gap-[40px] py-4">
             {[
               c1,
               c2,
@@ -199,7 +199,7 @@ const PortFolio = () => {
                 src={src}
                 alt={`Project ${index + 1}`}
                 // className="w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[60vh] [@media(min-width:2500px)]:w-[19vw]   h-[20vh] lg:w-[18vw] xl:w-[22vw] 2xl:w-[18vw] lg:h-[47vh] lg:object-cover rounded-lg animate-cardScroll"
-                className="animate-cardScroll w-[33vw] h-[20vh] 
+                className="animate-cardScroll w-[33.5vw] h-[20vh] 
               sm:min-w-[170px] sm:h-fit
               md:min-w-[240px] md:h-fit
               lg:min-w-[230px] lg:fit
