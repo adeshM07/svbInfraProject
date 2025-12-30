@@ -16,7 +16,7 @@ import f10 from "../assets/f10.png";
 import f11 from "../assets/f11.png";
 import f12 from "../assets/f12.png";
 import "../CSS/Landing.css";
-import fleetVideo from '../assets/fleetVideo.MOV'
+import fleetVideo from "../assets/fleetVideo.MOV";
 
 const Fleet = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -140,7 +140,7 @@ const Fleet = () => {
 
           {/* ===== DARK OVERLAY (OPTIONAL BUT RECOMMENDED) ===== */}
           <div className="absolute inset-0 bg-black/40 z-10" />
-          <div className="flex flex-col  gap-7 lg:gap-8  lg:mx-auto mx-auto w-90 md:w-160 lg:w-200 xl:w-205.5 ">
+          <div className="flex flex-col   gap-7 lg:gap-8  lg:mx-auto mx-auto w-90 md:w-160 lg:w-200 xl:w-205.5 [@media(min-width:1400px)_and_(max-width:1500px)]:w-[70%]">
             {/* Heading & Subtext */}
             <motion.div
               className="flex flex-col gap-4"
@@ -149,7 +149,7 @@ const Fleet = () => {
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="px-2.5 md:px-0 lg:px-0 xl:px-0 fontMon text-white font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19 z-300">
+              <p className="px-2.5 md:px-0 lg:px-0 xl:px-0 fontMon text-white font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19  z-300">
                 Powering <span className="text-[#FDC000]">Progress</span> with{" "}
                 <br /> Modern Machinery
               </p>
@@ -161,11 +161,8 @@ const Fleet = () => {
                 transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.5 }}
               >
-                    Equipped with advanced machinery, we deliver efficient,
-                    precise, and dependable  results across all project
-                    scales.
-                  
-                
+                Equipped with advanced machinery, we deliver efficient, precise,
+                and dependable results across all project scales.
               </motion.p>
             </motion.div>
 
@@ -185,10 +182,10 @@ const Fleet = () => {
               ].map(([title, value], i) => (
                 <React.Fragment key={i}>
                   <div className="flex flex-col  gap-[3px] md:gap-5 lg:gap-[20px] text-center">
-                    <p className="popins-noweight [@media(min-width:300px)_and_(max-width:410px)]:text-[0.5rem] text-[0.6rem] md:text-[0.8rem] lg:text-[1.3rem] xl:text-[1.1rem] font-semibold text-[#333333]">
+                    <p className="popins-noweight [@media(min-width:300px)_and_(max-width:410px)]:text-[0.5rem] text-[0.6rem] md:text-[0.8rem] lg:text-[1.3rem] xl:text-[1.1rem] [@media(min-width:1400px)_and_(max-width:1500px)]:text-[1.3rem] font-semibold text-[#333333]">
                       {title}
                     </p>
-                    <p className="popins-noweight text-[0.4rem] md:text-[0.6rem] lg:text-[1rem] xl:text-[0.9rem] font-normal text-[#333333]">
+                    <p className="popins-noweight text-[0.4rem] md:text-[0.6rem] lg:text-[1rem] xl:text-[0.9rem] [@media(min-width:1400px)_and_(max-width:1500px)]:text-[1.1rem] font-normal text-[#333333]">
                       {value}
                     </p>
                   </div>
@@ -239,16 +236,16 @@ const Fleet = () => {
           </motion.div>
 
           {/* Cards */}
-          <motion.div 
-          // className="flex gap-x-8 gap-y-10 w-[85vw] md:w-[77vw] xl:w-[85vw] 2xl:w-[78vw] justify-between flex-wrap  mb-20"
-          //
-          className=" px-5 md:px-8 lg:px-15 xl:px-30 my-5 gap-y-10 flex flex-wrap w-full justify-evenly md:justify-between lg:justify-evenly xl:justify-between"
-           >
+          <motion.div
+            // className="flex gap-x-8 gap-y-10 w-[85vw] md:w-[77vw] xl:w-[85vw] 2xl:w-[78vw] justify-between flex-wrap  mb-20"
+            //
+            className="mb-15 px-5 md:px-8 lg:px-15 xl:px-30 my-5 gap-y-10 flex flex-wrap w-full justify-evenly md:justify-between lg:justify-evenly xl:justify-between"
+          >
             {cardDetails.map((item, index) => (
               <motion.div
                 key={index}
                 // className="w-[85vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[100vh]   h-[50vh] md:h-[45vh] lg:w-[24vw] xl:w-[26vw] 2xl:w-[24vw] 2xl:h-[50vh] lg:h-[50vh] xl:h-[53vh] flex flex-col gap-2 lg:gap-5 xl:gap-3 2xl:gap-5 px-4 py-4 rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)]"
-                className="shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-lg flex flex-col gap-3 md:gap-6 lg:gap-4  md:w-85 p-3 w-full md:min-h-90 lg:p-5 lg:w-100 lg:h-100 xl:w-80 xl:h-85 2xl:gap-4 2xl:p-5 2xl:w-95 2xl:h-93"
+                className="shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-lg flex flex-col gap-3 md:gap-6 lg:gap-4  md:w-85 p-3 w-full md:min-h-90 lg:p-5 lg:w-100 lg:h-100 xl:w-80 xl:h-85 [@media(min-width:1400px)_and_(max-width:1500px)]:w-94 2xl:gap-4 2xl:p-5 2xl:w-95 2xl:h-93"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
