@@ -217,7 +217,7 @@ const Menu = () => {
         {isMobile ? (
           <div className="flex gap-7  ">
             <Link to="/contact">
-              <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:py-1 [@media(min-width:300px)_and_(max-width:700px)]:px-[0.4rem] rounded-sm flex hover:cursor-pointer">
+              <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:py-1 [@media(min-width:300px)_and_(max-width:700px)]:px-[0.4rem] rounded-md flex hover:cursor-pointer">
                 Contact Us
               </button>
             </Link>
