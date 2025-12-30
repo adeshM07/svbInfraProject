@@ -163,13 +163,13 @@ const Contactus = () => {
                       </div>
                     </div>
                     <div className="flex gap-6 mx-auto lg:mx-0 lg:gap-7 place-items-center w-[80vw] lg:w-[26vw] h-fit">
-                      <a href="tel:9036354261" className="flex gap-6">
+                      <a href="tel:9900641808" className="flex gap-6">
                         <img
                           src={phone}
                           className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[5vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[2vw] w-[3vw] h-[2.3vh] lg:w-[1vw] lg:h-[3vh]"
                         />
                         <p className="text-[#333333] popins-contact text-[0.9rem] lg:text-[1rem]">
-                          +91 9036354261 , +91 9980851508
+                          +91 9900641808 , +91 9980851508
                         </p>
                       </a>
                     </div>

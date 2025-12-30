@@ -110,7 +110,7 @@ const Footer = () => {
                 </div>
                 <div className="text-white [@media(min-width:650px)_and_(max-width:1200px)]:text-start  md:text-center flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:flex-col md:flex-row gap-y-1">
                   {" "}
-                  <a href="tel:9036354261">+91 9036354261</a>{" "}
+                  <a href="tel:9900641808">+91 9900641808</a>{" "}
                 
                   <a href="tel:9980851508">+91 9980851508</a>{" "}
                 </div>
@@ -162,13 +162,13 @@ const Footer = () => {
                   {/* 📞 Phone */}
 
                   <div className="flex items-start gap-3 md:gap-4">
-                    <a href="tel:9036354261" className="flex gap-3 md:gap-4 place-items-center">
+                    <a href="tel:9900641808" className="flex gap-3 md:gap-4 place-items-center">
                       <img
                         src={phone}
                         className="w-[6vw] h-[4vh] md:w-[4vw] md:h-[4vh] lg:w-[3vw] lg:h-[3vh] xl:w-[2.5vw] 2xl:w-[2vw] 2xl:h-[3.6vh]"
                       />
                       <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
-                        +91 9036354261  +91 9980851508
+                        +91 9900641808  +91 9980851508
                       </p>
                     </a>
                   </div>
