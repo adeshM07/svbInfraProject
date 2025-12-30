@@ -217,7 +217,7 @@ const Menu = () => {
         {isMobile ? (
           <div className="flex gap-7  ">
             <Link to="/contact">
-              <button className="text-white bg-[#FDC000] text-[0.8rem] [@media(min-width:300px)_and_(max-width:700px)]:py-[0.1rem] [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex hover:cursor-pointer">
+              <button className="text-white bg-[#FDC000] text-[0.8rem] [@media(min-width:300px)_and_(max-width:700px)]:py-2 [@media(min-width:300px)_and_(max-width:700px)]:px-[0.3rem] rounded-sm flex hover:cursor-pointer">
                 Contact Us
               </button>
             </Link>
@@ -225,7 +225,7 @@ const Menu = () => {
               id="hamburgerIcon"
               class="fa-solid fa-bars [@media(min-width:300px)_and_(max-width:700px)]:text-[1.7rem] text-white z-[1000]"
               onClick={() => setPopup(!popup)}
-            ></i>
+            ></i>s
           </div>
         ) : (
           <>
