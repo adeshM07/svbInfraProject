@@ -155,7 +155,7 @@ const AboutPage = () => {
                     contract civil engineering sector.
                   </p>
                 </div>
-                {/* <div className="w-full    items-center flex justify-between lg:justify-normal lg:gap-3 xl:gap-7 2xl:gap-5">
+                <div className="w-full    items-center flex justify-between lg:justify-normal lg:gap-3 xl:gap-7 2xl:gap-5">
                   <div
                     className=" text-[#333333] rounded-lg lg:w-fit  2xl:w-auto
         xl:px-2 xl:py-3 2xl:px-4 2xl:py-3 
@@ -243,16 +243,8 @@ const AboutPage = () => {
                       Machines & Equipments
                     </p>
                   </div>
-                </div> */}
-                 <div className="items-center sm:justify-between md:justify-start justify-start gap-2  2xl:flex  md:flex sm:flex flex ">
-                    {cardData.map((card, index) => (
-                      <AboutSectionCard
-                        number={card.number}
-                        label={card.label}
-                        key={index}
-                      />
-                    ))}
-                  </div>
+                </div>
+                 
               </div>
             </div>
           </section>
