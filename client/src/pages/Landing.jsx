@@ -39,7 +39,7 @@ import c11 from "../assets/globalCard11.png";
 import c12 from "../assets/globalCard12.png";
 import c13 from "../assets/globalCard13.png";
 import c4 from "../assets/globalCard14.png";
-import c3 from "../assets/globalCard15.png";
+import c3 from "../assets/globalCard7.png";
 
 import SectionWrapper from "../component/common/SectionWrapper";
 import AboutSectionCard from "../component/home/about-card";
