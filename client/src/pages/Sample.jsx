@@ -1,193 +1,279 @@
-import React, { useState } from "react";
+import React from "react";
+import svbLogo from "../assets/SVB_Logo.png";
 import "../App.css";
-import "../CSS/ContactUS.css";
-import mail from "../assets/mail_marker_black.png";
-import phone from "../assets/phone_marker_black.png";
-import address from "../assets/address_marker_black.png";
-import fb from "../assets/facebook-black-marker.png";
-import yt from "../assets/contact-yt-icon.png";
+import "../CSS/Menu.css";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-const Contactus = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    address: "",
-    message: "",
-  });
+const Menu = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const [hideOnScroll, setHideOnScroll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [popup, setPopup] = useState(false);
+  const [isColored, setIsColored] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
 
-    if (name === "phone") {
-      const numeric = value.replace(/[^0-9]/g, "");
-      if (numeric.length <= 10) {
-        setFormData({ ...formData, phone: numeric });
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScrollDirection = () => {
+      const currentScrollY = window.scrollY;
+
+      // scrolling down → hide
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setHideOnScroll(true);
       }
-      return;
-    }
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.phone ||
-      !formData.address ||
-      !formData.message
-    ) {
-      alert("All fields are mandatory.");
-      return;
-    }
-
-    if (formData.phone.length !== 10) {
-      alert("Phone number must be exactly 10 digits.");
-      return;
-    }
-
-    fetch(
-      "https://script.google.com/macros/s/AKfycbxMXXpLSjDzpyndl3juxYhJuiNTXMTnHjMbZELESB_2lnrbVgLOp43iZzaoGw8ESi7TDg/exec",
-      {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: `Email=${encodeURIComponent(formData.email)}&Name=${encodeURIComponent(
-          formData.name
-        )}&Phone=${encodeURIComponent(formData.phone)}&Address=${encodeURIComponent(
-          formData.address
-        )}&Message=${encodeURIComponent(formData.message)}`,
+      // scrolling up → show
+      else {
+        setHideOnScroll(false);
       }
-    ).then(() => {
-      alert("Thank you! We’ll notify you soon.");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        address: "",
-        message: "",
-      });
-    });
-  };
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScrollDirection);
+    return () => window.removeEventListener("scroll", handleScrollDirection);
+  }, []);
+
+  useEffect(() => {
+    if (!isLandingPage) {
+      setShowMenu(true); // always show menu on other pages
+      return;
+    }
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowMenu(true);
+      } else {
+        setShowMenu(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isLandingPage]);
+
+  useEffect(() => {
+    if (!isLandingPage) {
+      setIsColored(true); // always colored on other pages
+      return;
+    }
+
+    const section = document.getElementById("secondSection");
+
+    const handleScroll = () => {
+      if (!section) return;
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top <= 100) {
+        setIsColored(true);
+      } else {
+        setIsColored(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isLandingPage]);
+
+  // const handleResize = () => {
+  //   const width = window.innerWidth;
+
+  //   if (width < 740) {
+  //     setIsMobile(true);
+  //   } else {
+  //     setIsMobile(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   handleResize(); // Run once when mounted
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+
+  const menuItems = [
+    { name: "About Us", link: "/about-us" },
+    { name: "Services", link: "/services" },
+    { name: "Our Fleet", link: "/our-fleet-2" },
+    { name: "Portfolio", link: "/portfolio" },
+    { name: "Gallery", link: "/portfolio#gallery" },
+    { name: "HSE", link: "/hse" },
+  ];
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 739px)");
+
+    const handleChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    // Run once on mount
+    setIsMobile(mediaQuery.matches);
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (popup) {
+        // if click is NOT inside popup and NOT on hamburger icon
+        if (
+          !e.target.closest("#mobilePopup") &&
+          !e.target.closest("#hamburgerIcon")
+        ) {
+          setPopup(false);
+        }
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [popup]);
 
   return (
-    <div className="w-screen">
+    <>
+      {/* ${hideOnScroll ? "-translate-y-full" : "translate-y-0"} */}
+      {/* <div
+        className={`
+    fixed top-0 left-0 border-2 border-red-500   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
+     lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
+    
+    
+    ${isColored ? "bg-[#333333]" : "bg-transparent"}
+   
+  `} */}
       <div
-        id="contactUSBanner"
-        className="
-          flex flex-col gap-[51px] w-full
-          min-h-[45vh] md:min-h-[45vh] lg:min-h-[95vh]
-          pb-[6rem]
-          [@media(min-width:800px)_and_(max-width:1200px)]:min-h-fit
-        "
+        className={` w-full fixed top-0 left-0 transition-all duration-500 z-999 flex  justify-between place-items-center min-h-15 md:h-17 lg:h-18 xl:h-25   px-2.5 md:px-8 lg:px-15 xl:px-30 
+    ${isColored ? "bg-[#333333]" : "bg-transparent"}
+    ${hideOnScroll ? "-translate-y-full" : "translate-y-0"}
+   
+  `}
       >
-        <p className="contactUSbannertitle text-white text-[1.2rem] md:text-[2.5rem] lg:text-[4rem] ml-12 lg:ml-48 pt-[40px] lg:pt-[90px]">
-          Contact SVB Infra Projects — Your <br className="hidden md:block" />
-          Partner for Reliable <span className="text-[#FDC000] mx-1">Construction Solutions</span>
-        </p>
-
-        <div
-          className="
-            w-[88vw] lg:w-[69vw]
-            min-h-fit
-            bg-white rounded-lg
-            lg:pl-[5rem] lg:pr-[48px] lg:py-[60px]
-            mx-auto
-          "
-        >
-          <p className="font-semibold text-[1.2rem] lg:text-[2rem] text-[#333333] text-center lg:text-left lg:mb-14 my-10 lg:my-0">
-            Get in touch
-          </p>
-
-          <div className="flex flex-col-reverse lg:flex-row gap-[4rem]">
-            {/* LEFT INFO */}
-            <div className="lg:w-[30vw]">
-              <div className="flex flex-col gap-10">
-                {[{
-                  title: "Karnataka Office",
-                  text: "UB Tower, UB City, 24, Vittal Mallya Road, Bengaluru - 560001",
-                },{
-                  title: "Andhra / Telangana Office",
-                  text: "PCS Business Centre, Vijayawada - 520010",
-                }].map((item, i) => (
-                  <div key={i} className="flex gap-6 w-[80vw] lg:w-[26vw]">
-                    <img src={address} className="w-[3vw] lg:w-[1vw] h-[3vh]" />
-                    <div>
-                      <span className="text-[#FDC000]">{item.title}</span>
-                      <p className="text-black">{item.text}</p>
-                    </div>
-                  </div>
-                ))}
-
-                <a href="tel:9036354261" className="flex gap-6">
-                  <img src={phone} className="w-[3vw] lg:w-[1vw]" />
-                  <p>+91 9036354261 , +91 9980851508</p>
-                </a>
-
-                <a href="mailto:info@svbinfraprojects.com" className="flex gap-6">
-                  <img src={mail} className="w-[4vw] lg:w-[1.5vw]" />
-                  <p>info@svbinfraprojects.com</p>
-                </a>
-
-                <div className="flex gap-4 items-center mt-6">
-                  <p>Follow for More</p>
-                  <a href="https://www.youtube.com/@svbinfraprojects5316">
-                    <img src={yt} className="w-[5vw] lg:w-[1.1vw]" />
-                  </a>
-                  <a href="https://www.facebook.com/share/17Yn7q28DJ/">
-                    <img src={fb} className="w-[5vw] lg:w-[1.3vw]" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* FORM */}
-            <div className="w-[90vw] lg:w-[30vw]">
-              <form onSubmit={handleSubmit} className="flex flex-col  ">
-                <div className="flex flex-wrap gap-3 justify-between">
-                  {["name", "email", "address"].map((field) => (
-                    <input
-                      key={field}
-                      name={field}
-                      value={formData[field]}
-                      onChange={handleChange}
-                      placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
-                      className="w-[43vw] md:w-[14vw] h-[5vh] md:h-[7vh] border rounded-md px-3"
-                    />
-                  ))}
-
-                  <div className="flex items-center w-[43vw] md:w-[14vw] h-[5vh] md:h-[7vh] border rounded-md px-3">
-                    <span className="mr-2">+91</span>
-                    <input
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="Phone"
-                      className="w-full outline-none"
-                    />
-                  </div>
-                </div>
-
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Message"
-                  className="w-full lg:w-[29vw] h-[14vh] border rounded-md p-3 mt-5"
-                />
-
-                <button className="mt-8 w-full lg:w-[9vw] h-[6vh] bg-[#FDC000] rounded-md font-semibold hover:scale-105 transition">
-                  Send Now
-                </button>
-              </form>
-            </div>
-          </div>
+        <div className="">
+          <Link to="/">
+            {/* <img
+              src={svbLogo}
+              className="w-[15vw] h-[3.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[7.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[7vw] lg:w-[7vw] xl:w-[7vw] xl:h-[6vh] lg:h-[6vh]"
+            /> */}
+            <img
+              src={svbLogo}
+              className=" w-24 h-9 md:w-19 md:h-9 lg:w-25 lg:h-10 xl:w-35 xl:h-13"
+            />
+          </Link>
         </div>
+        {popup && (
+          <div
+            id="mobilePopup"
+            className="absolute right-5 top-[90px] w-[60vw] h-fit 
+  border border-white/20 
+  rounded-xl 
+  bg-white/40 
+  backdrop-blur-sm 
+  shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
+  flex flex-col 
+  z-[999]"
+          >
+            <nav className="flex flex-col text-[1.6rem] gap-5 p-4">
+              {menuItems.map((item) => {
+                const isActive =
+                  item.link === "/portfolio"
+                    ? location.pathname === "/portfolio" &&
+                      location.hash !== "#gallery"
+                    : item.link === "/portfolio#gallery"
+                    ? location.pathname === "/portfolio" &&
+                      location.hash === "#gallery"
+                    : location.pathname === item.link;
+
+                return (
+                  <li key={item.link} className="relative list-none">
+                    <NavLink
+                      to={item.link}
+                      onClick={() => setPopup(false)}
+                      className={`relative transition-all duration-300
+            ${isActive ? "text-[#FDC000]" : "text-black"}`}
+                    >
+                      {item.name}
+
+                      {/* underline */}
+                      <span
+                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#FDC000] transition-all duration-300
+              ${isActive ? "w-full" : "w-0"}`}
+                      />
+                    </NavLink>
+                  </li>
+                );
+              })}
+            </nav>
+          </div>
+        )}
+
+        {isMobile ? (
+          <div className="flex gap-7  ">
+            <Link to="/contact">
+              <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:py-1 [@media(min-width:300px)_and_(max-width:700px)]:px-[0.4rem] rounded-md flex hover:cursor-pointer">
+                Contact Us
+              </button>
+            </Link>
+            <i
+              id="hamburgerIcon"
+              class="fa-solid fa-bars [@media(min-width:300px)_and_(max-width:700px)]:text-[1.7rem] text-white z-[1000]"
+              onClick={() => setPopup(!popup)}
+            ></i>
+          </div>
+        ) : (
+          <>
+            <nav className="flex gap-7 list-none text-white">
+              {menuItems.map((item) => {
+                const isActive =
+                  item.link === "/portfolio"
+                    ? location.pathname === "/portfolio" &&
+                      location.hash !== "#gallery"
+                    : item.link === "/portfolio#gallery"
+                    ? location.pathname === "/portfolio" &&
+                      location.hash === "#gallery"
+                    : location.pathname === item.link;
+
+                return (
+                  <li key={item.link} className="relative group">
+                    <NavLink
+                      to={item.link}
+                      className={`relative popins transition-all duration-300
+            ${isActive ? "text-[#FDC000]" : "text-[#ECECEC]"}`}
+                    >
+                      {item.name}
+
+                      {/* underline */}
+                      <span
+                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#FDC000] transition-all duration-300
+              ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
+                      />
+                    </NavLink>
+                  </li>
+                );
+              })}
+            </nav>
+
+            <Link to="/contact">
+              <button
+                // className="menuButton [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] xl:h-[6vh] xl:w-[9vw] [@media(min-width:2500px)]:h-[5vh] bg-[#FDC000] text-black text-[1rem] rounded-[9px]  xl:text-[1rem] [@media(min-width:2500px)]:text-[1.4rem] transition duration-300 transform
+                // hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
+                className="menuButton bg-[#FDC000] text-[#333333] font-semibold rounded-lg  transition duration-300 transform hover:scale-105 hover:bg-[#ffcf33] hover:cursor-pointer md:text-lg lg:text-xl md:w-28 md:h-9 lg:w-34 lg:h-9 xl:w-37 xl:h-12 "
+              >
+                Contact Us
+              </button>
+            </Link>
+          </>
+        )}
       </div>
-    </div>
+    </>
   );
 };
 
-export default Contactus;
+export default Menu;

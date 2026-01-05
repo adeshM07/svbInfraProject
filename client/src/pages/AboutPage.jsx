@@ -16,6 +16,11 @@ import AboutHighlights from "./AboutHighlights ";
 import machineIMG from "../assets/aboutMachineImg.png";
 import { useState, useEffect } from "react";
 
+import Button from "../component/common/Button";
+import NavLink from "../component/common/nav-link";
+import aboutBanner from "../assets/aboutBannerIMG.png";
+import SectionWrapper from "../component/common/SectionWrapper";
+
 const AboutPage = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -67,182 +72,167 @@ const AboutPage = () => {
       {/* new line  */}
       <div className="flex flex-col ">
         <div
-          id="aboutBanner"
-          className="flex flex-col justify-center relative   [@media(min-width:300px)_and_(max-width:410px)]:h-[50vh]   [@media(min-width:300px)_and_(max-width:410px)]:w-screen  h-[45vh] sm:h-[45vh] md:h-[45vh] lg:h-[50vh] xl:h-[100vh]"
+          className="flex flex-col gap-5  bg-no-repeat bg-cover bg-center
+          min-h-screen justify-center"
+          style={{
+            backgroundImage: `url(${aboutBanner})`,
+            // "url('/images/about-us/hero/aboutUs-hero-bgIMG.png')",
+          }}
         >
-          <div className=" ">
-            <motion.p
-              // className="text-white [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.7rem]  md:text-[3.2rem] lg:text-[4rem] [@media(min-width:2500px)]:text-[6rem] aboutCom [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-8 md:leading-14 lg:leading-19 [@media(min-width:2500px)]:leading-28"
-              className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-white font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-            >
-              <span className="text-[#FDC000] ">SVB Infra</span> <br /> Building
-              the Future with <br /> Experience and Excellence
-            </motion.p>
+          <h1 className="px-3 sm:px-5 xl:px-30 xl:text-6xl max-w-[90%]  2xl:max-w-[70%] lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight text-white">
+            <span className="sm:block inline text-primary mr-2 text-nowrap">
+              SVB Infra
+            </span>
+            Building the Future with Experience and Excellence
+          </h1>
 
-            <motion.p
-              className="px-2.5 md:px-8 lg:px-15 xl:px-30 text-white popins text-[0.6rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem] mt-4 md:mt-6"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-            >
-              Providing fast, flexible, and professional earthmoving services
-              statewide since 2003
-            </motion.p>
-
-            <Link to="/contact">
-              <motion.button
-                className="hover:cursor-pointer mx-2.5 md:mx-8 lg:mx-15 xl:mx-30 mt-6 md:mt-10 bg-[#FDC000] z-999 rounded-md popins font-semibold text-[0.6rem] h-7 w-26 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5 "
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
-                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-                whileTap={{ scale: 0.97 }}
-              >
-                Contact Us
-              </motion.button>
-            </Link>
+          <p className="px-3 sm:px-5 xl:px-30 xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[900px] md:max-w-[500px] leading-relaxed text-white">
+            Providing fast, flexible, and professional earthmoving services
+            statewide since 2003
+          </p>
+          <div className="px-3 sm:px-5 xl:px-30 flex">
+            <NavLink href="/contact-us">
+              <Button text="Contact Us" />
+            </NavLink>
           </div>
         </div>
-        <div className="px-2.5  md:px-8 lg:px-15 xl:px-30 flex flex-col gap-5 md:gap-25 py-10 md:py-25">
-          <div className=" w-fit flex flex-col gap-10 ">
-            <motion.p
-              className="text-black popins text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] xl:text-[2rem] font-semibold underline decoration-[#FDC000] underline-offset-8"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.5 }}
-            >
+        <div className=" flex flex-col my-[70px] lg:my-[100px] xl:my-[120px] gap-30">
+          <section
+            className=" mx-auto
+        px-3 sm:px-5 xl:px-30
+        xl:max-w-360 2xl:max-w-400  gap-10 flex flex-col items-start "
+          >
+            <h3 className="text-[20px] lg:text-[32px] md:text-[30px] sm:text-[24px] border-b-2 border-b-primary font-semibold ">
               About our company
-            </motion.p>
-            <div className="  flex gap-4 [@media(min-width:300px)_and_(max-width:410px)]:gap-2 lg:gap-7 w-full  h-45 sm:h-70 md:h-80 lg:h-100 xl:h-120">
-              {/* 🟡 Image comes from left */}
-              <motion.img
-                src={bgIMG}
-                // className="[@media(min-width:650px)_and_(max-width:1200px)]:h-[70vh] w-[45vw] h-[20vh] [@media(min-width:300px)_and_(max-width:410px)]:w-[46vw] [@media(min-width:300px)_and_(max-width:410px)]:h-[24vh] md:w-[50vw] md:h-[30vh] lg:w-[32vw]  lg:h-[59vh] xl:w-[35vw] xl:h-[60vh] 2xl:w-[31vw] 2xl:h-[65vh]"
-                // className="h-45 w-45 md:h-85 md:w-85 lg:w-110 lg:h-110 xl:w-120 xl:h-120"
-                className="h-full w-[50%] sm:w-[60%] md:w-[45%] lg:w-[50%] xl:w-[50%]"
-                initial={{ opacity: 0, x: -80 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.4 }}
-              />
-
-              {/* 🟢 Text slides from right */}
-              <motion.div
-                className="flex flex-col  w-50 sm:w-95 md:w-95 lg:w-172 lg:h-88 gap-1 lg:gap-4 relative"
-                initial={{ opacity: 0, x: 80 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.4 }}
-              >
-                <p
-                  // className="popins-bold [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] text-[1.3rem] md:text-[2.3rem] [@media(min-width:300px)_and_(max-width:410px)]:leading-6 leading-7 md:leading-12 lg:text-[3rem] xl:text-[3rem] 2xl:text-[4rem]  lg:leading-14 xl:leading-16 2xl:leading-19  [@media(min-width:2500px)]:text-[5rem] [@media(min-width:2500px)]:leading-24"
-                  className="fontMon text-[#333333] font-bold text-[0.9rem] leading-5 sm:text-[1.7rem] sm:leading-9 md:text-[2rem] md:leading-12 lg:text-[2.5rem] lg:leading-14   2xl:text-[3.5rem] 2xl:leading-18 "
-                >
-                  Excellence, <br />
-                  <span className="text-[#FDC000]">Expertise,</span> Efficiency
-                </p>
-
-                <p className="text-[#4D4D4D] text-[0.5rem] sm:text-[0.8rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.3rem] text-justify">
-                  <span className="font-semibold mr-1">SVB Infra Projects</span>
-                  is a 3rd generation family-run business. SVB has been managing
-                  earthmoving projects since 2003. Based in Karnataka and Andhra
-                  Pardesh, we provide a fast, flexible, reliable and
-                  professional service state wide. We offer contract earth
-                  moving services across the state providing a professional and
-                  reliable service to the main and sub contract civil
-                  engineering sector.
-                </p>
-
-                {!isMobile && (
-                  <motion.div
-                    className="flex [@media(min-width:300px)_and_(max-width:430px)]:w-screen [@media(min-width:300px)_and_(max-width:430px)]:place-items-center [@media(min-width:300px)_and_(max-width:410px)]:justify-center  absolute lg:relative gap-5   md:gap-4 lg:gap-7 top-[200px] -left-[120%] md:-left-0 sm:top-[300px] sm:-left-50   md:top-[255px]  lg:top-4  text-[#333333] "
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.5 }}
+            </h3>
+            <div className="flex flex-col lg:flex-row w-full gap-10">
+              <div className="object-cover lg:min-w-[420px] lg:min-h-[420px] xl:min-w-[480px] xl:min-h-[480px]">
+                <img src={bgIMG} className="h-full w-full" alt="" />
+              </div>
+              <div className="flex flex-col gap-10">
+                <div className="w-full flex flex-col gap-4 justify-start">
+                  <h1
+                    className="2xl:text-6xl 
+                        xl:text-[58px] lg:text-[50px] md:text-5xl 
+                         sm:text-4xl text-3xl font-bold 
+                        leading-tight popins-noweight "
                   >
-                    {/* Clients */}
-                    <div className="flex flex-col place-items-center">
-                      <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
-                        <Counter from={0} to={125} duration={0.8} />+
-                      </p>
-                      <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
-                        Clients
-                      </p>
-                    </div>
+                    Excellence, <br />
+                    <span className="text-primary mr-2">Expertise,</span>
+                    Efficiency
+                  </h1>
+                  <p
+                    className="xl:text-xl text-[#4D4D4D]  w-full
+                          lg:text-lg 
+                        md:text-xl text-sm lg:max-w-[550px] xl:max-w-[700px] 
+                        md:max-w-auto leading-relaxed  popins
+                        "
+                  >
+                    <span className="font-semibold mr-2">
+                      SVB Infra Projects
+                    </span>
+                    is a 3rd generation family run business. SVB has been
+                    managing earthmoving projects since 2003. Based in
+                    Bangalore, we provide a fast, flexible, reliable and
+                    professional service statewide. We offer contract
+                    earthmoving services across the state providing a
+                    professional and reliable service to the main and sub
+                    contract civil engineering sector.
+                  </p>
+                </div>
+                <div className="w-full    items-center flex justify-between lg:justify-normal lg:gap-3 xl:gap-7 2xl:gap-5">
+                  <div
+                    className=" text-[#333333] rounded-lg lg:w-fit  2xl:w-auto
+        xl:px-2 xl:py-3 2xl:px-4 2xl:py-3 
+        flex flex-col sm:gap-2 gap-1 items-center justify-center 
+        lg:px-2 md:px-2
+        px-1 py-2
+        lg:w-max-none
+        md:w-fit
+        w-auto
 
-                    <div className="h-[4vh] md:h-[4vh] 2xl:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
+        "
+                  >
+                    <h4
+                      className="2xl:text-[32px] xl:text-[28px] lg:text-[24px]
+            xl:font-semibold 
+            md:text-4xl
+            leading-none
+            sm:text-[28px]
+            text-[18px]
+           font-semibold
+            "
+                    >
+                      10+
+                    </h4>
+                    <p className=" 2xl:text-[16px] xl:text-[16px] lg:text-[14px] md:text-lg sm:text-[16px] text-[9px] text-center ">
+                      Clients
+                    </p>
+                  </div>
+                  <div className="lg:h-[70%] lg:w-0.5 md:min-h-18 md:w-1 w-0.5  h-12 bg-[#333333]"></div>
+                  <div
+                    className=" text-[#333333] rounded-lg lg:w-fit xl:w-[180px]  2xl:w-auto
+        xl:px-2 xl:py-3 2xl:px-4 2xl:py-3 
+        flex flex-col sm:gap-2 gap-1 items-center justify-center 
+        lg:px-2 md:px-2
+        px-1 py-2
+        lg:w-max-none
+        md:w-fit
+        w-auto
 
-                    <div className="flex flex-col place-items-center">
-                      <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
-                        <Counter from={0} to={185} duration={1.0} />+
-                      </p>
-                      <p className="popins text-[#4D4D4D] [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
-                        Successful project
-                      </p>
-                    </div>
+        "
+                  >
+                    <h4
+                      className="2xl:text-[32px] xl:text-[28px] lg:text-[24px]
+            xl:font-semibold 
+            md:text-4xl
+            leading-none
+            sm:text-[28px]
+            text-[18px]
+           font-semibold
+            "
+                    >
+                      185+
+                    </h4>
+                    <p className=" 2xl:text-[16px] xl:text-[16px] lg:text-[14px] md:text-lg sm:text-[16px] text-[9px] text-center ">
+                      Successfull project
+                    </p>
+                  </div>
+                  <div className="lg:h-[70%] lg:w-0.5 md:min-h-18 md:w-1 w-0.5  h-12 bg-[#333333]"></div>
+                  <div
+                    className=" text-[#333333] rounded-lg lg:w-fit xl:w-fit  2xl:w-auto
+        xl:px-2 xl:py-3 2xl:px-4 2xl:py-3 
+        flex flex-col sm:gap-2 gap-1 items-center justify-center 
+        lg:px-2 md:px-2
+        
+        px-1 py-2
+        lg:w-max-none
+        md:w-fit
+        w-auto
 
-                    <div className="h-[4vh] md:h-[4vh] 2xl:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
-
-                    <div className="flex flex-col  place-items-center ">
-                      <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
-                        <Counter from={0} to={45} duration={1.3} />+
-                      </p>
-                      <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
-                        Machines & Equipments
-                      </p>
-                    </div>
-                  </motion.div>
-                )}
-              </motion.div>
+        "
+                  >
+                    <h4
+                      className="2xl:text-[32px] xl:text-[28px] lg:text-[24px]
+            xl:font-semibold 
+            md:text-4xl
+            leading-none
+            sm:text-[28px]
+            text-[18px]
+           font-semibold
+            "
+                    >
+                      45+
+                    </h4>
+                    <p className=" 2xl:text-[16px] xl:text-[16px] lg:text-[14px] md:text-lg sm:text-[16px] text-[9px] text-center ">
+                      Machines & Equipments
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          {isMobile && (
-            <motion.div
-              className="flex gap-4 sm:gap-10 justify-center place-items-center text-[#333333] "
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.5 }}
-            >
-              {/* Clients */}
-              <div className="flex flex-col place-items-center">
-                <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
-                  <Counter from={0} to={125} duration={0.8} />+
-                </p>
-                <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
-                  Clients
-                </p>
-              </div>
-
-              <div className="h-[4vh] md:h-[4vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
-
-              <div className="flex flex-col place-items-center">
-                <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
-                  <Counter from={0} to={185} duration={1.0} />+
-                </p>
-                <p className="popins text-[#4D4D4D] [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
-                  Successful project
-                </p>
-              </div>
-
-              <div className="h-[4vh] md:h-[4vh] lg:h-[8vh] bg-black w-[1px] lg:w-0.5"></div>
-
-              <div className="flex flex-col  place-items-center ">
-                <p className="text-[1.5rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[1rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] popins-bold">
-                  <Counter from={0} to={45} duration={1.3} />+
-                </p>
-                <p className="popins [@media(min-width:300px)_and_(max-width:410px)]:text-[9px] text-[#4D4D4D] text-[10px] md:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.8rem] 2xl:text-[1rem]">
-                  Machines & Equipments
-                </p>
-              </div>
-            </motion.div>
-          )}
-          <div className="mt-8">
+          </section>
+          <div className=" px-2.5  md:px-8 lg:px-15 xl:px-30">
             <AboutHighlights></AboutHighlights>
           </div>
         </div>

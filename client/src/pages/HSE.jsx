@@ -47,14 +47,14 @@ const HSE = () => {
       </Helmet>
       <div className="bg-[F8F8F8]">
         <div
-          className="h-[45vh]  md:h-[45vh] lg:h-[45vh] xl:h-screen w-full"
+          className="relative overflow-hidden [@media(min-width:300px)_and_(max-width:400px)]:h-[55vh] h-[45vh]  md:h-[45vh] lg:h-[45vh] xl:h-screen w-full"
           id="hseBanner"
         >
           <div className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">
             {/* Animated Title */}
             <motion.p
               // className="hseBannerTitle [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.5rem] md:text-[2.5rem] md:leading-10 leading-6 lg:text-[4rem] text-[#FDC000] lg:leading-20"
-              className="px-1.5 md:px-0 lg:px-0 xl:px-0 fontMon text-[#FDC000] font-bold text-[1.2rem] leading-7 md:text-[2.5rem] md:leading-14 lg:text-[3.2rem] lg:leading-18 xl:text-[3.5rem] xl:leading-20  2xl:text-[4rem] 2xl:leading-19 z-300 hseBannerTitle"
+             className="text-[#FDC000] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -67,7 +67,7 @@ const HSE = () => {
             {/* Animated Description */}
             <motion.p
               // className="hseBannerDesc text-white text-[14px] md:text-[1.5rem] lg:text-[20px]"
-              className="text-white popins text-[0.7rem] md:text-[1.2rem] lg:text-[1.2rem] 2xl:text-[1.3rem] hseBannerDesc"
+              className="xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[700px] md:max-w-[500px] leading-relaxed text-white hseBannerDesc"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}

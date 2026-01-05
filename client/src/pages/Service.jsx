@@ -38,18 +38,18 @@ const Service = () => {
         {/* ===== BANNER SECTION ===== */}
         <div
           id="serviceBanner"
-          className="w-full   h-[45vh] md:h-[45vh] lg:h-[45vh] xl:h-[95vh] flex flex-col "
+          className="relative overflow-hidden w-full  [@media(min-width:300px)_and_(max-width:400px)]:min-h-[50vh]   min-h-[45vh] md:min-h-[45vh] lg:min-h-[50vh] xl:min-h-[95vh] flex flex-col "
         >
           <div className="flex flex-col gap-4 pt-[30%] md:pt-[12%]">
             {/* Heading Animation */}
             <motion.p
-              className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-white font-bold text-[1.2rem] leading-6 md:text-[2.5rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[3rem] 2xl:text-[4rem] xl:leading-19"
+              className="text-white px-2.5 md:px-8 lg:px-15 xl:px-30 xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              Your Trusted Partner for Every <br />
+              Your Trusted Partner for Every <br className="hidden sm:block" />
               Construction
               <span className="text-[#FDC000]"> Machine You Need</span>
             </motion.p>
@@ -61,7 +61,8 @@ const Service = () => {
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="px-2.5 md:px-8 lg:px-15 xl:px-30 text-white popins text-[0.6rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem]">
+              <p  className="px-2.5 md:px-8 lg:px-15 xl:px-30 xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[1000px] md:max-w-[700px] leading-relaxed text-white hseBannerDesc"
+             >
                 Delivering top-quality machinery and equipment to ensure every
                 project runs smoothly, safely, and efficiently.
               </p>

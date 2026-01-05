@@ -1,279 +1,148 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Button from "../component/common/Button";
+import NavLink from "../component/common/nav-link";
+import { Menu, X } from "lucide-react";
 import svbLogo from "../assets/SVB_Logo.png";
-import "../App.css";
-import "../CSS/Menu.css";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import SectionWrapper from "../component/common/SectionWrapper";
+import { Link, useLocation } from "react-router-dom";
 
-const Menu = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  const [hideOnScroll, setHideOnScroll] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [popup, setPopup] = useState(false);
-  const [isColored, setIsColored] = useState(false);
+const Header = () => {
+  const [open, setOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isAtTop, setIsAtTop] = useState(true);
 
   const location = useLocation();
-  const isLandingPage = location.pathname === "/";
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScrollDirection = () => {
+    const handleScroll = () => {
+      
       const currentScrollY = window.scrollY;
+      const vh = window.innerHeight;
 
-      // scrolling down → hide
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setHideOnScroll(true);
-      }
-      // scrolling up → show
-      else {
-        setHideOnScroll(false);
-      }
+      const heroTransparentEnd = vh * 1;   // 100vh
+      const heroEnd = vh * 1.5;             // ~150vh
 
-      lastScrollY = currentScrollY;
-    };
+      // -------------------------
+      // HOME PAGE LOGIC
+      // -------------------------
+      if (isHome) {
+        setIsAtTop(currentScrollY < heroTransparentEnd);
 
-    window.addEventListener("scroll", handleScrollDirection);
-    return () => window.removeEventListener("scroll", handleScrollDirection);
-  }, []);
-
-  useEffect(() => {
-    if (!isLandingPage) {
-      setShowMenu(true); // always show menu on other pages
-      return;
-    }
-
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setShowMenu(true);
-      } else {
-        setShowMenu(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isLandingPage]);
-
-  useEffect(() => {
-    if (!isLandingPage) {
-      setIsColored(true); // always colored on other pages
-      return;
-    }
-
-    const section = document.getElementById("secondSection");
-
-    const handleScroll = () => {
-      if (!section) return;
-      const rect = section.getBoundingClientRect();
-
-      if (rect.top <= 100) {
-        setIsColored(true);
-      } else {
-        setIsColored(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isLandingPage]);
-
-  // const handleResize = () => {
-  //   const width = window.innerWidth;
-
-  //   if (width < 740) {
-  //     setIsMobile(true);
-  //   } else {
-  //     setIsMobile(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   handleResize(); // Run once when mounted
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-
-  const menuItems = [
-    { name: "About Us", link: "/about-us" },
-    { name: "Services", link: "/services" },
-    { name: "Our Fleet", link: "/our-fleet-2" },
-    { name: "Portfolio", link: "/portfolio" },
-    { name: "Gallery", link: "/portfolio#gallery" },
-    { name: "HSE", link: "/hse" },
-  ];
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 739px)");
-
-    const handleChange = (e) => {
-      setIsMobile(e.matches);
-    };
-
-    // Run once on mount
-    setIsMobile(mediaQuery.matches);
-
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => mediaQuery.removeEventListener("change", handleChange);
-  }, []);
-
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (popup) {
-        // if click is NOT inside popup and NOT on hamburger icon
-        if (
-          !e.target.closest("#mobilePopup") &&
-          !e.target.closest("#hamburgerIcon")
-        ) {
-          setPopup(false);
+        // Always visible inside hero
+        if (currentScrollY < heroEnd) {
+          setShowHeader(true);
+          setLastScrollY(currentScrollY);
+          return;
         }
+      } else {
+        // -------------------------
+        // OTHER PAGES LOGIC
+        // -------------------------
+        setIsAtTop(false); // ALWAYS force background
       }
+
+      // -------------------------
+      // DEFAULT SCROLL BEHAVIOR
+      // -------------------------
+      if (currentScrollY > lastScrollY) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+
+      setLastScrollY(currentScrollY);
     };
 
-    document.addEventListener("click", handleClickOutside);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY, isHome]);
 
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, [popup]);
+  // Close mobile menu on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
 
   return (
-    <>
-      {/* ${hideOnScroll ? "-translate-y-full" : "translate-y-0"} */}
-      {/* <div
-        className={`
-    fixed top-0 left-0 border-2 border-red-500   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
-     lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
-    
-    
-    ${isColored ? "bg-[#333333]" : "bg-transparent"}
-   
-  `} */}
-      <div
-        className={` w-full fixed top-0 left-0 transition-all duration-500 z-999 flex  justify-between place-items-center min-h-15 md:h-17 lg:h-18 xl:h-25   px-2.5 md:px-8 lg:px-15 xl:px-30 
-    ${isColored ? "bg-[#333333]" : "bg-transparent"}
-    ${hideOnScroll ? "-translate-y-full" : "translate-y-0"}
-   
-  `}
+    <header
+      className={`
+        fixed top-0 left-0 w-full z-50
+        transition-all duration-300 ease-in-out
+        z-999
+        ${showHeader ? "translate-y-0" : "-translate-y-full"}
+        ${
+          isHome && isAtTop && !open
+            ? "bg-transparent"
+            : "bg-[#333333] shadow-lg"
+        }
+      `}
+    >
+      <section
+        className="
+          py-6 text-white mx-auto
+          px-3 sm:px-5 xl:px-30
+          flex items-center justify-between
+          xl:max-w-360 2xl:max-w-400
+        "
       >
-        <div className="">
-          <Link to="/">
-            {/* <img
-              src={svbLogo}
-              className="w-[15vw] h-[3.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[7.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[7vw] lg:w-[7vw] xl:w-[7vw] xl:h-[6vh] lg:h-[6vh]"
-            /> */}
+        {/* LOGO */}
+        <Link to="/">
+          <div className="w-24 h-9 sm:w-28 sm:h-11 md:w-32 md:h-12 lg:w-34.5 lg:h-13">
             <img
               src={svbLogo}
-              className=" w-24 h-9 md:w-19 md:h-9 lg:w-25 lg:h-10 xl:w-35 xl:h-13"
+              alt="svb-logo"
+              className="w-full h-full object-contain"
             />
+          </div>
+        </Link>
+
+        {/* DESKTOP MENU */}
+        <ul className="hidden lg:flex gap-7 font-medium text-white">
+          <NavLink className="text-lg font-semibold" to="/about-us">About Us</NavLink>
+          <NavLink className="text-lg font-semibold" to="/services">Services</NavLink>
+          <NavLink className="text-lg font-semibold" to="/our-fleet-2">Our Fleet</NavLink>
+          <NavLink className="text-lg font-semibold" to="/portfolio">Portfolio</NavLink>
+          <NavLink className="text-lg font-semibold" to="/gallery">Gallery</NavLink>
+          <NavLink className="text-lg font-semibold" to="/hse">HSE</NavLink>
+        </ul>
+
+        {/* ACTIONS */}
+        <div className="flex  items-center gap-4">
+
+          <Link to='/contact'>
+          
+          <Button text="Contact Us" />
           </Link>
-        </div>
-        {popup && (
-          <div
-            id="mobilePopup"
-            className="absolute right-5 top-[90px] w-[60vw] h-fit 
-  border border-white/20 
-  rounded-xl 
-  bg-white/40 
-  backdrop-blur-sm 
-  shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
-  flex flex-col 
-  z-[999]"
+
+
+          <button
+            onClick={() => setOpen(!open)}
+            className="lg:hidden text-white"
+            aria-label="Toggle menu"
           >
-            <nav className="flex flex-col text-[1.6rem] gap-5 p-4">
-              {menuItems.map((item) => {
-                const isActive =
-                  item.link === "/portfolio"
-                    ? location.pathname === "/portfolio" &&
-                      location.hash !== "#gallery"
-                    : item.link === "/portfolio#gallery"
-                    ? location.pathname === "/portfolio" &&
-                      location.hash === "#gallery"
-                    : location.pathname === item.link;
+            {open ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </section>
 
-                return (
-                  <li key={item.link} className="relative list-none">
-                    <NavLink
-                      to={item.link}
-                      onClick={() => setPopup(false)}
-                      className={`relative transition-all duration-300
-            ${isActive ? "text-[#FDC000]" : "text-black"}`}
-                    >
-                      {item.name}
-
-                      {/* underline */}
-                      <span
-                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#FDC000] transition-all duration-300
-              ${isActive ? "w-full" : "w-0"}`}
-                      />
-                    </NavLink>
-                  </li>
-                );
-              })}
-            </nav>
-          </div>
-        )}
-
-        {isMobile ? (
-          <div className="flex gap-7  ">
-            <Link to="/contact">
-              <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:py-1 [@media(min-width:300px)_and_(max-width:700px)]:px-[0.4rem] rounded-md flex hover:cursor-pointer">
-                Contact Us
-              </button>
-            </Link>
-            <i
-              id="hamburgerIcon"
-              class="fa-solid fa-bars [@media(min-width:300px)_and_(max-width:700px)]:text-[1.7rem] text-white z-[1000]"
-              onClick={() => setPopup(!popup)}
-            ></i>
-          </div>
-        ) : (
-          <>
-            <nav className="flex gap-7 list-none text-white">
-              {menuItems.map((item) => {
-                const isActive =
-                  item.link === "/portfolio"
-                    ? location.pathname === "/portfolio" &&
-                      location.hash !== "#gallery"
-                    : item.link === "/portfolio#gallery"
-                    ? location.pathname === "/portfolio" &&
-                      location.hash === "#gallery"
-                    : location.pathname === item.link;
-
-                return (
-                  <li key={item.link} className="relative group">
-                    <NavLink
-                      to={item.link}
-                      className={`relative popins transition-all duration-300
-            ${isActive ? "text-[#FDC000]" : "text-[#ECECEC]"}`}
-                    >
-                      {item.name}
-
-                      {/* underline */}
-                      <span
-                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#FDC000] transition-all duration-300
-              ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
-                      />
-                    </NavLink>
-                  </li>
-                );
-              })}
-            </nav>
-
-            <Link to="/contact">
-              <button
-                // className="menuButton [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] xl:h-[6vh] xl:w-[9vw] [@media(min-width:2500px)]:h-[5vh] bg-[#FDC000] text-black text-[1rem] rounded-[9px]  xl:text-[1rem] [@media(min-width:2500px)]:text-[1.4rem] transition duration-300 transform
-                // hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
-                className="menuButton bg-[#FDC000] text-[#333333] font-semibold rounded-lg  transition duration-300 transform hover:scale-105 hover:bg-[#ffcf33] hover:cursor-pointer md:text-lg lg:text-xl md:w-28 md:h-9 lg:w-34 lg:h-9 xl:w-37 xl:h-12 "
-              >
-                Contact Us
-              </button>
-            </Link>
-          </>
-        )}
+      {/* MOBILE MENU */}
+      <div
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          open ? "max-h-screen" : "max-h-0"
+        } bg-[#333333]`}
+      >
+        <ul className="flex text-white flex-col px-6 py-6 gap-5 font-medium border-t border-white/10">
+          <NavLink to="/about-us">About Us</NavLink>
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/our-fleet-2">Our Fleet</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
+          <NavLink to="/gallery">Gallery</NavLink>
+          <NavLink to="/hse">HSE</NavLink>
+        </ul>
       </div>
-    </>
+    </header>
   );
 };
 
-export default Menu;
+export default Header;

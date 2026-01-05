@@ -24,49 +24,45 @@ const scaleIn = {
   },
 };
 
-const   AboutHighlights = () => {
-
+const AboutHighlights = () => {
   const [isMobile, setIsMobile] = useState(false);
-  
-    const handleResize = () => {
-      const width = window.innerWidth;
-  
-      if (width < 740) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
+
+  const handleResize = () => {
+    const width = window.innerWidth;
+
+    if (width < 740) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
   return (
-    <div className="flex flex-col  gap-[80px]">
+    <div className="flex flex-col   gap-[80px]">
       <motion.div
-        className="flex flex-col gap-2 w-fit  "
+        className="flex flex-col  gap-6 md:gap-10 w-fit  items-start"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <p className="text-[#333333] text-[1.4rem] md:text-[1.4rem] lg:text-[2rem] font-semibold underline decoration-[#FDC000] underline-offset-8 mb-6">
-         Why Choose Us
-        </p>
+        <h3 className="text-[20px] inline lg:text-[32px] md:text-[30px] sm:text-[24px] border-b-2 border-b-primary font-semibold ">
+          Why Choose Us
+        </h3>
 
         <div className="flex flex-col gap-4">
-          <p 
-          // className="popins-bold text-[1.6rem] md:text-[3rem] lg:text-[4rem] md:leading-14 lg:leading-19"
-          className="fontMon text-[#333333] font-bold text-[1.2rem] leading-6 md:text-[2.4rem] md:leading-14 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19"
+          <p
+            // className="popins-bold text-[1.6rem] md:text-[3rem] lg:text-[4rem] md:leading-14 lg:leading-19"
+            className="text-[#333333] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
           >
-            Know why we’re the <span className="text-[#FCD000]">trusted <br/> partner</span>  for every construction <br/> need.
+            Know why we’re the{" "}
+            <span className="text-[#FCD000]">
+              trusted <br /> partner
+            </span>{" "}
+            for every construction <br /> need.
           </p>
-          {isMobile ? (
-            <p className="text-[#333333] text-[0.8rem]">
-              A fleet engineered for strength, accuracy, and <br /> unmatched
-              efficiency.
-            </p>
-          ) : (
-            <p className="text-[#333333] md:text-[1.4rem] lg:text-[1.3rem]">
-              A fleet engineered for strength, accuracy, and unmatched
-              efficiency.
-            </p>
-          )}
+
+          <p className="xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[700px] md:max-w-[500px] leading-relaxed text-[#333333]">
+            A fleet engineered for strength, accuracy, and unmatched efficiency.
+          </p>
         </div>
       </motion.div>
 

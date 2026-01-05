@@ -28,32 +28,29 @@ const DS = () => {
   let nav = useNavigate();
   return (
     <>
-      <div className=" px-2.5 md:px-8 lg:px-15 xl:px-30">
-        <div className="flex flex-col gap-7 lg:gap-10 mt-[120px] lg:mt-[200px] mt-[40px] ">
+      <div className=" px-2.5 md:px-8 lg:px-15 xl:px-30 my-15 md:my-20 flex flex-col gap-10">
+        <div className="flex flex-col gap-7 lg:gap-10 ">
           <div className="flex  place-items-center gap-3">
-            <p className="text-[#333333] fontMon text-[1rem] md:text-[1.5rem] lg:text-[1.4rem] xl:text-[2rem] font-semibold underline decoration-[#FDC000] underline-offset-8">
-              Reliable Dewatering System
-            </p>
-            <img
-              onClick={() => nav("/srp")}
-              src={fb}
-              className="h-[1.5vh] w-[3vw] md:h-[2vh] lg:h-[4.5vh] lg:w-[2.5vw] transition-transform duration-300 hover:scale-110 cursor-pointer"
-            />
+            
+              <h3 className="text-[20px] inline lg:text-[32px] md:text-[30px] sm:text-[24px] border-b-2 border-b-primary font-semibold">
+                Reliable Dewatering System
+              </h3>
+            
           </div>
           <div className="flex flex-col gap-2 lg:gap-4">
-            <p className="fontMon font-bold text-[1.6rem] md:text-[3rem] lg:text-[4rem] md:leading-14 lg:leading-[69px] text-[#333333]">
+            <p className="text-[#333333] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
               <span className="text-[#FDC000]">Dewatering & Groundwater </span>{" "}
               <br /> Control Services
             </p>
-            <p className="px-2.5 md:px-0 lg:px-0 xl:px-0 text-[#333333] popins text-[0.5rem] md:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem] z-300">
+            <p className="xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[700px] md:max-w-[500px] leading-relaxed text-[#333333]">
               Dewatering involves controlled removal of groundwater to maintain
-              dry and safe <br /> excavation sites, protecting foundations and
+              dry and safe  excavation sites, protecting foundations and
               ensuring smooth construction operations.
             </p>
           </div>
         </div>
 
-        <div className="   w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px]">
+        <div className="   w-full flex flex-col place-items-center gap-[27px] md:gap-[150px] lg:gap-[150px] ">
           <div className=" md:mx-0 py-5 md:py-0  w-full  md:max-h-100 lg:max-h-100  2xl:max-h-110 gap-y-5 flex flex-col md:flex-row  rounded-lg place-items-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div
@@ -237,7 +234,7 @@ const DS = () => {
         </div>
 
         {isMobile ? (
-          <div className="relative w-full overflow-hidden my-20">
+          <div className="relative w-full overflow-hidden">
             <div className="marquee flex items-center whitespace-nowrap">
               <Link to="/ese" className="mx-8 md:text-[1.3rem] font-semibold">
                 Excavation Soil / Earth
@@ -283,7 +280,7 @@ const DS = () => {
             </div>
           </div>
         ) : (
-          <div className="flex w-full   my-20  md:text-[1.3rem] font-semibold justify-between mx-2 md:justify-evenly  overfow-hidden">
+          <div className="flex w-full     md:text-[1.3rem] font-semibold justify-between mx-2 md:justify-evenly  overfow-hidden">
             <Link to="/ese" className=" hover:underline">
               Excavation Soil / Earth
             </Link>

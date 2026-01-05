@@ -149,7 +149,7 @@ const Fleet = () => {
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p className="px-2.5 md:px-0 lg:px-0 xl:px-0 fontMon text-white font-bold text-[1.5rem] leading-8 md:text-[3rem] md:leading-16 lg:text-[3.5rem] lg:leading-18  xl:text-[4rem] xl:leading-19 z-300">
+              <p className="px-2.5 md:px-0 lg:px-0 xl:px-0 fontMon text-white font-bold text-[1.5rem] md:text-[3rem]  lg:text-[3.5rem]   xl:text-[4rem] leading-tight z-100">
                 Powering <span className="text-[#FDC000]">Progress</span> with{" "}
                 <br /> Modern Machinery
               </p>
