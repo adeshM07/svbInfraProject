@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Menu from "./pages/Menu";
 import Landing from "./pages/Landing";
 import Footer from "./pages/Footer";
+import FooterNew from "./pages/FooterNew";
 import AboutPage from "./pages/AboutPage";
 import Service from "./pages/Service";
 import Fleet from "./pages/Fleet";

@@ -67,6 +67,7 @@ const Footer = () => {
                     { label: "Services", to: "/services" },
                     { label: "Our Fleet", to: "/our-fleet-2" },
                     { label: "Portfolio", to: "/portfolio" },
+                    { label: "Gallery", to: "/portfolio#gallery" },
                     { label: "HSE", to: "/hse" },
                   ].map((item, index) => (
                     <Link
