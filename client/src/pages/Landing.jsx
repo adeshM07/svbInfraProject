@@ -432,7 +432,7 @@ const Landing = () => {
                   </p>
                 )}
                 <div
-                  className="absolute overflow-hidden   -top-4 w-full border-2 left-[65%]  md:left-[60%] md:-top-10  lg:left-[55%] lg:-top-24  xl:left-[55%] xl:-top-20"
+                  className="absolute overflow-hidden   -top-4 w-full  left-[65%]  md:left-[60%] md:-top-10  lg:left-[55%] lg:-top-24  xl:left-[55%] xl:-top-20"
                   // className="absolute -top-4  md:-top-10 lg:-top-24 xl:-top-20"
                 >
                   <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll">
