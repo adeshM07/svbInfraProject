@@ -206,11 +206,11 @@ const Fleet = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className=" overflow-hidden bg-white"
+          className=" overflow-hidden bg-white py-10 md:py-20 flex flex-col gap-10"
         >
           {/* Section Title */}
           <motion.div
-            className=" px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-2 w-fit  my-10 md:my-25"
+            className=" px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-2 w-fit   "
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -242,7 +242,7 @@ const Fleet = () => {
           <motion.div 
           // className="flex gap-x-8 gap-y-10 w-[85vw] md:w-[77vw] xl:w-[85vw] 2xl:w-[78vw] justify-between flex-wrap  mb-20"
           //
-          className=" px-5 md:px-8 lg:px-15 xl:px-30 my-5 gap-y-10 flex flex-wrap w-full justify-evenly md:justify-between lg:justify-evenly xl:justify-between"
+          className=" px-5 md:px-8 lg:px-15 xl:px-30  gap-y-10 flex flex-wrap w-full justify-evenly md:justify-between lg:justify-evenly xl:justify-between"
            >
             {cardDetails.map((item, index) => (
               <motion.div
