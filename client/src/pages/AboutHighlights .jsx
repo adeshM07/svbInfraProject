@@ -54,10 +54,10 @@ const AboutHighlights = () => {
             className="text-[#333333] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
           >
             Know why we’re the{" "}
-            <span className="text-[#FCD000]">
-              trusted <br /> partner
-            </span>{" "}
-            for every construction <br /> need.
+            <span className="text-[#FCD000] mr-2 sm:mr-4">
+              trusted <br className="hidden sm:block" /> partner
+            </span>
+            for every construction <br className="hidden sm:block" /> need.
           </p>
 
           <p className="xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[700px] md:max-w-[500px] leading-relaxed text-[#333333]">

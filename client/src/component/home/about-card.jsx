@@ -8,10 +8,12 @@ const AboutSectionCard = ({ number, label }) => {
         flex sm:gap-2 gap-1 items-center justify-center 
         lg:px-2 md:px-2
         px-1 py-2
+    
         lg:w-max-none
         md:w-[220px]
         w-auto
-
+        
+        min-h-[50px] sm:min-h-[70px] xl:min-h-[80px]
         '>
             <h4 className='2xl:text-[28px] xl:text-[28px]
             xl:font-semibold 

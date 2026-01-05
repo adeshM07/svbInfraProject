@@ -20,8 +20,10 @@ import Button from "../component/common/Button";
 import NavLink from "../component/common/nav-link";
 import aboutBanner from "../assets/aboutBannerIMG.png";
 import SectionWrapper from "../component/common/SectionWrapper";
+import AboutSectionCard from "../component/home/about-card";
 
 const AboutPage = () => {
+  
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
@@ -33,7 +35,20 @@ const AboutPage = () => {
       setIsMobile(false);
     }
   };
-
+  const cardData = [
+    {
+      number: "125+",
+      label: "Clients",
+    },
+    {
+      number: "185+",
+      label: "Successfull projects",
+    },
+    {
+      number: "45+",
+      label: "Machines & Equipments",
+    },
+  ];
   useEffect(() => {
     handleResize(); // Run once when mounted
     window.addEventListener("resize", handleResize);
@@ -140,7 +155,7 @@ const AboutPage = () => {
                     contract civil engineering sector.
                   </p>
                 </div>
-                <div className="w-full    items-center flex justify-between lg:justify-normal lg:gap-3 xl:gap-7 2xl:gap-5">
+                {/* <div className="w-full    items-center flex justify-between lg:justify-normal lg:gap-3 xl:gap-7 2xl:gap-5">
                   <div
                     className=" text-[#333333] rounded-lg lg:w-fit  2xl:w-auto
         xl:px-2 xl:py-3 2xl:px-4 2xl:py-3 
@@ -228,7 +243,16 @@ const AboutPage = () => {
                       Machines & Equipments
                     </p>
                   </div>
-                </div>
+                </div> */}
+                 <div className="items-center sm:justify-between md:justify-start justify-start gap-2 xl:hidden 2xl:flex lg:hidden md:flex sm:flex flex ">
+                    {cardData.map((card, index) => (
+                      <AboutSectionCard
+                        number={card.number}
+                        label={card.label}
+                        key={index}
+                      />
+                    ))}
+                  </div>
               </div>
             </div>
           </section>

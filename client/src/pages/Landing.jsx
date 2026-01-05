@@ -184,11 +184,11 @@ const Landing = () => {
                 machinery and expert execution.
               </p>
               <div className="flex">
-                <Button text="See Our Fleet" />
+                <Link to="/our-fleet-2">
+                  <Button text="See Our Fleet" />
+                </Link>
               </div>
             </div>
-
-         
           </div>
         </div>
 
@@ -306,7 +306,9 @@ const Landing = () => {
                     ))}
                   </div>
                   <div className="flex justify-end">
-                    <Button text={"Know More"} />
+                    <Link to="/about-us">
+                      <Button text={"Know More"} />
+                    </Link>
                   </div>
 
                   {/* <PropertyCard /> */}
@@ -362,11 +364,12 @@ const Landing = () => {
                     Starting out with only one JCB 3D, we now keep a
                     well-maintained fleet of trucks and equipment.
                   </p>
-
-                  <Button
-                    text="Explore All"
-                    className="mt-10 lg:block md:hidden hidden"
-                  />
+                  <Link to="/our-fleet-2">
+                    <Button
+                      text="Explore All"
+                      className="mt-10 lg:block md:hidden hidden"
+                    />
+                  </Link>
                 </div>
 
                 {/* Right Marquee */}
@@ -382,144 +385,147 @@ const Landing = () => {
                                             sm:w-[260px] sm:h-[300px]
                                             lg:w-[282px] lg:h-[324px]
                                             rounded-lg shadow-md object-cover
-                                        "
+                           "
                         />
                       </div>
                     ))}
                   </div>
                 </div>
                 <div className="flex lg:hidden md:block block">
-                  <Button text="Explore All" className="mt-0 " />
+                  <Link to="/our-fleet-2">
+                    <Button text="Explore All" className="mt-0 " />
+                  </Link>
                 </div>
               </div>
             </div>
             <div className=" ">
-            <div className="custom-shape-container">
-              <video
-                src={projectVideo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
-              />
-            </div>
-            <div className="  flex w-full py-2 lg:py-6 relative ">
-              {isMobile ? (
-                <p className="text-[#4D4D4D]  w-[45vw] text-justify  popins  text-[8px] lg:text-[16px]  lg:mt-5 font-semibold ">
-                  We have successfully completed a wide range of earthwork and
-                  excavation projects for leading clients across Karnataka and Andhra Pardesh. Our
-                  portfolio includes residential, commercial, and infrastructure
-                  developments delivered with quality and precision.
-                </p>
-              ) : (
-                <p className="text-[#4D4D4D] w-[48%] text-justify popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem]  lg:text-[1.5rem] xl:text-[1.2rem] lg:mt-3 font-semibold ">
-                  We have successfully completed a wide range of 
-                  earthwork and excavation projects for leading  clients
-                  across Karnataka and Andhra Pardesh.  Our portfolio includes  residential,
-                  commercial,   and infrastructure developments delivered
-                  with quality and precision.
-                </p>
-              )}
-              <div 
-              className="absolute overflow-hidden -top-4 w-full left-[65%]  md:left-[60%] md:-top-10  lg:left-[55%] lg:-top-24  xl:left-[55%] xl:-top-20"
-              // className="absolute -top-4  md:-top-10 lg:-top-24 xl:-top-20"
-              >
-                <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll">
-                  {[
-                    {
-                      src: c1,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
-                    },
-                    {
-                      src: c2,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
-                    },
-                    {
-                      src: c3,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
-                    },
-                    {
-                      src: c4,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
-                    },
-                    {
-                      src: c5,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
-                    },
-                    {
-                      src: c6,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
-                    },
-                    {
-                      src: c7,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
-                    },
-                    {
-                      src: c8,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
-                    },
-                    {
-                      src: c9,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
-                    },
-                    {
-                      src: c10,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
-                    },
-                    {
-                      src: c11,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
-                    },
-                    {
-                      src: c12,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
-                    },
-                    {
-                      src: c13,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
-                    },
-                    {
-                      src: c14,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
-                    },
-                    {
-                      src: c15,
-                      video:
-                        "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
-                    },
-                  ].map((item, index) => (
-                    <img
-                      key={index}
-                      src={`${item.src}`}
-                      onClick={() => setProjectVideo(item.video)}
-                      alt=""
-                      className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit object-cover 
+              <div className="custom-shape-container">
+                <video
+                  src={projectVideo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className="  flex w-full py-2 lg:py-6 relative ">
+                {isMobile ? (
+                  <p className="text-[#4D4D4D]  w-[45vw] text-justify  popins  text-[8px] lg:text-[16px]  lg:mt-5 font-semibold ">
+                    We have successfully completed a wide range of earthwork and
+                    excavation projects for leading clients across Karnataka and
+                    Andhra Pardesh. Our portfolio includes residential,
+                    commercial, and infrastructure developments delivered with
+                    quality and precision.
+                  </p>
+                ) : (
+                  <p className="text-[#4D4D4D] w-[48%] text-justify popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem]  lg:text-[1.5rem] xl:text-[1.2rem] lg:mt-3 font-semibold ">
+                    We have successfully completed a wide range of earthwork and
+                    excavation projects for leading clients across Karnataka and
+                    Andhra Pardesh. Our portfolio includes residential,
+                    commercial, and infrastructure developments delivered with
+                    quality and precision.
+                  </p>
+                )}
+                <div
+                  className="absolute overflow-hidden -top-4 w-full left-[65%]  md:left-[60%] md:-top-10  lg:left-[55%] lg:-top-24  xl:left-[55%] xl:-top-20"
+                  // className="absolute -top-4  md:-top-10 lg:-top-24 xl:-top-20"
+                >
+                  <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll">
+                    {[
+                      {
+                        src: c1,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                      },
+                      {
+                        src: c2,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                      },
+                      {
+                        src: c3,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                      },
+                      {
+                        src: c4,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
+                      },
+                      {
+                        src: c5,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
+                      },
+                      {
+                        src: c6,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
+                      },
+                      {
+                        src: c7,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                      },
+                      {
+                        src: c8,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                      },
+                      {
+                        src: c9,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                      },
+                      {
+                        src: c10,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
+                      },
+                      {
+                        src: c11,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
+                      },
+                      {
+                        src: c12,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
+                      },
+                      {
+                        src: c13,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                      },
+                      {
+                        src: c14,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                      },
+                      {
+                        src: c15,
+                        video:
+                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                      },
+                    ].map((item, index) => (
+                      <img
+                        key={index}
+                        src={`${item.src}`}
+                        onClick={() => setProjectVideo(item.video)}
+                        alt=""
+                        className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit object-cover 
            transition-transform duration-300 hover:scale-115 cursor-pointer"
-                    />
-                  ))}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
             <div
               id="landing-contact"
               // className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw]   text-white md:h-[23vh] lg:h-[37vh]   flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
