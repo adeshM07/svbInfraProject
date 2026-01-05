@@ -91,7 +91,7 @@ const HSE = () => {
             <div className="flex animate-scroll  gap-[2px] lg:gap-[24px] min-w-full">
               <img
                 src={c1}
-                className="w-[47vw]  h-[30vh] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
+                className="min-w-[47vw]  min-h-[30vh] lg:w-[18vw] lg:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c2}
