@@ -47,7 +47,7 @@ const HSE = () => {
       </Helmet>
       <div className="bg-[F8F8F8]">
         <div
-          className="relative overflow-hidden [@media(min-width:300px)_and_(max-width:400px)]:h-[55vh] h-[45vh]  md:h-[45vh] lg:h-[45vh] xl:h-screen w-full"
+          className="relative overflow-hidden [@media(min-width:300px)_and_(max-width:400px)]:h-[55vh] h-[50vh]  md:h-[45vh] lg:h-[45vh] xl:h-screen w-full"
           id="hseBanner"
         >
           <div className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">
