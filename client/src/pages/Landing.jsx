@@ -432,95 +432,99 @@ const Landing = () => {
                   </p>
                 )}
                 <div
-                  className="absolute overflow-hidden -top-4 w-full left-[65%]  md:left-[60%] md:-top-10  lg:left-[55%] lg:-top-24  xl:left-[55%] xl:-top-20"
+                  className="absolute overflow-hidden   -top-4 w-full border-2 left-[65%]  md:left-[60%] md:-top-10  lg:left-[55%] lg:-top-24  xl:left-[55%] xl:-top-20"
                   // className="absolute -top-4  md:-top-10 lg:-top-24 xl:-top-20"
                 >
                   <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll">
-                    {[
-                      {
-                        src: c1,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
-                      },
-                      {
-                        src: c2,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
-                      },
-                      {
-                        src: c3,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
-                      },
-                      {
-                        src: c4,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
-                      },
-                      {
-                        src: c5,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
-                      },
-                      {
-                        src: c6,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
-                      },
-                      {
-                        src: c7,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
-                      },
-                      {
-                        src: c8,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
-                      },
-                      {
-                        src: c9,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
-                      },
-                      {
-                        src: c10,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
-                      },
-                      {
-                        src: c11,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
-                      },
-                      {
-                        src: c12,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
-                      },
-                      {
-                        src: c13,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
-                      },
-                      {
-                        src: c14,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
-                      },
-                      {
-                        src: c15,
-                        video:
-                          "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
-                      },
-                    ].map((item, index) => (
-                      <img
-                        key={index}
-                        src={`${item.src}`}
-                        onClick={() => setProjectVideo(item.video)}
-                        alt=""
-                        className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit object-cover 
+                    {[...Array(2)].map((_, duplicateIndex) => (
+                      <React.Fragment key={duplicateIndex}>
+                        {[
+                          {
+                            src: c1,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                          },
+                          {
+                            src: c2,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                          },
+                          {
+                            src: c3,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                          },
+                          {
+                            src: c4,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
+                          },
+                          {
+                            src: c5,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
+                          },
+                          {
+                            src: c6,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
+                          },
+                          {
+                            src: c7,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                          },
+                          {
+                            src: c8,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                          },
+                          {
+                            src: c9,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                          },
+                          {
+                            src: c10,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
+                          },
+                          {
+                            src: c11,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
+                          },
+                          {
+                            src: c12,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
+                          },
+                          {
+                            src: c13,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                          },
+                          {
+                            src: c14,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                          },
+                          {
+                            src: c15,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                          },
+                        ].map((item, index) => (
+                          <img
+                            key={`${duplicateIndex}-${index}`}
+                            src={`${item.src}`}
+                            onClick={() => setProjectVideo(item.video)}
+                            alt=""
+                            className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit object-cover 
            transition-transform duration-300 hover:scale-115 cursor-pointer"
-                      />
+                          />
+                        ))}
+                      </React.Fragment>
                     ))}
                   </div>
                 </div>
