@@ -244,7 +244,7 @@ const AboutPage = () => {
                     </p>
                   </div>
                 </div> */}
-                 <div className="items-center sm:justify-between md:justify-start justify-start gap-2 xl:hidden 2xl:flex lg:hidden md:flex sm:flex flex ">
+                 <div className="items-center sm:justify-between md:justify-start justify-start gap-2  2xl:flex  md:flex sm:flex flex ">
                     {cardData.map((card, index) => (
                       <AboutSectionCard
                         number={card.number}

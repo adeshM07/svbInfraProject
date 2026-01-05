@@ -76,6 +76,7 @@ const Header = () => {
     <header
       className={`
         fixed top-0 left-0 w-full z-50
+        xl:max-w-360 2xl:max-w-400 
         transition-all duration-300 ease-in-out
         z-999
         ${showHeader ? "translate-y-0" : "-translate-y-full"}

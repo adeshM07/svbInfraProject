@@ -196,7 +196,7 @@ const Landing = () => {
         <SectionWrapper>
           <div
             id="secondSection"
-            className="w-full flex flex-col   gap-15 md:gap-25   bg-[#F8F8F8] py-10 md:py-25"
+            className="w-full flex flex-col   gap-15 md:gap-25    py-10 md:py-25"
           >
             <div className="flex flex-col gap-10">
               {/* <h2 className='text-4xl font-bold '>About our company</h2> */}
@@ -218,8 +218,10 @@ const Landing = () => {
                         w-full
                         overflow-hidden
                         rounded-xl
-                        xl:min-h-[620px]
-                        xl:min-w-[620px]
+                        2xl:min-h-[620px]
+                        2xl:min-w-[620px]
+                        xl:min-h-[580px]
+                        xl:min-w-[580px]
                         lg:min-h-[480px]
                         lg:min-w-[480px]
                         md:min-h-[200px]
@@ -254,7 +256,7 @@ const Landing = () => {
                 >
                   {/* Your content here */}
                   <h1
-                    className="lg:block px-2.5 py-3 bg-background rounded-bl-lg 
+                    className=" lg:block px-2.5 py-3 bg-white rounded-bl-lg 
                         2xl:text-6xl
                         xl:text-[58px] lg:text-[56px] md:text-5xl 
                         md:mr-4 sm:text-4xl text-2xl font-bold 
@@ -276,7 +278,7 @@ const Landing = () => {
                         </h1> */}
 
                   <p
-                    className="xl:text-xl md:mt-10 w-full
+                    className=" md:mt-10 w-full
                          lg:mt-[170px] mt-0 lg:text-xl 
                         md:text-lg text-sm lg:max-w-[700px] 
                         md:max-w-auto leading-relaxed
