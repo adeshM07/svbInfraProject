@@ -17,12 +17,20 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      
       const currentScrollY = window.scrollY;
       const vh = window.innerHeight;
 
-      const heroTransparentEnd = vh * 1;   // 100vh
-      const heroEnd = vh * 1.5;             // ~150vh
+      // ✅ ALWAYS show header at top
+      if (currentScrollY <= 5) {
+        setShowHeader(true);
+        setIsAtTop(true);
+        setLastScrollY(0);
+        return;
+      }
+
+    
+      const heroTransparentEnd = vh * 1; // 100vh
+      const heroEnd = vh * 1.5; // ~150vh
 
       // -------------------------
       // HOME PAGE LOGIC
@@ -99,22 +107,31 @@ const Header = () => {
 
         {/* DESKTOP MENU */}
         <ul className="hidden lg:flex gap-7 font-medium text-white">
-          <NavLink className="text-lg font-semibold" to="/about-us">About Us</NavLink>
-          <NavLink className="text-lg font-semibold" to="/services">Services</NavLink>
-          <NavLink className="text-lg font-semibold" to="/our-fleet-2">Our Fleet</NavLink>
-          <NavLink className="text-lg font-semibold" to="/portfolio">Portfolio</NavLink>
-          <NavLink className="text-lg font-semibold" to="/gallery">Gallery</NavLink>
-          <NavLink className="text-lg font-semibold" to="/hse">HSE</NavLink>
+          <NavLink className="text-lg font-semibold" to="/about-us">
+            About Us
+          </NavLink>
+          <NavLink className="text-lg font-semibold" to="/services">
+            Services
+          </NavLink>
+          <NavLink className="text-lg font-semibold" to="/our-fleet-2">
+            Our Fleet
+          </NavLink>
+          <NavLink className="text-lg font-semibold" to="/portfolio">
+            Portfolio
+          </NavLink>
+          <NavLink className="text-lg font-semibold" to="/gallery">
+            Gallery
+          </NavLink>
+          <NavLink className="text-lg font-semibold" to="/hse">
+            HSE
+          </NavLink>
         </ul>
 
         {/* ACTIONS */}
         <div className="flex  items-center gap-4">
-
-          <Link to='/contact'>
-          
-          <Button text="Contact Us" />
+          <Link to="/contact">
+            <Button text="Contact Us" />
           </Link>
-
 
           <button
             onClick={() => setOpen(!open)}
