@@ -113,9 +113,8 @@ const AboutPage = () => {
         </div>
         <div className=" flex flex-col my-[70px] lg:my-[100px] xl:my-[120px] gap-30">
           <section
-            className=" mx-auto
-        px-3 sm:px-5 xl:px-30
-        xl:max-w-360 2xl:max-w-400  gap-10 flex flex-col items-start "
+            className=" 
+        px-3 sm:px-5 xl:px-30  gap-10 flex flex-col items-start "
           >
             <h3 className="text-[20px] lg:text-[32px] md:text-[30px] sm:text-[24px] border-b-2 border-b-primary font-semibold ">
               About our company
