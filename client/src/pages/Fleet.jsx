@@ -210,7 +210,7 @@ const Fleet = () => {
         >
           {/* Section Title */}
           <motion.div
-            className="  mx-auto
+            className="  
         px-3 sm:px-5 xl:px-30  flex flex-col gap-2 w-fit   "
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}

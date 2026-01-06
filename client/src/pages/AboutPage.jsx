@@ -248,7 +248,7 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-          <div className="  mx-auto
+          <div className="  
         px-3 sm:px-5 xl:px-30">
             <AboutHighlights></AboutHighlights>
           </div>

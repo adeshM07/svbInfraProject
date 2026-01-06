@@ -167,7 +167,7 @@ const PortFolio = () => {
             </motion.div>
           </div>
         </section>
-        <section className=" mx-auto
+        <section className=" 
         px-3 sm:px-5 xl:px-30 flex flex-col gap-12 overflow-hidden ">
           <p className="fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
             Our Latest Projects
@@ -213,7 +213,7 @@ const PortFolio = () => {
           </div>
         </section>
         {/* <section className="  flex flex-col gap-12 overflow-hidden"></section> */}
-        <p className=" mx-auto
+        <p className="
         px-3 sm:px-5 xl:px-30 fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
           Reviews and ratings
         </p>

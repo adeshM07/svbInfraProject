@@ -43,7 +43,7 @@ const Service = () => {
           <div className="flex flex-col gap-4 pt-[30%] md:pt-[12%]">
             {/* Heading Animation */}
             <motion.p
-              className="text-white  mx-auto
+              className="text-white  
         px-3 sm:px-5 xl:px-30  xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ const Service = () => {
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p  className=" mx-auto
+              <p  className=" 
         px-3 sm:px-5 xl:px-30 xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[1000px] md:max-w-[700px] leading-relaxed text-white hseBannerDesc"
              >
                 Delivering top-quality machinery and equipment to ensure every
