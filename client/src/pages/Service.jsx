@@ -43,7 +43,8 @@ const Service = () => {
           <div className="flex flex-col gap-4 pt-[30%] md:pt-[12%]">
             {/* Heading Animation */}
             <motion.p
-              className="text-white px-2.5 md:px-8 lg:px-15 xl:px-30 xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
+              className="text-white  mx-auto
+        px-3 sm:px-5 xl:px-30  xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -61,7 +62,8 @@ const Service = () => {
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p  className="px-2.5 md:px-8 lg:px-15 xl:px-30 xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[1000px] md:max-w-[700px] leading-relaxed text-white hseBannerDesc"
+              <p  className=" mx-auto
+        px-3 sm:px-5 xl:px-30 xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[1000px] md:max-w-[700px] leading-relaxed text-white hseBannerDesc"
              >
                 Delivering top-quality machinery and equipment to ensure every
                 project runs smoothly, safely, and efficiently.
@@ -72,7 +74,8 @@ const Service = () => {
 
         {/* ===== SERVICE CARDS ===== */}
         <motion.div
-          className="px-2.5 md:px-8 lg:px-15 xl:px-30  w-fit flex flex-col  gap-6 lg:gap-10 py-5 md:py-0   [@media(min-width:650px)_and_(max-width:1200px)]:-mt-[140px]  md:-mt-[150px] lg:-mt-[150px] xl:-mt-[130px] pb-20 w-full"
+          className=" mx-auto
+        px-3 sm:px-5 xl:px-30  w-fit flex flex-col  gap-6 lg:gap-10 py-5 md:py-0   [@media(min-width:650px)_and_(max-width:1200px)]:-mt-[140px]  md:-mt-[150px] lg:-mt-[150px] xl:-mt-[130px] pb-20 w-full"
           // initial={{ opacity: 0, y: 50 }}
           // whileInView={{ opacity: 1, y: 0 }}
           // transition={{ duration: 1, ease: "easeOut" }}

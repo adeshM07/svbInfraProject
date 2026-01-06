@@ -50,7 +50,8 @@ const HSE = () => {
           className="relative overflow-hidden [@media(min-width:300px)_and_(max-width:400px)]:h-[55vh] h-[50vh]  md:h-[45vh] lg:h-[45vh] xl:h-screen w-full"
           id="hseBanner"
         >
-          <div className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">
+          <div className=" mx-auto
+        px-3 sm:px-5 xl:px-30 flex flex-col gap-[20px] lg:gap-[12px] pt-[80px] lg:pt-[195px]">
             {/* Animated Title */}
             <motion.p
               // className="hseBannerTitle [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.5rem] md:text-[2.5rem] md:leading-10 leading-6 lg:text-[4rem] text-[#FDC000] lg:leading-20"
@@ -152,7 +153,8 @@ const HSE = () => {
           </motion.div>
         )}
 
-        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:my-[100px] px-2.5 md:px-8 lg:px-15 xl:px-30">
+        <div className="flex flex-col gap-7 lg:gap-10 mt-[70px] lg:my-[100px]  mx-auto
+        px-3 sm:px-5 xl:px-30">
           {/* Section Heading */}
           <motion.p
             // className="text-[14px] md:text-[1.3rem] lg:text-[2rem] underline decoration-[#FDC000] underline-offset-8 fontMon font-semibold text-[#333333]"
@@ -205,7 +207,8 @@ const HSE = () => {
           </motion.div>
         </div>
 
-        <div className=" px-2.5 md:px-8 lg:px-15 xl:px-30  w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px] xl:gap-[120px] xl:mb-30">
+        <div className="  mx-auto
+        px-3 sm:px-5 xl:px-30  w-full flex flex-col place-items-center gap-[27px] my-14 md:gap-[150px] lg:gap-[150px] lg:my-[81px] xl:gap-[120px] xl:mb-30">
           <div className=" md:mx-0 py-5 md:py-0  w-full  md:max-h-100 lg:max-h-100  2xl:max-h-110 gap-y-5 flex flex-col md:flex-row  rounded-lg place-items-center">
             {/* ===== IMAGE (Fades In Smoothly) ===== */}
             <motion.div

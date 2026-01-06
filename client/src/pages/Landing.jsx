@@ -163,7 +163,8 @@ const Landing = () => {
       </Helmet>
       <div className=" bg-transparent w-full ">
         <div
-          className={`w-full  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700 px-2.5 md:px-8 lg:px-15 xl:px-30
+          className={`w-full  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700  
+        px-3 sm:px-5 xl:px-30
   ${applyEffect ? "banner-active" : ""}`}
         >
           <div
@@ -193,10 +194,11 @@ const Landing = () => {
         </div>
 
         {/* <ProjectVideoBanner></ProjectVideoBanner> */}
-        <SectionWrapper>
+      
           <div
             id="secondSection"
-            className="w-full flex flex-col   gap-15 md:gap-25    py-10 md:py-25"
+            className=" mx-auto
+        px-3 sm:px-5 xl:px-30 w-full bg-white flex flex-col   gap-15 md:gap-25    py-10 md:py-25"
           >
             <div className="flex flex-col gap-10">
               {/* <h2 className='text-4xl font-bold '>About our company</h2> */}
@@ -327,6 +329,7 @@ const Landing = () => {
                 ))}
               </div>
             </div>
+
             {/* pillar */}
             <div className="lg:pb-25 md:pb-16 sm:pb-14 pb-10 flex-col gap-10 items-start">
               {/* Animated Heading */}
@@ -566,7 +569,6 @@ const Landing = () => {
               </Link>
             </div>
           </div>
-        </SectionWrapper>
       </div>
     </>
   );

@@ -105,7 +105,8 @@ const PortFolio = () => {
         <link rel="canonical" href="https://svbinfraprojects.com/portfolio" />
       </Helmet>
       <div className="flex  flex-col gap-10 lg:gap-[13vh] my-13 lg:my-30 ">
-        <section className="flex  flex-col gap-8 lg:gap-8 px-2.5 md:px-8 lg:px-15 xl:px-30 ">
+        <section className="flex  flex-col gap-8 lg:gap-8  mx-auto
+        px-3 sm:px-5 xl:px-30 ">
           <div className="flex flex-col gap-y-4  lg:flex-row   lg:w-full lg:justify-between   [@media(min-width:2500px)]:gap-90">
             {/* Left Side - Texts + Button */}
             <motion.div
@@ -166,7 +167,8 @@ const PortFolio = () => {
             </motion.div>
           </div>
         </section>
-        <section className="px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-12 overflow-hidden ">
+        <section className=" mx-auto
+        px-3 sm:px-5 xl:px-30 flex flex-col gap-12 overflow-hidden ">
           <p className="fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
             Our Latest Projects
           </p>
@@ -211,10 +213,12 @@ const PortFolio = () => {
           </div>
         </section>
         {/* <section className="  flex flex-col gap-12 overflow-hidden"></section> */}
-        <p className="px-2.5 md:px-8 lg:px-15 xl:px-30 fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
+        <p className=" mx-auto
+        px-3 sm:px-5 xl:px-30 fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
           Reviews and ratings
         </p>
-        <div className="flex  flex-col lg:flex-row w-full xl:h-100 2xl:h-110 gap-y-15 justify-between  px-2.5 md:px-8 lg:px-15 xl:px-30">
+        <div className="flex  flex-col lg:flex-row w-full xl:h-100 2xl:h-110 gap-y-15 justify-between   mx-auto
+        px-3 sm:px-5 xl:px-30">
           {/* Left Side - Texts + Button */}
           <motion.div
             className="flex  flex-col gap-5 w-full lg:w-[50%] xl:w-[45%] 2xl:w-[50%]"
@@ -285,7 +289,8 @@ const PortFolio = () => {
         </div>
         <section
           id="gallery"
-          className=" px-2.5 md:px-8 lg:px-15 xl:px-30 flex flex-col gap-20"
+          className="  mx-auto
+        px-3 sm:px-5 xl:px-30 flex flex-col gap-20"
         >
           {/* ===== HEADING ===== */}
           <motion.p

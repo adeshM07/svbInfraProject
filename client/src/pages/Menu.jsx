@@ -73,10 +73,10 @@ const Header = () => {
   }, [location.pathname]);
 
   return (
-    <header
+    <SectionWrapper>
+    <div
       className={`
-        fixed top-0 left-0 w-full z-50
-        xl:max-w-360 2xl:max-w-400 
+        fixed top-0 left-0 w-full z-50 
         transition-all duration-300 ease-in-out
         z-999
         ${showHeader ? "translate-y-0" : "-translate-y-full"}
@@ -89,10 +89,10 @@ const Header = () => {
     >
       <section
         className="
-          py-6 text-white mx-auto
-          px-3 sm:px-5 xl:px-30
+          py-6 text-white 
+          mx-auto
+        px-3 sm:px-5 xl:px-30
           flex items-center justify-between
-          xl:max-w-360 2xl:max-w-400
         "
       >
         {/* LOGO */}
@@ -159,7 +159,8 @@ const Header = () => {
           <NavLink to="/hse">HSE</NavLink>
         </ul>
       </div>
-    </header>
+    </div>
+    </SectionWrapper>
   );
 };
 

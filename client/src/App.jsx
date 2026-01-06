@@ -26,6 +26,7 @@ import { ChevronDown } from "lucide-react";
 // import lvideo from "/LandingVideoTrimmed.mp4";
 import lvideo from "../src/videos/LandingVideoTrimmed.mp4";
 import "./App.css";
+import SectionWrapper from "./component/common/SectionWrapper";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -89,6 +90,7 @@ const App = () => {
 
   return (
     <>
+    
       <div className="w-full">
         {/* {isPageLoading && <PageLoader />} */}
         <ScrollToHash />
