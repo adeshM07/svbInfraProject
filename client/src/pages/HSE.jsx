@@ -135,19 +135,19 @@ const HSE = () => {
             <div className="flex justify-center gap-[2px] lg:gap-[3px] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
               <img
                 src={c1}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[51vh] 2xl:w-[18vw] lg:w-[25vw]  lg:h-[30vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw]  lg:h-[30vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c2}
-                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[51vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c3}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[51vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c4}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[51vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
             </div>
           </motion.div>

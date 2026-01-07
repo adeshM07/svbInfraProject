@@ -169,10 +169,10 @@ const Landing = () => {
         >
           <div
             className=" 
-               flex flex-col justify-center w-full"
+               flex  flex-col justify-center w-full"
           >
             {/* Text Block */}
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 z-999">
               <h1 className="text-white xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
                 Building the Future with{" "}
                 <span className="sm:block inline text-primary">
@@ -526,7 +526,7 @@ const Landing = () => {
                             src={`${item.src}`}
                             onClick={() => setProjectVideo(item.video)}
                             alt=""
-                            className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit  object-cover 
+                            className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:w-67 xl:h-80  object-cover 
            transition-transform duration-300 hover:scale-95 cursor-pointer"
                           />
                         ))}
