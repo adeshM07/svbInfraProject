@@ -106,7 +106,7 @@ const ESE = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Deep Excavation & Transportation
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Excavate soil for basements and utilities.</li>
                   <li>Use excavators, trucks, and loaders efficiently.</li>
                   <li>Ensure slope stability and site safety.</li>
@@ -166,7 +166,7 @@ const ESE = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Land Leveling & Compaction
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Grade surfaces to desired elevation and slope.</li>
                   <li>Ensure proper drainage and soil uniformity.</li>
                   <li>Use rollers, graders, and compactors for density.</li>
@@ -226,7 +226,7 @@ const ESE = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Controlled Earth Filling
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Backfill excavated areas with approved materials.</li>
                   <li>Fill and compact in layers to design levels.</li>
                   <li>Raise site levels or strengthen subgrade.</li>
@@ -286,7 +286,7 @@ const ESE = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Building Demolition Works
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Safely dismantle structures for new developments.</li>
                   <li>Use hydraulic breakers, excavators, or demolition.</li>
                   <li>Sort and dispose of debris per environmental norms.</li>

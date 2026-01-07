@@ -108,7 +108,7 @@ const REP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Diamond Rope Cutting
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2  marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use diamond wire saws for controlled rock cutting.</li>
                   <li>Suitable for confined or sensitive sites.</li>
                   <li>Ensure smooth, accurate cutting of rock or concrete.</li>
@@ -168,7 +168,7 @@ const REP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Controlled Rock Blasting
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use explosives to fracture rock efficiently.</li>
                   <li>Follow strict safety and environmental guidelines.</li>
                   <li>Control vibration and fly-rock with charge design.</li>
@@ -228,7 +228,7 @@ const REP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Chemical Rock Cutting
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use chemical agents to fracture rock safely.</li>
                   <li>Suitable for urban or sensitive areas.</li>
                   <li>Environmentally safe with low noise and vibration.</li>
@@ -288,7 +288,7 @@ const REP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Hydraulic Rock Splitting
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use hydraulic pressure to split large rocks.</li>
                   <li>Provide controlled, low-noise excavation.</li>
                   <li>Safely remove rock near foundations or utilities.</li>
@@ -348,7 +348,7 @@ const REP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Excavation Rock breaker
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use excavator tools to break rock or concrete.</li>
                   <li>Flexible for selective demolition and excavation.</li>
                   <li>Cost-effective for medium-scale rock removal.</li>
@@ -409,7 +409,7 @@ const REP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Excavation Chiselling Method
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Chisel small rock sections manually or mechanically.</li>
                   <li>Suitable for precision or limited-access areas.</li>
                   <li>Labor-intensive but provides controlled excavation.</li>

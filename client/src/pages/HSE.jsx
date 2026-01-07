@@ -135,19 +135,19 @@ const HSE = () => {
             <div className="flex justify-center gap-[2px] lg:gap-[3px] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
               <img
                 src={c1}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[25vw]  lg:h-[30vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[51vh] 2xl:w-[18vw] lg:w-[25vw]  lg:h-[30vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c2}
-                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[51vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c3}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[51vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c4}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[50vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[51vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
             </div>
           </motion.div>
@@ -260,7 +260,7 @@ const HSE = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Commitment to health & safety
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col pl-2 marker:text-xs gap-2  popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li className="">Setting out of corner benchmarks</li>
                   <li className="">Surveying ground levels</li>
                   <li className="">Surveying top levels</li>
@@ -322,7 +322,7 @@ const HSE = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Monitoring & risk management
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col   gap-2 pl-2 marker:text-xs  popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li className="">
                     Continuous monitoring to ensure a safe environment.
                   </li>
@@ -393,7 +393,7 @@ const HSE = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Certified Equipment operators
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex pl-2 marker:text-xs flex-col gap-2 pl-2 marker:text-xs  popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Certified operators handle machinery safely.</li>
                   <li>Training keeps operators updated on safety.</li>
                   <li>Third-party inspections ensure compliance.</li>
@@ -453,7 +453,7 @@ const HSE = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Compliance & Adaptability
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex pl-2 marker:text-xs flex-col gap-2  popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Follow site HSE guidelines and safety policies.</li>
                   <li>Audits ensure legal and operational compliance.</li>
                   <li>Teams adapt to changing site conditions.</li>

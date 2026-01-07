@@ -110,7 +110,7 @@ const SRP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Micro Piling
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use small-diameter piles to strengthen foundations.</li>
                   <li>Install in confined areas with minimal vibration.</li>
                   <li>Common in retrofitting and slope stabilization.</li>
@@ -170,7 +170,7 @@ const SRP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Sheet Piling
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use interlocking sheets to form retaining walls.</li>
                   <li>Prevent soil collapse in deep excavations.</li>
                   <li>Reusable, temporary or permanent support.</li>
@@ -230,7 +230,7 @@ const SRP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   RCC Piling
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use concrete piles for load-bearing support.</li>
                   <li>Transfer heavy loads to deep stable soil.</li>
                   <li>Ensure minimal settlement and stable foundations.</li>
@@ -292,7 +292,7 @@ const SRP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Soil Nailing
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Reinforce slopes by inserting steel nails into soil.</li>
                   <li>Stabilize excavations and prevent landslides.</li>
                   <li>Cost-effective for temporary or permanent use.</li>
@@ -352,7 +352,7 @@ const SRP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Short Creating
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Spray concrete onto soil, rock under high pressure.</li>
                   <li>Provide instant protective and stabilizing layer.</li>
                   <li>Used with soil nailing for retaining structures.</li>
@@ -412,7 +412,7 @@ const SRP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Grouting
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Inject cement or chemical mixtures into soil or rock.</li>
                   <li>Increase density, strength, and reduce permeability.</li>
                   <li>Control water seepage and stabilize weak soil.</li>
@@ -472,7 +472,7 @@ const SRP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Weep Holes
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Add small drainage openings in retaining walls.</li>
                   <li>Essential for long-term soil retention.</li>
                   <li>Increase wall stability and longevity.</li>
@@ -532,7 +532,7 @@ const SRP = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   PT & Rock Anchors
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use post-tensioned anchors to stabilize excavations.</li>
                   <li>Transfer load to stable rock or soil layers.</li>
                   <li>Allow adjustable tensioning for monitoring.</li>

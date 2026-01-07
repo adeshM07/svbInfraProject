@@ -102,7 +102,7 @@ const DS = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Well Point System
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use vacuum pumps to remove groundwater.</li>
                   <li>Control water levels during shallow excavations.</li>
                   <li>Enable dry conditions and prevent soil instability.</li>
@@ -162,7 +162,7 @@ const DS = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Deep Well System
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Install deep wells with submersible pumps.</li>
                   <li>Efficiently handle large volumes of groundwater.</li>
                   <li>Used in basements, shafts, or deep foundations.</li>
@@ -222,7 +222,7 @@ const DS = () => {
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
                   Automated Dewatering System
                 </p>
-                <div className="flex flex-col gap-2 list-none popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
+                <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use sensors and automated pumps for groundwater.</li>
                   <li>Monitor water levels in real-time with less manpower.</li>
                   <li>Energy-efficient and adaptable to site conditions.</li>

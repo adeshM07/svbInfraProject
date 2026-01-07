@@ -525,8 +525,8 @@ const Landing = () => {
                             src={`${item.src}`}
                             onClick={() => setProjectVideo(item.video)}
                             alt=""
-                            className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit object-cover 
-           transition-transform duration-300 hover:scale-115 cursor-pointer"
+                            className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit  object-cover 
+           transition-transform duration-300 hover:scale-95 cursor-pointer"
                           />
                         ))}
                       </React.Fragment>
