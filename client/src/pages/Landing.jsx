@@ -250,7 +250,6 @@ const Landing = () => {
                 <div
                   className="
                             w-full
-                            
                             flex flex-col
                             gap-6
                             justify-start
@@ -262,13 +261,15 @@ const Landing = () => {
                         2xl:text-6xl
                         xl:text-[58px] lg:text-[56px] md:text-5xl 
                         md:mr-4 sm:text-4xl text-2xl font-bold 
-                        leading-tight absolute 
+                        leading-tight  z-300
                         lg:rounded-tl-lg
-                        lg:right-auto md:right-0 md:rounded-tl-lg 
+                        lg:right-auto md:right-0 md:rounded-tr-lg 
                         sm:-mt-25 lg:-mt-4 lg:-ml-60
-                        sm:right-0 sm:rounded-tl-lg 
-                        right-0 -mt-20
-                        rounded-tl-lg 
+                        sm:right-0 sm:rounded-tr-lg 
+                        right-0 -mt-24 md:-mt-30
+                        rounded-tr-lg 
+                        lg:w-auto
+                        w-fit
                         "
                   >
                     Great Relationships, <br />
@@ -280,11 +281,11 @@ const Landing = () => {
                         </h1> */}
 
                   <p
-                    className=" md:mt-10 w-full
-                         lg:mt-[170px] mt-0 lg:text-xl 
+                    className=" w-full
+                          mt-0 lg:text-xl 
                         md:text-lg text-sm lg:max-w-[700px] 
                         md:max-w-auto leading-relaxed
-                        sm:mt-4
+                     
                         
                         "
                   >

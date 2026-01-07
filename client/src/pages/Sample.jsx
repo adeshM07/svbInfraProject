@@ -1,279 +1,576 @@
 import React from "react";
-import svbLogo from "../assets/SVB_Logo.png";
-import "../App.css";
-import "../CSS/Menu.css";
-import { Link, NavLink, useLocation } from "react-router-dom";
+// import LandingBanner from "./LandingBanner";
+// import ProjectVideoBanner from "./ProjectVideoBanner ";
+import constructionImg from "../assets/cap.png";
+
+import pillarImg from "../assets/pillarsOfTrustIMG.png";
+import { Link } from "react-router-dom";
+import { motion, useMotionValue, animate } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+// import CustomShape from "./CustomShape";
+import "../CSS/ProjectVideoBanner.css";
+import "../CSS/CustomShape.css";
+import "../CSS/Landing.css";
+import { Helmet } from "react-helmet";
+import boxvideo from "/public/boxVideoTrimmed.mov";
 import { useState, useEffect } from "react";
+import fleet1 from "../assets/fleet-img1.png";
+import fleet2 from "../assets/fleet-img2.png";
+import fleet3 from "../assets/fleet-img3.png";
+import fleet4 from "../assets/fleet-img4.png";
+import fleet5 from "../assets/fleet-img5.png";
+import fleet6 from "../assets/fleet-img6.png";
+import fleet7 from "../assets/fleet-img7.png";
+import fleet8 from "../assets/fleet-img8.png";
+import fleet9 from "../assets/fleet-img9.png";
+import fleet10 from "../assets/fleet-img10.png";
+import Cards from "./Cards";
+import c1 from "../assets/globalCard1.png";
+import c2 from "../assets/globalCard2.png";
+import c15 from "../assets/globalCard3.png";
+import c14 from "../assets/globalCard4.png";
+import c5 from "../assets/globalCard5.png";
+import c6 from "../assets/globalCard6.png";
+import c7 from "../assets/globalCard7.png";
+import c8 from "../assets/globalCard8.png";
+import c9 from "../assets/globalCard9.png";
+import c10 from "../assets/globalCard10.png";
+import c11 from "../assets/globalCard11.png";
+import c12 from "../assets/globalCard12.png";
+import c13 from "../assets/globalCard13.png";
+import c4 from "../assets/globalCard14.png";
+import c3 from "../assets/globalCard7.png";
 
-const Menu = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  const [hideOnScroll, setHideOnScroll] = useState(false);
+import SectionWrapper from "../component/common/SectionWrapper";
+import AboutSectionCard from "../component/home/about-card";
+import Button from "../component/common/Button";
+import { ChevronDown } from "lucide-react";
+
+const Landing = () => {
+  const cardData = [
+    {
+      number: "50+",
+      label: "Successful Project",
+    },
+    {
+      number: "100+",
+      label: "Machines & Equipments",
+    },
+    {
+      number: "27/7",
+      label: "Anywhere Assistance",
+    },
+  ];
+  const [applyEffect, setApplyEffect] = useState(false);
+  let [projectVideo, setProjectVideo] = useState(
+    "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4"
+  );
   const [isMobile, setIsMobile] = useState(false);
-  const [popup, setPopup] = useState(false);
-  const [isColored, setIsColored] = useState(false);
+  const MotionLink = motion(Link);
+  const handleResize = () => {
+    const width = window.innerWidth;
 
-  const location = useLocation();
-  const isLandingPage = location.pathname === "/";
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScrollDirection = () => {
-      const currentScrollY = window.scrollY;
-
-      // scrolling down → hide
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setHideOnScroll(true);
-      }
-      // scrolling up → show
-      else {
-        setHideOnScroll(false);
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScrollDirection);
-    return () => window.removeEventListener("scroll", handleScrollDirection);
-  }, []);
-
-  useEffect(() => {
-    if (!isLandingPage) {
-      setShowMenu(true); // always show menu on other pages
-      return;
+    if (width < 740) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
     }
+  };
 
+  useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setShowMenu(true);
+      const banner = document.getElementById("landingBanner");
+      if (!banner) return;
+
+      if (window.scrollY > 300) {
+        banner.classList.add("bg-visible");
       } else {
-        setShowMenu(false);
+        banner.classList.remove("bg-visible");
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isLandingPage]);
+  }, []);
 
   useEffect(() => {
-    if (!isLandingPage) {
-      setIsColored(true); // always colored on other pages
-      return;
-    }
+    handleResize(); // Run once when mounted
+    window.addEventListener("resize", handleResize);
 
-    const section = document.getElementById("secondSection");
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
+  useEffect(() => {
     const handleScroll = () => {
+      const section = document.getElementById("secondSection");
       if (!section) return;
+
       const rect = section.getBoundingClientRect();
 
-      if (rect.top <= 100) {
-        setIsColored(true);
+      // When secondSection touches or crosses the top
+      if (rect.top <= 0) {
+        window.dispatchEvent(new Event("sectionReachedTop"));
       } else {
-        setIsColored(false);
+        window.dispatchEvent(new Event("sectionLeftTop"));
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isLandingPage]);
-
-  // const handleResize = () => {
-  //   const width = window.innerWidth;
-
-  //   if (width < 740) {
-  //     setIsMobile(true);
-  //   } else {
-  //     setIsMobile(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   handleResize(); // Run once when mounted
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-
-  const menuItems = [
-    { name: "About Us", link: "/about-us" },
-    { name: "Services", link: "/services" },
-    { name: "Our Fleet", link: "/our-fleet-2" },
-    { name: "Portfolio", link: "/portfolio" },
-    { name: "Gallery", link: "/portfolio#gallery" },
-    { name: "HSE", link: "/hse" },
-  ];
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 739px)");
-
-    const handleChange = (e) => {
-      setIsMobile(e.matches);
-    };
-
-    // Run once on mount
-    setIsMobile(mediaQuery.matches);
-
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (popup) {
-        // if click is NOT inside popup and NOT on hamburger icon
-        if (
-          !e.target.closest("#mobilePopup") &&
-          !e.target.closest("#hamburgerIcon")
-        ) {
-          setPopup(false);
-        }
+  const fleetData = [
+    fleet1,
+    fleet2,
+    fleet3,
+    fleet4,
+    fleet5,
+    fleet6,
+    fleet7,
+    fleet8,
+    fleet9,
+    fleet10,
+  ];
+
+  const Counter = ({ from = 0, to, duration = 1.2 }) => {
+    const [value, setValue] = useState(from);
+    const count = useMotionValue(from);
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
+
+    useEffect(() => {
+      if (inView) {
+        const controls = animate(count, to, {
+          duration,
+          ease: "linear",
+          onUpdate: (latest) => setValue(Math.floor(latest)),
+        });
+        return controls.stop;
       }
-    };
+    }, [inView, count, to, duration]);
 
-    document.addEventListener("click", handleClickOutside);
-
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, [popup]);
+    return <motion.span ref={ref}>{value}</motion.span>;
+  };
 
   return (
     <>
-      {/* ${hideOnScroll ? "-translate-y-full" : "translate-y-0"} */}
-      {/* <div
-        className={`
-    fixed top-0 left-0 border-2 border-red-500   [@media(min-width:300px)_and_(max-width:700px)]:h-[9vh] w-full flex px-5 md:px-6 justify-between 
-     lg:h-[13vh] xl:h-[13vh] place-items-center lg:px-30 
-    
-    
-    ${isColored ? "bg-[#333333]" : "bg-transparent"}
-   
-  `} */}
-      <div
-        className={` w-full fixed top-0 left-0 transition-all duration-500 z-999 flex  justify-between place-items-center min-h-15 md:h-17 lg:h-18 xl:h-25   px-2.5 md:px-8 lg:px-15 xl:px-30 
-    ${isColored ? "bg-[#333333]" : "bg-transparent"}
-    ${hideOnScroll ? "-translate-y-full" : "translate-y-0"}
-   
-  `}
-      >
-        <div className="">
-          <Link to="/">
-            {/* <img
-              src={svbLogo}
-              className="w-[15vw] h-[3.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[7.3vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[7vw] lg:w-[7vw] xl:w-[7vw] xl:h-[6vh] lg:h-[6vh]"
-            /> */}
-            <img
-              src={svbLogo}
-              className=" w-24 h-9 md:w-19 md:h-9 lg:w-25 lg:h-10 xl:w-35 xl:h-13"
-            />
-          </Link>
-        </div>
-        {popup && (
+      <Helmet>
+        <title>SVB Infra Projects</title>
+        <meta
+          name="description"
+          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
+        />
+        <link rel="canonical" href="https://svbinfraprojects.com" />
+      </Helmet>
+      <div className=" bg-transparent w-full ">
+        <div
+          className={`w-full  [@media(min-width:650px)_and_(max-width:1200px)]:h-[94vh]  h-[75vh] md:h-[45vh] lg:h-[88vh] transition-all duration-700  
+        px-3 sm:px-5 xl:px-30
+  ${applyEffect ? "banner-active" : ""}`}
+        >
           <div
-            id="mobilePopup"
-            className="absolute right-5 top-[90px] w-[60vw] h-fit 
-  border border-white/20 
-  rounded-xl 
-  bg-white/40 
-  backdrop-blur-sm 
-  shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
-  flex flex-col 
-  z-[999]"
+            className=" 
+               flex flex-col justify-center w-full"
           >
-            <nav className="flex flex-col text-[1.6rem] gap-5 p-4">
-              {menuItems.map((item) => {
-                const isActive =
-                  item.link === "/portfolio"
-                    ? location.pathname === "/portfolio" &&
-                      location.hash !== "#gallery"
-                    : item.link === "/portfolio#gallery"
-                    ? location.pathname === "/portfolio" &&
-                      location.hash === "#gallery"
-                    : location.pathname === item.link;
+            {/* Text Block */}
+            <div className="flex flex-col gap-5">
+              <h1 className="text-white xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
+                Building the Future with{" "}
+                <span className="sm:block inline text-primary">
+                  Strength & Precision
+                </span>
+              </h1>
 
-                return (
-                  <li key={item.link} className="relative list-none">
-                    <NavLink
-                      to={item.link}
-                      onClick={() => setPopup(false)}
-                      className={`relative transition-all duration-300
-            ${isActive ? "text-[#FDC000]" : "text-black"}`}
-                    >
-                      {item.name}
-
-                      {/* underline */}
-                      <span
-                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#FDC000] transition-all duration-300
-              ${isActive ? "w-full" : "w-0"}`}
-                      />
-                    </NavLink>
-                  </li>
-                );
-              })}
-            </nav>
+              <p className="xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[700px] md:max-w-[500px] leading-relaxed text-white">
+                Delivering reliable infrastructure solutions with modern
+                machinery and expert execution.
+              </p>
+              <div className="flex">
+                <Link to="/our-fleet-2">
+                  <Button text="See Our Fleet" />
+                </Link>
+              </div>
+            </div>
           </div>
-        )}
+        </div>
 
-        {isMobile ? (
-          <div className="flex gap-7  ">
-            <Link to="/contact">
-              <button className="text-white bg-[#FDC000] text-[1rem] [@media(min-width:300px)_and_(max-width:700px)]:py-1 [@media(min-width:300px)_and_(max-width:700px)]:px-[0.4rem] rounded-md flex hover:cursor-pointer">
-                Contact Us
-              </button>
-            </Link>
-            <i
-              id="hamburgerIcon"
-              class="fa-solid fa-bars [@media(min-width:300px)_and_(max-width:700px)]:text-[1.7rem] text-white z-[1000]"
-              onClick={() => setPopup(!popup)}
-            ></i>
-          </div>
-        ) : (
-          <>
-            <nav className="flex gap-7 list-none text-white">
-              {menuItems.map((item) => {
-                const isActive =
-                  item.link === "/portfolio"
-                    ? location.pathname === "/portfolio" &&
-                      location.hash !== "#gallery"
-                    : item.link === "/portfolio#gallery"
-                    ? location.pathname === "/portfolio" &&
-                      location.hash === "#gallery"
-                    : location.pathname === item.link;
+        {/* <ProjectVideoBanner></ProjectVideoBanner> */}
+      
+          <div
+            id="secondSection"
+            className=" mx-auto
+        px-3 sm:px-5 xl:px-30 w-full bg-white flex flex-col   gap-15 md:gap-25    py-10 md:py-25"
+          >
+            <div className="flex flex-col gap-10">
+              {/* <h2 className='text-4xl font-bold '>About our company</h2> */}
+              <div
+                className="
+                    flex flex-col
+                    gap-6
+                    text-lg
+                    leading-relaxed
+                    text-gray
 
-                return (
-                  <li key={item.link} className="relative group">
-                    <NavLink
-                      to={item.link}
-                      className={`relative popins transition-all duration-300
-            ${isActive ? "text-[#FDC000]" : "text-[#ECECEC]"}`}
-                    >
-                      {item.name}
-
-                      {/* underline */}
-                      <span
-                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#FDC000] transition-all duration-300
-              ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
-                      />
-                    </NavLink>
-                  </li>
-                );
-              })}
-            </nav>
-
-            <Link to="/contact">
-              <button
-                // className="menuButton [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] [@media(min-width:650px)_and_(max-width:1200px)]:w-[14vw] md:w-[15vw] md:h-[4vh] w-[9vw] h-[6vh] lg:h-[6vh] lg:w-[9vw] xl:h-[6vh] xl:w-[9vw] [@media(min-width:2500px)]:h-[5vh] bg-[#FDC000] text-black text-[1rem] rounded-[9px]  xl:text-[1rem] [@media(min-width:2500px)]:text-[1.4rem] transition duration-300 transform
-                // hover:scale-105 hover:bg-[#ffcf33] cursor-pointer"
-                className="menuButton bg-[#FDC000] text-[#333333] font-semibold rounded-lg  transition duration-300 transform hover:scale-105 hover:bg-[#ffcf33] hover:cursor-pointer md:text-lg lg:text-xl md:w-28 md:h-9 lg:w-34 lg:h-9 xl:w-37 xl:h-12 "
+                    lg:flex-row
+                    lg:gap-[40px]
+                "
               >
-                Contact Us
-              </button>
-            </Link>
-          </>
-        )}
+                {/* Left Column – Video */}
+                <div
+                  className="
+                        w-full
+                        overflow-hidden
+                        rounded-xl
+                        2xl:min-h-[620px]
+                        2xl:min-w-[620px]
+                        xl:min-h-[580px]
+                        xl:min-w-[580px]
+                        lg:min-h-[480px]
+                        lg:min-w-[480px]
+                        md:min-h-[200px]
+                        md:h-auto
+                        sm:h-[550px]
+                        h-[400px]
+                        
+                        "
+                >
+                  <video
+                    className="w-full h-full object-cover lg:scale-[1.16] rounded-xl
+                                        lg:translate-y-[50px]
+                                        lg:translate-x-[30px]
+                                       
+                                        "
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    src="https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov"
+                  />
+                </div>
+
+                <div
+                  className="
+                            w-full
+                            flex flex-col
+                            gap-6
+                            justify-start
+                        "
+                >
+                  {/* Your content here */}
+                  <h1
+                    className=" lg:block px-2.5 py-3 bg-white rounded-bl-lg 
+                        2xl:text-6xl
+                        xl:text-[58px] lg:text-[56px] md:text-5xl 
+                        md:mr-4 sm:text-4xl text-2xl font-bold 
+                        leading-tight  z-300
+                        lg:rounded-tl-lg
+                        lg:right-auto md:right-0 md:rounded-tl-lg 
+                        sm:-mt-25 lg:-mt-4 lg:-ml-60
+                        sm:right-0 sm:rounded-tl-lg 
+                        right-0 -mt-20
+                        rounded-tl-lg 
+                        "
+                  >
+                    Great Relationships, <br />
+                    Greater <span className="text-primary">Infrastructure</span>
+                  </h1>
+
+                  {/* <h1 className=" lg:hidden md:block  px-2.5 py-3 bg-white rounded-bl-lg xl:text-6xl lg:text-6xl md:text-6xl sm:text-4xl text-3xl font-bold leading-tight">
+                            Great Relationships, <br />Greater <span className='text-primary'>Infrastructure</span>
+                        </h1> */}
+
+                  <p
+                    className=" w-full
+                          mt-0 lg:text-xl 
+                        md:text-lg text-sm lg:max-w-[700px] 
+                        md:max-w-auto leading-relaxed
+                     
+                        
+                        "
+                  >
+                    SVB Infra Projects is a 3rd generation family-run business.
+                    SVB has been managing earthmoving projects since 2003. Based
+                    in Bangalore, we provide a fast, flexible, reliable and
+                    professional service statewide. We offer contract
+                    earthmoving services across the state providing a
+                    professional and reliable service to the main and sub
+                    contract civil engineering sector. We have had over 15
+                    years’ experience for total excavation solution. We work
+                    with some of the biggest names in construction and civil
+                    engineering sector.
+                  </p>
+
+                  <div className="items-center sm:justify-between md:justify-start justify-start gap-2 xl:hidden 2xl:flex lg:hidden md:flex sm:flex flex ">
+                    {cardData.map((card, index) => (
+                      <AboutSectionCard
+                        number={card.number}
+                        label={card.label}
+                        key={index}
+                      />
+                    ))}
+                  </div>
+                  <div className="flex justify-end">
+                    <Link to="/about-us">
+                      <Button text={"Know More"} />
+                    </Link>
+                  </div>
+
+                  {/* <PropertyCard /> */}
+                  {/* <ServiceCard /> */}
+                </div>
+              </div>
+              <div className="items-center justify-start gap-2 xl:flex 2xl:hidden  hidden lg:flex md:hidden sm:hidden flex-nowrap sm:flex-nowrap">
+                {cardData.map((card, index) => (
+                  <AboutSectionCard
+                    number={card.number}
+                    label={card.label}
+                    key={index}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* pillar */}
+            <div className="lg:pb-25 md:pb-16 sm:pb-14 pb-10 flex-col gap-10 items-start">
+              {/* Animated Heading */}
+              <h3 className="text-[20px] inline lg:text-[32px] md:text-[30px] sm:text-[24px] border-b-2 border-b-primary font-semibold">
+                Pillars of Trust
+              </h3>
+              <div className="w-full">
+                <img
+                  src={pillarImg}
+                  alt="Pillars of Trust"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+            {/* fleet */}
+
+            <div className="flex flex-col gap-10 w-full">
+              {/* Heading */}
+              <div>
+                <h3 className="text-[20px] sm:text-[24px] md:text-[30px] lg:text-[32px] border-b-2 border-primary inline font-semibold">
+                  Our Fleet
+                </h3>
+              </div>
+
+              {/* Content Row */}
+              <div className="flex flex-col lg:flex-row gap-10">
+                {/* Left Content */}
+                <div className="xl:max-w-[640px] max-w-none w-full">
+                  <h1 className="xl:text-[58px] lg:text-[53px] md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
+                    Force Behind Every{" "}
+                    <span className="xl:block lg:inline inline text-primary">
+                      Foundation
+                    </span>
+                  </h1>
+
+                  <p className="mt-4 xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[640px] max-w-none leading-relaxed">
+                    Starting out with only one JCB 3D, we now keep a
+                    well-maintained fleet of trucks and equipment.
+                  </p>
+                  <Link to="/our-fleet-2">
+                    <Button
+                      text="Explore All"
+                      className="mt-10 lg:block md:hidden hidden"
+                    />
+                  </Link>
+                </div>
+
+                {/* Right Marquee */}
+                <div className="relative w-full overflow-hidden">
+                  <div className="flex gap-10 marquee w-max">
+                    {[...fleetData, ...fleetData].map((imageSrc, index) => (
+                      <div key={index} className="shrink-0">
+                        <img
+                          src={imageSrc}
+                          alt={`Fleet ${index + 1}`}
+                          className="
+                                            w-[220px] h-[260px]
+                                            sm:w-[260px] sm:h-[300px]
+                                            lg:w-[282px] lg:h-[324px]
+                                            rounded-lg shadow-md object-cover
+                           "
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex lg:hidden md:block block">
+                  <Link to="/our-fleet-2">
+                    <Button text="Explore All" className="mt-0 " />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className=" ">
+              <div className="custom-shape-container">
+                <video
+                  src={projectVideo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className="  flex w-full py-2 lg:py-6 relative ">
+                {isMobile ? (
+                  <p className="text-[#4D4D4D]  w-[45vw] text-justify  popins  text-[8px] lg:text-[16px]  lg:mt-5 font-semibold ">
+                    We have successfully completed a wide range of earthwork and
+                    excavation projects for leading clients across Karnataka and
+                    Andhra Pardesh. Our portfolio includes residential,
+                    commercial, and infrastructure developments delivered with
+                    quality and precision.
+                  </p>
+                ) : (
+                  <p className="text-[#4D4D4D] w-[48%] text-justify popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[0.9rem]  text-[0.6rem]  lg:text-[1.5rem] xl:text-[1.2rem] lg:mt-3 font-semibold ">
+                    We have successfully completed a wide range of earthwork and
+                    excavation projects for leading clients across Karnataka and
+                    Andhra Pardesh. Our portfolio includes residential,
+                    commercial, and infrastructure developments delivered with
+                    quality and precision.
+                  </p>
+                )}
+                <div
+                  className="absolute overflow-hidden   -top-4 w-full  left-[65%]  md:left-[60%] md:-top-10  lg:left-[55%] lg:-top-24  xl:left-[55%] xl:-top-20"
+                  // className="absolute -top-4  md:-top-10 lg:-top-24 xl:-top-20"
+                >
+                  <div className="flex lg:gap-x-6 gap-x-2 animate-fleet-scroll">
+                    {[...Array(2)].map((_, duplicateIndex) => (
+                      <React.Fragment key={duplicateIndex}>
+                        {[
+                          {
+                            src: c1,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                          },
+                          {
+                            src: c2,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                          },
+                          {
+                            src: c3,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                          },
+                          {
+                            src: c4,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
+                          },
+                          {
+                            src: c5,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
+                          },
+                          {
+                            src: c6,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
+                          },
+                          {
+                            src: c7,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                          },
+                          {
+                            src: c8,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                          },
+                          {
+                            src: c9,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                          },
+                          {
+                            src: c10,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
+                          },
+                          {
+                            src: c11,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
+                          },
+                          {
+                            src: c12,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
+                          },
+                          {
+                            src: c13,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                          },
+                          {
+                            src: c14,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                          },
+                          {
+                            src: c15,
+                            video:
+                              "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                          },
+                        ].map((item, index) => (
+                          <img
+                            key={`${duplicateIndex}-${index}`}
+                            src={`${item.src}`}
+                            onClick={() => setProjectVideo(item.video)}
+                            alt=""
+                            className="[@media(min-width:650px)_and_(max-width:1200px)]:w-[30vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[20vh] w-[17vw] h-[10vh] lg:w-[20vw] lg:h-[47vh] xl:min-w-[240px] xl:h-fit  object-cover 
+           transition-transform duration-300 hover:scale-95 cursor-pointer"
+                          />
+                        ))}
+                      </React.Fragment>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="landing-contact"
+              // className="lg:w-[80vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[30vh] [@media(min-width:2500px)]:my-[2vh] rounded-md  w-[95vw]   text-white md:h-[23vh] lg:h-[37vh]   flex  place-items-center justify-evenly gap-4 md:gap-[4.2rem] lg:gap-70 z-200"
+              className="relative flex justify-evenly  place-items-center z-200 text-white h-30  md:h-50  lg:h-70  xl:h-74 rounded-md"
+            >
+              <div className="">
+                <p
+                  // className="text-[0.8rem] [@media(min-width:300px)_and_(max-width:410px)]:text-[0.7rem] md:text-[1.7rem] lg:text-[1.5rem] popins-bold "
+                  className="popins-bold text-[0.7rem] md:text-[1rem] lg:text-[1.3rem] xl:text-[2rem]"
+                >
+                  Let's Build Your Next Project Together
+                </p>
+                <p
+                  // className="fontMon [@media(min-width:300px)_and_(max-width:410px)]:text-[1.3rem] font-bold text-[1.2rem] md:text-[2rem] lg:text-[3.5rem]"
+                  className="fontMon font-bold md:text-[2.5rem] lg:text-[3.4rem] xl:text-[4rem]"
+                >
+                  Contact Us!
+                </p>
+              </div>
+              <Link to="/contact">
+                <motion.button
+                  className="hover:cursor-pointer bg-[#FDC000] z-999 rounded-md popins font-semibold text-[0.6rem] h-7 w-20 md:text-[1rem] md:h-9 md:w-35 lg:text-[1rem] lg:h-10 lg:w-42 xl:text-[1.3rem] xl:h-11.5 xl:w-43.5 "
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Contact Now
+                </motion.button>
+              </Link>
+            </div>
+          </div>
       </div>
     </>
   );
 };
 
-export default Menu;
+export default Landing;
