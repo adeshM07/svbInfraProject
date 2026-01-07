@@ -172,7 +172,7 @@ const Landing = () => {
                flex  flex-col justify-center w-full"
           >
             {/* Text Block */}
-            <div className="flex flex-col gap-5 z-999">
+            <div className="flex flex-col gap-5 ">
               <h1 className="text-white xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
                 Building the Future with{" "}
                 <span className="sm:block inline text-primary">
