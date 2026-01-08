@@ -30,7 +30,7 @@ const Header = () => {
 
     
       const heroTransparentEnd = vh * 1; // 100vh
-      const heroEnd = vh * 1.5; // ~150vh
+      const heroEnd = vh * 0.7; // ~150vh
 
       // -------------------------
       // HOME PAGE LOGIC
@@ -76,7 +76,7 @@ const Header = () => {
     <SectionWrapper>
     <div
       className={`
-        fixed top-0 left-0 w-full z-50 
+        fixed top-0 left-0 w-full  
         transition-all duration-300 ease-in-out
         z-999
         ${showHeader ? "translate-y-0" : "-translate-y-full"}
@@ -101,7 +101,7 @@ const Header = () => {
             <img
               src={svbLogo}
               alt="svb-logo"
-              className="w-full h-full object-contain"
+              className=" w-full h-full object-contain"
             />
           </div>
         </Link>
