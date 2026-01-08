@@ -53,15 +53,22 @@ const AboutHighlights = () => {
             // className="popins-bold text-[1.6rem] md:text-[3rem] lg:text-[4rem] md:leading-14 lg:leading-19"
             className="text-[#333333] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
           >
-            Know why we’re the{" "}
-            <span className="text-[#FCD000] mr-2 sm:mr-4">
-              trusted <br className="hidden sm:block" /> partner
+            Trusted
+            <span className="text-[#FCD000] ml-2 mr-2 sm:mr-4">
+              Infrastructure  Execution
             </span>
-            for every construction <br className="hidden sm:block" /> need.
+            Partner
           </p>
 
-          <p className="xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[700px] md:max-w-[500px] leading-relaxed text-[#333333]">
-            A fleet engineered for strength, accuracy, and unmatched efficiency.
+          <p className="xl:text-xl lg:text-xl md:text-lg text-sm  leading-relaxed text-[#333333]">
+            Backed by strong technical expertise and hands-on site knowledge,
+            SVB Infra Projects delivers dependable excavation and site
+            development solutions under complex ground conditions and tight
+            timelines. Our focus on safety, quality, and execution discipline
+            enables us to support large-scale projects with confidence and
+            consistency. Operating across Karnataka and Andhra Pradesh, we
+            partner with developers, EPC contractors, and industrial clients to
+            build strong foundations for future infrastructure.
           </p>
         </div>
       </motion.div>
@@ -93,7 +100,7 @@ const AboutHighlights = () => {
               Upgraded Fleet
             </p>
             <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.3rem] popins">
-              Advanced equipment for every project need
+              Strong Machinery Fleet & Skilled Workforce
             </p>
           </motion.div>
 
@@ -129,7 +136,7 @@ const AboutHighlights = () => {
               Qualified Team
             </p>
             <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.3rem] popins">
-              Skilled Workforce Delivering Exceptional Results
+              Professional Reporting & Transparent Execution
             </p>
           </motion.div>
         </div>
@@ -156,8 +163,7 @@ const AboutHighlights = () => {
               Reliable Results
             </p>
             <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.3rem] popins">
-              Trusted since 2003, delivering projects across Karnataka and AP
-            </p>
+             22+ Years of Execution Experience</p>
           </motion.div>
 
           {/* Bottom Center */}
@@ -180,7 +186,7 @@ const AboutHighlights = () => {
               Safety Priority
             </p>
             <p className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.3rem] popins">
-              Safety is our top priority in every project.
+              Strict Safety & Quality Compliance
             </p>
           </motion.div>
 
@@ -201,14 +207,13 @@ const AboutHighlights = () => {
               />
             </motion.div>
             <p className="font-semibold text-[1.4rem] sm:text-[1.8rem] md:text-[1.2rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[2rem] fontMon text-[#333333]">
-              Client Priority
+              Clientile
             </p>
             <p
               className="text-[#4D4D4D] text-[0.9rem] sm:text-[1.1rem] md:text-[0.8rem] lg:text-[1rem] 
           xl:text-[1rem] 2xl:text-[1.3rem] popins"
             >
-              Building strong partnerships with tailored client solutions
-            </p>
+             Capability to Handle Large-Scale Industrial Projects </p>
           </motion.div>
         </div>
       </motion.section>

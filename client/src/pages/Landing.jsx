@@ -49,16 +49,16 @@ import { ChevronDown } from "lucide-react";
 const Landing = () => {
   const cardData = [
     {
-      number: "50+",
-      label: "Successful Project",
+      number: "22+",
+      label: "Years of Experience",
     },
     {
-      number: "100+",
-      label: "Machines & Equipments",
+      number: "45+",
+      label: "Extensive Machinery Fleet",
     },
     {
-      number: "27/7",
-      label: "Anywhere Assistance",
+      number: "24/7",
+      label: "Operational Support",
     },
   ];
   const [applyEffect, setApplyEffect] = useState(false);
@@ -174,9 +174,9 @@ const Landing = () => {
             {/* Text Block */}
             <div className="flex flex-col gap-5 ">
               <h1 className="text-white xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
-                Building the Future with{" "}
+                Building with
                 <span className="sm:block inline text-primary">
-                  Strength & Precision
+                  Precision and Reliability
                 </span>
               </h1>
 
@@ -289,16 +289,7 @@ const Landing = () => {
                         
                         "
                   >
-                    SVB Infra Projects is a 3rd generation family-run business.
-                    SVB has been managing earthmoving projects since 2003. Based
-                    in Bangalore, we provide a fast, flexible, reliable and
-                    professional service statewide. We offer contract
-                    earthmoving services across the state providing a
-                    professional and reliable service to the main and sub
-                    contract civil engineering sector. We have had over 15
-                    years’ experience for total excavation solution. We work
-                    with some of the biggest names in construction and civil
-                    engineering sector.
+                   SVB Infra Projects is a professionally managed infrastructure and earthwork contracting company with over two decades of execution experience. We specialize in large-scale excavation, land development, rock excavation, soil retention, and dewatering works for industrial, commercial, and infrastructure projects.
                   </p>
 
                   <div className="items-center sm:justify-between md:justify-start justify-start gap-2 xl:hidden 2xl:flex lg:hidden md:flex sm:flex flex ">

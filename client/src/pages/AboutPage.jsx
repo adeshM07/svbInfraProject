@@ -131,9 +131,9 @@ const AboutPage = () => {
                          sm:text-4xl text-3xl font-bold 
                         leading-tight popins-noweight "
                   >
-                    Excellence, <br />
-                    <span className="text-primary mr-2">Expertise,</span>
-                    Efficiency
+                    Proven, <br />
+                    <span className="text-primary mr-2">Project,</span>
+                    Experience
                   </h1>
                   <p
                     className="xl:text-xl text-[#4D4D4D]  w-full
@@ -145,13 +145,8 @@ const AboutPage = () => {
                     <span className="font-semibold mr-2">
                       SVB Infra Projects
                     </span>
-                    is a 3rd generation family run business. SVB has been
-                    managing earthmoving projects since 2003. Based in
-                    Bangalore, we provide a fast, flexible, reliable and
-                    professional service statewide. We offer contract
-                    earthmoving services across the state providing a
-                    professional and reliable service to the main and sub
-                    contract civil engineering sector.
+                     is a professionally managed infrastructure and earthwork contracting company with over two decades of execution experience. We specialize in large-scale excavation, land development, rock excavation, soil retention, and dewatering works for industrial, commercial, and infrastructure projects.
+                 
                   </p>
                 </div>
                 <div className="w-full    items-center flex justify-between lg:justify-normal lg:gap-3 xl:gap-7 2xl:gap-5">
@@ -177,7 +172,7 @@ const AboutPage = () => {
            font-semibold
             "
                     >
-                      10+
+                      100+
                     </h4>
                     <p className=" 2xl:text-[16px] xl:text-[16px] lg:text-[14px] md:text-lg sm:text-[16px] text-[9px] text-center ">
                       Clients
