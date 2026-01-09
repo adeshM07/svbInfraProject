@@ -151,7 +151,7 @@ const Contactus = () => {
                       />
                       <div className="flex flex-col">
                         <span className="popins text-[10px] md:text-[0.9rem] lg:text-[1rem] text-[#FDC000]">
-                          Andhra / Telangana Office
+                          Andhra & Telangana Office
                         </span>
                         <p className="text-black popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
                           PCS Business Centre 40-6/3-3,

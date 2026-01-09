@@ -47,7 +47,7 @@ const ESE = () => {
               Services
             </p>
             <p className="xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[700px] md:max-w-[500px] leading-relaxed text-[#333333]">
-              Excavation is the first step of construction, preparing the site
+              Excavation is the first step in construction, preparing the site
               and <br className="hidden md:block" /> foundations for a safe and
               successful project.
             </p>
@@ -288,7 +288,7 @@ const ESE = () => {
                 </p>
                 <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Safely dismantle structures for new developments.</li>
-                  <li>Use hydraulic breakers, excavators, or demolition.</li>
+                  <li>Use hydraulic breakers, excavators, or other demolition.</li>
                   <li>Sort and dispose of debris per environmental norms.</li>
                   <li>Minimize dust, noise, and vibration impact.</li>
                 </div>
@@ -332,14 +332,14 @@ const ESE = () => {
               </Link>
 
               <Link to="/ds" className="mx-8 md:text-[1.3rem] font-semibold">
-                Reliable Dewatering System
+                Reliable Dewatering Systems
               </Link>
 
               <Link
                 to="/soil-retention"
                 className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
               >
-                Soil Retention System
+                Soil Retention Systems
               </Link>
             </div>
           </div>
@@ -354,11 +354,11 @@ const ESE = () => {
             </Link>
 
             <Link to="/ds" className="hover:underline">
-              Reliable Dewatering System
+              Reliable Dewatering Systems
             </Link>
 
             <Link to="/srp" className="hover:underline">
-              Soil Retention System
+              Soil Retention Systems
             </Link>
           </div>
         )}

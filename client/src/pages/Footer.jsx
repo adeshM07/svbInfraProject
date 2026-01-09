@@ -64,7 +64,7 @@ const Footer = () => {
               <p className=" popins text-[#ECECEC] text-start md:text-[0.7rem] lg:text-[1rem] lg:text-start">
                 At SVB Infra Projects, we are a trusted <br /> provider of
                 comprehensive infrastructure <br /> solutions, specializing in
-                construction, <br /> earthmoving, land development, and <br />{" "}
+                  earthmoving,<br /> land development, and 
                 project execution.
               </p>
             </div>

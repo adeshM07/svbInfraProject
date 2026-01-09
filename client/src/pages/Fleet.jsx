@@ -228,12 +228,12 @@ const Fleet = () => {
               {isMobile ? (
                 <p className="text-[#333333] text-[0.8rem]">
                   A fleet engineered for strength, accuracy, and <br />{" "}
-                  unmatched efficiency.
+                  unmatched efficiency.Fleet deployed as per project scale and execution requirement
                 </p>
               ) : (
                 <p className="text-[#333333] md:text-[1.4rem] lg:text-[1rem]">
                   A fleet engineered for strength, accuracy, and unmatched
-                  efficiency.
+                  efficiency.Fleet deployed as per project scale and execution requirement
                 </p>
               )}
             </div>

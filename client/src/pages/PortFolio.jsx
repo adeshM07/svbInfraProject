@@ -215,7 +215,7 @@ const PortFolio = () => {
         {/* <section className="  flex flex-col gap-12 overflow-hidden"></section> */}
         <p className="
         px-3 sm:px-5 xl:px-30 fontMon text-[1.2rem] lg:text-[2rem]  font-semibold underline decoration-[#FDC000] underline-offset-8">
-          Reviews and ratings
+          Reviews and Ratings
         </p>
         <div className="flex  flex-col lg:flex-row w-full xl:h-100 2xl:h-110 gap-y-15 justify-between   mx-auto
         px-3 sm:px-5 xl:px-30">

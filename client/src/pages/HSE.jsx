@@ -267,7 +267,7 @@ const HSE = () => {
                   <li className="">Surveying top levels</li>
                   <li className="">Excavation to approved depth</li>
                   <li className="">Dressing of loose soil</li>
-                  <li className="">Making up to cut-off level</li>
+                  <li className="">Making up to the cut-off level</li>
                 </div>
               </motion.div>
             </div>

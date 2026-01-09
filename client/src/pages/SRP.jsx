@@ -114,7 +114,7 @@ const SRP = () => {
                   <li>Use small-diameter piles to strengthen foundations.</li>
                   <li>Install in confined areas with minimal vibration.</li>
                   <li>Common in retrofitting and slope stabilization.</li>
-                  <li>Transfer load to deeper, stable soils.</li>
+                  <li>Transfer loads to deeper, stable soils.</li>
                 </div>
               </motion.div>
             </div>
@@ -350,10 +350,10 @@ const SRP = () => {
                 viewport={{ once: true, amount: 0.4 }}
               >
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
-                  Short Creating
+                  Shotcreting
                 </p>
                 <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
-                  <li>Spray concrete onto soil, rock under high pressure.</li>
+                  <li>Spray concrete onto soil and rock under high pressure.</li>
                   <li>Provide instant protective and stabilizing layer.</li>
                   <li>Used with soil nailing for retaining structures.</li>
                   <li>Increase durability of excavation faces.</li>

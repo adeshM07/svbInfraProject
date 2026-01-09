@@ -166,7 +166,7 @@ const DS = () => {
                   <li>Install deep wells with submersible pumps.</li>
                   <li>Efficiently handle large volumes of groundwater.</li>
                   <li>Used in basements, shafts, or deep foundations.</li>
-                  <li>Ensure long-term dewatering for complex sites.</li>
+                  <li>Ensures long-term dewatering for complex sites.</li>
                 </div>
               </motion.div>
             </div>
@@ -248,11 +248,11 @@ const DS = () => {
                 to="/ds"
                 className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
               >
-                Reliable Dewatering System
+                Reliable Dewatering Systems
               </Link>
 
               <Link to="/srp" className="mx-8 md:text-[1.3rem] font-semibold">
-                Soil Retention System
+                Soil Retention Systems
               </Link>
 
               {/* Duplicate items for seamless loop */}
@@ -268,14 +268,14 @@ const DS = () => {
                 to="/ds"
                 className="mx-8 md:text-[1.3rem] font-semibold text-[#FDC000]"
               >
-                Reliable Dewatering System
+                Reliable Dewatering Systems
               </Link>
 
               <Link
                 to="/soil-retention"
                 className="mx-8 md:text-[1.3rem] font-semibold"
               >
-                Soil Retention System
+                Soil Retention Systems
               </Link>
             </div>
           </div>

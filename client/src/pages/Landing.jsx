@@ -54,7 +54,7 @@ const Landing = () => {
     },
     {
       number: "45+",
-      label: "Extensive Machinery Fleet",
+      label: "Machinery Fleet",
     },
     {
       number: "24/7",
@@ -356,7 +356,7 @@ const Landing = () => {
               {/* Left Content */}
               <div className="xl:max-w-[640px] max-w-none w-full">
                 <h1 className="xl:text-[50px] lg:text-[53px] md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
-                  Force Behind Every{" "}
+                  Force Behind <br /> Every{" "}
                   <span className="xl:block lg:inline inline text-primary">
                     Foundation
                   </span>

@@ -50,9 +50,9 @@ const Service = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              Your Trusted Partner for Every <br className="hidden sm:block" />
-              Construction
-              <span className="text-[#FDC000]"> Machine You Need</span>
+              Your Trusted Partner for Excavation & <br className="hidden sm:block" />
+              
+              <span className="text-[#FDC000]">Infrastructure Execution</span>
             </motion.p>
 
             {/* Subtext Animation */}
