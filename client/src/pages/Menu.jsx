@@ -30,7 +30,7 @@ const Header = () => {
 
     
       const heroTransparentEnd = vh * 1; // 100vh
-      const heroEnd = vh * 0.7; // ~150vh
+      const heroEnd = vh * 0.9; // ~150vh
 
       // -------------------------
       // HOME PAGE LOGIC

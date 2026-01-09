@@ -67,7 +67,7 @@ const AboutHighlights = () => {
             timelines. Our focus on safety, quality, and execution discipline
             enables us to support large-scale projects with confidence and
             consistency. Operating across Karnataka and Andhra Pradesh, we
-            partner with developers, EPC contractors, and industrial clients to
+            partner with developers, EPC contractors and industrial clients to
             build strong foundations for future infrastructure.
           </p>
         </div>

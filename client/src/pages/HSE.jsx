@@ -47,7 +47,7 @@ const HSE = () => {
       </Helmet>
       <div className="bg-[F8F8F8]">
         <div
-          className="relative overflow-hidden [@media(min-width:300px)_and_(max-width:400px)]:h-[55vh] h-[50vh]  md:h-[45vh] lg:h-[45vh] xl:h-screen w-full"
+          className="relative border-2 border-red-500 overflow-hidden [@media(min-width:300px)_and_(max-width:400px)]:h-[55vh] h-[50vh]  md:h-[45vh] lg:h-[70vh] xl:h-screen w-full"
           id="hseBanner"
         >
           <div className=" mx-auto
@@ -55,7 +55,7 @@ const HSE = () => {
             {/* Animated Title */}
             <motion.p
               // className="hseBannerTitle [@media(min-width:300px)_and_(max-width:410px)]:text-[1.2rem] text-[1.5rem] md:text-[2.5rem] md:leading-10 leading-6 lg:text-[4rem] text-[#FDC000] lg:leading-20"
-             className="text-[#FDC000] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
+             className="text-[#FDC000] xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
@@ -75,7 +75,7 @@ const HSE = () => {
               viewport={{ once: true, amount: 0.5 }}
             >
               Delivering infrastructure that’s safe,
-              <br className="lg:hidden" /> responsible, and built for the
+              <br className="lg:hidden" /> responsible and built for the
               <br className="hidden lg:block" /> future.
             </motion.p>
           </div>
@@ -135,19 +135,19 @@ const HSE = () => {
             <div className="flex justify-center gap-[2px] lg:gap-[3px] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
               <img
                 src={c1}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw]  lg:h-[30vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[21vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw]  lg:h-[30vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c2}
-                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] h-[30vh] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] md:w-[25vw] md:h-[17vh] xl:w-[21vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c3}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[21vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
               <img
                 src={c4}
-                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[23vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
+                className="w-[47vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[25vh] h-[30vh] md:w-[25vw] md:h-[17vh] xl:w-[21vw] xl:h-[52vh] 2xl:w-[18vw] lg:w-[25vw] lg:h-[47vh] 2xl:h-[47vh] flex-shrink-0 scale-3d"
               />
             </div>
           </motion.div>
@@ -201,7 +201,7 @@ const HSE = () => {
               }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
-              At SVB Infra Projects, health, safety, and environmental
+              At SVB Infra Projects, health, safety and environmental
               protection are at the core of everything we do.
             </motion.p>
           </motion.div>

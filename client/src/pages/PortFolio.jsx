@@ -236,7 +236,7 @@ const PortFolio = () => {
 
             <p className="text-[#4D4D4D] text-justify popins text-[1rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1.3rem]">
               Real feedback from clients who rely on our expertise for
-              excavation, rock work, soil retention, and dewatering services.
+              excavation, rock work, soil retention and dewatering services.
               Every rating reflects our dedication to quality and reliability.
             </p>
 
@@ -319,8 +319,8 @@ const PortFolio = () => {
                 Captured in Action
               </p>
               <p className="[@media(min-width:500px)_and_(max-width:639px)]:text-[0.6rem] text-[1rem] md:text-[1.3rem]  lg:text-[1rem] text-[#333333] font-semibold">
-                Explore our gallery to see SVB Infra Projects’ commitment to
-                quality, precision, and trusted execution in every project we
+                Explore our gallery to see SVB Infra Projects commitment to
+                quality, precision and trusted execution in every project we
                 deliver.
               </p>
             </motion.div>

@@ -52,7 +52,7 @@ const Fleet = () => {
     {
       img: f1,
       title: "Volvo EX 350 ",
-      desc: "Versatile and efficient for all construction operations..",
+      desc: "Versatile and efficient for all construction operations.",
     },
     {
       img: f2,
@@ -87,7 +87,7 @@ const Fleet = () => {
     {
       img: f8,
       title: "Man Dumpers 16 CUM",
-      desc: "Rugged and efficient for bulk material movement..",
+      desc: "Rugged and efficient for bulk material movement.",
     },
     {
       img: f9,
@@ -162,7 +162,7 @@ const Fleet = () => {
                 viewport={{ once: true, amount: 0.5 }}
               >
                     Equipped with advanced machinery, we deliver efficient,
-                    precise, and dependable  results across all project
+                    precise and dependable  results across all project
                     scales.
                   
                 
@@ -222,7 +222,7 @@ const Fleet = () => {
 
             <div>
               <p className="popins-bold text-[1.6rem] md:text-[3rem] lg:text-[4rem] md:leading-14 lg:leading-[69px]">
-                Power, Precision, and <br /> Performance -{" "}
+                Power, Precision and <br /> Performance -{" "}
                 <span className="text-[#FCD000]">All in One Fleet.</span>
               </p>
               {isMobile ? (

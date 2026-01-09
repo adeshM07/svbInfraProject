@@ -23,7 +23,6 @@ import SectionWrapper from "../component/common/SectionWrapper";
 import AboutSectionCard from "../component/home/about-card";
 
 const AboutPage = () => {
-  
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
@@ -102,7 +101,7 @@ const AboutPage = () => {
           </h1>
 
           <p className="px-3 sm:px-5 xl:px-30 xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[900px] md:max-w-[500px] leading-relaxed text-white">
-            Providing fast, flexible, and professional earthmoving services
+            Providing fast, flexible and professional earthmoving services
             statewide since 2003
           </p>
           <div className="px-3 sm:px-5 xl:px-30 flex">
@@ -145,8 +144,12 @@ const AboutPage = () => {
                     <span className="font-semibold mr-2">
                       SVB Infra Projects
                     </span>
-                     is a professionally managed infrastructure and earthwork contracting company with over two decades of execution experience. We specialize in large-scale excavation, land development, rock excavation, soil retention, and dewatering works for industrial, commercial, and infrastructure projects.
-                 
+                    is a professionally managed infrastructure and earthwork
+                    contracting company with over two decades of execution
+                    experience. We specialize in large-scale excavation, land
+                    development, rock excavation, soil retention and dewatering
+                    works for industrial, commercial and infrastructure
+                    projects.
                   </p>
                 </div>
                 <div className="w-full    items-center flex justify-between lg:justify-normal lg:gap-3 xl:gap-7 2xl:gap-5">
@@ -238,12 +241,13 @@ const AboutPage = () => {
                     </p>
                   </div>
                 </div>
-                 
               </div>
             </div>
           </section>
-          <div className="  
-        px-3 sm:px-5 xl:px-30">
+          <div
+            className="  
+        px-3 sm:px-5 xl:px-30"
+          >
             <AboutHighlights></AboutHighlights>
           </div>
         </div>
