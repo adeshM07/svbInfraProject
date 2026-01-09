@@ -132,6 +132,7 @@ const HSE = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
+            {/* skdbjncewjk */}
             <div className="flex justify-center gap-[2px] lg:gap-[3px] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
               <img
                 src={c1}
