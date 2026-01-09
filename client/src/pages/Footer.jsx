@@ -8,12 +8,13 @@ import lin from "../assets/linkedin-marker.png";
 import yt from "../assets/youtube-marker.png";
 import fb from "../assets/facebook-marker.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import bg from "../assets/footerBG.jpeg";
 import { useLocation } from "react-router-dom";
 import "../CSS/Footer.css";
 import { useState, useEffect } from "react";
-import { Youtube, Facebook, Copyright } from 'lucide-react'
-import {Phone, Mail, MapPin} from 'lucide-react'
+import { Youtube, Facebook, Copyright } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -40,6 +41,13 @@ const Footer = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/SVB_Brochure.pdf";
+    link.download = "SVB_Brochure.pdf";
+    link.click();
+  };
   return (
     <>
       <div className="bg-[#F8F8F8] w-full">
@@ -50,40 +58,68 @@ const Footer = () => {
           <div className=" lg:h-fit flex flex-col gap-y-4  md:flex-row    justify-between">
             <div className="flex flex-col gap-7">
               <div className="relative w-24 h-9 sm:w-28 sm:h-11 md:w-32 md:h-12 lg:w-34.5 lg:h-13">
-                            <Link href="/">
-                                <img
-                                    src={logo}
-                                    alt="svb-logo"
-                                    fill
-                                    className="object-contain"
-                                    priority
-                                />
-                            </Link>
-
-                        </div>
+                <Link href="/">
+                  <img
+                    src={logo}
+                    alt="svb-logo"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </Link>
+              </div>
               <p className=" popins text-[#ECECEC] text-start md:text-[0.7rem] lg:text-[1rem] lg:text-start">
                 At SVB Infra Projects, we are a trusted <br /> provider of
                 comprehensive infrastructure <br /> solutions, specializing in
-                  earthmoving,<br /> land development, and 
-                project execution.
+                earthmoving,
+                <br /> land development, and project execution. <br /> Soil &
+                Rock Excavation and Infrastructure <br /> Contractors serving
+                Bengaluru, Penagunda, <br /> Sri Sathya Sai District, and Andhra
+                Pradesh.
               </p>
+              <motion.div
+                onClick={downloadResume}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="font-normal hidden md:flex text-white hover:text-black  gap-2 items-center justify-center
+    bg-[#FDC000] md:bg-transparent w-[40vw]
+    [@media(min-width:650px)_and_(max-width:1200px)]:h-[5vh]
+    h-[5vh] md:w-[15vw] lg:h-[6vh]
+    rounded-md md:border 
+    hover:bg-[#ffcf00] cursor-pointer text-[1rem]"
+              >
+                Brochure
+                <motion.i
+                  className="fa-solid fa-download text-[1rem]"
+                  whileHover={{ y: 2 }}
+                  transition={{ duration: 0.2 }}
+                />
+              </motion.div>
             </div>
             <div className="flex  flex-col gap-5 lg:gap-11  w-fit lg:mx-0 place-items-start lg:place-items-start ">
               {/* <ul className="flex lg:flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[0.9rem] text-white decoration-0"> */}
-              <p className="md:text-[17px]  lg:text-[20px] xl:text-[24px] text-[#ECECEC] font-semibold underline decoration-[#FDC000] underline-offset-8 popins">Quick Links</p>
-                <ul className="flex  flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[1rem]">
-                  {[
-                    { label: "About Us", to: "/about-us" },
-                    { label: "Services", to: "/services" },
-                    { label: "Our Fleet", to: "/our-fleet-2" },
-                    { label: "Portfolio", to: "/portfolio" },
-                    { label: "Gallery", to: "/portfolio#gallery" },
-                    { label: "HSE", to: "/hse" },
-                  ].map((item, index) => (
-                    <Link
-                      key={index}
-                      to={item.to}
-                      className="
+              <p className="md:text-[17px]  lg:text-[20px] xl:text-[24px] text-[#ECECEC] font-semibold underline decoration-[#FDC000] underline-offset-8 popins">
+                Quick Links
+              </p>
+              <ul className="flex  flex-col gap-3  text-[1rem] md:text-[1rem] lg:gap-4 lg:text-[1rem]">
+                {[
+                  { label: "About Us", to: "/about-us" },
+                  { label: "Services", to: "/services" },
+                  { label: "Our Fleet", to: "/our-fleet-2" },
+                  { label: "Portfolio", to: "/portfolio" },
+                  { label: "Gallery", to: "/portfolio#gallery" },
+                  { label: "HSE", to: "/hse" },
+                ].map((item, index) => (
+                  <Link
+                    key={index}
+                    to={item.to}
+                    className="
         text-white
         transition-all duration-300
         cursor-pointer
@@ -91,11 +127,11 @@ const Footer = () => {
         hover:translate-x-2
         inline-block
       "
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </ul>
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </ul>
               {/* </ul> */}
             </div>
             {isMobile ? (
@@ -112,7 +148,7 @@ const Footer = () => {
                     </a>
                   </div>
                   <div className="flex gap-1 place-items-center">
-                     <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
+                    <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
                     <p className="text-white">Andhra Pradesh</p>
                     <a href="https://maps.app.goo.gl/jQgCtc5rAtjt9jJ47">
                       <i class="fa-solid fa-arrow-up-right-from-square text-[#FDC000]"></i>
@@ -120,11 +156,17 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="text-white [@media(min-width:650px)_and_(max-width:1200px)]:text-start  md:text-center flex flex-col [@media(min-width:650px)_and_(max-width:1200px)]:flex-col md:flex-row gap-y-1">
-                  {" "}
                   <a href="tel:9900641808">+91 9900641808</a>{" "}
-                
                   <a href="tel:9980851508">+91 9980851508</a>{" "}
                 </div>
+                 <div
+                onClick={downloadResume}
+                className="contactUSBannerFormButton font-normal md:hidden  text-[#333333] flex justify-evenly place-items-center text-center bg-[#FDC000] border-none md:bg-transparent w-[40vw] [@media(min-width:650px)_and_(max-width:1200px)]:h-[11vh] h-[5vh] md:w-[13vw] lg:h-[7vh] rounded-md md:border hover:border-none mx-auto lg:mx-0  transition duration-300 transform
+  hover:bg-[#ffcf00] hover:scale-105 hover:shadow-lg cursor-pointer text-[1rem] md:text-[1.5rem]"
+              >
+                Brochure{" "}
+                <i class="fa-solid fa-download text-[1rem] md:text-[1.5rem]"></i>
+              </div>
               </div>
             ) : (
               <div className="flex flex-col gap-11">
@@ -167,10 +209,13 @@ const Footer = () => {
                   {/* 📞 Phone */}
 
                   <div className="flex items-start gap-3 md:gap-4">
-                    <a href="tel:9900641808" className="flex gap-3 md:gap-4 place-items-center">
+                    <a
+                      href="tel:9900641808"
+                      className="flex gap-3 md:gap-4 place-items-center"
+                    >
                       <Phone className="w-5 h-5 text-primary mt-1 shrink-0" />
                       <p className="text-[#ECECEC] popins text-[8px] md:text-[0.8rem] lg:text-[0.85rem] leading-relaxed">
-                        +91 9900641808  +91 9980851508
+                        +91 9900641808 +91 9980851508
                       </p>
                     </a>
                   </div>
@@ -208,18 +253,14 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Youtube className="w-5 h-5 text-white" />
-              
-                 
-               
-                
               </a>
               {/* <img src={ins} className="h-[3vh] lg:h-[4vh]" alt="" /> */}
             </div>
             <div className="flex gap-2 mt-1  place-items-center">
-            <Copyright className="w-3 h-3 text-white" />
-            <p className="text-white popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[1rem] text-[0.5rem] md:text-[0.9rem] lg:text-[0.8rem] ">
-              Copyright 2025 SVB Infra Projects. All rights reserved.
-            </p>
+              <Copyright className="w-3 h-3 text-white" />
+              <p className="text-white popins [@media(min-width:650px)_and_(max-width:1200px)]:text-[1rem] text-[0.5rem] md:text-[0.9rem] lg:text-[0.8rem] ">
+                Copyright 2025 SVB Infra Projects. All rights reserved.
+              </p>
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ import ic4 from "../assets/ESECardIMG4.png";
 import fb from "../assets/forwardButton.png";
 import { Link } from "react-router-dom";
 import "../CSS/Landing.css";
+import { Helmet } from "react-helmet";
 import { useState, useEffect } from "react";
 
 const ESE = () => {
@@ -31,18 +32,24 @@ const ESE = () => {
   let nav = useNavigate();
   return (
     <>
-      <div  className=" px-2.5 md:px-8 lg:px-15 xl:px-30 my-15 md:my-20 flex flex-col gap-10">
+      <Helmet>
+        <title>Excavation & Infrastructure Services  | SVB Infra Projects</title>
+
+        <meta
+          name="description"
+          content="SVB Infra Projects specializes in soil excavation, rock excavation, land development, soil retention systems, and dewatering works for infrastructure projects."
+        />
+         {/* <link rel="canonical" href="https://svbinfraprojects.com/ese" /> */}
+      </Helmet>
+      <div className=" px-2.5 md:px-8 lg:px-15 xl:px-30 my-15 md:my-20 flex flex-col gap-10">
         <div className="flex flex-col gap-7 lg:gap-10   ">
           <div className="flex  place-items-center gap-3">
             <h3 className="text-[20px] inline lg:text-[32px] md:text-[30px] sm:text-[24px] border-b-2 border-b-primary font-semibold">
-                Excavation Soil / Earth
-              </h3>
-            
+              Excavation Soil / Earth
+            </h3>
           </div>
           <div className="flex flex-col gap-2 lg:gap-4">
-            <p 
-            className="text-[#333333] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight"
-           >
+            <p className="text-[#333333] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
               <span className="text-[#FDC000]">Earth & Soil</span> Excavation
               Services
             </p>
@@ -288,7 +295,9 @@ const ESE = () => {
                 </p>
                 <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Safely dismantle structures for new developments.</li>
-                  <li>Use hydraulic breakers, excavators, or other demolition.</li>
+                  <li>
+                    Use hydraulic breakers, excavators, or other demolition.
+                  </li>
                   <li>Sort and dispose of debris per environmental norms.</li>
                   <li>Minimize dust, noise, and vibration impact.</li>
                 </div>

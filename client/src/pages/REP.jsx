@@ -10,6 +10,7 @@ import ic5 from "../assets/REPCardIMG5.png";
 import ic6 from "../assets/REPCardIMG6.png";
 import fb from "../assets/forwardButton.png";
 import "../CSS/Landing.css";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -32,18 +33,28 @@ const REP = () => {
   let nav = useNavigate();
   return (
     <>
+      <Helmet>
+        <title>
+          Rock Excavation Services in Penagunda  Sathya Sai District | SVB
+          Infra Projects
+        </title>
+
+        <meta
+          name="description"
+          content="SVB Infra Projects provides soil excavation, rock excavation, and infrastructure support services across Andhra Pradesh for industrial, commercial, and large-scale development projects."
+        />
+      </Helmet>
+
       <div className="px-2.5 md:px-8 lg:px-15 xl:px-30 my-15 md:my-20 flex flex-col gap-10">
         <div className=" flex flex-col gap-7 lg:gap-10  ">
           <div className="flex flex-col gap-7 lg:gap-10   ">
             <div className="flex  place-items-center gap-3">
-             
-               <h3 className="text-[20px] inline lg:text-[32px] md:text-[30px] sm:text-[24px] border-b-2 border-b-primary font-semibold">
-                   Rock Excavation
+              <h3 className="text-[20px] inline lg:text-[32px] md:text-[30px] sm:text-[24px] border-b-2 border-b-primary font-semibold">
+                Rock Excavation
               </h3>
-             
             </div>
             <div className="flex flex-col gap-2 lg:gap-4">
-              <p  className="text-[#333333] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
+              <p className="text-[#333333] xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
                 <span className="text-[#FDC000] mr-3">Rock Excavation</span>
                 Services
               </p>

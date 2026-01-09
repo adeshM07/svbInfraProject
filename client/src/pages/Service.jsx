@@ -30,7 +30,8 @@ const Service = () => {
         <title>Services | SVB Infra Projects</title>
         <meta
           name="description"
-          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
+          content="SVB Infra Projects specializes in soil excavation, rock excavation, land
+development, soil retention systems, and dewatering works for infrastructure projects"
         />
         <link rel="canonical" href="https://svbinfraprojects.com/services" />
       </Helmet>
@@ -50,8 +51,8 @@ const Service = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              Your Trusted Partner for Excavation & <br className="hidden sm:block" />
-              
+              Your Trusted Partner for Excavation &{" "}
+              <br className="hidden sm:block" />
               <span className="text-[#FDC000]">Infrastructure Execution</span>
             </motion.p>
 
@@ -62,9 +63,10 @@ const Service = () => {
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.4 }}
             >
-              <p  className=" 
+              <p
+                className=" 
         px-3 sm:px-5 xl:px-30 xl:text-xl lg:text-xl md:text-lg text-sm lg:max-w-[1000px] md:max-w-[700px] leading-relaxed text-white hseBannerDesc"
-             >
+              >
                 Delivering top-quality machinery and equipment to ensure every
                 project runs smoothly, safely, and efficiently.
               </p>
@@ -94,7 +96,7 @@ const Service = () => {
           <div className=" flex flex-col md:flex-row justify-evenly w-full ">
             {[s1, s2, s3, s4].map((src, index) => (
               <div
-              className=""
+                className=""
                 key={index}
                 // initial={{ opacity: 0, scale: 0.9 }}
                 // whileInView={{ opacity: 1, scale: 1 }}

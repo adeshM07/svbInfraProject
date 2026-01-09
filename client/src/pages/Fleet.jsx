@@ -85,12 +85,12 @@ const Fleet = () => {
       desc: "Versatile and efficient for all construction operations.",
     },
     {
-      img: f8,
+      img: f9,
       title: "Man Dumpers 16 CUM",
       desc: "Rugged and efficient for bulk material movement.",
     },
     {
-      img: f9,
+      img: f8,
       title: "Hydraulic Rock Splitter",
       desc: "Efficient and powerful tool for controlled rock breaking.",
     },
@@ -114,14 +114,14 @@ const Fleet = () => {
   return (
     <>
       <Helmet>
-        <title>Our Fleet | SVB Infra Projects</title>
+        <title>Our Fleet | Excavation & Infrastructure Machinery | SVB Infra Projects</title>
         <meta
           name="description"
-          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
+          content="SVB Infra Projects operates a modern fleet of excavation and infrastructure machinery supporting soil and rock excavation projects across Bengaluru and Andhra Pradesh."
         />
         <link
           rel="canonical"
-          href="https://svbinfraprojects.com/fleet
+          href="https://www.svbinfraprojects.com/our-fleet-2
         "
         />
       </Helmet>

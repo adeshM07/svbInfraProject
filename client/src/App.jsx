@@ -16,6 +16,7 @@ import ESE from "./pages/ESE";
 import REP from "./pages/REP";
 import DS from "./pages/DS";
 import SRP from "./pages/SRP";
+import "./CSS/Landing.css";
 import ScrollToHash from "./pages/ScrollToHash ";
 import WhatsAppFloat from "./pages/WhatsAppFloat ";
 import PageLoader from "./pages/PageLoader ";
@@ -34,7 +35,7 @@ const App = () => {
   const [mounted, setMounted] = useState(false);
   const [progress, setProgress] = useState(0);
 
-   const location = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     setMounted(true);
@@ -54,10 +55,6 @@ const App = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-
-
- 
 
   useEffect(() => {
     const width = window.innerWidth;
@@ -79,18 +76,15 @@ const App = () => {
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
-    if (!mounted) return null;
-
- 
+  if (!mounted) return null;
 
   const isLandingPage = location.pathname === "/";
-   const showArrow = progress < 0.2;
+  const showArrow = progress < 0.2;
   const overlayOpacity = progress * 1;
   // const isfleet = location.pathname === "/our-fleet-2";
 
   return (
     <>
-    
       <div className="w-full">
         {/* {isPageLoading && <PageLoader />} */}
         <ScrollToHash />
@@ -110,6 +104,24 @@ const App = () => {
               className="absolute inset-0 pointer-events-none transition-opacity duration-200"
               style={{ backgroundColor: `rgba(0,0,0,${overlayOpacity})` }}
             />
+            <h1
+              className={`
+    popins-bold absolute text-white
+    2xl:text-7xl xl:text-[58px] lg:text-[56px] md:text-5xl
+    sm:text-4xl text-2xl leading-tight font-bold
+    bottom-50 xl:bottom-30 px-3 sm:px-5 xl:px-30
+    flex flex-col
+    transition-all duration-300 ease-out
+    ${
+      progress > 0.05
+        ? "opacity-0 translate-y-6 pointer-events-none"
+        : "opacity-100 translate-y-0"
+    }
+  `}
+            >
+              Total <br />
+              <span className="text-[#FDC000]">Excavation Solutions</span>
+            </h1>
 
             <div
               className={`

@@ -100,7 +100,9 @@ const PortFolio = () => {
         <title>Portfolio | SVB Infra Projects</title>
         <meta
           name="description"
-          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
+          content="Our project execution capabilities extend across Andhra Pradesh,
+delivering dependable earthwork, rock excavation, soil retention, and dewatering
+solutions"
         />
         <link rel="canonical" href="https://svbinfraprojects.com/portfolio" />
       </Helmet>

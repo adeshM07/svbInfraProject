@@ -76,10 +76,11 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | SVB Infra Projects</title>
+        <title>About Us | Excavation , Land leveling Contractors</title>
         <meta
           name="description"
-          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
+          content="SVB Infra Projects is a Bengaluru-based excavation and infrastructure
+contractor specializing in soil excavation, rock excavation, and site development works."
         />
         <link rel="canonical" href="https://svbinfraprojects.com/about" />
       </Helmet>

@@ -154,10 +154,14 @@ const Landing = () => {
   return (
     <>
       <Helmet>
-        <title>SVB Infra Projects</title>
+        <title>
+          Soil & Rock Excavation Contractors in Bengaluru & Andhra Pradesh | SVB
+          Infra Projects
+        </title>
+
         <meta
           name="description"
-          content="SVB Infra PROJECTS is a 3rd generation family-run business..."
+          content="SVB Infra Projects undertakes soil and rock excavation and infrastructure works in Bengaluru , Penagunda and across the Sri Sathya Sai district of Andhra Pradesh."
         />
         <link rel="canonical" href="https://svbinfraprojects.com" />
       </Helmet>
@@ -291,10 +295,11 @@ const Landing = () => {
                 >
                   SVB Infra Projects is a professionally managed infrastructure
                   and earthwork contracting company with over two decades of
-                  execution experience. We specialize in large-scale excavation,
-                  land development, rock excavation, soil retention and
-                  dewatering works for industrial, commercial and
-                  infrastructure projects.
+                  execution experience. We specialize in large-scale soil and
+                  rock excavation, land development, soil retention, and
+                  dewatering works, delivering reliable, safe, and efficient
+                  solutions for industrial, commercial, and infrastructure
+                  projects across Bengaluru and Andhra Pradesh.
                 </p>
 
                 <div className="items-center sm:justify-between md:justify-start justify-start gap-2 xl:hidden 2xl:flex lg:hidden md:flex sm:flex flex ">
@@ -357,7 +362,7 @@ const Landing = () => {
               <div className="xl:max-w-[640px] max-w-none w-full">
                 <h1 className="xl:text-[50px] lg:text-[53px] md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
                   Force Behind <br /> Every{" "}
-                  <span className="xl:block lg:inline inline text-primary">
+                  <span className=" lg:inline inline text-primary">
                     Foundation
                   </span>
                 </h1>
