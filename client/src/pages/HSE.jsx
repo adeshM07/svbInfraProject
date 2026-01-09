@@ -47,7 +47,7 @@ const HSE = () => {
       </Helmet>
       <div className="bg-[F8F8F8]">
         <div
-          className="relative border-2 border-red-500 overflow-hidden [@media(min-width:300px)_and_(max-width:400px)]:h-[55vh] h-[50vh]  md:h-[45vh] lg:h-[70vh] xl:h-screen w-full"
+          className="relative  overflow-hidden [@media(min-width:300px)_and_(max-width:400px)]:h-[55vh] h-[50vh]  md:h-[45vh] lg:h-[70vh] xl:h-screen w-full"
           id="hseBanner"
         >
           <div className=" mx-auto
@@ -132,7 +132,7 @@ const HSE = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            {/* skdbjncewjk */}
+            {/* skdbjncewjkg */}
             <div className="flex justify-center gap-[2px] lg:gap-[3px] xl:gap-[1rem] 2xl:gap-[1.5rem] min-w-full">
               <img
                 src={c1}
