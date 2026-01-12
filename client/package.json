@@ -20,7 +20,6 @@
     "react-helmet": "^6.1.0",
     "react-intersection-observer": "^10.0.0",
     "react-router-dom": "^7.9.4",
-    "react-snap": "^0.8.2",
     "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
