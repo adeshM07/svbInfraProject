@@ -17,7 +17,7 @@ import f11 from "../assets/f11.png";
 import f12 from "../assets/f12.png";
 import "../CSS/Landing.css";
 import fleetVideo from '../assets/fleetVideo.MOV'
-
+// kuiefbuib
 const Fleet = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -95,12 +95,12 @@ const Fleet = () => {
       desc: "Efficient and powerful tool for controlled rock breaking.",
     },
     {
-      img: f10,
+      img: f11,
       title: "Diamond Rope Cutting",
       desc: "Accurate cutting for concrete and rock structures.",
     },
     {
-      img: f11,
+      img: f10,
       title: "JCB (3DX) ",
       desc: "Versatile and efficient for all construction operations.",
     },
