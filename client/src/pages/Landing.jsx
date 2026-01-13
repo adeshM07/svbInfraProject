@@ -179,7 +179,7 @@ const Landing = () => {
             <div className="flex flex-col gap-5 ">
               <h1 className="text-white xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold leading-tight">
                 Building with
-                <span className="sm:block inline ml-2 text-primary">
+                <span className="sm:block ml-2 sm:ml-0 inline  text-primary">
                   Precision and Reliability
                 </span>
               </h1>

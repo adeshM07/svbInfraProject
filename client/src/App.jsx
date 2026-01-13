@@ -108,7 +108,7 @@ const App = () => {
               className={`
     popins-bold absolute text-white
     2xl:text-[100px]  xl:text-[65px] lg:text-[56px] md:text-5xl
-    sm:text-4xl text-2xl leading-tight font-bold
+    sm:text-4xl text-4xl leading-tight font-bold
     bottom-50 xl:bottom-30 px-3 sm:px-5 xl:px-30
     flex flex-col
     transition-all duration-300 ease-out
