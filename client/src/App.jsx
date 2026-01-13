@@ -107,7 +107,7 @@ const App = () => {
             <h1
               className={`
     popins-bold absolute text-white
-    2xl:text-7xl xl:text-[58px] lg:text-[56px] md:text-5xl
+    2xl:text-[100px]  xl:text-[65px] lg:text-[56px] md:text-5xl
     sm:text-4xl text-2xl leading-tight font-bold
     bottom-50 xl:bottom-30 px-3 sm:px-5 xl:px-30
     flex flex-col
