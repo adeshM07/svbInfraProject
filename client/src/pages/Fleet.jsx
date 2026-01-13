@@ -130,7 +130,7 @@ const Fleet = () => {
         <div className="relative w-full h-[45vh] md:h-[65vh] lg:h-[95vh] overflow-hidden flex place-items-center">
           {/* ===== VIDEO BACKGROUND ===== */}
           <video
-            src="https://res.cloudinary.com/dtculdtll/video/upload/v1766659656/fleetVideo_sdxdkt.mov"
+            src="https://res.cloudinary.com/dkuwwakct/video/upload/v1768292134/ourFleetVideo_xhvgtx.mp4"
             autoPlay
             loop
             muted

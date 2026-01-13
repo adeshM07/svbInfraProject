@@ -297,7 +297,7 @@ const REP = () => {
                 viewport={{ once: true, amount: 0.4 }}
               >
                 <p className="text-[#FDC000] text-[1rem] md:text-[0.9rem] lg:text-[1.3rem] 2xl:text-[2rem] font-semibold fontMon">
-                  Hydraulic Rock Splitting
+                  Hydraulic Rock Breakers
                 </p>
                 <div className="flex flex-col gap-2 pl-2 marker:text-xs popins text-[0.6rem] md:text-[0.6rem] lg:text-[0.9rem] 2xl:text-[1.4rem]">
                   <li>Use hydraulic pressure to split large rocks.</li>

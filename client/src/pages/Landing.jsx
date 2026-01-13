@@ -63,7 +63,7 @@ const Landing = () => {
   ];
   const [applyEffect, setApplyEffect] = useState(false);
   let [projectVideo, setProjectVideo] = useState(
-    "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4"
+    "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290528/BMCVellaraJunctionProjectVideo_liplwt.mp4"
   );
   const [isMobile, setIsMobile] = useState(false);
   const MotionLink = motion(Link);
@@ -247,7 +247,7 @@ const Landing = () => {
                   loop
                   muted
                   playsInline
-                  src="https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov"
+                  src="https://res.cloudinary.com/dkuwwakct/video/upload/v1768290441/boxVideoTrimmed_nlhwd1.mov"
                 />
               </div>
 
@@ -454,17 +454,17 @@ const Landing = () => {
                         {
                           src: c1,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290550/BMCVellaraJunctionProjectVideo_sqk22s.mp4",
                         },
                         {
                           src: c2,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290561/MarkSquareProjectVideo_eiwy14.mp4",
                         },
                         {
                           src: c3,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290587/VellaraJunctionProjectVideo_dxe59x.mp4",
                         },
                         {
                           src: c4,
@@ -474,42 +474,42 @@ const Landing = () => {
                         {
                           src: c5,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290566/ProjectVideo_yh4mat.mp4",
                         },
                         {
                           src: c6,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290441/boxVideoTrimmed_nlhwd1.mov",
                         },
                         {
                           src: c7,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573121/VellaraJunctionProjectVideo_uhiyic.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290494/LandingVideoTrimmed_ovxi4q.mp4",
                         },
                         {
                           src: c8,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290550/BMCVellaraJunctionProjectVideo_sqk22s.mp4",
                         },
                         {
                           src: c9,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290561/MarkSquareProjectVideo_eiwy14.mp4",
                         },
                         {
                           src: c10,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290587/VellaraJunctionProjectVideo_dxe59x.mp4",
                         },
                         {
                           src: c11,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766572285/boxVideoTrimmed_naarfb.mov",
+                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573110/MarkSquareProjectVideo_nkguhx.mp4",
                         },
                         {
                           src: c12,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766571856/LandingVideoTrimmed_yj2zr6.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290566/ProjectVideo_yh4mat.mp4",
                         },
                         {
                           src: c13,
@@ -519,12 +519,12 @@ const Landing = () => {
                         {
                           src: c14,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573114/ProjectVideo_rw8gt4.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290528/BMCVellaraJunctionProjectVideo_liplwt.mp4",
                         },
                         {
                           src: c15,
                           video:
-                            "https://res.cloudinary.com/dtculdtll/video/upload/v1766573111/MarkSquare_iinsjt.mp4",
+                            "https://res.cloudinary.com/dkuwwakct/video/upload/v1768290494/LandingVideoTrimmed_ovxi4q.mp4",
                         },
                       ].map((item, index) => (
                         <img
