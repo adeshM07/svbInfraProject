@@ -158,6 +158,7 @@ const Landing = () => {
           Soil & Rock Excavation Contractors in Bengaluru & Andhra Pradesh | SVB
           Infra Projects
         </title>
+       <meta name="google-site-verification" content="VEgv_vVGghT7dSlFyHM9E0klcTqiZPfObuRRKGOhHbY" />
 
         <meta
           name="description"
